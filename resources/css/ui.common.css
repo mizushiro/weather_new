@@ -28,7 +28,7 @@ em, u, cite, i, abbr{font-style:normal;text-decoration:none;}
 strong, b{font-weight:normal;}
 a{color:rgb(16, 79, 252);outline-offset:.1rem;box-sizing:border-box;}
 button{border:0 none;font-family:'NanumSquare','sans-serif';cursor:pointer;background:transparent;box-sizing:border-box;color:#666}
-input, textarea, select, button{box-sizing:border-box;font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;font-size:1.3rem;}
+input, textarea, select, button {box-sizing:border-box;font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;font-size:1.3rem;outline:none;}
 article, aside, details, figcaption, figure, footer, header, main, hgroup, nav, section, summary{display:block;margin:0;padding:0;box-sizing:border-box;}
 .hidden{position:absolute !important;width:0 !important;height:0 !important;z-index:-1 !important;color:transparent !important;overflow:hidden !important;font-size:xx-small !important;line-height:0 !important;min-height:0 !important;max-height:0 !important;}
 .ui-widget{font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;}
