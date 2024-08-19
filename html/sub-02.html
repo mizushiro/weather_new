@@ -1,0 +1,665 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/ui.common.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap sub-map">
+		<header class="header">
+			<div class="header-left">
+				<h1 class="header-title">
+					<i class="header-logo"></i>
+					<i class="header-logo-text"></i>
+					<span class="for-a11y">기상청 기후정보포털</span>
+				</h1>
+				<i class="header-line"></i>
+				<h2 class="header-title-2">기후변화 상황지도</h2>
+			</div>
+			<div class="header-right">
+				<a href="" class="header-right-item">우리동네 기후변화</a>
+				<a href="" class="header-right-item">종합기후변화</a>
+				<a href="" class="header-right-item">기후변화 예측정보</a>
+				<a href="" class="header-right-item">재난영향정보</a>
+				<a href="" class="header-right-item">열린마당</a>
+			</div>
+		</header>
+		<main class="sub-map-content">
+			<div class="sub-map-content-area">
+				<div class="map-container-box">
+					<div class="map-breadcrumbs">
+						<div class="breadcrumbs-box">
+							기후변화 예측정보
+							<img src="../resources/images/common/icon-arrow-right.svg" alt="">
+							<span>유역별 기후변화</span>
+						</div>
+					</div>
+					<div class="map-left-position">
+						<div class="map-left-sh-box">
+							<i class="icon-sh"></i>
+							<input type="text" class="left-input-sh" placeholder="" data-id="search" />
+
+							<div class="map-left-sh-list" style="display:none">
+								<div class="map-left-sh-group">
+									<p class="map-left-sh-group-title">명칭</p>
+									<div class="map-left-sh-group-item">
+										<button type="button" class="btn-map-sh-items"><span>서울</span></button>
+										<button type="button" class="btn-map-sh-items"><span>백석대학교 도서관(서울)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>서울 지하철</span></button>
+									</div>
+								</div>
+								<div class="map-left-sh-group">
+									<p class="map-left-sh-group-title">도로명</p>
+									<div class="map-left-sh-group-item">
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
+									</div>
+								</div>
+								<div class="map-left-sh-group">
+									<p class="map-left-sh-group-title">지번</p>
+									<div class="map-left-sh-group-item">
+										<button type="button" class="btn-map-sh-items">서울특별시 중구 세종대로 110</button>
+										<button type="button" class="btn-map-sh-items">서울특별시 강남구 광평로 303</button>
+										<button type="button" class="btn-map-sh-items">서울특별시 강남구 압구정로 431</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="map-left-map-type">
+							<button type="button" class="btn-map-type active">
+								<span class="map-type-img"><img src="../resources/images/common/icon-map-1.png" alt=""></span>
+								<span class="map-type-text">위성지도</span>
+							</button>
+							<button type="button" class="btn-map-type">
+								<span class="map-type-img"><img src="../resources/images/common/icon-map-2.png" alt=""></span>
+								<span class="map-type-text">일반지도</span>
+							</button>
+						</div>
+
+						<div class="map-left-map-expand">
+							<button type="button" class="btn-s-map-right">
+								<i class="icon-plus"></i>
+							</button>
+							<button type="button" class="btn-s-map-right">
+								<i class="icon-minus"></i>
+							</button>
+						</div>
+
+						<div class="map-left-btn-group">
+							<div class="btn-layer-hover">
+								<button type="button" class="btn-s-map-item">
+									<i class="icon-left-map-01"></i>
+								</button>
+								<div class="left-tooltip-layer">
+									<div class="left-tooltip-layer-box">
+										경계
+									</div>
+								</div>
+							</div>
+
+							<div class="btn-layer-hover">
+								<button type="button" class="btn-s-map-item active">
+									<i class="icon-left-map-02"></i>
+								</button>
+								<div class="left-tooltip-layer">
+									<div class="left-tooltip-layer-box">
+										격자
+									</div>
+								</div>
+							</div>
+
+							<div class="btn-layer-hover">
+								<button type="button" class="btn-s-map-item">
+									<i class="icon-left-map-03"></i>
+								</button>
+								<div class="left-tooltip-layer">
+									<div class="left-tooltip-layer-box">
+										기후요소 표출
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="map-right-position">
+						<button type="button" class="btn-base active btn-deviation-open">
+							<i class="icon-map-open-1"></i>
+						</button>
+						<button type="button" class="btn-base btn-deviation-open2">
+							<i class="icon-map-open-2"></i>
+						</button>
+					</div>
+					<img src="../resources/images/temp/map.png" alt="" class="object-cover">
+				</div>
+				<div class="map-detail-right-area scrollbar-4">
+					<p class="map-detail-right-title">KMA 대권역 - 금강</p>
+					<div class="map-detail-right-box">
+						<div class="map-detail-right-1">
+							<div class="map-detail-right-group">
+							<p class="map-detail-right-group-title">SSP1 - 2.6</p>
+							<div class="map-detail-right-list">
+								<div class="map-detail-right-item">
+									<img src="../resources/images/temp/sample.svg" alt="">
+									<p class="map-detail-right-item-text">
+										<span class="map-detail-right-item-text-stork">금강</span>
+										<span class="map-detail-right-item-value">금강</span>
+									</p>
+								</div>
+								<div class="map-detail-right-item">
+									<img src="../resources/images/temp/sample.svg" alt="">
+									<p class="map-detail-right-item-text">
+										<span class="map-detail-right-item-text-stork">금강</span>
+										<span class="map-detail-right-item-value">금강</span>
+									</p>
+								</div>
+								<div class="map-detail-right-item">
+									<img src="../resources/images/temp/sample.svg" alt="">
+									<p class="map-detail-right-item-text">
+										<span class="map-detail-right-item-text-stork">금강</span>
+										<span class="map-detail-right-item-value">금강</span>
+									</p>
+								</div>
+								<div class="map-detail-right-item">
+									<img src="../resources/images/temp/sample.svg" alt="">
+									<p class="map-detail-right-item-text">
+										<span class="map-detail-right-item-text-stork">금강</span>
+										<span class="map-detail-right-item-value">금강</span>
+									</p>
+								</div>
+							</div>
+						</div>
+							<div class="map-detail-right-group">
+								<p class="map-detail-right-group-title">SSP5 - 8.5</p>
+								<div class="map-detail-right-list">
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="map-detail-right-group v2">
+								<div class="map-detail-right-list">
+									<div class="map-detail-right-item">
+										<p class="map-detail-right-item-title">
+											현재
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<p class="map-detail-right-item-title">
+											21세기 전반기<br>
+											2021~2024
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<p class="map-detail-right-item-title">
+											21세기 중반기<br>
+											2041~2060
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<p class="map-detail-right-item-title">
+											21세기 후반기<br>
+											2081~2100
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="map-detail-right-title">SSP시나리오 연별 최고기온 전망</p>
+					<div class="map-detail-right-box">
+						차트 영역
+					</div>
+					<div class="map-detail-right-table-area">
+						<table class="dark-table">
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">현재기후</th>
+									<th scope="col">전반기</th>
+									<th scope="col">중반기</th>
+									<th scope="col">후반기</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">SSP1 - 2.6</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP2 - 4.6</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP3 - 7.0</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP5 - 8.5</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="map-detail-right-btn-group">
+						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
+							XLSX
+							<i class="icon-circle-down"></i>
+						</button>
+						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
+							CSV
+							<i class="icon-circle-down"></i>
+						</button>
+						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
+							PNG
+							<i class="icon-circle-down"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<nav class="footer-nav">
+			<div class="map-control-btn-group">
+				<div class="layer-open-box">
+					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-1">
+						<i class="icon-btm-5"></i>
+						<span class="map-control-layer-btn-text">평균기온</span>
+					</button>
+					<div id="data-layer1-1" class="layer_section">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title"><i class="icon-btm-5"></i>평균기온</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data1-1" name="data1" class="radio-style-a">
+										<label for="data1-1" class="right-check-label">
+											<span class="right-check-data2">평균기온</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data1-2" name="data1" class="radio-style-a">
+										<label for="data1-2" class="right-check-label">
+											<span class="right-check-data2">최고기온</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data1-3" name="data1" class="radio-style-a">
+										<label for="data1-3" class="right-check-label">
+											<span class="right-check-data2">최저기온</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data1-4" name="data1" class="radio-style-a">
+										<label for="data1-4" class="right-check-label">
+											<span class="right-check-data2">강수량</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-open-box">
+					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-2">
+						<i class="icon-btm-6"></i>
+						<span class="map-control-layer-btn-text">최고기온</span>
+					</button>
+					<div id="data-layer1-2" class="layer_section">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title"><i class="icon-btm-6"></i>최고기온</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data2-1" name="data2" class="radio-style-a">
+										<label for="data2-1" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data2-2" name="data2" class="radio-style-a">
+										<label for="data2-2" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data2-3" name="data2" class="radio-style-a">
+										<label for="data2-3" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-open-box">
+					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-3">
+						<i class="icon-btm-7"></i>
+						<span class="map-control-layer-btn-text">최저기온</span>
+					</button>
+					<div id="data-layer1-3" class="layer_section">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title"><i class="icon-btm-7"></i>최저기온</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data3-1" name="data3" class="radio-style-a">
+										<label for="data3-1" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data3-2" name="data3" class="radio-style-a">
+										<label for="data3-2" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data3-3" name="data3" class="radio-style-a">
+										<label for="data3-3" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-open-box">
+					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-4">
+						<i class="icon-btm-4"></i>
+						<span class="map-control-layer-btn-text">강수량</span>
+					</button>
+					<div id="data-layer1-4" class="layer_section">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title"><i class="icon-btm-4"></i>강수량</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data4-1" name="data4" class="radio-style-a">
+										<label for="data4-1" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data4-2" name="data4" class="radio-style-a">
+										<label for="data4-2" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data4-3" name="data4" class="radio-style-a">
+										<label for="data4-3" class="right-check-label">
+											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map-control-period-group">
+				<div class="layer-open-box">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-5">
+						연별
+					</button>
+					<div id="data-layer1-5" class="layer_section size-small">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title">연별 (ANNUAL)</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data5-1" name="data5" class="radio-style-a">
+										<label for="data5-1" class="right-check-label">
+											<span class="right-check-data2">2002년</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data5-2" name="data5" class="radio-style-a">
+										<label for="data5-2" class="right-check-label">
+											<span class="right-check-data2">2003년</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data5-3" name="data5" class="radio-style-a">
+										<label for="data5-3" class="right-check-label">
+											<span class="right-check-data2">2004년</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-open-box">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-6">
+						계절별
+					</button>
+					<div id="data-layer1-6" class="layer_section position-type-b size-small">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title">계절별 (SEASONAL)</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data6-1" name="data6" class="radio-style-a">
+										<label for="data6-1" class="right-check-label">
+											<span class="right-check-data2">봄(Spring)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data6-2" name="data6" class="radio-style-a">
+										<label for="data6-2" class="right-check-label">
+											<span class="right-check-data2">여름(Summer)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data6-3" name="data6" class="radio-style-a">
+										<label for="data6-3" class="right-check-label">
+											<span class="right-check-data2">가을(Fall)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data6-4" name="data6" class="radio-style-a">
+										<label for="data6-4" class="right-check-label">
+											<span class="right-check-data2">겨울(Winter)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-open-box">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-7">
+						월별
+					</button>
+					<div id="data-layer1-7" class="layer_section position-type-c size-small">
+						<div class="layer_section-container">
+							<div class="map-section-head">
+								<h1 class="map-section-title">월별 (MONTHLY)</h1>
+							</div>
+							<div class="layer-content">
+								<div class="layer-radio-group">
+									<div class="radio-item">
+										<input type="radio" id="data7-1" name="data7" class="radio-style-a">
+										<label for="data7-1" class="right-check-label">
+											<span class="right-check-data2">1월(JAN)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-2" name="data7" class="radio-style-a">
+										<label for="data7-2" class="right-check-label">
+											<span class="right-check-data2">2월(FEB)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-3" name="data7" class="radio-style-a">
+										<label for="data7-3" class="right-check-label">
+											<span class="right-check-data2">3월(MAR)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-4" name="data7" class="radio-style-a">
+										<label for="data7-4" class="right-check-label">
+											<span class="right-check-data2">4월(APR)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-5" name="data7" class="radio-style-a">
+										<label for="data7-5" class="right-check-label">
+											<span class="right-check-data2">5월(MAY)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-6" name="data7" class="radio-style-a">
+										<label for="data7-6" class="right-check-label">
+											<span class="right-check-data2">6월(JUN)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-7" name="data7" class="radio-style-a">
+										<label for="data7-7" class="right-check-label">
+											<span class="right-check-data2">7월(JUL)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-8" name="data7" class="radio-style-a">
+										<label for="data7-8" class="right-check-label">
+											<span class="right-check-data2">8월(AUG)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-9" name="data7" class="radio-style-a">
+										<label for="data7-9" class="right-check-label">
+											<span class="right-check-data2">9월(SEP)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-10" name="data7" class="radio-style-a">
+										<label for="data7-10" class="right-check-label">
+											<span class="right-check-data2">10월(OCT)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-11" name="data7" class="radio-style-a">
+										<label for="data7-11" class="right-check-label">
+											<span class="right-check-data2">11월(NOV)</span>
+										</label>
+									</div>
+									<div class="radio-item">
+										<input type="radio" id="data7-12" name="data7" class="radio-style-a">
+										<label for="data7-12" class="right-check-label">
+											<span class="right-check-data2">12월(DEC)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="layer-top-right-btn">
+								<button type="button" class="layer-top-btn-item dark btn_layer-close">
+									<img src="../resources/images/common/icon-close.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

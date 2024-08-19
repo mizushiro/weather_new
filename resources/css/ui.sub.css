@@ -2,13 +2,16 @@
 
 .sub-map {display:flex;flex-direction:column;height:100%;}
 .sub-map-content {flex:1;width:100%;overflow:hidden}
-.footer-nav {background-color:#181D2B;height:5.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;gap:6rem;}
+.footer-nav {background-color:#131723;height:5.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;gap:6rem;}
 
 [class^="icon-btm-"] {display:block;width:2.4rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;aspect-ratio:1/1;}
 .icon-btm-1 {background-image:url("../images/common/icon-btm-1.svg")}
 .icon-btm-2 {background-image:url("../images/common/icon-btm-2.svg")}
 .icon-btm-3 {background-image:url("../images/common/icon-btm-3.svg")}
 .icon-btm-4 {background-image:url("../images/common/icon-btm-4.svg")}
+.icon-btm-5 {background-image:url("../images/common/icon-btm-5.svg")}
+.icon-btm-6 {background-image:url("../images/common/icon-btm-6.svg")}
+.icon-btm-7 {background-image:url("../images/common/icon-btm-7.svg")}
 .map-control-layer-btn {display:flex;align-items:center;gap:.4rem;}
 .map-control-layer-btn-text {font-size:1.6rem;font-weight:700;color:#fff;}
 .map-control-btn-group {display:flex;gap:3.6rem;}
@@ -82,3 +85,30 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .active .icon-left-map-01 {background-image:url("../images/common/icon-space-dashboard-on.svg")}
 .active .icon-left-map-02 {background-image:url("../images/common/icon-window-on.svg")}
 .active .icon-left-map-03 {background-image:url("../images/common/icon-layer-on.svg")}
+
+.map-detail-right-area {width:50%;flex-shrink:0;background-color:#181D2B;padding:0 2rem;position:relative;overflow-y:auto;border-bottom:.1rem solid #0A0D13;border-left:.1rem solid #0A0D13}
+.map-detail-right-area.scrollbar-4::-webkit-scrollbar-thumb {background-color:rgba(255,255,255,.2)}
+.map-detail-right-title {margin-top:3rem;margin-bottom:1rem;font-size:2rem;line-height:2.2rem;font-weight:800;color:#3396FF;}
+.map-detail-right-box {background-color:#212633;border-radius:.6rem;padding:2rem;}
+.map-detail-right-group {display:flex;align-items:center;}
+.map-detail-right-group.v2 {padding-left:17rem;}
+.map-detail-right-group-title {margin-right:6.8rem;font-size:2rem;line-height:2.2rem;font-weight:800;color:#fff;width:10.2rem;}
+.map-detail-right-1 {display:flex;flex-direction:column;gap:2rem;padding:1rem 6rem 1rem 2rem;}
+.map-detail-right-list {display:flex;align-items:center;justify-content:space-between;flex:1;}
+.map-detail-right-item {width:8.6rem;position:relative;}
+.map-detail-right-item img {width:100%;object-fit:contain;}
+.map-detail-right-item-text {position:absolute;top:50%;left:50%;text-align:center;transform:translate(-50%, -50%);font-size:1.2rem;font-weight:800;}
+.map-detail-right-item-text-stork {-webkit-text-stroke:.4rem rgba(0,0,0,.7)}
+.map-detail-right-item-value {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);color:#fff;white-space:nowrap}
+.map-detail-right-item-title {font-size:1.4rem;font-weight:800;line-height:1.6rem;color:#fff;text-align:center;}
+.map-detail-right-table-area {margin-top:3rem;}
+
+.dark-table {border-top:.1rem solid #38455F;border-left:.1rem solid #38455F;}
+.dark-table thead th {height:4rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#fff;font-weight:800;background-color:#212633}
+.dark-table tbody th {height:3rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#fff;font-weight:800;background-color:#212633}
+.dark-table tbody td {height:3rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#fff;font-weight:700;}
+
+.map-detail-right-btn-group {margin-top:2rem;display:flex;justify-content:flex-end;align-items:center;gap:.6rem;}
+.map-detail-right-btn-group .btn-base {min-width:12rem;}
+.map-detail-right-btn-group .btn-base i {margin-left:auto;margin-right:-.6rem;}
+.icon-circle-down {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-circle-down.svg") no-repeat 50% 50%;background-size:contain;}
