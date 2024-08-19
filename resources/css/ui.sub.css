@@ -86,7 +86,8 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .active .icon-left-map-02 {background-image:url("../images/common/icon-window-on.svg")}
 .active .icon-left-map-03 {background-image:url("../images/common/icon-layer-on.svg")}
 
-.map-detail-right-area {width:50%;flex-shrink:0;background-color:#181D2B;padding:0 2rem;position:relative;overflow-y:auto;border-bottom:.1rem solid #0A0D13;border-left:.1rem solid #0A0D13}
+.map-detail-right-area {width:50%;flex-shrink:0;background-color:#181D2B;padding:0 2rem;position:relative;overflow-y:auto;border-bottom:.1rem solid #0A0D13;border-left:.1rem solid #0A0D13;margin-right:-50%;transition:margin-right .2s}
+.map-detail-right-area.is-open {margin-right:0}
 .map-detail-right-area.scrollbar-4::-webkit-scrollbar-thumb {background-color:rgba(255,255,255,.2)}
 .map-detail-right-title {margin-top:3rem;margin-bottom:1rem;font-size:2rem;line-height:2.2rem;font-weight:800;color:#3396FF;}
 .map-detail-right-box {background-color:#212633;border-radius:.6rem;padding:2rem;}
