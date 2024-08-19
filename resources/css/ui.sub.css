@@ -116,3 +116,39 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 
 .btn-detail-right-close {width:3.6rem;height:3.6rem;background-color:#0A0D13;display:flex;align-items:center;justify-content:center;border-radius:.2rem;position:absolute;top:1.4rem;right:2rem;}
 .icon-close {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-close.svg") no-repeat 50% 50%;background-size:contain;}
+
+.left-nav-area {flex-shrink:0;position:relative;z-index:2;}
+.left-nav-area.is-close {margin-left:-4.8rem;}
+.left-nav-box {padding:2rem 1.4rem;background-color:#2B3244;border-right:.1rem solid #1F2330;height:100%;box-shadow:.4rem 0 .2rem 0 rgba(0,0,0,.1)}
+.left-nav-box:hover .left-nav-item-name {display:block;}
+.left-nav-list {display:flex;flex-direction:column;gap:1.4rem;}
+.left-nav-item {display:flex;gap:.8rem;align-items:center;text-decoration:none;}
+.left-nav-item-name {font-size:1.2rem;color:#49577C;font-weight:800;line-height:1;display:none;}
+.left-nav-item.active .left-nav-item-name,
+.left-nav-item:hover .left-nav-item-name {color:#fff;}
+[class^="icon-nav-"] {aspect-ratio:1/1;width:2rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;}
+.icon-nav-1 {background-image:url("../images/common/icon-nav-1.svg")}
+.icon-nav-2 {background-image:url("../images/common/icon-nav-2.svg")}
+.icon-nav-3 {background-image:url("../images/common/icon-nav-3.svg")}
+.icon-nav-4 {background-image:url("../images/common/icon-nav-4.svg")}
+.icon-nav-5 {background-image:url("../images/common/icon-nav-5.svg")}
+.icon-nav-6 {background-image:url("../images/common/icon-nav-6.svg")}
+.icon-nav-7 {background-image:url("../images/common/icon-nav-7.svg")}
+
+.active .icon-nav-1,
+.left-nav-item:hover .icon-nav-1 {background-image:url("../images/common/icon-nav-1-on.svg")}
+.active .icon-nav-2,
+.left-nav-item:hover .icon-nav-2 {background-image:url("../images/common/icon-nav-2-on.svg")}
+.active .icon-nav-3,
+.left-nav-item:hover .icon-nav-3 {background-image:url("../images/common/icon-nav-3-on.svg")}
+.active .icon-nav-4,
+.left-nav-item:hover .icon-nav-4 {background-image:url("../images/common/icon-nav-4-on.svg")}
+.active .icon-nav-5,
+.left-nav-item:hover .icon-nav-5 {background-image:url("../images/common/icon-nav-5-on.svg")}
+.active .icon-nav-6,
+.left-nav-item:hover .icon-nav-6 {background-image:url("../images/common/icon-nav-6-on.svg")}
+.active .icon-nav-7,
+.left-nav-item:hover .icon-nav-7 {background-image:url("../images/common/icon-nav-7-on.svg")}
+
+.btn-left-nav-folding {background:url("../images/common/button-nav-close.svg") no-repeat 50% 50%;background-size:contain;aspect-ratio:26/92;width:2.6rem;position:absolute;top:50%;right:-2.6rem;}
+.is-close .btn-left-nav-folding {background-image:url("../images/common/button-nav-open.svg")}
