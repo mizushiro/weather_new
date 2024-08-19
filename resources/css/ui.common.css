@@ -136,6 +136,7 @@ select::-ms-expand {display:none}
 .btn-base[data-color="navy"] {background-color:#0c2742;color:#fff;font-weight:500;}
 .btn-base[data-color="gray"]{background-color:#2C364F;color:#fff;font-weight:700;}
 .btn-base[data-color="white"]{background-color:#fff;color:#000;font-weight:800;}
+.btn-base[data-color="blue"]{background-color:#2E7EF6;color:#fff;font-weight:800;}
 
 .btn-size-56 .arrow-round {margin-right:-1.2rem;}
 .arrow-round {width:2.8rem;height:2.8rem;display:flex;align-items:center;justify-content:center;border-radius:999rem;background-color:#fff;box-shadow:.2rem .3rem 1rem 0 rgba(0, 0, 0, 0.12);transition:all .2s;flex-shrink:0}
