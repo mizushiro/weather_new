@@ -112,3 +112,6 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .map-detail-right-btn-group .btn-base {min-width:12rem;}
 .map-detail-right-btn-group .btn-base i {margin-left:auto;margin-right:-.6rem;}
 .icon-circle-down {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-circle-down.svg") no-repeat 50% 50%;background-size:contain;}
+
+.btn-detail-right-close {width:3.6rem;height:3.6rem;background-color:#0A0D13;display:flex;align-items:center;justify-content:center;border-radius:.2rem;position:absolute;top:1.4rem;right:2rem;}
+.icon-close {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-close.svg") no-repeat 50% 50%;background-size:contain;}

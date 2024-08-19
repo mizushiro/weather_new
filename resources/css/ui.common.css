@@ -144,7 +144,7 @@ select::-ms-expand {display:none}
 .btn-base:hover .icon-arrow-2 {background-image:url("../images/common/icon-arrow-2-hover.svg")}
 
 /* header  */
-.header {height:8rem;display:flex;align-items:center;padding:0 4rem 0 2rem;background-color:var(--gnb-bg);border-bottom:.1rem solid #1F2330;box-shadow:0 .4rem .4rem 0 rgba(0,0,0,.1);flex-shrink:0;}
+.header {height:8rem;display:flex;align-items:center;padding:0 4rem 0 2rem;background-color:var(--gnb-bg);border-bottom:.1rem solid #1F2330;box-shadow:0 .4rem .4rem 0 rgba(0,0,0,.1);flex-shrink:0;position:sticky;top:0;z-index:10;}
 .header-left {display:flex;align-items:center;gap:1.8rem;}
 .header-title {display:flex;align-items:center;gap:.8rem;}
 .header-logo {width:4.6rem;background:url("../images/common/header-logo.svg") no-repeat 50% 50%;background-size:contain;aspect-ratio:1/1;}
