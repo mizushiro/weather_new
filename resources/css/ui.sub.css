@@ -82,9 +82,11 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .icon-left-map-01 {background-image:url("../images/common/icon-space-dashboard.svg")}
 .icon-left-map-02 {background-image:url("../images/common/icon-window.svg")}
 .icon-left-map-03 {background-image:url("../images/common/icon-layer.svg")}
+.icon-left-map-04 {background-image:url("../images/common/icon-map.svg")}
 .active .icon-left-map-01 {background-image:url("../images/common/icon-space-dashboard-on.svg")}
 .active .icon-left-map-02 {background-image:url("../images/common/icon-window-on.svg")}
 .active .icon-left-map-03 {background-image:url("../images/common/icon-layer-on.svg")}
+.active .icon-left-map-04 {background-image:url("../images/common/icon-map-on.svg")}
 
 .map-detail-right-area {width:50%;flex-shrink:0;background-color:#181D2B;padding:0 2rem;position:relative;overflow-y:auto;border-bottom:.1rem solid #0A0D13;border-left:.1rem solid #0A0D13;margin-right:-50%;transition:margin-right .2s}
 .map-detail-right-area.is-open {margin-right:0}
@@ -150,5 +152,5 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .active .icon-nav-7,
 .left-nav-item:hover .icon-nav-7 {background-image:url("../images/common/icon-nav-7-on.svg")}
 
-.btn-left-nav-folding {background:url("../images/common/button-nav-close.svg") no-repeat 50% 50%;background-size:contain;aspect-ratio:26/92;width:2.6rem;position:absolute;top:50%;right:-2.6rem;}
+.btn-left-nav-folding {background:url("../images/common/button-nav-close.svg") no-repeat 50% 50%;background-size:contain;aspect-ratio:26/92;width:2.6rem;position:absolute;top:50%;right:-2.5rem;}
 .is-close .btn-left-nav-folding {background-image:url("../images/common/button-nav-open.svg")}
