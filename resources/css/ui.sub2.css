@@ -29,3 +29,7 @@
 .data-content-nav-1depth {font-size:1.6rem;line-height:1.8rem;color:#2F3139;font-weight:800;text-decoration:none;}
 .data-content-nav-2depth-box {margin-top:.8rem;display:flex;flex-direction:column;}
 .data-content-nav-2depth {font-size:1.4rem;line-height:2.2rem;font-weight:700;color:#7386B6;text-decoration:none;}
+
+.data-content-nav-2depth-box [data-acco="wrap"]{display:flex;flex-direction:column;}
+[data-acco="item"] ~ [data-acco="item"] {margin-top:2.4rem;}
+[data-expanded="true"] .icon-nav-folding {rotate:180deg;}

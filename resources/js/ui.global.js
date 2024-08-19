@@ -985,8 +985,8 @@ class Accordion {
         this.id = opt.id;
         this.current = opt.current;
         this.callback = opt.callback;
-        this.acco = document.querySelector('.mdl-acco[data-id="'+ this.id +'"]');
-        this.acco_items = document.querySelectorAll('.mdl-acco[data-id="'+ this.id +'"] > .mdl-acco-item');
+        this.acco = document.querySelector('[data-acco-id="'+ this.id +'"]');
+        this.acco_items = document.querySelectorAll('[data-acco-id="'+ this.id +'"] > [data-acco="item"]');
         this.acco_wrap;
         this.acco_body;
         this.acco_item;
@@ -996,8 +996,7 @@ class Accordion {
 
     init() {
         for (const item of this.acco_items) {
-            const btn = item.querySelector('.mdl-acco-btn');
-
+            const btn = item.querySelector('[data-acco="btn"]');
             btn.addEventListener('click', this.actToggle);
         }
 
@@ -1005,8 +1004,8 @@ class Accordion {
     }
     actToggle = (e) => {
         const _this = e.currentTarget;
-        this.acco_item = _this.closest('.mdl-acco-item');
-        const acco_head = _this.closest('.mdl-acco-head');
+        this.acco_item = _this.closest('[data-acco="item"]');
+        const acco_head = _this.closest('[data-acco="head"]');
         this.acco_body = acco_head.nextElementSibling;
 
         if (this.acco_body) {
@@ -1044,11 +1043,11 @@ class Accordion {
         this.acco_item = this.acco_items[v];
 
         for (const item of this.acco_item.children) {
-            if (item.classList.contains('mdl-acco-body')) {
+            if (item.dataset.acco === 'body') {
                 this.acco_body = item;
             }
         }
-        
+        console.log(this.acco_body)
         this.acco_wrap = this.acco_body.children[0];
         this.h = this.acco_wrap.offsetHeight;
         this.actShow();
@@ -1057,7 +1056,7 @@ class Accordion {
         this.acco_item = this.acco_items[v];
 
         for (const item of this.acco_item.children) {
-            if (item.classList.contains('mdl-acco-body')) {
+            if (item.dataset.acco === 'body') {
                 this.acco_body = item;
             }
         }
@@ -1075,14 +1074,14 @@ class Accordion {
     allHide() {
         for (const item of this.acco_items) {
             item.dataset.expanded = 'false';
-            const _body = item.querySelector('.mdl-acco-body');
+            const _body = item.querySelector('[data-acco="body"]');
             _body ? _body.style.height = 0 : '';
         }
     }
     allShow() {
         for (const item of this.acco_items) {
             item.dataset.expanded = 'true';
-            const _body = item.querySelector('.mdl-acco-body');
+            const _body = item.querySelector('[data-acco="body"]');
             _body ? _body.style.height = 'auto' : '';
         }
     }
@@ -1675,5 +1674,5 @@ UI.exe.infiniteMotion = () => {
             infiniteMotion();
         }, 6000);
     }
-        infiniteMotion();
+    infiniteMotion();
 }

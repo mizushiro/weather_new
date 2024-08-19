@@ -200,3 +200,7 @@ select::-ms-expand {display:none}
 
 .layer-radio-group {display:flex;flex-direction:column}
 .layer-radio-group .radio-item:not(:last-child) {border-bottom:1px solid #f0f0f5}
+
+[data-acco-id] {width:100%;position:relative;margin:0;}
+[data-acco="body"] {position:relative;visibility:visible;transition:height .3s ease-in-out;height:0;overflow:hidden;}
+
