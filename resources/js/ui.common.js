@@ -32,6 +32,7 @@
          }
      }
  )();
+
  document.addEventListener('DOMContentLoaded', function () {
      //layerpopup
      newWeather.callLayer();

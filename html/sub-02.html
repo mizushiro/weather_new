@@ -11,9 +11,12 @@
 
 	<title>기후변화상황지도</title>
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="../resources/css/ui.base.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
 
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="../resources/js/ui.common.js"></script>
 </head>
 
@@ -131,6 +134,79 @@
 						<button type="button" class="btn-base btn-deviation-open2">
 							<i class="icon-map-open-2"></i>
 						</button>
+					</div>
+					<!-- content : BOTTOM -->
+					<div class="map-btm">
+						<div class="map-btm-item">
+							<div class="map3-btm-item-box">
+								<div class="radio-group-box">
+									<div class="choice-item-type-a">
+										<input type="radio" id="a1-0" name="a1" class="inp-choice">
+										<label for="a1-0" class="choice-item-type-a-label">
+											현재
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a1-1" name="a1" class="inp-choice">
+										<label for="a1-1" class="choice-item-type-a-label">
+											SSP1-26
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a1-2" name="a1" class="inp-choice">
+										<label for="a1-2" class="choice-item-type-a-label">
+											SSP2-45
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a1-3" name="a1" class="inp-choice">
+										<label for="a1-3" class="choice-item-type-a-label">
+											SSP3-70
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a1-4" name="a1" class="inp-choice">
+										<label for="a1-4" class="choice-item-type-a-label">
+											SSP5-85
+										</label>
+									</div>
+								</div>
+								<div class="carbon-box">
+									<span class="carbon-label">저탄소</span>
+									<span class="carbon-img"></span>
+									<span class="carbon-label">고탄소</span>
+								</div>
+							</div>
+							<div class="map3-btm-item-box">
+								<div class="player-control-area">
+									<div class="player-control-btn">
+										<button type="button" class="btn-control">
+											<i class="icon-pause"></i>
+										</button>
+										<button type="button" class="btn-control">
+											<i class="icon-play"></i>
+										</button>
+										<!-- <button type="button" class="btn-control">
+                                            <i class="icon-stop"></i>
+                                        </button> -->
+									</div>
+									<div class="player-slider-area-box">
+										<span class="player-slider-value-s-e">2000</span>
+										<div class="player-slider-area">
+											<div class="slider-range-min2"></div>
+											<div class="slider-value-position" style="left:0%">
+												<output class="amount-data"></output>
+											</div>
+										</div>
+										<span class="player-slider-value-s-e">2100</span>
+									</div>
+								</div>
+								<div class="player-control-top">
+									<button type="button" class="btn-player-control-top active">전중후</button>
+									<button type="button" class="btn-player-control-top">연대별</button>
+								</div>
+							</div>
+						</div>
 					</div>
 					<img src="../resources/images/temp/map.png" alt="" class="object-cover">
 				</div>
@@ -653,6 +729,27 @@
 	</div>
 </body>
 <script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+		let sliderTimer;
+		$('.slider-range-min2').slider({
+			range: 'min',
+			value: 0,
+			min: 1,
+			max: 100,
+			slide: function(event, ui) {
+				const _wrap = $(this).parent().parent();
+
+				_wrap.find('.amount-data').val(ui.value);
+				_wrap.find('.slider-value-position').css('left', ui.value + '%');
+				_wrap.find('.slider-value-position').addClass('on');
+				clearTimeout(sliderTimer);
+				sliderTimer = setTimeout(() => {
+					_wrap.find('.slider-value-position').removeClass('on');
+				}, 700);
+			}
+		});
+		$('.amount-data').val($('.slider-range-min2').slider('value'));
+	});
 
 </script>
 </html>
