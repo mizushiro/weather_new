@@ -40,7 +40,7 @@
 .data-content-section-sky-box-title {font-size:1.6rem;font-weight:800;color:#2E7EF6;line-height:2rem;}
 .data-content-section-sky-box-title ~ .data-content-section-sky-box-title {margin-top:2rem;}
 .data-content-section-sky-box-desc {margin-top:1rem;font-size:1.4rem;color:#414756;font-weight:700;line-height:1.8rem;word-break:keep-all;}
-.data-content-section-sky-box .blue-table {margin-top:.8rem;}
+.data-content-section-sky-box .table-basic {margin-top:.8rem;}
 .table-basic {border-top:.1rem solid #38455F;border-left:.1rem solid #38455F;}
 .table-basic thead th {height:4rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#fff;font-weight:800;background-color:#212633}
 .table-basic tbody td {height:3rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#414756;font-weight:700;background-color:#fff;}
