@@ -33,3 +33,4 @@
 .data-content-nav-2depth-box [data-acco="wrap"]{display:flex;flex-direction:column;}
 [data-acco="item"] ~ [data-acco="item"] {margin-top:2.4rem;}
 [data-expanded="true"] .icon-nav-folding {rotate:180deg;}
+.data-content-nav-2depth[data-active="true"] {color:#000; background:#f2f2f2;}
