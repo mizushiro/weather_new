@@ -1,9 +1,10 @@
 ﻿<!doctype html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="mobile-web-app-capable" content="yes">
@@ -18,6 +19,7 @@
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
 </head>
 
 <body>
@@ -67,9 +69,12 @@
 								<div class="map-left-sh-group">
 									<p class="map-left-sh-group-title">도로명</p>
 									<div class="map-left-sh-group-item">
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
 									</div>
 								</div>
 								<div class="map-left-sh-group">
@@ -215,38 +220,38 @@
 					<div class="map-detail-right-box">
 						<div class="map-detail-right-1">
 							<div class="map-detail-right-group">
-							<p class="map-detail-right-group-title">SSP1 - 2.6</p>
-							<div class="map-detail-right-list">
-								<div class="map-detail-right-item">
-									<img src="../resources/images/temp/sample.svg" alt="">
-									<p class="map-detail-right-item-text">
-										<span class="map-detail-right-item-text-stork">금강</span>
-										<span class="map-detail-right-item-value">금강</span>
-									</p>
-								</div>
-								<div class="map-detail-right-item">
-									<img src="../resources/images/temp/sample.svg" alt="">
-									<p class="map-detail-right-item-text">
-										<span class="map-detail-right-item-text-stork">금강</span>
-										<span class="map-detail-right-item-value">금강</span>
-									</p>
-								</div>
-								<div class="map-detail-right-item">
-									<img src="../resources/images/temp/sample.svg" alt="">
-									<p class="map-detail-right-item-text">
-										<span class="map-detail-right-item-text-stork">금강</span>
-										<span class="map-detail-right-item-value">금강</span>
-									</p>
-								</div>
-								<div class="map-detail-right-item">
-									<img src="../resources/images/temp/sample.svg" alt="">
-									<p class="map-detail-right-item-text">
-										<span class="map-detail-right-item-text-stork">금강</span>
-										<span class="map-detail-right-item-value">금강</span>
-									</p>
+								<p class="map-detail-right-group-title">SSP1 - 2.6</p>
+								<div class="map-detail-right-list">
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
+									<div class="map-detail-right-item">
+										<img src="../resources/images/temp/sample.svg" alt="">
+										<p class="map-detail-right-item-text">
+											<span class="map-detail-right-item-text-stork">금강</span>
+											<span class="map-detail-right-item-value">금강</span>
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
 							<div class="map-detail-right-group">
 								<p class="map-detail-right-group-title">SSP5 - 8.5</p>
 								<div class="map-detail-right-list">
@@ -548,7 +553,8 @@
 			</div>
 			<div class="map-control-period-group">
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-5">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-5">
 						연별
 					</button>
 					<div id="data-layer1-5" class="layer_section size-small">
@@ -587,7 +593,8 @@
 					</div>
 				</div>
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-6">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-6">
 						계절별
 					</button>
 					<div id="data-layer1-6" class="layer_section position-type-b size-small">
@@ -632,7 +639,8 @@
 					</div>
 				</div>
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-7">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-7">
 						월별
 					</button>
 					<div id="data-layer1-7" class="layer_section position-type-c size-small">
@@ -736,7 +744,7 @@
 			value: 0,
 			min: 1,
 			max: 100,
-			slide: function(event, ui) {
+			slide: function (event, ui) {
 				const _wrap = $(this).parent().parent();
 
 				_wrap.find('.amount-data').val(ui.value);
@@ -752,4 +760,5 @@
 	});
 
 </script>
+
 </html>

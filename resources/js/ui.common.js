@@ -36,4 +36,16 @@
  document.addEventListener('DOMContentLoaded', function () {
      //layerpopup
      newWeather.callLayer();
+
+    UI.exe.toggle = new ToggleUI({
+        scope: document.querySelector('body')
+    });
+    
+    //CALLBACK
+    UI.callback.setting1 = (result) => {
+        console.log('callback', result);
+        
+    }
+    
+
  }, false);

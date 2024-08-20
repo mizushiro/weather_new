@@ -796,7 +796,7 @@
 
     //common callback
     Global.callback.toggle_nav = (result) => {
-        const btn = document.querySelector('[data-toggle-object="'+ result.name +'"]');
+        const btn = document.querySelector('[data-toggle-obj="'+ result.name +'"]');
 
         if (result.state === 'true') {
             btn.dataset.meterial = 'arrow_forward';
@@ -856,7 +856,7 @@ class ScrollPage {
 class ToggleUI {
     constructor(opt) {
         this.scope = !!opt ? opt.scope : false;
-        this.objects = this.scope ? this.scope.querySelectorAll('[data-toggle-object]') : document.querySelectorAll('[data-toggle-object]');
+        this.objects = this.scope ? this.scope.querySelectorAll('[data-toggle-obj]') : document.querySelectorAll('[data-toggle-obj]');
         this.init();
     }
     init() {
@@ -869,11 +869,12 @@ class ToggleUI {
         }
     }
     actClick = (e) => {
+        console.log('click');
         const type = e.type;
         const el_object = e.currentTarget;
         const callbackName = el_object.dataset.callback;
-        const is_name = el_object.dataset.toggleObject;
-        const el_objects = document.querySelectorAll('[data-toggle-object="'+ is_name +'"]');
+        const is_name = el_object.dataset.toggleObj;
+        const el_objects = document.querySelectorAll('[data-toggle-obj="'+ is_name +'"]');
         const el_target = document.querySelector('[data-toggle-target="'+ is_name +'"]');
 
         let data_state = el_object.dataset.toggleState;
@@ -882,7 +883,7 @@ class ToggleUI {
         for(let item of el_objects) {
             item.dataset.toggleState = is_state;
         }
-       
+        console.log(el_target)
         // el_object.dataset.toggleState = is_state;
         !!el_target ? el_target.dataset.toggleState = is_state : '';
               
@@ -895,7 +896,7 @@ class ToggleUI {
     actHover = (e) => {
         const el_object = e.currentTarget;
         const callbackName = el_object.dataset.callback;
-        const is_name = el_object.dataset.toggleObject;
+        const is_name = el_object.dataset.toggleObj;
         const el_target = document.querySelector('[data-toggle-target="'+ is_name +'"]');
 
         el_object.dataset.toggleEvent = 'hover';

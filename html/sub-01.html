@@ -1,9 +1,10 @@
 ﻿<!doctype html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="mobile-web-app-capable" content="yes">
@@ -12,12 +13,13 @@
 	<title>기후변화상황지도</title>
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="../resources/css/ui.base.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
 </head>
 
 <body>
@@ -67,9 +69,12 @@
 								<div class="map-left-sh-group">
 									<p class="map-left-sh-group-title">도로명</p>
 									<div class="map-left-sh-group-item">
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로 110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
+										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
+												110)</span></button>
 									</div>
 								</div>
 								<div class="map-left-sh-group">
@@ -427,43 +432,43 @@
 					<div class="map-detail-right-table-area">
 						<table class="dark-table">
 							<thead>
-							<tr>
-								<th></th>
-								<th scope="col">현재기후</th>
-								<th scope="col">전반기</th>
-								<th scope="col">중반기</th>
-								<th scope="col">후반기</th>
-							</tr>
+								<tr>
+									<th></th>
+									<th scope="col">현재기후</th>
+									<th scope="col">전반기</th>
+									<th scope="col">중반기</th>
+									<th scope="col">후반기</th>
+								</tr>
 							</thead>
 							<tbody>
-							<tr>
-								<th scope="row">SSP1 - 2.6</th>
-								<td>26.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-							</tr>
-							<tr>
-								<th scope="row">SSP2 - 4.6</th>
-								<td>26.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-							</tr>
-							<tr>
-								<th scope="row">SSP3 - 7.0</th>
-								<td>26.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-							</tr>
-							<tr>
-								<th scope="row">SSP5 - 8.5</th>
-								<td>26.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-								<td>30.8°</td>
-							</tr>
+								<tr>
+									<th scope="row">SSP1 - 2.6</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP2 - 4.6</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP3 - 7.0</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
+								<tr>
+									<th scope="row">SSP5 - 8.5</th>
+									<td>26.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+									<td>30.8°</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -659,7 +664,8 @@
 			</div>
 			<div class="map-control-period-group">
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-5">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-5">
 						연별
 					</button>
 					<div id="data-layer1-5" class="layer_section size-small">
@@ -698,7 +704,8 @@
 					</div>
 				</div>
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-6">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-6">
 						계절별
 					</button>
 					<div id="data-layer1-6" class="layer_section position-type-b size-small">
@@ -743,7 +750,8 @@
 					</div>
 				</div>
 				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray" data-layer="data-layer1-7">
+					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
+						data-layer="data-layer1-7">
 						월별
 					</button>
 					<div id="data-layer1-7" class="layer_section position-type-c size-small">
@@ -847,7 +855,7 @@
 			value: 0,
 			min: 1,
 			max: 100,
-			slide: function(event, ui) {
+			slide: function (event, ui) {
 				const _wrap = $(this).parent().parent();
 
 				_wrap.find('.amount-data').val(ui.value);
@@ -863,4 +871,5 @@
 	});
 
 </script>
+
 </html>

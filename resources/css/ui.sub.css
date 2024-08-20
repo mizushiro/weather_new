@@ -211,6 +211,7 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .level-group.h-2 {gap:4px}
 .level-group.h-2 .level-item {height:2rem}
 .layer-setting {position:absolute;right:4rem;top:0;background-color:#fff;border-radius:.4rem;padding:1.2rem 1rem;display:none;box-shadow:.1rem 0 .4rem rgba(0,0,0,.25)}
+.layer-setting[data-toggle-state="true"]{display:block;}
 .layer-setting.bottom-type {top:auto;bottom:0;width:30rem;border-radius:1rem;border:2px solid #000;padding:1rem;height:34rem}
 .setting-title-area {display:flex;justify-content:space-between;align-items:center}
 .setting-title {font-size:1.2rem;color:#1e2329;font-weight:800}
