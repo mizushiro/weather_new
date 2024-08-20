@@ -1687,10 +1687,9 @@ UI.exe.targetScroll = () => {
     const contName = cont.dataset.navName;
     const pageNave = document.querySelector('[data-acco="item"][data-nav-name="'+ contName +'"]')
     const _html = document.querySelector('html');
-    const _body = document.querySelector('body');
     const headH =  _header.offsetHeight;
-
     let ps_cont = [];
+
     for (let i = 0; i < secs.length; i++) {
         const rect = secs[i].getBoundingClientRect();
 
@@ -1709,7 +1708,6 @@ UI.exe.targetScroll = () => {
         let _wrap;
         let _target;
         let _name;
-        let _isSame;
 
         if (!isString) {
             _this = e.currentTarget;
@@ -1721,7 +1719,6 @@ UI.exe.targetScroll = () => {
         }
 
         let accoN = 0;
-        
 
         if (isString) {
             _name = contName;
@@ -1761,7 +1758,6 @@ UI.exe.targetScroll = () => {
                 }
             });
         }
-       
     }
     const actScroll = (e) => {
         for (let i = 0; i < ps_cont.length; i++) {
@@ -1769,7 +1765,9 @@ UI.exe.targetScroll = () => {
             const currentName = current.dataset.target;
 
             if (ps_cont[i+1]) {
-                if (ps_cont[i] < _html.scrollTop && _html.scrollTop < ps_cont[i+1]) {
+                let n = ps_cont[i];
+                if ( i === 0 ) n = 0;
+                if (n <= _html.scrollTop && _html.scrollTop <= ps_cont[i+1]) {
                     if (currentName !== 'item_' + (i + 1)) {
                         current.dataset.active = false;
                         pageNave.querySelector('.data-content-nav-2depth[data-target="item_' + (i + 1)+'"]').dataset.active = true;
@@ -1785,7 +1783,9 @@ UI.exe.targetScroll = () => {
     }
 
     window.addEventListener('scroll', actScroll);
-    for (const item of depths) { item.addEventListener('click', actTargetScroll); }
+    for (const item of depths) { 
+        item.addEventListener('click', actTargetScroll); 
+    }
     const _targetName = UI.parts.paraGet('target') || '1';
     actTargetScroll(_targetName);
 }
