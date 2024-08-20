@@ -1680,10 +1680,30 @@ UI.exe.infiniteMotion = () => {
 }
 
 UI.exe.targetScroll = () => {
+    const _header = document.querySelector('.header');
     const depths = document.querySelectorAll('.data-content-nav-2depth');
+    const secs = document.querySelectorAll('.data-content-section[data-target]');
+    const cont = document.querySelector('.data-content-section-group');
+    const contName = cont.dataset.navName;
+    const pageNave = document.querySelector('[data-acco="item"][data-nav-name="'+ contName +'"]')
+    const _html = document.querySelector('html');
+    const _body = document.querySelector('body');
+    const headH =  _header.offsetHeight;
 
+    let ps_cont = [];
+    for (let i = 0; i < secs.length; i++) {
+        const rect = secs[i].getBoundingClientRect();
+
+        if (i === (secs.length - 1)) {
+           if (window.innerHeight - headH > rect.height) {
+            cont.style.paddingBottom = (window.innerHeight - headH) - rect.height + 'px'
+           }
+        }
+
+        ps_cont.push(Math.abs(Number(rect.top.toFixed(0)) + _html.scrollTop - headH - 100));
+    }
+   
     const actTargetScroll = e => {
-        console.log(e);
         const isString = typeof e === 'string';
         let _this;
         let _wrap;
@@ -1698,22 +1718,18 @@ UI.exe.targetScroll = () => {
             _name = _wrap.dataset.navName;
         } else {
             _target = 'item_' + e;
-
         }
+
         let accoN = 0;
-        const _cont = document.querySelector('.data-content-section-group');
-        const _contName = _cont.dataset.navName;
-        const _html = document.querySelector('html');
-        const _header = document.querySelector('.header');
+        
 
         if (isString) {
-            _name = _contName;
+            _name = contName;
             const _accoItem = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
 
-            // UI.exe.accordion.allHide();
             accoN = Number(_accoItem.dataset.n);;
         }
-        if (_name === _contName) {
+        if (_name === contName) {
             if (!isString) e.preventDefault();
 
             const _contItem = document.querySelector('.data-content-section[data-target="' + _target + '"]');
@@ -1722,7 +1738,7 @@ UI.exe.targetScroll = () => {
                 const rect = _contItem.getBoundingClientRect();
                 const t = _html.scrollTop;
                 _html.scrollTo({
-                    top: Math.abs(Number(rect.top.toFixed(0)) + t - _header.offsetHeight - 30),
+                    top: Math.abs(Number(rect.top.toFixed(0)) + t - headH - 30),
                     behavior: 'smooth'
                 });
             }
@@ -1735,6 +1751,7 @@ UI.exe.targetScroll = () => {
         const btnWrap_a = btnWrap.querySelector('a[data-target="' + _target + '"]');
         console.log(btnWrap, _target, btnWrap_a);
         btnWrap_a.dataset.active = true;
+
         if (!UI.exe.accoSideNav) {
             UI.exe.accoSideNav = new Accordion({
                 id: 'sideNav',
@@ -1746,6 +1763,28 @@ UI.exe.targetScroll = () => {
         }
        
     }
+    const actScroll = (e) => {
+        for (let i = 0; i < ps_cont.length; i++) {
+            const current = pageNave.querySelector('.data-content-nav-2depth[data-active="true"]');
+            const currentName = current.dataset.target;
+
+            if (ps_cont[i+1]) {
+                if (ps_cont[i] < _html.scrollTop && _html.scrollTop < ps_cont[i+1]) {
+                    if (currentName !== 'item_' + (i + 1)) {
+                        current.dataset.active = false;
+                        pageNave.querySelector('.data-content-nav-2depth[data-target="item_' + (i + 1)+'"]').dataset.active = true;
+                    }
+                    break;
+                }
+            } else {
+                current.dataset.active = false;
+                pageNave.querySelector('.data-content-nav-2depth[data-target="item_' + (i + 1)+'"]').dataset.active = true;
+                break;
+            }
+        }
+    }
+
+    window.addEventListener('scroll', actScroll);
     for (const item of depths) { item.addEventListener('click', actTargetScroll); }
     const _targetName = UI.parts.paraGet('target') || '1';
     actTargetScroll(_targetName);
