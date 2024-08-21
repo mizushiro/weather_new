@@ -138,13 +138,13 @@ select:focus{border-color:#23b7e5;background-position:100% -50px}
 .radio-style-a + label {font-weight:600;height:4.4rem;display:flex;padding:0 2rem;align-items:center;gap:1rem;font-size:1.6rem;}
 .radio-style-a:checked + label {color:#2e7ef6;background-color:#f9f9fb}
 
-.radio-group-box {display:flex;gap:6px}
+.radio-group-box {display:flex;gap:.6rem}
 .checkbox-group-box {display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .choice-item-type-a {position:relative}
-.choice-item-type-a-label {padding:0 20px;height:38px;background-color:#f4f4f4;font-size:16px;font-weight:700;color:#1e2329;display:flex;align-items:center;border-radius:4px;border:1px solid #f4f4f4;min-width:100px;justify-content:center}
+.choice-item-type-a-label {padding:0 2rem;height:3.8rem;background-color:#f4f4f4;font-size:1.6rem;font-weight:700;color:#1e2329;display:flex;align-items:center;border-radius:.4rem;border:1px solid #f4f4f4;min-width:10rem;justify-content:center}
 .choice-item-type-a .inp-choice {opacity:0;position:absolute;left:0;top:0}
-.label-title {font-size:18px;color:#2F3233;line-height:26px;font-weight:600}
-.label-desc {color:#2F3233;font-size:16px;line-height:22px;text-align:center;word-break:keep-all}
+.label-title {font-size:1.8rem;color:#2F3233;line-height:2.6rem;font-weight:600}
+.label-desc {color:#2F3233;font-size:1.6rem;line-height:2.2rem;text-align:center;word-break:keep-all}
 .inp-choice:checked + .choice-item-type-a-label {background-color:#fff;border-color:#3396ff}
 .choice-item-type-a-label:before,
 .choice-item-type-a-label:after {display:none !important}
