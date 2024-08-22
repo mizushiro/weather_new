@@ -44,3 +44,12 @@
 .table-basic {border-top:.1rem solid #38455F;border-left:.1rem solid #38455F;}
 .table-basic thead th {height:4rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#fff;font-weight:800;background-color:#212633}
 .table-basic tbody td {height:3rem;border-right:.1rem solid #38455F;border-bottom:.1rem solid #38455F;text-align:center;font-size:1.4rem;color:#414756;font-weight:700;background-color:#fff;}
+
+.data-content-section-legend {display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:center;background-color:#F7F8FB;padding:1rem 2rem;margin-top:2.4rem;}
+.data-content-section-legend-item {display:flex;align-items:center;gap:.8rem;}
+.data-content-section-legend-line {width:1.4rem;height:.2rem;}
+.data-content-section-legend-circle {width:.8rem;height:.8rem;border-radius:99em;}
+.data-content-section-legend-name {font-size:1.4rem;font-weight:700;line-height:1.6rem;color:#414756;}
+.ata-content-section-legend-group {display:flex;align-items:center;gap:.2rem;}
+.ata-content-section-legend-group .data-content-section-legend-line {width:1rem;}
+.ata-content-section-legend-group .data-content-section-legend-circle {width:.2rem;height:.2rem;border-radius:0;}
