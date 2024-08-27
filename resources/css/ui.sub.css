@@ -119,6 +119,8 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .btn-detail-right-close {width:3.6rem;height:3.6rem;background-color:#0A0D13;display:flex;align-items:center;justify-content:center;border-radius:.2rem;position:absolute;top:1.4rem;right:2rem;}
 .icon-close {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-close.svg") no-repeat 50% 50%;background-size:contain;}
 
+.left-nav-area[data-toggle-target="left-nav"] {transition: margin 300ms ease-in}
+.left-nav-area[data-toggle-target="left-nav"][data-toggle-state="true"] {margin-left:-5rem}
 .left-nav-area {flex-shrink:0;position:relative;z-index:2;}
 .left-nav-area.is-close {margin-left:-4.8rem;}
 .left-nav-box {padding:2rem 1.4rem;background-color:#2B3244;border-right:.1rem solid #1F2330;height:100%;box-shadow:.4rem 0 .2rem 0 rgba(0,0,0,.1)}
