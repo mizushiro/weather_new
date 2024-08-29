@@ -33,7 +33,7 @@
             }
 
             const btnLayerClose = targetLayer.querySelector('.btn_layer-close');
-            btnLayerClose.addEventListener('click', closeLayer)
+            btnLayerClose?.addEventListener('click', closeLayer)
         }
 
         for (let i = 0; i < btnLayer.length; i++) {
