@@ -162,6 +162,7 @@ select:focus{border-color:#23b7e5;background-position:100% -50px}
 .btn-base[data-round="4"] {border-radius:.4rem;}
 .btn-base[data-color="navy"] {background-color:#0c2742;color:#fff;font-weight:500;}
 .btn-base[data-color="gray"]{background-color:#2C364F;color:#fff;font-weight:700;}
+.btn-base[data-color="lightGray"]{background-color:#f8f8f8;color:#27355a;font-weight:700;}
 .btn-base[data-color="white"]{background-color:#fff;color:#000;font-weight:800;}
 .btn-base[data-color="blue"]{background-color:#2E7EF6;color:#fff;font-weight:800;}
 
@@ -194,6 +195,8 @@ select:focus{border-color:#23b7e5;background-position:100% -50px}
 [class^="footer-icon-"] {width:4rem;height:4rem;background-size:contain;background-position:50% 50%;background-repeat:no-repeat;margin-right:-1.8rem}
 .footer-icon-01 {background-image:url("../images/common/footer-icon-01.png")}
 .footer-icon-02 {background-image:url("../images/common/footer-icon-02.png")}
+.footer-icon-03 {background-image:url("../images/common/footer-icon-03.png")}
+.footer-icon-03-dark {background-image:url("../images/common/footer-icon-03-dark.png")}
 
 /* layer */
 .layer_section {opacity:0;visibility:hidden;transition:.2s;position:fixed;left:0;top:8rem;width:100%;bottom:0;background-color:rgba(0,0,0,.45);z-index:9001;display:flex;align-items:center;justify-content:center}
