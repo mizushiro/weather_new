@@ -24,7 +24,23 @@ body {background-color:#fff;}
 .main-map-tab-area {position:absolute;left:0;right:0;bottom:0;height:5.6rem;border-bottom:.1rem solid #000;background-color:rgba(18,21,39,.9);text-align:center;}
 .main-map-tab-area:before {content:'';position:absolute;left:0;top:0;right:0;height:.1rem;background-color:#000;}
 .main-map-tab-list {height:100%;display:inline-flex;margin:0 auto;}
-.main-map-tab-item {width:18rem;height:100%;display:flex;align-items:center;justify-content:center;line-height:1;border:.1rem solid #000;border-bottom:none;color:#fff;font-size:1.6rem;font-weight:600}
+.main-map-tab-item {width:18rem;height:100%;display:flex;align-items:center;justify-content:center;line-height:1;border:1px solid #000;border-bottom:none;color:#fff;font-size:1.6rem;font-weight:600}
+.main-map-tab-item ~ .main-map-tab-item {margin-left:-1px;}
+
+.main-map-layer {position:absolute;left:50%;top:4rem;transform:translateX(calc(50% - 83rem));width:28rem;border-radius:1rem;overflow:hidden;box-shadow:0 .6rem 1.6rem 0 rgba(0,0,0,.2);}
+.main-map-layer-img {height:15.4rem;}
+.main-map-layer-img img {width:100%;height:100%;object-fit:cover;}
+.main-map-layer-content {padding:2rem 2.4rem 3rem;background-color:#fff;}
+.main-map-layer-content-title {font-family:'GmarketSans', 'sans-serif';font-size:2.1rem;line-height:1;color:#27355a;}
+.main-map-layer-link-list {margin-top:1.6rem;display:flex;flex-direction:column;gap:.8rem;}
+.main-map-layer-link-item {display:flex;align-items:center;font-size:1.6rem;font-weight:800;color:#7b849b;line-height:2.2rem;text-decoration:none;}
+.main-map-layer-link-item.is-active,
+.main-map-layer-link-item:hover {color:#0066ff}
+.main-map-layer-link-item.is-active .layer-link-icon,
+.main-map-layer-link-item:hover .layer-link-icon {background-image:url("../images/main/icon-layer-link-on.png")}
+.layer-link-icon {background:url("../images/main/icon-layer-link.png") no-repeat 50% 50%;aspect-ratio:5/8;width:.5rem;margin-left:auto;flex-shrink:0;}
+.main-map-layer-single-link {margin-top:.8rem;display:flex;align-items:center;font-size:1.5rem;line-height:1.8rem;font-weight:800;color:#7b849b;text-decoration:none;}
+.layer-single-link-icon {background:url("../images/common/icon-main-link.png") no-repeat 50% 50%;aspect-ratio:1/1;width:2.8rem;background-size:contain;flex-shrink:0;margin-left:auto;}
 
 .main-content-section-3 {margin-top:5rem;padding-bottom:5rem;}
 .main-content-box-list {display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:1.8rem;}
