@@ -1,37 +1,49 @@
- var newWeather = (function() {
-         var callLayer = function() {
-             var btnLayer = document.querySelectorAll('[data-layer]');
-             for (var i = 0; i < btnLayer.length; i++) {
-                 btnLayer[i].addEventListener('click', function(e) {
-                     var targetId = this.dataset.layer;
-                     var targetLayer = document.querySelector('#' + targetId);
-                     targetLayer.classList.add('showing');
-                     console.log($(targetLayer));
-                     if ($(targetLayer).is('.layer-area')) {
-                         $('html, body').addClass('scroll-off');
-                     }
-                 });
-             }
-             var btnLayerClose = document.querySelectorAll('.layer_section .btn_layer-close');
-             for (var i = 0; i < btnLayerClose.length; i++) {
-                 btnLayerClose[i].addEventListener('click', function(e) {
-                     var targetElem = e.target;
-                     while (!targetElem.classList.contains('layer_section')) {
-                         targetElem = targetElem.parentNode;
-                         if (targetElem.nodeName == 'BODY') {
-                             targetElem = null;
-                             return;
-                         }
-                     }
-                     targetElem.classList.remove('showing');
-                 })
-             }
-         };
-         return {
-             callLayer: callLayer,
-         }
-     }
- )();
+ const newWeather = (function() {
+    const callLayer = function() {
+        const btnLayer = document.querySelectorAll('[data-layer]');
+        const closeLayer = (e) => {
+            const targetElem = e.target;
+            const targetLayer = targetElem.closest('.layer_section');
+            targetLayer.classList.remove('showing');
+
+            // while (!targetElem.classList.contains('layer_section')) {
+            //     targetElem = targetElem.parentNode;
+            //     if (targetElem.nodeName == 'BODY') {
+            //         targetElem = null;
+            //         return;
+            //     }
+            // }
+            // targetElem.classList.remove('showing');
+        }
+        const openLayer = (e) => {
+            const _this = e.currentTarget;
+            const targetId = _this.dataset.layer;
+            const targetSwitch = _this.dataset.switch;
+
+            if (targetSwitch) {
+                const openLayer = document.querySelector('.layer_section.showing[data-switch="'+ targetSwitch +'"]');
+                openLayer?.classList.remove('showing');
+            }
+
+            const targetLayer = document.querySelector('#' + targetId);
+            targetLayer.classList.add('showing');
+                
+            if ((targetLayer).classList.contains('.layer-area')) {
+                document.querySelector('html, body').classList.add('scroll-off');
+            }
+
+            const btnLayerClose = targetLayer.querySelector('.btn_layer-close');
+            btnLayerClose.addEventListener('click', closeLayer)
+        }
+
+        for (let i = 0; i < btnLayer.length; i++) {
+            btnLayer[i].addEventListener('click', openLayer);
+        }
+    };
+    return {
+        callLayer: callLayer,
+    }
+})();
 
  document.addEventListener('DOMContentLoaded', function () {
      //layerpopup

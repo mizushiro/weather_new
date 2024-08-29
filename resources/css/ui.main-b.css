@@ -39,3 +39,5 @@ body {background-color:#fff;}
 
 .main .footer {background-color:#fff;border-top:.1rem solid #eef0f2}
 .main .footer-desc {color:#646e89}
+
+.layer_section[data-style="map-info"] {position:fixed; bottom:auto; top:20rem; left:40rem; width:20rem; height:auto; background:transparent;}
