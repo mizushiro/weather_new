@@ -11,188 +11,76 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<title>기후변화상황지도</title>
+	<style>
+		html {font-size:10px}
+		html, body{width:100%;height:100%;min-width:140rem}
+		body{font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;font-size:1.3rem;line-height:1.5;letter-spacing:-0.03em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-moz-osx-font-smoothing:grayscale;overflow-y:auto;-webkit-overflow-scrolling:touch;background-color:#fff;}
+		body:before{content:'';position:fixed;left:0;top:0;width:100%;height:0;}/* fix webkit bug(scroll event delay) */
+		body, div, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, iframe, tr, tbody, thead, table, th, td, b, span, strong, label{margin:0;padding:0;box-sizing:border-box;}
+		dl, dt, dd, ul, ol, li{box-sizing:border-box;list-style:none;padding:0;margin:0;}
+		h1, h2, h3, h4, h5, h6, dt{font-weight:normal;}
+		img, fieldset, iframe, button{border:0 none;}
+		table {width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed}
+		table th {font-weight:normal}
+		* html table {border-collapse:collapse}
+		*+html table {border-collapse:collapse}
+		legend, caption{height:0;overflow:hidden;opacity:0;}
+		hr{border:0;border-top:.1rem solid #ccc;margin:4rem 0}
+		em, u, cite, i, abbr{font-style:normal;text-decoration:none;}
+		strong, b{font-weight:normal;}
+		a{color:rgb(16, 79, 252);outline-offset:.1rem;box-sizing:border-box;}
+		button{border:0 none;font-family:'NanumSquare','sans-serif';cursor:pointer;background:transparent;box-sizing:border-box;color:#666}
+		input, textarea, select, button {box-sizing:border-box;font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;font-size:1.3rem;outline:none;}
+		article, aside, details, figcaption, figure, footer, header, main, hgroup, nav, section, summary{display:block;margin:0;padding:0;box-sizing:border-box;}
+		textarea {resize:none}
+		a, button{color:blue}
+		* {box-sizing:border-box}
+		.base-wrap {height:100%;min-height:84rem;display:flex;align-items:center;justify-content:center}
+		.index-box {width:134rem;margin:0 auto;border-bottom:.1rem solid #000;padding-bottom:7.2rem;}
+		.index-top {padding-bottom:4.2rem;border-bottom:.5rem solid #000;}
+		.index-list {background-color:#f5f7ff;display:flex;gap:8rem;height:50rem;align-items:center;justify-content:center;margin-top:7.2rem;border-radius:2rem;}
+		.index-item {display:flex;flex-direction:column;gap:4rem;justify-content:center;align-items:center}
+		.index-item-img {box-shadow:0 1.5rem 5rem 0 rgba(9,29,109,.3);border-radius:1.6rem}
+		.index-item-img img {display:block}
+	</style>
 
 	<script src="../resources/js/ui.common.js"></script>
 	<script src="../resources/js/ui.global.js"></script>
 </head>
 
 <body>
-	<div class="base-wrap main">
-		<header class="header">
-			<div class="header-left">
-				<h1 class="header-title">
-					<i class="header-logo"></i>
-					<i class="header-logo-text"></i>
-					<span class="for-a11y">기상청 기후정보포털</span>
-				</h1>
-				<i class="header-line"></i>
-				<h2 class="header-title-2">기후변화 상황지도</h2>
+	<div class="base-wrap">
+		<div class="index-box">
+			<div class="index-top">
+				<img src="../resources/images/temp/index-1.png" alt="">
 			</div>
-			<div class="header-right">
-				<a href="" class="header-right-item">기후분석 · 예측</a>
-				<a href="" class="header-right-item">기후변화 지도 서비스</a>
-				<a href="" class="header-right-item">열린마당</a>
-			</div>
-		</header>
-		<div class="main-content-section-1">
-			<div class="max-142">
-				<h3 class="main-content-text"><span>기후변화</span> 상황지도</h3>
-				<p class="main-content-desc">
-					우리동네 과거부터 미래 2100년까지의 기후변화 상황을 쉽게 조회하고, 기후위기 대응에 활용할 수 있는 지도기반 서비스
-				</p>
-				<button type="button" class="main-help">
-					<span class="for-a11y">도움말</span>
-				</button>
-				<div class="main-card-list">
-					<div class="main-card-item">
-						<img src="../resources/images/main/main-card-1.png" alt="">
-						<div class="main-card-item-content">
-							<p class="main-card-item-text">
-								우리동네<br>
-								기후변화
-							</p>
-							<p class="main-card-item-desc">
-								시나리오별 과거부터 2100년까지<br>
-								기후변화 전망 조회
-							</p>
-						</div>
-						<a href="" class="main-card-link"></a>
+			<div class="index-list">
+				<a href="main-a.html" class="index-item" target="_blank">
+					<div class="index-item-img">
+						<img src="../resources/images/temp/index-2.png" alt="">
 					</div>
-					<div class="main-card-item">
-						<img src="../resources/images/main/main-card-2.png" alt="">
-						<div class="main-card-item-content">
-							<p class="main-card-item-text">
-								남한상세
-							</p>
-							<p class="main-card-item-desc">
-								남한 및 전지구, 동아시아의 기후변화<br>
-								한눈에 보기
-							</p>
-						</div>
-						<a href="" class="main-card-link"></a>
+					<span class="index-item-name">
+						<img src="../resources/images/temp/index-5.png" alt="">
+					</span>
+				</a>
+				<a href="main-b.html" class="index-item" target="_blank">
+					<div class="index-item-img">
+						<img src="../resources/images/temp/index-3.png" alt="">
 					</div>
-					<div class="main-card-item">
-						<img src="../resources/images/main/main-card-3.png" alt="">
-						<div class="main-card-item-content">
-							<p class="main-card-item-text">
-								재난영향<br>
-								정보
-							</p>
-							<p class="main-card-item-desc">
-								발생빈도·강도로 원하는 기후변화 자료<br>
-								조회
-							</p>
-						</div>
-						<a href="" class="main-card-link"></a>
+					<span class="index-item-name">
+						<img src="../resources/images/temp/index-6.png" alt="">
+					</span>
+				</a>
+				<a href="main-c.html" class="index-item" target="_blank">
+					<div class="index-item-img">
+						<img src="../resources/images/temp/index-4.png" alt="">
 					</div>
-					<div class="main-card-item">
-						<img src="../resources/images/main/main-card-4.png" alt="">
-						<div class="main-card-item-content">
-							<p class="main-card-item-text">
-								실시간<br>
-								자외선 지수
-							</p>
-							<p class="main-card-item-desc">
-								전국 각 지역의 자외선 지수를 실시간으로<br>
-								조회
-							</p>
-						</div>
-						<a href="" class="main-card-link"></a>
-					</div>
-				</div>
+					<span class="index-item-name">
+						<img src="../resources/images/temp/index-7.png" alt="">
+					</span>
+				</a>
 			</div>
 		</div>
-		<div class="main-content-section-2">
-			<div class="max-142">
-				<!--<div class="main-content-section-2-title">
-					<p class="main-content-section-2-text">
-						기후변화 지도 서비스
-					</p>
-					<p class="main-content-section-2-desc">
-						기상청 기후변화 감시소 관측자료의 실시간 제공정보입니다.
-					</p>
-				</div>-->
-				<div class="main-content-box-list">
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							유역별 기후변화
-						</p>
-						<i class="main-box-icon-01"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							종합 기후변화<br>
-							감시 정보
-						</p>
-						<i class="main-box-icon-02"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							동아시아
-						</p>
-						<i class="main-box-icon-03"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							전지구 입체
-						</p>
-						<i class="main-box-icon-04"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							실시간 지구<br>
-							대기감시 자료
-						</p>
-						<i class="main-box-icon-05"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							시각화 정보
-						</p>
-						<i class="main-box-icon-06"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							기후변화 전망<br>
-							분석 보고서
-						</p>
-						<i class="main-box-icon-07"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-					<div class="main-content-box-item">
-						<p class="main-content-box-item-text">
-							다운로드
-						</p>
-						<i class="main-box-icon-08"></i>
-						<a href="" class="main-card-link"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="max-142">
-				<div class="footer-box">
-					<p class="footer-desc">
-						(35280) 대전광역시 서구 청사로 189 정부대전청사 1동 12층 기상청 기후변화감시과<br>
-						홈페이지 관련 문의 : 042)481-7429, 시나리오 문의 : 042)481-7423, 기상문의 : 전국 국번없이131(기상상담전화, 유료)<br>
-						본 홈페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.<br>
-						Copyright 2017 KMA. All Rights Reserved. E-mail : cl.ccmd@korea.kr
-					</p>
-					<div class="footer-btn-group">
-						<button type="button" class="btn-base" data-size="58" data-round="full" data-color="navy">
-							<span class="font-g">기후변화 상황지도 소개</span>
-							<i class="footer-icon-03"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</div>
 </body>
 <script type="text/javascript">
