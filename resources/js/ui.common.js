@@ -20,9 +20,16 @@
             const targetId = _this.dataset.layer;
             const targetSwitch = _this.dataset.switch;
 
+
+
             if (targetSwitch) {
+                const switchBtns = document.querySelectorAll('button[data-switch="'+ targetSwitch +'"]');
                 const openLayer = document.querySelector('.layer_section.showing[data-switch="'+ targetSwitch +'"]');
                 openLayer?.classList.remove('showing');
+                for (const item of switchBtns) {
+                    item.classList.remove('active');
+                }
+                _this.classList.add('active');
             }
 
             const targetLayer = document.querySelector('#' + targetId);

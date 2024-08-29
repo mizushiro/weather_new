@@ -56,5 +56,6 @@ body {background-color:#fff;}
 .main .footer {background-color:#fff;border-top:.1rem solid #eef0f2}
 .main .footer-desc {color:#646e89}
 
+.main-map-tab-item.active{background:#2d5cd3;}
 .layer_section[data-style="map-info"].showing{display:block;}
 .layer_section[data-style="map-info"] {display:block;bottom:auto; height:auto; background:transparent;}
