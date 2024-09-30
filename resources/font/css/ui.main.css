@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-.main {background:url("../images/main/bg.jpg") no-repeat 50% 0;background-size:100% 60.9rem;min-height:100%;display:flex;flex-direction:column;}
+.main {background:url("../../images/main/bg.jpg") no-repeat 50% 0;background-size:100% 60.9rem;min-height:100%;display:flex;flex-direction:column;}
 .main-content-section-1 {flex-shrink:0;}
 .main-content-section-1 .max-142 {position:relative;padding-top:4.8rem;}
-.main-help {position:absolute;top:2rem;right:0;width:5.4rem;height:5.4rem;background:url("../images/main/help-icon.png") no-repeat 50% 50%;background-size:contain;}
+.main-help {position:absolute;top:2rem;right:0;width:5.4rem;height:5.4rem;background:url("../../images/main/help-icon.png") no-repeat 50% 50%;background-size:contain;}
 .main-content-text {font-size:8.2rem;font-weight:700;font-family:'GmarketSans', 'sans-serif';text-align:center;color:#fff;line-height:1;}
 .main-content-text span {color:#06e5ff;}
 .main-content-desc {font-family:'GmarketSans', 'sans-serif';text-align:center;color:#fff;font-size:2.4rem;line-height:1.4;margin-top:1.6rem;}
@@ -22,11 +22,11 @@
 .main-content-box-item {position:relative;height:8.6rem;border-radius:.6rem;background-color:#fff;box-shadow:0 .4rem .8rem 0 rgba(47,112,255,.08);display:flex;padding:1.6rem 3rem 1.6rem 3.6rem;align-items:center;}
 .main-content-box-item-text {font-family:'GmarketSans', 'sans-serif';line-height:2.4rem;font-size:2rem;color:#27355a;font-weight:500;}
 [class^="main-box-icon-"] {margin-left:auto;align-self:flex-start;width:5.7rem;height:4.4rem;background-size:contain;background-position:50% 50%;background-repeat:no-repeat;}
-.main-box-icon-01 {background-image:url("../images/main/icon-01.png")}
-.main-box-icon-02 {background-image:url("../images/main/icon-02.png")}
-.main-box-icon-03 {background-image:url("../images/main/icon-03.png")}
-.main-box-icon-04 {background-image:url("../images/main/icon-04.png")}
-.main-box-icon-05 {background-image:url("../images/main/icon-05.png")}
-.main-box-icon-06 {background-image:url("../images/main/icon-06.png")}
-.main-box-icon-07 {background-image:url("../images/main/icon-07.png")}
-.main-box-icon-08 {background-image:url("../images/main/icon-08.png")}
+.main-box-icon-01 {background-image:url("../../images/main/icon-01.png")}
+.main-box-icon-02 {background-image:url("../../images/main/icon-02.png")}
+.main-box-icon-03 {background-image:url("../../images/main/icon-03.png")}
+.main-box-icon-04 {background-image:url("../../images/main/icon-04.png")}
+.main-box-icon-05 {background-image:url("../../images/main/icon-05.png")}
+.main-box-icon-06 {background-image:url("../../images/main/icon-06.png")}
+.main-box-icon-07 {background-image:url("../../images/main/icon-07.png")}
+.main-box-icon-08 {background-image:url("../../images/main/icon-08.png")}
