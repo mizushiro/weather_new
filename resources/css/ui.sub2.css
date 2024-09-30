@@ -19,6 +19,7 @@
 .data-content-section-sub-title {font-size:2.4rem;line-height:2.8rem;font-weight:800;color:#1E222F;}
 .data-content-section-sub-btn-group {display:flex;align-items:center;gap:.6rem;margin-left:auto;}
 .data-content-section-sub-btn-group .btn-base {font-size:1.4rem;}
+.data-content-section-sub-btn-group .w-line {width:1rem;height:.2rem;background-color:#27355A}
 .data-content-section-chart {margin-top:2.8rem;}
 .data-content-section-chart.mt-0 {margin-top:0;}
 .data-content-section-chart-desc {margin-top:1rem;text-align:center;font-size:1.2rem;line-height:2rem;color:#2E7EF6;font-weight:700;}

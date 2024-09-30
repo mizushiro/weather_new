@@ -1,0 +1,307 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap">
+		<header class="header">
+			<div class="header-left">
+				<h1 class="header-title">
+					<i class="header-logo"></i>
+					<i class="header-logo-text"></i>
+					<span class="for-a11y">기상청 기후정보포털</span>
+				</h1>
+				<i class="header-line"></i>
+				<h2 class="header-title-2">기후변화 상황지도</h2>
+			</div>
+			<div class="header-right">
+				<a href="" class="header-right-item">우리동네 기후변화</a>
+				<a href="" class="header-right-item">종합기후변화</a>
+				<a href="" class="header-right-item">기후변화 예측정보</a>
+				<a href="" class="header-right-item">재난영향정보</a>
+				<a href="" class="header-right-item">열린마당</a>
+			</div>
+		</header>
+		<main class="sub3-content">
+			<div class="sub3-top-title">
+				<div class="max-142">
+					<h3 class="sub3-title">실시간 자외선지수</h3>
+				</div>
+			</div>
+            <div class="sub3-top-tab-area">
+                <div class="max-142">
+                    <button type="button" class="top-button-tab is-select">
+                        온실가스
+                    </button>
+                    <button type="button" class="top-button-tab">
+                        반응가스
+                    </button>
+                    <button type="button" class="top-button-tab">
+                        에어로졸
+                    </button>
+                    <button type="button" class="top-button-tab">
+                        자외선
+                    </button>
+                    <button type="button" class="top-button-tab">
+                        대기복사
+                    </button>
+                </div>
+            </div>
+			<div class="max-142 sub3-content-box">
+				<div class="sub3-left-map-box">
+					<div class="sub3-left-map-box-top">
+						<p class="sub3-left-map-box-top-title">지구대기 감시자료 위치</p>
+						<div class="sub3-left-btn-group">
+							<button type="button" class="btn-base" data-size="42" data-color="blue" data-round="4">
+								오늘
+							</button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-prev"></i>
+                            </button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-next"></i>
+                            </button>
+                            <div class="select-item-box line-type select-size-42 w-80">
+                                <select name="">
+                                    <option value="">일</option>
+                                </select>
+                            </div>
+						</div>
+					</div>
+					<div class="sub3-left-map-content">
+						<div class="sub3-left-map-info">
+							<div class="sub3-left-map-mark-box color-base">
+								<span class="sub3-left-map-mark-round">
+                                    <span class="pin-box">
+                                        <i class="pin-bg"></i>
+                                        <i class="icon-pin pin-base"></i>
+                                    </span>
+                                </span>
+								<span class="sub3-left-map-mark-desc">마크</span>
+							</div>
+							<p class="sub3-left-map-info-desc">
+								마크를 클릭하면 해당 지역의 감시 자료를<br>
+								확인할 수 있습니다.
+							</p>
+						</div>
+						<div class="sub3-left-map-area j-center">
+							<div class="sub3-left-map-col-2">
+								<img src="../resources/images/common/map-img.png" alt="">
+								<div class="sub3-left-map-mark-box color-base ulg color-green">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-green"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">울릉도</span>
+								</div>
+								<div class="sub3-left-map-mark-box color-base an color-blue">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-blue"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">안면도</span>
+								</div>
+								<div class="sub3-left-map-mark-box color-base kpo color-purple">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-purple"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">포항</span>
+								</div>
+								<div class="sub3-left-map-mark-box color-base chj color-red">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-red"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">고산</span>
+								</div>
+							</div>
+                            <p class="sub3-left-map-col-1-desc-2 p-a">
+                                본 자료는 기상청 기후변화감시소 관측자료의<br>
+                                실시간 정보제공을 위해 서비스되는 것으로,<br>
+                                기후변화 연구, 평가, 보도 등의 자료로 활용될 수 없습니다.<br><br>
+                                공식 목적으로 사용할 경우 지구대기감시보고서나<br>
+                                기상청 공표자료를 활용하시기 바랍니다.
+                            </p>
+						</div>
+					</div>
+				</div>
+				<div class="data-content-section-group">
+					<div class="data-content-section" data-target="item_1">
+						<div class="data-content-section-box">
+							<div class="data-content-section-title-box">
+								<h4 class="data-content-section-title">
+                                    안면도
+								</h4>
+							</div>
+							<div class="data-content-section-sub-box-list">
+								<div class="data-content-section-sub-box-s">
+									<div class="data-content-section-sub-title-box">
+										<h5 class="data-content-section-sub-title">이산화탄소</h5>
+										<div class="data-content-section-sub-btn-group">
+											<div class="select-item-box line-type select-size-42 w-80">
+												<select name="">
+													<option value="">일</option>
+												</select>
+											</div>
+                                            <i class="w-line"></i>
+                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                                검색
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                                전체검색
+                                            </button>
+										</div>
+									</div>
+									<div class="data-content-section-chart">
+										차트 영역
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="max-142">
+				<div class="footer-box">
+					<div>
+						<div class="footer-logo-box">
+							<h1 class="footer-title">
+								<i class="footer-logo"></i>
+								<i class="footer-logo-text"></i>
+								<span class="for-a11y">기상청 기후정보포털</span>
+							</h1>
+							<i class="footer-line"></i>
+							<h2 class="footer-title-2">기후변화 상황지도</h2>
+						</div>
+						<p class="footer-desc">
+							((35280) 대전광역시 서구 청사로 189 정부대전청사 1동 12층 기상청 기후변화감시과<br>
+							홈페이지 관련 문의 : 042)481-7429, 시나리오 문의 : 042)481-7423, 기상문의 : 전국 국번없이131(기상상담전화, 유료)<br>
+							본 홈페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.<br><br>
+							Copyright 2017 KMA. All Rights RESERVED. E-mail : cl.ccmd@korea.kr
+						</p>
+					</div>
+					<div class="footer-btn-group">
+						<button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray">
+							<span class="font-800">기후변화 상황지도 소개</span>
+							<i class="footer-icon-03-dark"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="layer-data" class="layer_section dark w-840">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">대응요령</h1>
+			</div>
+			<div class="layer-content p-30">
+               <table class="table-basic-2">
+                   <colgroup>
+                       <col style="width:12rem">
+                       <col style="width:17rem">
+                       <col style="width:auto">
+                   </colgroup>
+                   <thead>
+                   <tr>
+                       <th scope="col">단계</th>
+                       <th scope="col">지수범위</th>
+                       <th scope="col">대응요령</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <td class="level-type color-5">위험</td>
+                       <td>11 이상</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함<br>
+                           - 가능한 실내에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-4">매우높음</td>
+                       <td>8 이상 11 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함<br>
+                           - 오전 10시부터 오후 3시까지 외출을 피하고 실내나 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-3">높음</td>
+                       <td>6 이상 8 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함<br>
+                           - 한낮에는 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-2">보통</td>
+                       <td>3 이상 6 미만</td>
+                       <td class="a-left">
+                           - 2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음<br>
+                           - 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-1">낮음</td>
+                       <td>3 미만</td>
+                       <td class="a-left">
+                           - 햇볕 노출에 대한 보호조치가 필요하지 않음<br>
+                           - 그러나 햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   </tbody>
+               </table>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/common/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+	});
+
+</script>
+
+</html>

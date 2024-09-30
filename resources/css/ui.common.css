@@ -84,10 +84,6 @@ select {display:inline-block;position:relative;background-color:transparent;appe
 select::-ms-expand {display:none}
 .select-item-box {position:relative;background:#fff url(../images/common/select-bullet.svg) no-repeat calc(100% - 2rem) 50%;overflow:hidden}
 .select-item-box select {height:100%;width:100%;padding:0 4rem 0 2rem;border:none}
-.select-size-58 {height:5.8rem;border-radius:.8rem}
-.select-size-58 select {font-size:1.6rem;font-weight:400;border-radius:.8rem}
-.select-size-42 {height:4.2rem;border-radius:.8rem}
-.select-size-42 select {font-size:1.4rem;font-weight:700;border-radius:.8rem;padding-left:1.4rem;}
 
 .select-item-box {position:relative;background:#fff url(../images/common/icon-select.png) no-repeat 100% 50%;border-radius:.4rem;overflow:hidden;height:3.8rem;width:10rem}
 .select-item-box.line-type {border:.1rem solid #E4E8EF}
@@ -98,6 +94,7 @@ select::-ms-expand {display:none}
 .select-item-box.dark select option:hover {background-color:#2e7ef6}
 .select-item-box.text-bold select {font-weight:800}
 .select-item-box.w-230 {width:23rem}
+.select-item-box.w-80 {width:8rem}
 .select-item-box select {width:100%}
 select{display:inline-block;position:relative;width:auto;height:100%;padding:0 3rem 0 1.4rem;border-radius:.4rem;background-color:transparent;appearance:none;-moz-appearance:none;-webkit-appearance:none;border:.1rem solid #3396ff;font-size:1.6rem;cursor:pointer;outline:none;vertical-align:middle;font-weight:700}
 select::-ms-expand{display:none;}
@@ -105,6 +102,11 @@ select optgroup,
 select option{font-style:normal;background-color:#fff;font-size:1.3rem;}
 select[disabled]{background-color:#f7f7f7;color:#888;}
 select:focus{border-color:#23b7e5;background-position:100% -5rem}
+
+.select-size-58 {height:5.8rem;border-radius:.8rem}
+.select-size-58 select {font-size:1.6rem;font-weight:400;border-radius:.8rem}
+.select-size-42 {height:4.2rem;border-radius:.4rem}
+.select-size-42 select {font-size:1.4rem;font-weight:700;border-radius:.4rem;padding-left:1.4rem;}
 
 /* box-checkbox */
 .box-checkbox-a {position:relative;display:inline-block;cursor:pointer}
@@ -169,6 +171,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .btn-base[data-color="lightGray"]{background-color:#f8f8f8;color:#27355a;font-weight:700;}
 .btn-base[data-color="white"]{background-color:#fff;color:#000;font-weight:800;}
 .btn-base[data-color="blue"]{background-color:#2E7EF6;color:#fff;font-weight:800;}
+.btn-base[data-color="lineGray"]{background-color:#fff;color:#27355A;font-weight:800;border:.1rem solid #E4E8EF}
 
 .font-800 {font-weight:800;}
 
@@ -177,6 +180,9 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .icon-arrow-2 {aspect-ratio:9/14;width:.9rem;display:block;background:url("../images/common/icon-arrow-2.svg") 50% 50% no-repeat;}
 .btn-base:hover .arrow-round {background-color:#313EC0;}
 .btn-base:hover .icon-arrow-2 {background-image:url("../images/common/icon-arrow-2-hover.svg")}
+
+.icon-prev {display:block;width:.7rem;height:1.2rem;background:url("../images/common/icon-prev.svg") no-repeat 50% 50%;background-size:contain}
+.icon-next {display:block;width:.7rem;height:1.2rem;background:url("../images/common/icon-next.svg") no-repeat 50% 50%;background-size:contain}
 
 /* header  */
 .header {height:8rem;display:flex;align-items:center;padding:0 4rem 0 2rem;background-color:var(--gnb-bg);border-bottom:.1rem solid #1F2330;box-shadow:0 .4rem .4rem 0 rgba(0,0,0,.1);flex-shrink:0;position:sticky;top:0;z-index:10;}
