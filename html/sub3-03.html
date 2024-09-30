@@ -42,23 +42,39 @@
 		<main class="sub3-content">
 			<div class="sub3-top-title">
 				<div class="max-142">
-					<h3 class="sub3-title">실시간 자외선지수</h3>
+					<h3 class="sub3-title">에어로졸 라이다</h3>
 				</div>
 			</div>
 			<div class="max-142 sub3-content-box">
 				<div class="sub3-left-map-box">
 					<div class="sub3-left-map-box-top">
-						<p class="sub3-left-map-box-top-title">2024.05.30. 08:00</p>
+						<p class="sub3-left-map-box-top-title">라이다 관측소 위치</p>
 						<div class="sub3-left-btn-group">
-							<button type="button" class="btn-base" data-size="42" data-color="blue" data-round="4" data-layer="layer-data">
-								행동요령
+							<button type="button" class="btn-base" data-size="42" data-color="blue" data-round="4">
+								오늘
 							</button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-prev"></i>
+                            </button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-next"></i>
+                            </button>
+                            <div class="select-item-box line-type select-size-42 w-80">
+                                <select name="">
+                                    <option value="">일</option>
+                                </select>
+                            </div>
 						</div>
 					</div>
 					<div class="sub3-left-map-content">
 						<div class="sub3-left-map-info">
 							<div class="sub3-left-map-mark-box color-base">
-								<span class="sub3-left-map-mark-round">0</span>
+								<span class="sub3-left-map-mark-round">
+                                    <span class="pin-box">
+                                        <i class="pin-bg"></i>
+                                        <i class="icon-pin pin-base"></i>
+                                    </span>
+                                </span>
 								<span class="sub3-left-map-mark-desc">마크</span>
 							</div>
 							<p class="sub3-left-map-info-desc">
@@ -66,129 +82,92 @@
 								확인할 수 있습니다.
 							</p>
 						</div>
-						<div class="sub3-left-map-area">
-							<div class="sub3-left-map-col-1">
-								<p class="sub3-left-map-col-1-title">
-									<span class="title-area-value">서울</span>의<br>
-									자외선지수는<br>
-									<span class="title-level-value level-color-5">위험</span> 단계입니다.
-								</p>
-								<p class="sub3-left-map-col-1-desc-1">
-									보통 단계에서는 햇볕에 노출시 2-3시간
-									내에도피부 화상을 입을 수 있습니다.<br>
-									외출시 모자, 선글라스 이용하고 자외선
-									차단제를발라야 합니다.
-								</p>
-								<div class="sub3-left-map-col-1-img">
-									<img src="../resources/images/common/map-level-img.png" alt="">
-								</div>
-								<p class="sub3-left-map-col-1-desc-2">
-									총 자외선지수는 연중 10분 간격으로 04시~20시까지
-									제공하며,
-									자외선 노출 시간에 따른 피부화상은 개인별
-									차이가 있을 수 있음.<br>
-									본 자료는 실시간 품질관리된 자료로 추후 변경될 수
-									있음.
-								</p>
-								<div class="sub3-left-map-col-1-desc-box">
-									<i class="map-gray-icon"></i>
-									<p class="sub3-left-map-col-1-desc-2">
-										회색으로 표시된 관측소는 해당시각 자료가 수집되지
-										못한 경우입니다.
-									</p>
-								</div>
-							</div>
+						<div class="sub3-left-map-area j-center">
 							<div class="sub3-left-map-col-2">
 								<img src="../resources/images/common/map-img.png" alt="">
-								<div class="sub3-left-map-mark-box seoul color-4">
-									<span class="sub3-left-map-mark-round">9</span>
-									<span class="sub3-left-map-mark-desc">서울</span>
-								</div>
-								<div class="sub3-left-map-mark-box kag color-2">
-									<span class="sub3-left-map-mark-round">4</span>
-									<span class="sub3-left-map-mark-desc">강릉</span>
-								</div>
-								<div class="sub3-left-map-mark-box ulg color-5">
-									<span class="sub3-left-map-mark-round">8</span>
-									<span class="sub3-left-map-mark-desc">울릉도</span>
-								</div>
-								<div class="sub3-left-map-mark-box icn color-5">
-									<span class="sub3-left-map-mark-round">11</span>
-									<span class="sub3-left-map-mark-desc">인천</span>
-								</div>
-								<div class="sub3-left-map-mark-box cjj color-4">
-									<span class="sub3-left-map-mark-round">8</span>
-									<span class="sub3-left-map-mark-desc">청주</span>
-								</div>
-								<div class="sub3-left-map-mark-box an color-4">
-									<span class="sub3-left-map-mark-round">8</span>
+                                <div class="sub3-left-map-mark-box yj color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">양재</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box ga color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">관악</span>
+                                </div>
+								<div class="sub3-left-map-mark-box an color-base pin-active">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
 									<span class="sub3-left-map-mark-desc">안면도</span>
 								</div>
-								<div class="sub3-left-map-mark-box taj color-4">
-									<span class="sub3-left-map-mark-round">8</span>
-									<span class="sub3-left-map-mark-desc">대전</span>
-								</div>
-								<div class="sub3-left-map-mark-box tae color-4">
-									<span class="sub3-left-map-mark-round">8</span>
-									<span class="sub3-left-map-mark-desc">대구</span>
-								</div>
-								<div class="sub3-left-map-mark-box kpo color-4">
-									<span class="sub3-left-map-mark-round">9</span>
-									<span class="sub3-left-map-mark-desc">포항</span>
-								</div>
-								<div class="sub3-left-map-mark-box usn color-1">
-									<span class="sub3-left-map-mark-round">2</span>
+								<div class="sub3-left-map-mark-box usn color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
 									<span class="sub3-left-map-mark-desc">울산</span>
 								</div>
-								<div class="sub3-left-map-mark-box pus color-4">
-									<span class="sub3-left-map-mark-round">8</span>
-									<span class="sub3-left-map-mark-desc">부산</span>
-								</div>
-								<div class="sub3-left-map-mark-box cnj color-3">
-									<span class="sub3-left-map-mark-round">7</span>
-									<span class="sub3-left-map-mark-desc">전주</span>
-								</div>
-								<div class="sub3-left-map-mark-box kwj color-3">
-									<span class="sub3-left-map-mark-round">6</span>
-									<span class="sub3-left-map-mark-desc">광주</span>
-								</div>
-								<div class="sub3-left-map-mark-box mpk color-3">
-									<span class="sub3-left-map-mark-round">7</span>
-									<span class="sub3-left-map-mark-desc">목포</span>
-								</div>
-								<div class="sub3-left-map-mark-box chj color-4">
-									<span class="sub3-left-map-mark-round">8</span>
+								<div class="sub3-left-map-mark-box chj color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
 									<span class="sub3-left-map-mark-desc">고산</span>
 								</div>
 							</div>
+                            <p class="sub3-left-map-col-1-desc-2 p-a">
+                                본 자료는 실시간 분석 결과로, 관측장비나 관측환경의 변화에 따라<br>
+                                오류가 발생할 수 있으며, 강수시 장비 가동이 중단될 수 있습니다.<br>
+                                관측기관: 기상청 국립기상과학원(안면도), <br>
+                                서울특별시 보건환경연구원(양재), 서울대학교(관악, 고산), <br>
+                                울산과학기술원(울산)<br><br>
+                                국립기상과학원(안면도), 울산과학기술원(울산) <br>
+                                장비점검으로 표촐되지 않음
+                            </p>
 						</div>
 					</div>
 				</div>
 				<div class="data-content-section-group">
-					<div class="data-content-section">
+					<div class="data-content-section" data-target="item_1">
 						<div class="data-content-section-box">
 							<div class="data-content-section-title-box">
 								<h4 class="data-content-section-title">
-									서울
-									<span class="data-content-section-top-date">2024.05.30. 08:00</span>
+                                    안면도
 								</h4>
 							</div>
 							<div class="data-content-section-sub-box-list">
 								<div class="data-content-section-sub-box-s">
-									<div class="data-content-section-chart mt-0">
-										차트 영역
-									</div>
-								</div>
-
-								<div class="data-content-section-sub-box-s">
 									<div class="data-content-section-sub-title-box">
-										<h5 class="data-content-section-sub-title">2022년 일최고 자외선 지수 발생 일수</h5>
+										<h5 class="data-content-section-sub-title">이산화탄소</h5>
 										<div class="data-content-section-sub-btn-group">
-											<div class="select-item-box line-type select-size-42">
+											<div class="select-item-box line-type select-size-42 w-80">
 												<select name="">
-													<option value="">2022</option>
+													<option value="">일</option>
 												</select>
 											</div>
+                                            <i class="w-line"></i>
+                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                                검색
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                                전체검색
+                                            </button>
 										</div>
 									</div>
 									<div class="data-content-section-chart">
@@ -313,8 +292,6 @@
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
-
-
 	});
 
 </script>
