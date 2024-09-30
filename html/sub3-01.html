@@ -13,7 +13,7 @@
 	<title>기후변화상황지도</title>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
-	<link rel="stylesheet" href="../resources/font/css/ui.base.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
 
 	<script src="../resources/js/ui.common.js"></script>
 	<script src="../resources/js/ui.global.js"></script>
@@ -233,37 +233,75 @@
 		</footer>
 	</div>
 
-	<div id="layer-data" class="layer_section">
+	<div id="layer-data" class="layer_section dark w-840">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
 				<h1 class="layer-title">대응요령</h1>
 			</div>
-			<div class="layer-content">
-				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-half">
-						<div class="dashboard-chart-grid-item-4">
-							1
-						</div>
-						<div class="dashboard-chart-grid-item-4">
-							2
-						</div>
-					</div>
-					<div class="dashboard-chart-half-name-box">
-						<div class="dashboard-chart-half-name-item">SSP1-2.6</div>
-						<div class="dashboard-chart-half-name-item">SSP5-8.5</div>
-					</div>
-					<div class="dashboard-layer-area-fixed-btn">
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-1"></i>
-						</button>
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-2"></i>
-						</button>
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-3"></i>
-						</button>
-					</div>
-				</div>
+			<div class="layer-content p-30">
+               <table class="table-basic-2">
+                   <colgroup>
+                       <col style="width:12rem">
+                       <col style="width:17rem">
+                       <col style="width:auto">
+                   </colgroup>
+                   <thead>
+                   <tr>
+                       <th scope="col">단계</th>
+                       <th scope="col">지수범위</th>
+                       <th scope="col">대응요령</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <td class="level-type color-5">위험</td>
+                       <td>11 이상</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함<br>
+                           - 가능한 실내에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-4">매우높음</td>
+                       <td>8 이상 11 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함<br>
+                           - 오전 10시부터 오후 3시까지 외출을 피하고 실내나 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-3">높음</td>
+                       <td>6 이상 8 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함<br>
+                           - 한낮에는 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-2">보통</td>
+                       <td>3 이상 6 미만</td>
+                       <td class="a-left">
+                           - 2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음<br>
+                           - 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-1">낮음</td>
+                       <td>3 미만</td>
+                       <td class="a-left">
+                           - 햇볕 노출에 대한 보호조치가 필요하지 않음<br>
+                           - 그러나 햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   </tbody>
+               </table>
 			</div>
 			<div class="layer-top-right-btn">
 				<button type="button" class="layer-top-btn-item dark btn_layer-close">

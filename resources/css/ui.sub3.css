@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .sub3-content {padding-bottom:5.8rem;}
-.sub3-top-title {height:10rem;background-color:#fff;border-bottom:.1rem solid rgba(0,29,101,.1);padding-top:3.8rem;}
+.sub3-top-title {height:10rem;background-color:#fff;border-bottom:.1rem solid rgba(0,29,101,.1);padding-top:3.8rem;position:sticky;top:8rem;box-shadow:0 .2rem 0 0 rgba(0,0,0,.02);z-index:100}
 .sub3-title {font-size:3.6rem;font-weight:800;color:#1E222F;line-height:4rem;}
 .sub3-content-box {margin-top:3.2rem;gap:2rem;display:flex;align-items:flex-start;}
 .sub3-left-map-box {width:calc(50% - 1rem);border:.2rem solid #CBD9FF;border-radius:1.4rem;background-color:#F4F7FF;overflow:hidden;}
@@ -21,7 +21,7 @@
 .sub3-left-map-mark-round {width:3rem;height:3rem;display:flex;align-items:center;justify-content:center;background-color:#fff;font-size:1.7rem;font-weight:900;color:#000;border-radius:999em;line-height:1;font-family:'DINPro', 'sans-serif'}
 .sub3-left-map-mark-desc {font-size:1.2rem;font-weight:800;color:#fff;line-height:1;}
 .sub3-left-map-area {display:flex;align-items:flex-start;margin-top:2rem;justify-content:space-between;}
-.sub3-left-map-col-1 {margin-top:2rem;}
+.sub3-left-map-col-1 {margin-top:2rem;padding-left:1.6rem;}
 .sub3-left-map-col-1-title {font-size:3.6rem;font-weight:800;line-height:4rem;color:#717A90;}
 .sub3-left-map-col-1-desc-1 {font-size:1.6rem;line-height:1.8rem;font-weight:700;color:#414756;word-break:keep-all;max-width:30rem;margin-top:3.2rem;}
 .sub3-left-map-col-1-img {margin-top:2.8rem;width:27rem;}
@@ -55,3 +55,14 @@
 .sub3-left-map-col-2 .kwj {bottom:32.5%;left:20%;} /* 광주 */
 .sub3-left-map-col-2 .mpk {bottom:25%;left:6%;} /* 목포 */
 .sub3-left-map-col-2 .chj {bottom:7%;left:13%;} /* 고산 */
+
+.table-basic-2 {border-top:.1rem solid #D5DCE8;border-left:.1rem solid #D5DCE8;}
+.table-basic-2 thead th {background-color:#F3F3F3;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;height:4.8rem;font-size:1.6rem;font-weight:800;color:#1E222F;}
+.table-basic-2 tbody td {font-size:1.4rem;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;text-align:center;line-height:2.2rem;padding:1rem 1.4rem;color:#1E222F;font-weight:700}
+.table-basic-2 tbody td.a-left {text-align:left}
+.table-basic-2 tbody td.level-type {font-size:1.6rem;font-weight:800;color:#fff;}
+.table-basic-2 tbody td.color-1 {background-color:#00A3FF;}
+.table-basic-2 tbody td.color-2 {background-color:#FFB800;}
+.table-basic-2 tbody td.color-3 {background-color:#FF7A00;}
+.table-basic-2 tbody td.color-4 {background-color:#FF1F00;}
+.table-basic-2 tbody td.color-5 {background-color:#7000FF;}
