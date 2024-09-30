@@ -22,6 +22,7 @@
 .sub3-left-map-mark-box.color-blue {background-color:#0864EE;}
 .sub3-left-map-mark-box.color-red {background-color:#F11D00;}
 .sub3-left-map-mark-box.color-purple {background-color:#9014DC;}
+.sub3-left-map-mark-box.pin-active {background-color:#0864EE !important;}
 .sub3-left-map-mark-round {width:3rem;height:3rem;display:flex;align-items:center;justify-content:center;background-color:#fff;font-size:1.7rem;font-weight:900;color:#000;border-radius:999em;line-height:1;font-family:'DINPro', 'sans-serif'}
 .pin-box {position:relative;}
 .pin-box .icon-pin {width:1.2rem;height:1.6rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;display:block;position:relative}
@@ -30,11 +31,13 @@
 .pin-box .icon-pin.pin-blue {background-image:url("../images/common/pin-blue.svg")}
 .pin-box .icon-pin.pin-red {background-image:url("../images/common/pin-red.svg")}
 .pin-box .icon-pin.pin-purple {background-image:url("../images/common/pin-purple.svg")}
+.pin-box .icon-pin.pin-gray {background-image:url("../images/common/pin-gray.svg")}
+.sub3-left-map-mark-box.pin-active .icon-pin {background-image:url("../images/common/pin-active.svg") !important;}
 .pin-box .pin-bg {position:absolute;bottom:-.1rem;left:50%;transform:translateX(-50%);background:url("../images/common/pin-bg.svg") no-repeat 50% 50%;background-size:contain;width:.8rem;height:.2rem;}
 .sub3-left-map-mark-desc {font-size:1.2rem;font-weight:800;color:#fff;line-height:1;}
 .sub3-left-map-area {display:flex;align-items:flex-start;margin-top:2rem;justify-content:space-between;}
 .sub3-left-map-area.j-center {justify-content:center;margin-top:-1.2rem;position:relative;}
-.sub3-left-map-area .p-a {position:absolute;bottom:1.6rem;right:1.6rem}
+.sub3-left-map-area .p-a {position:absolute;bottom:1.6rem;right:1.6rem;max-width:100%}
 .sub3-left-map-col-1 {margin-top:2rem;padding-left:1.6rem;}
 .sub3-left-map-col-1-title {font-size:3.6rem;font-weight:800;line-height:4rem;color:#717A90;}
 .sub3-left-map-col-1-desc-1 {font-size:1.6rem;line-height:1.8rem;font-weight:700;color:#414756;word-break:keep-all;max-width:30rem;margin-top:3.2rem;}
@@ -69,6 +72,8 @@
 .sub3-left-map-col-2 .kwj {bottom:32.5%;left:20%;} /* 광주 */
 .sub3-left-map-col-2 .mpk {bottom:25%;left:6%;} /* 목포 */
 .sub3-left-map-col-2 .chj {bottom:7%;left:13%;} /* 고산 */
+.sub3-left-map-col-2 .ga {top:20%;left:20%;} /* 관악 */
+.sub3-left-map-col-2 .yj {top:13.5%;left:26%;} /* 양재 */
 
 .table-basic-2 {border-top:.1rem solid #D5DCE8;border-left:.1rem solid #D5DCE8;}
 .table-basic-2 thead th {background-color:#F3F3F3;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;height:4.8rem;font-size:1.6rem;font-weight:800;color:#1E222F;}
