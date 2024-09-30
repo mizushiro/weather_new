@@ -17,6 +17,12 @@
 
 	<script src="../resources/js/ui.common.js"></script>
 	<script src="../resources/js/ui.global.js"></script>
+
+	<!-- https://github.com/Pikaday/Pikaday -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
+	<link rel="stylesheet" href="../resources/lib/pikaday.css">
+	<script src="../resources/lib/pikaday.js"></script>
+	
 </head>
 
 <body>
@@ -78,6 +84,9 @@
                             <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
                                 <i class="icon-next"></i>
                             </button>
+
+							<input type="text" data-id="datepicker_1" class="datepicker datepicker-size-42 line-type">
+
                             <div class="select-item-box line-type select-size-42 w-80">
                                 <select name="">
                                     <option value="">일</option>
@@ -169,7 +178,9 @@
 													<option value="">일</option>
 												</select>
 											</div>
+											<input type="text"  data-id="datepicker_2" class="datepicker datepicker-size-42 line-type">
                                             <i class="w-line"></i>
+											<input type="text"  data-id="datepicker_3" class="datepicker datepicker-size-42 line-type">
                                             <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
                                                 검색
                                             </button>
@@ -300,6 +311,29 @@
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
+		
+		/**
+		 * https://github.com/Pikaday/Pikaday
+		 * 옵션값은 여기서 확인하시면 됩니다.
+		*/
+		UI.datepinker.dataepicker_1 = new Pikaday({ 
+			field: document.querySelector('.datepicker[data-id="datepicker_1"]'),
+			onSelect: function() {
+				console.log(this);
+			},
+		});
+		UI.datepinker.dataepicker_2 = new Pikaday({ 
+			field: document.querySelector('.datepicker[data-id="datepicker_2"]'),
+			onSelect: function() {
+				console.log(this);
+			},
+		});
+		UI.datepinker.dataepicker_3 = new Pikaday({ 
+			field: document.querySelector('.datepicker[data-id="datepicker_3"]'),
+			onSelect: function() {
+				console.log(this);
+			},
+		});
 	});
 
 </script>

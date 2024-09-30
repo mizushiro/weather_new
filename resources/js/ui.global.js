@@ -11,7 +11,7 @@
 
     const UA = navigator.userAgent.toLowerCase();
     const deviceInfo = ['android', 'iphone', 'ipod', 'ipad', 'blackberry', 'windows ce', 'windows','samsung', 'lg', 'mot', 'sonyericsson', 'nokia', 'opeara mini', 'opera mobi', 'webos', 'iemobile', 'kfapwi', 'rim', 'bb10'];
-
+    Global.datepinker = {};
     Global.page = {};
     Global.data = {};
     Global.exe = {};
@@ -703,7 +703,24 @@
 
 				el_childs[i].dataset.apply = '1';
 			}
-		}
+		},
+        datepicker() {
+            const el_datepicker = document.querySelectorAll('.datepicker');
+
+            for (const item of el_datepicker) {
+                const id = item.dataset.id;
+                
+                if (item.dataset.apply !== 'complete') {
+                    UI.datepinker[id] = new Pikaday({ 
+                        field: item,
+                        onSelect: function() {
+                            console.log(this);
+                        },
+                    });
+                    item.dataset.apply = 'complete';
+                }
+            }
+        }
 	}
 
 
@@ -789,7 +806,7 @@
 		}
 	}
 
-   
+
     //common exe
     Global.parts.resizeState();
     Global.parts.scroll();
