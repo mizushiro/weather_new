@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 .sub3-content {padding-bottom:5.8rem;}
-.sub3-top-title {height:10rem;background-color:#fff;border-bottom:.1rem solid rgba(0,29,101,.1);padding-top:3.8rem;box-shadow:0 .2rem 0 0 rgba(0,0,0,.02)}
+.sub3-top-title  {height:10rem;background-color:#fff;border-bottom:.1rem solid rgba(0,29,101,.1);padding-top:3.8rem;box-shadow:0 .2rem 0 0 rgba(0,0,0,.02)}
+.sub3-top-title .max-158 {display:flex;align-items:center;}
+.sub3-top-title .right-area {margin-left:auto;}
+.icon-info {aspect-ratio:1/1;width:2rem;background:url("../images/common/icon-info.svg") no-repeat 50% 50%;background-size:contain;}
+.btn-base .icon-info {margin-left:-.4rem;}
 .sub3-title {font-size:3.6rem;font-weight:800;color:#1E222F;line-height:4rem;}
 .sub3-content-box {margin-top:3.2rem;gap:2rem;display:flex;}
 .sub3-content-box .data-content-section-group {padding-bottom:0}
@@ -99,16 +103,28 @@
 .sub3-left-map-col-2 .chg {bottom:19.5%;left:23%;}/* 장흥 */
 .sub3-left-map-col-2 .khg {bottom:20.5%;left:42%;}/* 고흥 */
 
+.table-area-box {margin-top:.6rem}
 .table-basic-2 {border-top:.1rem solid #D5DCE8;border-left:.1rem solid #D5DCE8;}
-.table-basic-2 thead th {background-color:#F3F3F3;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;height:4.8rem;font-size:1.6rem;font-weight:800;color:#1E222F;}
+.table-basic-2 thead th {background-color:#F3F3F3;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;height:4.8rem;font-size:1.6rem;font-weight:800;color:#1E222F;padding:1.2rem;line-height:1.8rem;}
 .table-basic-2 tbody td {font-size:1.4rem;border-right:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8;text-align:center;line-height:2.2rem;padding:1rem 1.4rem;color:#1E222F;font-weight:700}
 .table-basic-2 tbody td.a-left {text-align:left}
+.table-basic-2 tbody td.a-right {text-align:right}
 .table-basic-2 tbody td.level-type {font-size:1.6rem;font-weight:800;color:#fff;}
 .table-basic-2 tbody td.color-1 {background-color:#00A3FF;}
 .table-basic-2 tbody td.color-2 {background-color:#FFB800;}
 .table-basic-2 tbody td.color-3 {background-color:#FF7A00;}
 .table-basic-2 tbody td.color-4 {background-color:#FF1F00;}
 .table-basic-2 tbody td.color-5 {background-color:#7000FF;}
+.table-basic-2.td-16 tbody td {font-size:1.6rem;}
+.table-basic-2.th-s thead th {padding:.6rem 1rem;height:4.4rem;}
+.w-scroll {overflow-x:auto;}
+.w-scroll .table-basic-2 {table-layout:auto;width:auto;min-width:100%;}
+.w-scroll .table-basic-2 thead th,
+.w-scroll .table-basic-2 tbody td {white-space:nowrap;}
+.w-scroll {-webkit-overflow-scrolling:touch}
+.w-scroll::-webkit-scrollbar {height:1.6rem;width:1.6rem;border:.1rem solid #D5DCE8;border-top:none}
+.w-scroll::-webkit-scrollbar-track {border-radius:999em;background-color:transparent}
+.w-scroll::-webkit-scrollbar-thumb {width:.4rem;border-radius:999em;background-color:#E5E8F2;border:.4rem solid transparent;background-clip:padding-box;}
 
 .sub3-top-tab-area {position:sticky;top:7.9rem;border-bottom:.1rem solid rgba(0,29,101,.1);padding:1.2rem 0;background-color:#fff;z-index:10;}
 .sub3-top-tab-area .max-158 {display:flex;align-items:center;gap:.6rem;}

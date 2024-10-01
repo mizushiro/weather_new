@@ -94,6 +94,8 @@ select::-ms-expand {display:none}
 .select-item-box.dark select option:hover {background-color:#2e7ef6}
 .select-item-box.text-bold select {font-weight:800}
 .select-item-box.w-230 {width:23rem}
+.select-item-box.w-180 {width:18rem}
+.select-item-box.w-130 {width:13rem}
 .select-item-box.w-80 {width:8rem}
 .select-item-box select {width:100%}
 select{display:inline-block;position:relative;width:auto;height:100%;padding:0 3rem 0 1.4rem;border-radius:.4rem;background-color:transparent;appearance:none;-moz-appearance:none;-webkit-appearance:none;border:.1rem solid #3396ff;font-size:1.6rem;cursor:pointer;outline:none;vertical-align:middle;font-weight:700}
