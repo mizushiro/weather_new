@@ -52,7 +52,9 @@
     }
 })();
 
- document.addEventListener('DOMContentLoaded', function () {
+
+
+document.addEventListener('DOMContentLoaded', function () {
      //layerpopup
      newWeather.callLayer();
 
@@ -65,6 +67,26 @@
         console.log('callback', result);
         
     }
-    
 
+    const headerAct = () => {
+        console.log('header')
+    }
+    
+    //header 공통영역
+    UI.parts.include({
+        dataId: 'header',
+        src: 'header.html',
+        type: 'HTML',
+        insert: false,
+        callback: headerAct
+    });
+    //footer 공통영역
+    UI.parts.include({
+        dataId: 'footer',
+        src: 'footer.html',
+        type: 'HTML',
+        insert: false,
+    });
+    
+    
  }, false);

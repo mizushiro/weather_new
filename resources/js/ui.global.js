@@ -206,7 +206,6 @@
             const insert = !!opt.insert ? opt.insert : false;
             const callback = !!opt.callback ? opt.callback : false;
 
-            !selector ? selector = document.querySelector('body') : '';
 
             if (!!selector && !!src) {
                 switch (type) {
