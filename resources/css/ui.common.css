@@ -193,10 +193,39 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .header-line {height:3.2rem;width:.1rem;background-color:#5C667E;display:block;}
 .header-title-2 {font-size:2rem;font-weight:800;color:#fff;}
 .header-right {display:flex;align-items:center;margin-left:auto;}
-.header-right-item {font-size:1.8rem;font-weight:800;color:#fff;position:relative;text-decoration:none;padding:0 4rem;}
-.header-right-item:hover,
-.header-right-item.active {color:var(--primary);}
-.header-right-item ~ .header-right-item:before {content:'';position:absolute;left:0;top:50%;margin-top:-.9rem;width:.1rem;height:1.8rem;background-color:#5C667E;display:block;}
+
+
+.header-right-dep1{position: relative;}
+.header-right-dep1-item {font-size:1.8rem;font-weight:800;color:#fff;position:relative;text-decoration:none;padding:2rem 4rem;}
+.header-right-dep1-item:hover,
+.header-right-dep1-item.active {color:var(--primary);}
+.header-right-dep1 ~ .header-right-dep1:before {content:'';position:absolute;left:0;top:50%;margin-top:-.9rem;width:.1rem;height:1.8rem;background-color:#5C667E;display:block;}
+
+.header-right-dep2 + .header-right-dep2{border-top:.1rem solid #F0F0F5;}
+.header-right-dep2-wrap{position: absolute;top:4rem;left:50%;border-radius:.8rem;border:.2rem solid #131723; background-color:#fff;transform:translate(-50%,0);min-width:18.6rem;display: none;}
+.header-right-dep2-wrap::before{content:"";display:block;position: absolute;top:-2.2rem;left:50%;transform:translate(-50%,0);border:1rem solid transparent;border-bottom:1.2rem solid #131723;}
+.header-right-dep2-item{font-size:1.4rem; font-weight: 800;width: 100%;padding:1.2rem 1.6rem;text-decoration:none;color:#1E222F;display: flex; align-items: center;white-space:nowrap;}
+.header-right-dep2:first-child{overflow: hidden;border-top-left-radius:.8rem;border-top-right-radius:.8rem;}
+.header-right-dep2:last-child{overflow: hidden;border-bottom-left-radius:.8rem;border-bottom-right-radius:.8rem;}
+.header-right-dep2:first-child .header-right-dep2-item{padding-top:1.9rem}
+.header-right-dep2:last-child .header-right-dep2-item{padding-bottom:1.9rem}
+.header-right-dep2-item:hover,
+.header-right-dep2-item.active {color:var(--primary);background-color: #F9F9FB;}
+
+.header-right-dep1[data-state="on"] .header-right-dep2-wrap{
+    display: block;
+    animation-name: navShow;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes navShow {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 
 /* footer */
 .max-142 {max-width:142rem;margin:0 auto;}

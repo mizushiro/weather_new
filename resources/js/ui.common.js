@@ -69,7 +69,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const headerAct = () => {
-        console.log('header')
+        const dep1s = document.querySelectorAll('.header-right-dep1-item');
+        const wraps = document.querySelectorAll('.header-right-dep1');
+        const actHover = (e) => {
+            const _this = e.currentTarget;
+            const _wrap = _this.closest('.header-right-dep1');
+            const _dep2 = _wrap.querySelector('.header-right-dep2-wrap');
+            const actLeaver = () => {
+                _dep2.removeEventListener('mouseleave', actLeaver);
+                _wrap.dataset.state = 'off';
+            }
+
+            for (const item of wraps) {
+                item.dataset.state = 'off';
+            }
+            
+            _dep2.addEventListener('mouseleave', actLeaver);
+            _wrap.dataset.state = 'on';
+        }
+        for (const item of dep1s) {
+            item.addEventListener('mouseover', actHover);
+        }
     }
     
     //header 공통영역
