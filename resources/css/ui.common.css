@@ -106,7 +106,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .select-size-58 {height:5.8rem;border-radius:.8rem}
 .select-size-58 select {font-size:1.6rem;font-weight:400;border-radius:.8rem}
 .select-size-42 {height:4.2rem;border-radius:.4rem}
-.select-size-42 select {font-size:1.4rem;font-weight:700;border-radius:.4rem;padding-left:1.4rem;}
+.select-size-42 select {font-size:1.4rem;font-weight:700;border-radius:.4rem;padding-left:1.4rem;padding-right:3.2rem}
 
 /* box-checkbox */
 .box-checkbox-a {position:relative;display:inline-block;cursor:pointer}
@@ -200,6 +200,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 
 /* footer */
 .max-142 {max-width:142rem;margin:0 auto;}
+.max-158 {max-width:158rem;margin:0 auto;}
 .footer {background-color:var(--footer-bg);padding:4rem 0 4.8rem;flex-shrink:0;margin-top:auto;}
 .footer-box {display:flex;align-items:flex-start;gap:2rem;}
 .footer-desc {font-size:1.2rem;color:#7386B6;line-height:1.4rem;font-weight:700;margin-top:1.6rem}
@@ -261,6 +262,6 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .layer-full .layer-title-box {background-color:#2c364f;border-bottom:none;box-shadow:0 .3rem 0 rgba(0,0,0,.1);position:relative;z-index:10}
 .layer-full .layer-content {flex:1;border:.2rem solid #2c364f;border-top:none;padding:0}
 
-.datepicker{position: relative; padding: 0.4rem 3rem 0 1.2rem;background:#fff url(../images/common/icon-datepicker.svg) no-repeat calc(100% - .6rem) 50% / 2.4rem;}
-.datepicker-size-42{height: 4.2rem; border-radius: .4rem;font-size: 1.4rem;font-weight: 700; width: 13rem;}
-.datepicker.line-type{border: .1rem solid #E4E8EF;}
+.datepicker {position:relative; padding:0.4rem 3rem 0 1.2rem;background:#fff url(../images/common/icon-datepicker.svg) no-repeat calc(100% - .6rem) 50% / 2.4rem;border:.1rem solid transparent}
+.datepicker-size-42 {height:4.2rem; border-radius:.4rem;font-size:1.4rem;font-weight:700;width:13rem;}
+.datepicker.line-type {border-color:#E4E8EF;}
