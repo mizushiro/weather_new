@@ -63,6 +63,7 @@
 .data-content-section-legend.j-end {justify-content:flex-end;padding-right:3.2rem}
 .data-content-section-legend-item {display:flex;align-items:center;gap:.8rem;}
 .data-content-section-legend-line {width:1.4rem;height:.2rem;}
+.data-content-section-legend-box {width:2rem;height:1.2rem;border-radius:.2rem}
 .data-content-section-legend-circle {width:.8rem;height:.8rem;border-radius:99em;}
 .data-content-section-legend-name {font-size:1.4rem;font-weight:700;line-height:1.6rem;color:#414756;}
 .data-content-section-legend-title {font-size:1.4rem;font-weight:800;line-height:1.6rem;color:#414756;}
