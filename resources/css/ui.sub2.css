@@ -24,6 +24,8 @@
 .data-content-section-chart.mt-0 {margin-top:0;}
 .data-content-section-chart-desc {margin-top:1rem;text-align:center;font-size:1.2rem;line-height:2rem;color:#2E7EF6;font-weight:700;}
 .data-content-section-desc {font-size:1.6rem;font-weight:700;line-height:2rem;color:#414756;margin-top:3.6rem;word-break:keep-all;}
+.data-content-section-desc-bullet {font-size:1.2rem;font-weight:700;line-height:1.6rem;color:#414756;margin-top:1.2rem;word-break:keep-all;}
+.data-content-section-desc-bullet ~ .data-content-section-desc-bullet {margin-top:0}
 .data-content-section-desc-from {font-size:1.4rem;font-weight:700;color:#414756;text-decoration:underline;text-underline-offset:.3rem;margin-right:2.8rem;}
 .data-content-section-desc-blue {font-size:1.2rem;line-height:2rem;color:#2E7EF6;font-weight:700;margin-top:2rem;padding-left:1.4rem;text-indent:-1.4rem;}
 .data-content-section-desc-blue + .data-content-section-desc-blue {margin-top:.4rem;}
