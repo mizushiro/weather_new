@@ -1,0 +1,463 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+
+    <!-- https://github.com/Pikaday/Pikaday -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/pikaday.css">
+    <script src="../resources/lib/pikaday.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		
+		<main class="sub3-content">
+			<div class="sub3-top-title">
+				<div class="max-158">
+					<h3 class="sub3-title">운고계</h3>
+				</div>
+			</div>
+			<div class="max-158 sub3-content-box">
+				<div class="sub3-left-map-box">
+					<div class="sub3-left-map-box-top">
+						<p class="sub3-left-map-box-top-title">운고계 관측소 위치</p>
+						<div class="sub3-left-btn-group">
+							<button type="button" class="btn-base" data-size="42" data-color="blue" data-round="4">
+								오늘
+							</button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-prev"></i>
+                            </button>
+                            <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
+                                <i class="icon-next"></i>
+                            </button>
+                            <input type="text" data-id="datepicker_1" class="datepicker datepicker-size-42">
+                            <div class="select-item-box line-type select-size-42 w-80">
+                                <select name="">
+                                    <option value="">일</option>
+                                </select>
+                            </div>
+						</div>
+					</div>
+					<div class="sub3-left-map-content">
+						<div class="sub3-left-map-info">
+							<div class="sub3-left-map-mark-box color-base">
+								<span class="sub3-left-map-mark-round">
+                                    <span class="pin-box">
+                                        <i class="pin-bg"></i>
+                                        <i class="icon-pin pin-base"></i>
+                                    </span>
+                                </span>
+								<span class="sub3-left-map-mark-desc">마크</span>
+							</div>
+							<p class="sub3-left-map-info-desc">
+								마크를 클릭하면 해당 지역의 감시 자료를<br>
+								확인할 수 있습니다.
+							</p>
+						</div>
+						<div class="sub3-left-map-area j-center">
+							<div class="sub3-left-map-col-2">
+								<img src="../resources/images/common/map-img.png" alt="">
+                                <div class="sub3-left-map-mark-box seoul color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">서울</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box ulg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">울릉도</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box icn color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">인천</span>
+                                </div>
+								<div class="sub3-left-map-mark-box chp color-base pin-active">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">추풍령</span>
+								</div>
+								<div class="sub3-left-map-mark-box kpo color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">포항</span>
+								</div>
+								<div class="sub3-left-map-mark-box chj color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+									<span class="sub3-left-map-mark-desc">서귀포</span>
+								</div>
+
+                                <div class="sub3-left-map-mark-box puj color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">파주</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box crw color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">철원</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box sho color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">속초</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box dgr color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">대관령</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box brd color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">백령도</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box wju color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">원주</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box the color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">동해</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box ywl color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">영월</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box thb color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">태백</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box can color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">천안</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box shg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">홍성</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box cjj color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">청주</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box adg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">안동</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box prg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">보령</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box mry color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">밀양</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box mpk color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">목포</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box rsu color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">여수</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box cwn color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">창원</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box hae color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">해남</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box chg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">장흥</span>
+                                </div>
+                                <div class="sub3-left-map-mark-box khg color-base">
+									<span class="sub3-left-map-mark-round">
+                                        <span class="pin-box">
+                                            <i class="pin-bg"></i>
+                                            <i class="icon-pin pin-gray"></i>
+                                        </span>
+                                    </span>
+                                    <span class="sub3-left-map-mark-desc">고흥</span>
+                                </div>
+							</div>
+                            <p class="sub3-left-map-col-1-desc-2 p-a">
+                                본 자료는 실시간 분석 결과로, 관측장비나 관측환경의 변화에 따라<br>
+                                오류가 발생할 수 있으며, 강수시 장비 가동이 중단될 수 있습니다.
+						</div>
+					</div>
+				</div>
+				<div class="data-content-section-group">
+					<div class="data-content-section" data-target="item_1">
+						<div class="data-content-section-box">
+							<div class="data-content-section-title-box">
+								<h4 class="data-content-section-title">
+                                    추풍령
+								</h4>
+							</div>
+							<div class="data-content-section-sub-box-list">
+								<div class="data-content-section-sub-box-s">
+									<div class="data-content-section-sub-title-box">
+										<h5 class="data-content-section-sub-title">운고계 관측 - 후방산란강도</h5>
+									</div>
+									<div class="data-content-section-chart">
+										차트 영역
+									</div>
+                                    <p class="data-content-section-sub-title-s">운고계 설명</p>
+                                    <p class="data-content-section-desc">
+                                        운고계는 구름의 높이를 수직 시정을 측정하는 장비이다.<br>
+                                        구름의 높이를 측정하는 원리는 강력한 레이저 펄스가 수직 또는 가까운 수직 방향으로 발사하면 대기 중에<br>
+                                        있는 안개, 미세한 입자들, 강수, 구름 등에 의해 부딪히게 되어 다시 되돌아오게 되는데<br>
+                                        이 펄스가 후방산란 (BACK-SCATTER)되어 되돌아오는 시간을 계산, 처리함으로서 구름의 최저 높이<br>
+                                        (CLOUD BASE)를 산출하게 되는 원리이다．<br>
+                                        이 장비는 대기 중에 분포된 구름의 높이를 층별(상중하등)로 ３개층의 운저와 운량을 동시에 측정할 수 있으며，<br>
+                                        장비 자체적으로 다양한 지원과 정비기능을 가지고 있고 자체 내부감시（Monitoring)기능을 통해 지속적인<br>
+                                        장비의 상태정보를 제공해주며 관측된 자료의 FULL BACK-SCATTER PROFILE를 제공하기 위한 프로그램이<br>
+                                        내장되어 있어 이러한 정보를 제공해 주는 기능을 가지고 있다．
+                                    </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" data-id="footer"></footer>
+	</div>
+
+	<div id="layer-data" class="layer_section dark w-840">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">대응요령</h1>
+			</div>
+			<div class="layer-content p-30">
+               <table class="table-basic-2">
+                   <colgroup>
+                       <col style="width:12rem">
+                       <col style="width:17rem">
+                       <col style="width:auto">
+                   </colgroup>
+                   <thead>
+                   <tr>
+                       <th scope="col">단계</th>
+                       <th scope="col">지수범위</th>
+                       <th scope="col">대응요령</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <td class="level-type color-5">위험</td>
+                       <td>11 이상</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함<br>
+                           - 가능한 실내에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-4">매우높음</td>
+                       <td>8 이상 11 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함<br>
+                           - 오전 10시부터 오후 3시까지 외출을 피하고 실내나 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-3">높음</td>
+                       <td>6 이상 8 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함<br>
+                           - 한낮에는 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-2">보통</td>
+                       <td>3 이상 6 미만</td>
+                       <td class="a-left">
+                           - 2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음<br>
+                           - 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-1">낮음</td>
+                       <td>3 미만</td>
+                       <td class="a-left">
+                           - 햇볕 노출에 대한 보호조치가 필요하지 않음<br>
+                           - 그러나 햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   </tbody>
+               </table>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/common/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+        /**
+         * https://github.com/Pikaday/Pikaday
+         * 옵션값은 여기서 확인하시면 됩니다.
+         */
+        UI.datepinker.dataepicker_1 = new Pikaday({
+            field: document.querySelector('.datepicker[data-id="datepicker_1"]'),
+            onSelect: function() {
+                console.log(this);
+            },
+        });
+	});
+
+</script>
+
+</html>
