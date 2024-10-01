@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap flex">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		
+		<main class="sub5-content">
+			<div class="sub5-top-title">
+				<div class="max-142">
+					<h3 class="sub5-title">승인(인증)SSP 시나리오</h3>
+                    <div class="right-area">
+                        <button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full">
+                            <i class="icon-info"></i>
+                            도움말
+                        </button>
+                    </div>
+				</div>
+			</div>
+			<div class="max-142 sub5-content-box">
+				<div class="white-box-1">
+                    <div class="sub5-select-group">
+                        <div class="select-item-box line-type select-size-42 w-180">
+                            <select name="">
+                                <option value="">SSP1-2.6</option>
+                            </select>
+                        </div>
+                        <div class="select-item-box line-type select-size-42 w-180">
+                            <select name="">
+                                <option value="">평균기온</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sub5-chart-box">
+                        차트
+                    </div>
+                    <div class="data-content-section-legend">
+                        <div class="data-content-section-legend-item">
+                            <span class="data-content-section-legend-box" style="background-color:#808080"></span>
+                            <span class="data-content-section-legend-name">관측자료</span>
+                        </div>
+                        <div class="data-content-section-legend-item">
+                            <span class="data-content-section-legend-box" style="background-color:#4484FF"></span>
+                            <span class="data-content-section-legend-name">SSP5-8.5</span>
+                        </div>
+                        <div class="data-content-section-legend-item">
+                            <span class="data-content-section-legend-box" style="background-color:#96CC7B"></span>
+                            <span class="data-content-section-legend-name">SSP5-8.5</span>
+                        </div>
+                        <div class="data-content-section-legend-item">
+                            <span class="data-content-section-legend-box" style="background-color:#F5BB64"></span>
+                            <span class="data-content-section-legend-name">SSP5-8.5</span>
+                        </div>
+                        <div class="data-content-section-legend-item">
+                            <span class="data-content-section-legend-box" style="background-color:#E66468"></span>
+                            <span class="data-content-section-legend-name">SSP5-8.5</span>
+                        </div>
+                    </div>
+                    <p class="data-content-section-chart-desc">※ 범례 클릭 시 그래프 추가·삭제할 수 있으며, 그래프 위 마우스로 영역을 설정하면 확대 가능합니다.
+                    </p>
+                </div>
+			</div>
+		</main>
+
+		<footer class="footer" data-id="footer"></footer>
+	</div>
+
+	<div id="layer-data" class="layer_section dark w-840">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">대응요령</h1>
+			</div>
+			<div class="layer-content p-30">
+               <table class="table-basic-2">
+                   <colgroup>
+                       <col style="width:12rem">
+                       <col style="width:17rem">
+                       <col style="width:auto">
+                   </colgroup>
+                   <thead>
+                   <tr>
+                       <th scope="col">단계</th>
+                       <th scope="col">지수범위</th>
+                       <th scope="col">대응요령</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <td class="level-type color-5">위험</td>
+                       <td>11 이상</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함<br>
+                           - 가능한 실내에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-4">매우높음</td>
+                       <td>8 이상 11 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함<br>
+                           - 오전 10시부터 오후 3시까지 외출을 피하고 실내나 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-3">높음</td>
+                       <td>6 이상 8 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함<br>
+                           - 한낮에는 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-2">보통</td>
+                       <td>3 이상 6 미만</td>
+                       <td class="a-left">
+                           - 2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음<br>
+                           - 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-1">낮음</td>
+                       <td>3 미만</td>
+                       <td class="a-left">
+                           - 햇볕 노출에 대한 보호조치가 필요하지 않음<br>
+                           - 그러나 햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   </tbody>
+               </table>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/common/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+
+
+	});
+
+</script>
+
+</html>

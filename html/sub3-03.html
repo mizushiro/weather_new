@@ -17,10 +17,15 @@
 
 	<script src="../resources/js/ui.common.js"></script>
 	<script src="../resources/js/ui.global.js"></script>
+
+    <!-- https://github.com/Pikaday/Pikaday -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/pikaday.css">
+    <script src="../resources/lib/pikaday.js"></script>
 </head>
 
 <body>
-	<div class="base-wrap">
+	<div class="base-wrap flex">
 		<!-- /html/header.html -->
 		<header class="header" data-id="header"></header>
 		
@@ -44,6 +49,7 @@
                             <button type="button" class="btn-base" data-size="42" data-color="white" data-round="4">
                                 <i class="icon-next"></i>
                             </button>
+                            <input type="text" data-id="datepicker_1" class="datepicker datepicker-size-42">
                             <div class="select-item-box line-type select-size-42 w-80">
                                 <select name="">
                                     <option value="">일</option>
@@ -119,12 +125,9 @@
                             <p class="sub3-left-map-col-1-desc-2 p-a">
                                 본 자료는 실시간 분석 결과로, 관측장비나 관측환경의 변화에 따라<br>
                                 오류가 발생할 수 있으며, 강수시 장비 가동이 중단될 수 있습니다.<br>
-                                관측기관: 기상청 국립기상과학원(안면도), <br>
-                                서울특별시 보건환경연구원(양재), 서울대학교(관악, 고산), <br>
-                                울산과학기술원(울산)<br><br>
-                                국립기상과학원(안면도), 울산과학기술원(울산) <br>
-                                장비점검으로 표촐되지 않음
-                            </p>
+                                관측기관 : 기상청 국립기상과학원(안면도), 서울특별시 보건환경연구원(양재),<br>
+                                서울대학교(관악, 고산), 울산과학기술원(울산)<br><br>
+                                국립기상과학원(안면도), 울산과학기술원(울산) 장비점검으로 표촐되지 않음
 						</div>
 					</div>
 				</div>
@@ -137,28 +140,85 @@
 								</h4>
 							</div>
 							<div class="data-content-section-sub-box-list">
+                                <!-- S : 후방산란강도 -->
 								<div class="data-content-section-sub-box-s">
 									<div class="data-content-section-sub-title-box">
-										<h5 class="data-content-section-sub-title">이산화탄소</h5>
-										<div class="data-content-section-sub-btn-group">
-											<div class="select-item-box line-type select-size-42 w-80">
-												<select name="">
-													<option value="">일</option>
-												</select>
-											</div>
-                                            <i class="w-line"></i>
-                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
-                                                검색
-                                            </button>
-                                            <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
-                                                전체검색
-                                            </button>
-										</div>
+										<h5 class="data-content-section-sub-title">후방산란강도</h5>
 									</div>
 									<div class="data-content-section-chart">
 										차트 영역
 									</div>
+                                    <p class="data-content-section-desc">
+                                        에어로졸 라이다에서 발사한 레이저가 대기 중 입자와 충돌 후 후방으로 산란된 강도를 의미하며 구름과
+                                        에어로졸의 구분에 사용, 구름은 에어로졸 층에 비해 훨씬 큰 후방산란강도가 나타남.<br>
+                                        점은 구름 하층의 높이(운저)를, 분홍색 점은 대기 경계층(혼합층) 높이 (또는 에어로졸 혼합 최대 높이)를
+                                        각각 나타내고 있음.
+                                    </p>
 								</div>
+                                <!-- E : 후방산란강도 -->
+                                <!-- S : 편광소멸도 -->
+                                <div class="data-content-section-sub-box-s">
+                                    <div class="data-content-section-sub-title-box">
+                                        <h5 class="data-content-section-sub-title">편광소멸도</h5>
+                                    </div>
+                                    <div class="data-content-section-chart">
+                                        차트 영역
+                                    </div>
+                                    <p class="data-content-section-desc">
+                                        한 방향으로 편광되어 발사된 빛이 후방산란되어 오면서 편광이 깨지는 정도를 의미하며<br>
+                                        비구형 황사와 구형 오염물질 입자 구분에 사용 황사 입자가 많이 포함된 층일수록 편광소멸도가 높게 나타남.
+                                    </p>
+                                </div>
+                                <!-- E : 편광소멸도 -->
+                                <!-- S : 소산계수 -->
+                                <div class="data-content-section-sub-box-s">
+                                    <div class="data-content-section-sub-title-box">
+                                        <h5 class="data-content-section-sub-title">소산계수</h5>
+                                    </div>
+                                    <div class="data-content-section-chart">
+                                        차트 영역
+                                    </div>
+                                    <p class="data-content-section-desc">
+                                        후방산란강도가 매우 약한 약 6 km를 기준고도로 설정하고 라이다 상수(63 sr)를<br>
+                                        이용하여 산출하며, 후방산란강도에 비해 상대적으로 정량적인 에어로졸 연직분포를 파악할 수 있음
+                                    </p>
+                                </div>
+                                <!-- E : 소산계수 -->
+                                <!-- S : 종류구분 -->
+                                <div class="data-content-section-sub-box-s">
+                                    <div class="data-content-section-sub-title-box">
+                                        <h5 class="data-content-section-sub-title">종류구분</h5>
+                                    </div>
+                                    <div class="data-content-section-chart">
+                                        차트 영역
+                                    </div>
+                                    <p class="data-content-section-desc">
+                                        후방산란강도와 편광소멸도를 이용하여 에어로졸의 종류를 구분
+                                    </p>
+                                    <p class="data-content-section-desc-bullet">
+                                        ㆍ 깨끗한 공기괴(clean continental) : 후방산란강도와 편광소멸도가 매우 낮을 때
+                                    </p>
+                                    <p class="data-content-section-desc-bullet">
+                                        ㆍ 황사(dust) : 후방산란강도가 ‘깨끗한 공기괴’ 보다 강하며 편광소멸도가 0.1 이상일 때
+                                    </p>
+                                    <p class="data-content-section-desc-bullet">
+                                        ㆍ 오염입자(polluted continental/urban) : 후방산란강도가 ‘깨끗한 공기괴’ 보다 강하며, 편광소멸도가 0.1 이하일 때
+                                    </p>
+                                </div>
+                                <!-- E : 종류구분 -->
+                                <!-- S : 질량농도 -->
+                                <div class="data-content-section-sub-box-s">
+                                    <div class="data-content-section-sub-title-box">
+                                        <h5 class="data-content-section-sub-title">질량농도</h5>
+                                    </div>
+                                    <div class="data-content-section-chart">
+                                        차트 영역
+                                    </div>
+                                    <p class="data-content-section-desc">
+                                        소산계수와 에어로졸 단위 질량당 소산 면적을 의미하는 질량소산효율을 이용하여 질량농도 연직분포를 산출.
+                                    </p>
+                                </div>
+                                <!-- E : 질량농도 -->
 							</div>
 						</div>
 					</div>
@@ -249,6 +309,16 @@
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
+        /**
+         * https://github.com/Pikaday/Pikaday
+         * 옵션값은 여기서 확인하시면 됩니다.
+         */
+        UI.datepinker.dataepicker_1 = new Pikaday({
+            field: document.querySelector('.datepicker[data-id="datepicker_1"]'),
+            onSelect: function() {
+                console.log(this);
+            },
+        });
 	});
 
 </script>

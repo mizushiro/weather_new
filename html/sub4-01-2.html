@@ -1,0 +1,429 @@
+﻿ <!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap flex">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		
+		<main class="sub4-content">
+			<div class="sub4-top-title">
+				<div class="max-142">
+					<h3 class="sub4-title">기후변화 전망 분석보고서</h3>
+                    <div class="right-area">
+                        <button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full">
+                            <i class="icon-info"></i>
+                            도움말
+                        </button>
+                    </div>
+				</div>
+			</div>
+			<div class="max-142 sub4-content-box">
+				<div class="sub4-left-map-box">
+					<div class="sub4-left-map-select">
+                        <div class="select-item-box line-type select-size-42 w-130">
+                            <select name="">
+                                <option value="">전국</option>
+                            </select>
+                        </div>
+                        <div class="select-item-box line-type select-size-42 w-130">
+                            <select name="">
+                                <option value="">시군구</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sub4-left-map-area">
+                        지도
+                    </div>
+				</div>
+				<div class="data-content-section-group">
+					<div class="data-content-section">
+						<div class="data-content-section-box">
+							<div class="data-content-section-title-box">
+								<h4 class="data-content-section-title">
+                                    광역시 · 도별
+								</h4>
+							</div>
+							<div class="data-content-section-sub-box-list">
+								<div class="data-content-section-sub-box-s">
+                                    <div class="data-content-section-select-group">
+                                        <div class="select-item-box line-type select-size-42 w-180">
+                                            <select name="">
+                                                <option value="">기후요소</option>
+                                                <option value="">극한기후지수 고온</option>
+                                                <option value="">계절길이</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-item-box line-type select-size-42 w-180">
+                                            <select name="">
+                                                <option value="">평균기온</option>
+                                                <option value="">폭염일수</option>
+                                            </select>
+                                        </div>
+                                    </div>
+									<div class="data-content-section-sub-title-box">
+										<h5 class="data-content-section-sub-title">현재(2000-2019년) 광역시·도 극한기후지수 고온 폭염일수 분포</h5>
+										<div class="data-content-section-sub-btn-group">
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                CVG
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                PNG
+                                            </button>
+										</div>
+									</div>
+									<div class="data-content-section-chart line-type">
+                                        <div class="section-chart-title">
+                                            폭염일수
+                                        </div>
+                                        <div>
+										    차트 영역
+                                        </div>
+									</div>
+
+                                    <div class="data-content-section-sub-title-box mt-48">
+                                        <h5 class="data-content-section-sub-title">현재(2000-2019년) 광역시·도 고온 관련 극한기후지수</h5>
+                                        <div class="data-content-section-sub-btn-group">
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                CVG
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                PNG
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-area-box">
+                                        <table class="table-basic-2 td-16">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">폭염일수 (일)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>서울</td>
+                                                <td>15.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>부산</td>
+                                                <td>15.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>대구</td>
+                                                <td>15.0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="data-content-section-sub-title-box mt-48">
+                                        <h5 class="data-content-section-sub-title">광역시·도 폭염일수 전망(일)</h5>
+                                        <div class="data-content-section-sub-btn-group">
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                CVG
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                PNG
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-area-box">
+                                        <table class="table-basic-2 td-16">
+                                            <colgroup>
+                                                <col style="width:10.8rem">
+                                                <col span="4">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">현재</th>
+                                                <th scope="col">21세기 전반기<br>(2021~2040)</th>
+                                                <th scope="col">21세기 중반기<br>(2041~2060)</th>
+                                                <th scope="col">21세기 후반기<br>(2081~2100)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>SSP1-2.6</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP2-4.5</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP3-7.0</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP5-8.5</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                                <td>차트</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="data-content-section-sub-title-box mt-48">
+                                        <h5 class="data-content-section-sub-title">광역시·도 폭염일수 전망 및 편차(일)</h5>
+                                        <div class="data-content-section-sub-btn-group">
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                CVG
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                PNG
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-area-box w-scroll">
+                                        <table class="table-basic-2 th-s td-16">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">구분</th>
+                                                <th scope="col" rowspan="2">현재<br>(2019~2021)</th>
+                                                <th scope="col" colspan="3">SSP1-2.6</th>
+                                                <th scope="col" colspan="3">SSP2-4.5</th>
+                                                <th scope="col" colspan="3">SSP3-7.0</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">전반기<br>(2021~2040)</th>
+                                                <th scope="col">중반기<br>(2041~2060)</th>
+                                                <th scope="col">후반기<br>(2081~2100)</th>
+                                                <th scope="col">전반기<br>(2021~2040)</th>
+                                                <th scope="col">중반기<br>(2041~2060)</th>
+                                                <th scope="col">후반기<br>(2081~2100)</th>
+                                                <th scope="col">전반기<br>(2021~2040)</th>
+                                                <th scope="col">중반기<br>(2041~2060)</th>
+                                                <th scope="col">후반기<br>(2081~2100)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td rowspan="2">서울</td>
+                                                <td rowspan="2">14.1</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="data-content-section-sub-title-box mt-48">
+                                        <h5 class="data-content-section-sub-title">광역시·도 폭염일수 연대별 전망 및 편차(일)</h5>
+                                        <div class="data-content-section-sub-btn-group">
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                CVG
+                                            </button>
+                                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                                PNG
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-area-box w-scroll">
+                                        <table class="table-basic-2 td-16">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">2000~2019</th>
+                                                <th scope="col">시나리오</th>
+                                                <th scope="col">2021~2030</th>
+                                                <th scope="col">2031~2040</th>
+                                                <th scope="col">2041~2050</th>
+                                                <th scope="col">2051~2060</th>
+                                                <th scope="col">2061~2070</th>
+                                                <th scope="col">2071~2080</th>
+                                                <th scope="col">2081~2090</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td rowspan="4">서울</td>
+                                                <td rowspan="4">-14.1</td>
+                                                <td>SSP1-2.6</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP2-4.5</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP3-7.0</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                                <td>14.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSP5-8.5</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                                <td>+1.6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" data-id="footer"></footer>
+	</div>
+
+	<div id="layer-data" class="layer_section dark w-840">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">대응요령</h1>
+			</div>
+			<div class="layer-content p-30">
+               <table class="table-basic-2">
+                   <colgroup>
+                       <col style="width:12rem">
+                       <col style="width:17rem">
+                       <col style="width:auto">
+                   </colgroup>
+                   <thead>
+                   <tr>
+                       <th scope="col">단계</th>
+                       <th scope="col">지수범위</th>
+                       <th scope="col">대응요령</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <td class="level-type color-5">위험</td>
+                       <td>11 이상</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 가장 위험함<br>
+                           - 가능한 실내에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-4">매우높음</td>
+                       <td>8 이상 11 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 수십 분 이내에도 피부 화상을 입을 수 있어 매우 위험함<br>
+                           - 오전 10시부터 오후 3시까지 외출을 피하고 실내나 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-3">높음</td>
+                       <td>6 이상 8 미만</td>
+                       <td class="a-left">
+                           - 햇볕에 노출 시 1～2시간 내에도 피부 화상을 입을 수 있어 위험함<br>
+                           - 한낮에는 그늘에 머물러야 함<br>
+                           - 외출 시 긴 소매 옷, 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 정기적으로 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-2">보통</td>
+                       <td>3 이상 6 미만</td>
+                       <td class="a-left">
+                           - 2～3시간 내에도 햇볕에 노출 시에 피부 화상을 입을 수 있음<br>
+                           - 모자, 선글라스 이용<br>
+                           - 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="level-type color-1">낮음</td>
+                       <td>3 미만</td>
+                       <td class="a-left">
+                           - 햇볕 노출에 대한 보호조치가 필요하지 않음<br>
+                           - 그러나 햇볕에 민감한 피부를 가진 분은 자외선 차단제를 발라야 함
+                       </td>
+                   </tr>
+                   </tbody>
+               </table>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/common/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+
+
+	});
+
+</script>
+
+</html>
