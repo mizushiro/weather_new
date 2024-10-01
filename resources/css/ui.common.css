@@ -44,7 +44,7 @@ html.scroll_off {overflow:hidden}
 .font-g {font-family:'GmarketSans', 'sans-serif'}
 
 /* layout */
-.base-wrap.flex {display:flex;flex-direction:column}
+.base-wrap.flex {display:flex;flex-direction:column;min-height:100%;}
 .base-wrap.flex .header {flex-shrink:0}
 .base-wrap.flex main {flex:1}
 
