@@ -891,7 +891,7 @@ class ToggleUI {
         const callbackName = el_object.dataset.callback;
         const is_name = el_object.dataset.toggleObj;
         const el_objects = document.querySelectorAll('[data-toggle-obj="'+ is_name +'"]');
-        const el_target = document.querySelector('[data-toggle-target="'+ is_name +'"]');
+        const el_targets = document.querySelectorAll('[data-toggle-target="'+ is_name +'"]');
 
         let data_state = el_object.dataset.toggleState;
         let is_state = data_state !== 'true' ? 'true' : 'false';
@@ -899,9 +899,13 @@ class ToggleUI {
         for(let item of el_objects) {
             item.dataset.toggleState = is_state;
         }
-        console.log(el_target)
+        console.log(el_targets)
         // el_object.dataset.toggleState = is_state;
-        !!el_target ? el_target.dataset.toggleState = is_state : '';
+        if (el_targets) {
+            for(let item of el_targets) {
+                item.dataset.toggleState = is_state;
+            }
+        }
               
         !!callbackName && UI.callback[callbackName]({
             state: is_state,
@@ -1014,16 +1018,18 @@ class Accordion {
     init() {
         for (const item of this.acco_items) {
             const btn = item.querySelector('[data-acco="btn"]');
+             console.log(btn)
             btn.addEventListener('click', this.actToggle);
         }
 
         (typeof this.current === 'number') && this.show(this.current);
     }
     actToggle = (e) => {
+        
         const _this = e.currentTarget;
         this.acco_item = _this.closest('[data-acco="item"]');
         const acco_head = _this.closest('[data-acco="head"]');
-        this.acco_body = acco_head.nextElementSibling;
+        this.acco_body = this.acco_item.querySelector('[data-acco="body"]');
 
         if (this.acco_body) {
             this.acco_wrap = this.acco_body.children[0];
@@ -1036,6 +1042,7 @@ class Accordion {
         this.acco_body.style.height = 'auto';
     }
     actShow() {
+         console.log(this)
         this.callback && this.callback({
             id: this.id,
             current: UI.parts.getIndex(this.acco_item)
@@ -1058,13 +1065,12 @@ class Accordion {
 
     show(v) {
         this.acco_item = this.acco_items[v];
-
         for (const item of this.acco_item.children) {
             if (item.dataset.acco === 'body') {
                 this.acco_body = item;
             }
         }
-        console.log(this.acco_body)
+       
         this.acco_wrap = this.acco_body.children[0];
         this.h = this.acco_wrap.offsetHeight;
         this.actShow();
@@ -1741,7 +1747,7 @@ UI.exe.targetScroll = () => {
             _name = contName;
             const _accoItem = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
 
-            accoN = Number(_accoItem.dataset.n);;
+            accoN = Number(_accoItem.dataset.n);
         }
         if (_name === contName) {
             if (!isString) e.preventDefault();
