@@ -1,0 +1,1249 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>기후변화상황지도</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../resources/css/ui.base.css">
+
+    <script src="../resources/js/ui.common.js"></script>
+    <script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+<div class="base-wrap flex">
+    <!-- /html/header.html -->
+    <header class="header" data-id="header"></header>
+
+    <main class="sub4-content">
+        <div class="sub4-top-title">
+            <div class="max-142">
+                <h3 class="sub4-title">다운로드</h3>
+                <div class="right-area">
+                    <button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full">
+                        <i class="icon-info"></i>
+                        도움말
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-142 data-content-box">
+            <div class="data-content-nav scrollbar-4" data-acco-id="sideNav">
+                <div data-acco="item" data-n="0" data-nav-name="관측자료">
+                    <div class="data-content-nav-1depth-box" data-acco="head">
+                        <a href="sub4-03-1.html" class="data-content-nav-1depth">관측자료</a>
+                        <button type="button" class="btn-nav-folding" data-acco="btn">
+                            <i class="icon-nav-folding"></i>
+                        </button>
+                    </div>
+                    <div class="data-content-nav-2depth-box" data-acco="body">
+                        <div data-acco="wrap">
+                            <a href="sub4-03-1.html?target=1" data-target="item_1" class="data-content-nav-2depth">남한 격자 (2)</a>
+                            <a href="sub4-03-1.html?target=2" data-target="item_2" class="data-content-nav-2depth">남한 행정구역 (32)</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-acco="item" data-n="1" data-nav-name="시나리오">
+                    <div class="data-content-nav-1depth-box" data-acco="head">
+                        <a href="sub4-03-2.html" class="data-content-nav-1depth">시나리오</a>
+                        <button type="button" class="btn-nav-folding" data-acco="btn">
+                            <i class="icon-nav-folding"></i>
+                        </button>
+                    </div>
+                    <div class="data-content-nav-2depth-box" data-acco="body">
+                        <div data-acco="wrap">
+                            <a href="sub4-03-2.html?target=1" data-target="item_1" class="data-content-nav-2depth">전지구 (2)</a>
+                            <a href="sub4-03-2.html?target=1" data-target="item_2" class="data-content-nav-2depth">동아시아 (3)</a>
+                            <a href="sub4-03-2.html?target=1" data-target="item_3" class="data-content-nav-2depth">한반도 (7)</a>
+                            <a href="sub4-03-2.html?target=1" data-target="item_4" class="data-content-nav-2depth">남한상세 (2)</a>
+                            <a href="sub4-03-2.html?target=1" data-target="item_5" class="data-content-nav-2depth">남한상세 행정구역 (26)</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-content-section-group pt-34" data-nav-name="시나리오">
+                <!-- S : 시나리오 - 전지구 -->
+                <div class="data-content-section" data-target="item_1">
+                    <div class="data-content-section-box">
+                        <div class="data-content-section-title-box">
+                            <h3 class="data-content-section-title">시나리오 - 전지구(2)</h3>
+                        </div>
+                        <div class="data-content-section-sub-box-list" data-acco-id="more">
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">시나리오</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 유역별 SSP 시나리오</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">시나리오</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 격자 SSP 시나리오</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 시나리오 - 전지구 -->
+                <!-- S : 시나리오 - 남한 동아시아 -->
+                <div class="data-content-section" data-target="item_2">
+                    <div class="data-content-section-box">
+                        <div class="data-content-section-title-box">
+                            <h3 class="data-content-section-title">관측자료 - 동아시아(3)</h3>
+                        </div>
+                        <div class="data-content-section-sub-box-list" data-acco-id="more">
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 유역별 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 격자 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 시나리오 - 남한 동아시아 -->
+                <!-- S : 시나리오 - 남한 한반도 -->
+                <div class="data-content-section" data-target="item_3">
+                    <div class="data-content-section-box">
+                        <div class="data-content-section-title-box">
+                            <h3 class="data-content-section-title">관측자료 - 한반도(7)</h3>
+                        </div>
+                        <div class="data-content-section-sub-box-list" data-acco-id="more">
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 유역별 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 격자 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 시나리오 - 남한 한반도 -->
+                <!-- S : 시나리오 - 남한 남한상세 -->
+                <div class="data-content-section" data-target="item_4">
+                    <div class="data-content-section-box">
+                        <div class="data-content-section-title-box">
+                            <h3 class="data-content-section-title">관측자료 - 남한상세(2)</h3>
+                        </div>
+                        <div class="data-content-section-sub-box-list" data-acco-id="more">
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 유역별 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 격자 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 시나리오 - 남한 남한상세 -->
+                <!-- S : 시나리오 - 남한 남한상세 행정구역 -->
+                <div class="data-content-section" data-target="item_5">
+                    <div class="data-content-section-box">
+                        <div class="data-content-section-title-box">
+                            <h3 class="data-content-section-title">관측자료 - 남한상세 행정구역(26)</h3>
+                        </div>
+                        <div class="data-content-section-sub-box-list" data-acco-id="more">
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 유역별 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="data-content-section-sub-box" data-acco="item">
+                                <div class="data-content-section-sub-title-box">
+                                    <span class="data-content-section-sub-title-type">관측자료</span>
+                                    <h4 class="data-content-section-sub-title">남한상세 격자 SSP 관측자료</h4>
+                                </div>
+                                <div class="data-content-section-area">
+                                    <div class="var-grid">
+                                            <span class="var-grid-col">
+                                                <span class="var-grid-year start">2011</span>
+                                                <span class="var-grid-year end">2020</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2021</span>
+                                                <span class="var-grid-year end">2030</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-start">
+                                                <span class="var-grid-year start">2031</span>
+                                                <span class="var-grid-year end">2040</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2041</span>
+                                                <span class="var-grid-year end">2050</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2051</span>
+                                                <span class="var-grid-year end">2060</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2061</span>
+                                                <span class="var-grid-year end">2070</span>
+                                            </span>
+                                        <span class="var-grid-col is-active-end">
+                                                <span class="var-grid-year start">2071</span>
+                                                <span class="var-grid-year end">2080</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2081</span>
+                                                <span class="var-grid-year end">2090</span>
+                                            </span>
+                                        <span class="var-grid-col">
+                                                <span class="var-grid-year start">2091</span>
+                                                <span class="var-grid-year end">2100</span>
+                                            </span>
+                                    </div>
+                                    <div class="var-info-list">
+                                        <span class="var-info-item">파일크기 : 20Mb</span>
+                                        <span class="var-info-item">데이터 기간 : 2021-01 ~ 2060-12</span>
+                                        <span class="var-info-item">시간 해상도 : 월, 연</span>
+                                        <span class="var-info-item">공간 해상도 : 1㎞</span>
+                                    </div>
+                                </div>
+
+                                <div data-acco="body">
+                                    <div data-acco="wrap">
+                                        <div class="table-basic-3-box">
+                                            <table class="table-basic-3">
+                                                <caption>파일 다운로드</caption>
+                                                <colgroup>
+                                                    <col style="width:30%">
+                                                    <col span="5">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">시나리오</th>
+                                                    <th scope="col">온도</th>
+                                                    <th scope="col">시간</th>
+                                                    <th scope="col">유형</th>
+                                                    <th scope="col">다운로드</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>연</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="a-left" data-ellipsis="1">AR6_SSP126_5ENSMN_skorea_AR6_SSP126_5ENSMN_skorea_</td>
+                                                    <td>SSP1-2.6</td>
+                                                    <td>평균온도</td>
+                                                    <td>월</td>
+                                                    <td>NC File</td>
+                                                    <td>
+                                                        <button type="button" class="btn-download">
+                                                            <i class="icon-download"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-wrap" data-acco="head">
+                                    <button type="button" class="btn-base" data-size="58" data-round="full" data-color="lightGray" data-acco="btn">
+                                        <span class="font-800">파일보기</span>
+                                        <i class="more-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 시나리오 - 남한 남한상세 행정구역 -->
+
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+        //타겟스크롤 이동
+        UI.exe.targetScroll();
+        UI.exe.accoMore = new Accordion({
+            id: 'more',
+            current: null,
+            callback: (v) => {
+                console.log('callback:');
+            }
+        });
+    });
+
+</script>
+
+</html>
