@@ -1754,6 +1754,7 @@ UI.exe.targetScroll = () => {
         } else {
             const btnWrap_a = pageNave.querySelector('a[data-target="item_1"]');
             btnWrap_a.dataset.active = true;
+            accoN = Number(pageNave.dataset.n);
         }
 
         if (!UI.exe.accoSideNav) {
