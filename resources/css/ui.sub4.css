@@ -36,3 +36,4 @@
 .table-basic-3 tbody tr:last-child td {border-bottom-color:#1D1D1D}
 .btn-download {width:4rem;height:4rem;background-color:#2E7EF6;border-radius:999em;display:inline-flex;align-items:center;justify-content:center}
 .icon-download {aspect-ratio:1/1;width:1.6rem;display:block;background:url("../images/common/icon-download.svg") no-repeat 50% 50%;background-size:contain}
+.sub4-content .data-content-nav {top:11.6rem}
