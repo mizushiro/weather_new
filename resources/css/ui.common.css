@@ -313,3 +313,4 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 [data-acco-id="more"] .btn-wrap .btn-base{flex: none;}
 [data-expanded="true"] .btn-base > span{display: none;}
 [data-expanded="true"] .btn-base::before{content:"파일닫기";    padding-top: .4rem;font-weight: 800;color: #27355a;font-size: 1.6rem;line-height: 1;}
+.pt-34{padding-top: 3.4rem;}
