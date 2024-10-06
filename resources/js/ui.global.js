@@ -1742,7 +1742,7 @@ UI.exe.targetScroll = () => {
                     });
                 }
             }
-        }
+        } 
 
         for (item of depths) {
             item.dataset.active = false;
@@ -1750,6 +1750,9 @@ UI.exe.targetScroll = () => {
         if (!notscroll) {
             const btnWrap = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
             const btnWrap_a = btnWrap.querySelector('a[data-target="' + _target + '"]');
+            btnWrap_a.dataset.active = true;
+        } else {
+            const btnWrap_a = pageNave.querySelector('a[data-target="item_1"]');
             btnWrap_a.dataset.active = true;
         }
 
@@ -1767,7 +1770,7 @@ UI.exe.targetScroll = () => {
         for (let i = 0; i < ps_cont.length; i++) {
             const current = pageNave.querySelector('.data-content-nav-2depth[data-active="true"]');
             const currentName = current.dataset.target;
-
+             
             if (ps_cont[i+1]) {
                 let n = ps_cont[i];
                 if ( i === 0 ) n = 0;
