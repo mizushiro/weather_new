@@ -145,8 +145,6 @@
                 _tempArray = _tempArray[0];
                 _tempArray = _tempArray.split('#');
                 _tempArray = _tempArray[0];
-
-                console.log(_tempArray);
             } else {
                 _tempArray = null
             }
@@ -237,7 +235,6 @@
                     
                     !!timer && clearTimeout(timer);
                     // timer = setTimeout(() => {
-                    //     console.log(width, height);
                         opt.callback({
                             width: width,
                             height: height,
@@ -843,8 +840,6 @@ class ScrollPage {
             this.ary_top_e.push(rect.top + this.sctop);
         }
 
-        console.log(this.ary_top_s, this.ary_top_e);
-
         const act = () => {
             const n = this.el_wrap.scrollTop;
             for (let i = 0, len = this.ary_top_s.length; i < len; i++) {
@@ -885,7 +880,6 @@ class ToggleUI {
         }
     }
     actClick = (e) => {
-        console.log('click');
         const type = e.type;
         const el_object = e.currentTarget;
         const callbackName = el_object.dataset.callback;
@@ -899,7 +893,6 @@ class ToggleUI {
         for(let item of el_objects) {
             item.dataset.toggleState = is_state;
         }
-        console.log(el_targets)
         // el_object.dataset.toggleState = is_state;
         if (el_targets) {
             for(let item of el_targets) {
@@ -943,8 +936,6 @@ class Tab {
     }
     init() {
         let para = UI.parts.paraGet('tab');
-
-        console.log(this.id,para);
 
         if (!!para && typeof para === 'string') {
             this.current = para;
@@ -1018,7 +1009,6 @@ class Accordion {
     init() {
         for (const item of this.acco_items) {
             const btn = item.querySelector('[data-acco="btn"]');
-             console.log(btn)
             btn.addEventListener('click', this.actToggle);
         }
 
@@ -1042,7 +1032,6 @@ class Accordion {
         this.acco_body.style.height = 'auto';
     }
     actShow() {
-         console.log(this)
         this.callback && this.callback({
             id: this.id,
             current: UI.parts.getIndex(this.acco_item)
@@ -1095,9 +1084,7 @@ class Accordion {
         }, 0);
     }
     allHide() {
-       
         for (const item of this.acco_items) {
-            console.log('all hide')
             item.dataset.expanded = 'false';
             const _body = item.querySelector('[data-acco="body"]');
             _body ? _body.style.height = 0 : '';
@@ -1458,10 +1445,8 @@ class Layer {
     show = (e) =>  {
         if (this.type === 'toast') {
             if (this.modal.dataset.state === 'show') {
-                console.log('열려있음');
                 return false;
             }
-            console.log('toast show: ' , this.modal);
         }
 
         const _zindex = 100;
@@ -1535,9 +1520,6 @@ class Layer {
             _prev ? _prev.dataset.layerCurrent = 'false' : '';
             this.modal.dataset.layerCurrent = 'true';
         }
-
-        console.log( this.modal);
-
        
         this.modal || this.src && this.setFetch();
         this.modal.dataset.state = 'show';
@@ -1554,7 +1536,6 @@ class Layer {
         
         // select layer
         if (this.type === 'select') {
-            console.log(this.select_btn.offsetWidth, this.select_btn.dataset.selectId);
             document.querySelector('.mdl-layer[data-id="'+ this.select_btn.dataset.selectId +'"]').style.width = (this.select_btn.offsetWidth / 10) + 'rem';
 
             const el_options = this.modal.querySelectorAll('.mdl-select-option');
@@ -1623,22 +1604,18 @@ class Layer {
         this.focus.focus();
        
         if (this.type !== 'toast' && this.type !== 'tooltip' && this.type !== 'select') {
-            console.log(Number(this.html.dataset.layerN));
             if (Number(this.html.dataset.layerN) !== 0) {
                 document.querySelector('.mdl-layer[data-layer-n="'+ this.html.dataset.layerN +'"]').dataset.layerCurrent = 'true';
             }
         }
         
         if (this.type === 'tooltip') {
-            console.log('tooltip', this.modal);
             this.modal.remove();
         }
     }
     hideAct = () => {
         clearTimeout(this.timer);
         if (this.type !== 'toast' && this.type !== 'tooltip' && this.type !== 'select') {
-
-            console.log('hide', Number(this.html.dataset.layerN));
             this.html.dataset.layerN = Number(this.html.dataset.layerN) - 1;
         }
 
@@ -1731,8 +1708,9 @@ UI.exe.targetScroll = () => {
         let _wrap;
         let _target;
         let _name;
+        let notscroll = (e === null) ? true : false;
 
-        if (!isString) {
+        if (!isString && e !== null) {
             _this = e.currentTarget;
             _wrap = _this.closest('[data-nav-name]');
             _target = _this.dataset.target;
@@ -1743,34 +1721,37 @@ UI.exe.targetScroll = () => {
 
         let accoN = 0;
 
-        if (isString) {
-            _name = contName;
-            const _accoItem = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
+        if (!notscroll) {
+            if (isString) {
+                _name = contName;
+                const _accoItem = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
 
-            accoN = Number(_accoItem.dataset.n);
-        }
-        if (_name === contName) {
-            if (!isString) e.preventDefault();
+                accoN = Number(_accoItem.dataset.n);
+            }
+            if (_name === contName) {
+                if (!isString) e.preventDefault();
 
-            const _contItem = document.querySelector('.data-content-section[data-target="' + _target + '"]');
+                const _contItem = document.querySelector('.data-content-section[data-target="' + _target + '"]');
 
-            if (_contItem) {
-                const rect = _contItem.getBoundingClientRect();
-                const t = _html.scrollTop;
-                _html.scrollTo({
-                    top: Math.abs(Number(rect.top.toFixed(0)) + t - headH - 30),
-                    behavior: 'smooth'
-                });
+                if (_contItem) {
+                    const rect = _contItem.getBoundingClientRect();
+                    const t = _html.scrollTop;
+                    _html.scrollTo({
+                        top: Math.abs(Number(rect.top.toFixed(0)) + t - headH - 30),
+                        behavior: 'smooth'
+                    });
+                }
             }
         }
 
         for (item of depths) {
             item.dataset.active = false;
         }
-        const btnWrap = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
-        const btnWrap_a = btnWrap.querySelector('a[data-target="' + _target + '"]');
-        console.log(btnWrap, _target, btnWrap_a);
-        btnWrap_a.dataset.active = true;
+        if (!notscroll) {
+            const btnWrap = document.querySelector('[data-acco="item"][data-nav-name="' + _name + '"]');
+            const btnWrap_a = btnWrap.querySelector('a[data-target="' + _target + '"]');
+            btnWrap_a.dataset.active = true;
+        }
 
         if (!UI.exe.accoSideNav) {
             UI.exe.accoSideNav = new Accordion({
@@ -1810,5 +1791,10 @@ UI.exe.targetScroll = () => {
         item.addEventListener('click', actTargetScroll); 
     }
     const _targetName = UI.parts.paraGet('target') || '1';
-    actTargetScroll(_targetName);
+    if (UI.parts.paraGet('target')) {
+        actTargetScroll(_targetName);
+    } else {
+        actTargetScroll(null);
+    }
+   
 }
