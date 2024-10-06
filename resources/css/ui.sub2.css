@@ -17,6 +17,7 @@
 .data-content-section-sub-box-s {background-color:#fff;border-radius:.8rem;padding:3rem 2rem;}
 .data-content-section-sub-title-box {display:flex;align-items:center;}
 .data-content-section-sub-title-box.mt-48 {margin-top:4.8rem;}
+.data-content-section-sub-title-type {height:3.6rem;padding:0 2rem;display:flex;align-items:center;font-size:1.4rem;color:#fff;font-weight:800;border-radius:999em;background-color:#2E7EF6;margin-right:1.2rem}
 .data-content-section-select-group {display:flex;align-items:center;gap:.6rem;margin-top:1rem;margin-bottom:2.8rem;}
 .data-content-section-sub-title {font-size:2.4rem;line-height:2.8rem;font-weight:800;color:#1E222F;}
 .data-content-section-sub-title-s {font-size:1.8rem;line-height:2rem;font-weight:800;color:#1E222F;margin-top:4rem;}

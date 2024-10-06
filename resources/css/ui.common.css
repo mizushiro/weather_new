@@ -43,6 +43,11 @@ a, button{color:blue}
 html.scroll_off {overflow:hidden}
 .font-g {font-family:'GmarketSans', 'sans-serif'}
 
+/* 말줄임 */
+[data-ellipsis] {text-overflow:ellipsis;overflow:hidden;}
+[data-ellipsis="1"] {white-space:nowrap;word-break:break-all;}
+[data-ellipsis="2"] {display:-webkit-box !important;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+
 /* layout */
 .base-wrap.flex {display:flex;flex-direction:column;min-height:100%;}
 .base-wrap.flex .header {flex-shrink:0}
