@@ -23,20 +23,20 @@
 .sub3-left-map-mark-box.color-3 {background-color:#FF7A00;}
 .sub3-left-map-mark-box.color-4 {background-color:#FF1F00;}
 .sub3-left-map-mark-box.color-5 {background-color:#7000FF;}
-.sub3-left-map-mark-box.color-green {background-color:#00B528;}
-.sub3-left-map-mark-box.color-blue {background-color:#0864EE;}
-.sub3-left-map-mark-box.color-red {background-color:#F11D00;}
-.sub3-left-map-mark-box.color-purple {background-color:#9014DC;}
-.sub3-left-map-mark-box.pin-active {background-color:#0864EE !important;}
+.sub3-left-map-mark-box.pin-active-green {background-color:#00B528 !important;z-index:2}
+.sub3-left-map-mark-box.pin-active-blue {background-color:#0864EE !important;z-index:2}
+.sub3-left-map-mark-box.pin-active-red {background-color:#F11D00 !important;z-index:2}
+.sub3-left-map-mark-box.pin-active-purple {background-color:#9014DC !important;z-index:2}
+.sub3-left-map-mark-box.pin-active {background-color:#0864EE !important;z-index:2}
 .sub3-left-map-mark-round {width:3rem;height:3rem;display:flex;align-items:center;justify-content:center;background-color:#fff;font-size:1.7rem;font-weight:900;color:#000;border-radius:999em;line-height:1;font-family:'DINPro', 'sans-serif'}
 .pin-box {position:relative;}
 .pin-box .icon-pin {width:1.2rem;height:1.6rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;display:block;position:relative}
 .pin-box .icon-pin.pin-base {background-image:url("../images/common/pin-base.svg")}
-.pin-box .icon-pin.pin-green {background-image:url("../images/common/pin-green.svg")}
-.pin-box .icon-pin.pin-blue {background-image:url("../images/common/pin-blue.svg")}
-.pin-box .icon-pin.pin-red {background-image:url("../images/common/pin-red.svg")}
-.pin-box .icon-pin.pin-purple {background-image:url("../images/common/pin-purple.svg")}
 .pin-box .icon-pin.pin-gray {background-image:url("../images/common/pin-gray.svg")}
+.sub3-left-map-mark-box.pin-active-green .icon-pin {background-image:url("../images/common/pin-green.svg") !important}
+.sub3-left-map-mark-box.pin-active-blue .icon-pin {background-image:url("../images/common/pin-blue.svg") !important}
+.sub3-left-map-mark-box.pin-active-red .icon-pin {background-image:url("../images/common/pin-red.svg") !important}
+.sub3-left-map-mark-box.pin-active-purple .icon-pin {background-image:url("../images/common/pin-purple.svg") !important}
 .sub3-left-map-mark-box.pin-active .icon-pin {background-image:url("../images/common/pin-active.svg") !important;}
 .pin-box .pin-bg {position:absolute;bottom:-.1rem;left:50%;transform:translateX(-50%);background:url("../images/common/pin-bg.svg") no-repeat 50% 50%;background-size:contain;width:.8rem;height:.2rem;}
 .sub3-left-map-mark-desc {font-size:1.2rem;font-weight:800;color:#fff;line-height:1;}
@@ -64,10 +64,10 @@
 .sub3-left-map-col-2 .sub3-left-map-mark-box {position:absolute;cursor:pointer}
 .sub3-left-map-col-2 .seoul {top:16%;left:26%;} /* 서울 */
 .sub3-left-map-col-2 .kag {top:8%;right:24%;} /* 강릉 */
-.sub3-left-map-col-2 .ulg {top:21%;right:-7%;} /* 울릉 */
+.sub3-left-map-col-2 .ulg {top:21%;right:-3%;} /* 울릉 */
 .sub3-left-map-col-2 .icn {top:21%;left:11%;} /* 인천 */
 .sub3-left-map-col-2 .an {top:36%;left:6%;} /* 안면도 */
-.sub3-left-map-col-2 .cjj {top:31%;left:42%;} /* 청주 */
+.sub3-left-map-col-2 .cjj {top:32%;left:42%;} /* 청주 */
 .sub3-left-map-col-2 .taj {top:40%;left:32%;} /* 대전 */
 .sub3-left-map-col-2 .cnj {bottom:43.5%;left:26%;} /* 전주 */
 .sub3-left-map-col-2 .tae {bottom:46.8%;right:24%;} /* 대구 */
@@ -88,10 +88,9 @@
 .sub3-left-map-col-2 .wju {top:16%;left:45%;}/* 원주 */
 .sub3-left-map-col-2 .the {top:15%;right:18%;}/* 동해 */
 .sub3-left-map-col-2 .ywl {top:22.5%;right:32%;}/* 영월 */
-.sub3-left-map-col-2 .thb {top:22.5%;right:13%;}/* 태백 */
+.sub3-left-map-col-2 .thb {top:24%;right:13%;}/* 태백 */
 .sub3-left-map-col-2 .can {top:30.5%;left:26%;}/* 천안 */
 .sub3-left-map-col-2 .shg {top:39%;left:20%;}/* 홍성 */
-.sub3-left-map-col-2 .cjj {top:37%;left:42%;}/* 청주 */
 .sub3-left-map-col-2 .adg {top:38%;right:19%;}/* 안동 */
 .sub3-left-map-col-2 .prg {bottom:47.5%;left:16%;}/* 보령 */
 .sub3-left-map-col-2 .chp {top:47.5%;left:41%;}/* 추풍령 */
