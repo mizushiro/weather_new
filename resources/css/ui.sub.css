@@ -332,3 +332,21 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .dashboard-chart-grid-4-chart {flex:1;display:flex;flex-direction:column}
 .dashboard-chart-grid-4-chart-box {display:flex;flex:1}
 .dashboard-chart-grid-4-chart-item {flex:1}
+
+/* 재난영향정보 */
+.disaster-info-box {display:flex;flex:1;flex-direction:column;}
+.disaster-info-title-area {padding:2rem 3rem 1.2rem;flex-shrink:0;display:flex;align-items:center}
+.disaster-info-title {font-size:2.8rem;font-weight:800;color:#1E222F;line-height:2.8rem;}
+.disaster-info-title-area .right-area {margin-left:auto}
+.sub-map-content.grid-layout {display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:2rem;padding:0 3rem 3rem;}
+.map-disaster-info-left {grid-column:span 2/span 2;grid-row:span 3/span 3;border:.1rem solid #CED6E3;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
+.map-disaster-info-left-top {flex-shrink:0;display:flex;align-items:center;gap:.6rem;padding:1.2rem 2.6rem;border-bottom:.1rem solid #CED6E3}
+.map-disaster-info-left-top .select-item-box {flex:1}
+.map-disaster-info-left-map {flex:1;padding:2rem;}
+.map-disaster-info-item {border:.1rem solid #E4E8EF;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
+.map-disaster-info-item-top {flex-shrink:0;display:flex;padding:0 1.2rem 0 1.6rem;align-items:center;height:4.2rem;border-bottom:.1rem solid #E4E8EF}
+.map-disaster-info-item-title {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex:1}
+.btn-detail-open {display:flex;align-items:center;justify-content:center;border:.1rem solid #E4E8EF;width:2.4rem;height:2.4rem;}
+.btn-detail-open .icon-plus {width:2rem;}
+.map-disaster-info-item-chart {flex:1;padding:1.6rem 1.6rem 0}
+.map-disaster-info-item-desc {font-size:1.2rem;line-height:1.4rem;font-weight:700;color:#7386B6;flex-shrink:0;padding:.8rem 2rem 2rem;word-break:keep-all}

@@ -1,0 +1,268 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap sub-map">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		<main class="disaster-info-box">
+			<div class="disaster-info-title-area">
+				<h3 class="disaster-info-title">기후위기 재난영향정보 - 발생빈도</h3>
+				<div class="right-area">
+					<button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full">
+						<i class="icon-info"></i>
+						도움말
+					</button>
+				</div>
+			</div>
+			<div class="sub-map-content grid-layout">
+				<div class="map-disaster-info-left">
+					<div class="map-disaster-info-left-top">
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">발생빈도</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">전국</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">시군구</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">읍면동</option>
+							</select>
+						</div>
+					</div>
+					<div class="map-disaster-info-left-map">
+						지도 영역
+					</div>
+				</div>
+				<!-- S : 고온(일최고기온) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							고온(일최고기온)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 고온의 일최고기온 21세기 전망 자료를
+						볼 수 있습니다.
+					</p>
+				</div>
+				<!-- E : 고온(일최고기온) -->
+				<!-- S : 고온(일최저기온) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							고온(일최저기온)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 고온의 일최저기온 21세기 전망 자료를 볼
+						수 있다.
+					</p>
+				</div>
+				<!-- E : 고온(일최저기온) -->
+				<!-- S : 고온(온난일) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							고온(온난일)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 고온의 온난일 21세기 전망 자료를 볼 수
+						있다.
+					</p>
+				</div>
+				<!-- E : 고온(온난일) -->
+				<!-- S : 저온(일최저기온) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							저온(일최저기온)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 고온의 일최고기온 21세기 전망 자료를
+						볼 수 있습니다.
+					</p>
+				</div>
+				<!-- E : 저온(일최저기온) -->
+				<!-- S : 저온(한랭야) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							저온(한랭야)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 저온의 한랭야 21세기 전망 자료를 볼 수
+						있다.
+					</p>
+				</div>
+				<!-- E : 저온(한랭야) -->
+				<!-- S : 습윤(일강수량) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							습윤(일강수량)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 습윤의 일강수량 21세기 전망 자료를 볼
+						수 있다.
+					</p>
+				</div>
+				<!-- E : 습윤(일강수량) -->
+				<!-- S : 습윤(90퍼센타일 강수일수) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							습윤(90퍼센타일 강수일수)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 습윤의 90퍼센타일 강수일수 21세기 전망
+						자료를 볼 수 있다.
+					</p>
+				</div>
+				<!-- E : 습윤(90퍼센타일 강수일수) -->
+				<!-- S : 건조(무강수일수) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							건조(무강수일수)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 건조의 무강수일수 21세기 전망 자료를 볼
+						수 있다.
+					</p>
+				</div>
+				<!-- E : 건조(무강수일수) -->
+				<!-- S : 건조(10퍼센타일 강수일수) -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							건조(10퍼센타일 강수일수)
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 건조의 10퍼센타일 강수일수 21세기
+						전망 자료를 볼 수 있다.
+					</p>
+				</div>
+				<!-- E : 건조(10퍼센타일 강수일수) -->
+				<!-- S : 풍속 -->
+				<div class="map-disaster-info-item">
+					<div class="map-disaster-info-item-top">
+						<h4 class="map-disaster-info-item-title">
+							풍속
+						</h4>
+						<button type="button" class="btn-detail-open">
+							<i class="icon-plus"></i>
+						</button>
+					</div>
+					<div class="map-disaster-info-item-chart">
+						차트영역
+					</div>
+					<p class="map-disaster-info-item-desc">
+						발생빈도별 풍속의 21세기 전망 자료를 볼 수
+						있다.
+					</p>
+				</div>
+				<!-- E : 풍속 -->
+			</div>
+		</main>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+
+	});
+
+</script>
+
+</html>
