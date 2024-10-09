@@ -30,7 +30,7 @@
 			<div class="disaster-info-title-area">
 				<h3 class="disaster-info-title">기후위기 재난영향정보 - 발생빈도</h3>
 				<div class="right-area">
-					<button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full">
+					<button type="button" class="btn-base" data-color="lineGray" data-size="42" data-round="full" data-layer="layer-data-help">
 						<i class="icon-info"></i>
 						도움말
 					</button>
@@ -70,7 +70,7 @@
 						<h4 class="map-disaster-info-item-title">
 							고온(일최고기온)
 						</h4>
-						<button type="button" class="btn-detail-open">
+						<button type="button" class="btn-detail-open" data-layer="chart-layer1">
 							<i class="icon-plus"></i>
 						</button>
 					</div>
@@ -89,7 +89,7 @@
 						<h4 class="map-disaster-info-item-title">
 							고온(일최저기온)
 						</h4>
-						<button type="button" class="btn-detail-open">
+						<button type="button" class="btn-detail-open" data-layer="chart-layer2">
 							<i class="icon-plus"></i>
 						</button>
 					</div>
@@ -256,6 +256,459 @@
 				<!-- E : 풍속 -->
 			</div>
 		</main>
+
+        <div id="chart-layer1" class="layer_section layer-full">
+            <div class="layer_section-container">
+                <div class="layer-title-box">
+                    <h1 class="layer-title">고온(일최고기온) - 전국</h1>
+                </div>
+                <div class="layer-content bg-gray">
+                    <div class="chart-layer-area">
+                        <div class="chart-layer-top">
+                            <div class="chart-layer-top-group">
+                                <div class="select-item-box line-type select-size-42 w-130">
+                                    <select name="">
+                                        <option value="">33 ℃ 이상</option>
+                                    </select>
+                                </div>
+                                <div class="select-item-box line-type select-size-42 w-100">
+                                    <select name="">
+                                        <option value="">년</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="chart-layer-top-group">
+                                <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                    <i class="icon-prev"></i>
+                                </button>
+                                <div class="select-item-box line-type select-size-42 w-280">
+                                    <select name="">
+                                        <option value="">8. 건조(10퍼센타일 강수일수)</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                    <i class="icon-next"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chart-layer-section">
+                            <div class="data-content-section-sub-title-box">
+                                <h2 class="data-content-section-sub-title">일최고기온 (33 ℃ 이상) (일)</h2>
+                                <div class="data-content-section-sub-btn-group">
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        CVG
+                                    </button>
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        PNG
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="chart-layer-chart-box">
+                                차트 영역
+                            </div>
+                            <div class="table-sticky-box line-scroll">
+                                <table class="table-basic-2 td-16">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">연도</th>
+                                        <th scope="col">관측자료</th>
+                                        <th scope="col">SSP1-2.6</th>
+                                        <th scope="col">SSP2-4.5</th>
+                                        <th scope="col">SSP3-7.0</th>
+                                        <th scope="col">SSP5-8.5</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2020</td>
+                                        <td class="a-right">10.8</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">26</td>
+                                        <td class="a-right">68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="a-right">12.6</td>
+                                        <td class="a-right">16</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">98</td>
+                                        <td class="a-right">89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023</td>
+                                        <td class="a-right">14.96</td>
+                                        <td class="a-right">42</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">62</td>
+                                        <td class="a-right">96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020</td>
+                                        <td class="a-right">10.8</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">26</td>
+                                        <td class="a-right">68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="a-right">12.6</td>
+                                        <td class="a-right">16</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">98</td>
+                                        <td class="a-right">89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023</td>
+                                        <td class="a-right">14.96</td>
+                                        <td class="a-right">42</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">62</td>
+                                        <td class="a-right">96</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="chart-layer-section">
+                            <div class="data-content-section-sub-title-box">
+                                <h2 class="data-content-section-sub-title">일최고기온 전망</h2>
+                                <div class="data-content-section-sub-btn-group">
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        CVG
+                                    </button>
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        PNG
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table-area-box">
+                                <table class="table-basic-2 td-16">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">현재</th>
+                                        <th scope="col">21세기 전반기(2021~2040)</th>
+                                        <th scope="col">21세기 중반기(2041~2060)</th>
+                                        <th scope="col">21세기 후반기(2081~2100)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>SSP1-2.6</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSP2-4.5</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSP3-7.0</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSP5-8.5</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                        <td>차트</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="chart-layer-section">
+                            <div class="data-content-section-sub-title-box">
+                                <h2 class="data-content-section-sub-title">계절길이</h2>
+                                <div class="data-content-section-sub-btn-group">
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        CVG
+                                    </button>
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        PNG
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="chart-layer-chart-box">
+                                차트 영역
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer-top-right-btn">
+                    <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                        <img src="../resources/images/common/icon-close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="chart-layer2" class="layer_section layer-full">
+            <div class="layer_section-container">
+                <div class="layer-title-box">
+                    <h1 class="layer-title">고온(일최고기온) - 전국</h1>
+                </div>
+                <div class="layer-content bg-gray">
+                    <div class="chart-layer-area">
+                        <div class="chart-layer-top">
+                            <div class="chart-layer-top-group">
+                                <div class="select-item-box line-type select-size-42 w-130">
+                                    <select name="">
+                                        <option value="">33 ℃ 이상</option>
+                                    </select>
+                                </div>
+                                <div class="select-item-box line-type select-size-42 w-100">
+                                    <select name="">
+                                        <option value="">년</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="chart-layer-top-group">
+                                <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                    <i class="icon-prev"></i>
+                                </button>
+                                <div class="select-item-box line-type select-size-42 w-280">
+                                    <select name="">
+                                        <option value="">8. 건조(10퍼센타일 강수일수)</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn-base" data-size="42" data-color="lineGray" data-round="4">
+                                    <i class="icon-next"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chart-layer-section">
+                            <div class="data-content-section-sub-title-box">
+                                <h2 class="data-content-section-sub-title">GEV (℃)</h2>
+                                <div class="data-content-section-sub-btn-group">
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        CVG
+                                    </button>
+                                    <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                        PNG
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="chart-layer-chart-box">
+                                차트 영역
+                            </div>
+                            <div class="table-sticky-box line-scroll">
+                                <table class="table-basic-2 td-16">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">과거</th>
+                                        <th scope="col">2021~2040</th>
+                                        <th scope="col">2041~2060</th>
+                                        <th scope="col">2061~2080</th>
+                                        <th scope="col">2081~2100</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2020</td>
+                                        <td class="a-right">10.8</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">26</td>
+                                        <td class="a-right">68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="a-right">12.6</td>
+                                        <td class="a-right">16</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">98</td>
+                                        <td class="a-right">89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023</td>
+                                        <td class="a-right">14.96</td>
+                                        <td class="a-right">42</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">62</td>
+                                        <td class="a-right">96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020</td>
+                                        <td class="a-right">10.8</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">20</td>
+                                        <td class="a-right">26</td>
+                                        <td class="a-right">68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="a-right">12.6</td>
+                                        <td class="a-right">16</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">98</td>
+                                        <td class="a-right">89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023</td>
+                                        <td class="a-right">14.96</td>
+                                        <td class="a-right">42</td>
+                                        <td class="a-right">-</td>
+                                        <td class="a-right">62</td>
+                                        <td class="a-right">96</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer-top-right-btn">
+                    <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                        <img src="../resources/images/common/icon-close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="layer-data-help" class="layer_section dark w-920">
+            <div class="layer_section-container">
+                <div class="layer-title-box">
+                    <h1 class="layer-title">극한기후현상 발생빈도 및 발생강도</h1>
+                </div>
+                <div class="layer-content p-30">
+                    <table class="table-basic-2 td-h-32">
+                        <caption>빈도/강도 기준</caption>
+                        <colgroup>
+                            <col style="width:19rem">
+                            <col style="width:auto">
+                            <col style="width:19rem">
+                            <col style="width:25rem">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">극한기후현상</th>
+                            <th scope="col" colspan="2">자료종류</th>
+                            <th scope="col">행정구역</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="17">발생빈도 / 발생강도</td>
+                            <td rowspan="4">기후변화시나리오</td>
+                            <td class="a-left">SSP1-2.6</td>
+                            <td class="a-left">전국</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">SSP2-4.5</td>
+                            <td class="a-left">광역</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">SSP3-7.0</td>
+                            <td class="a-left">기초</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">SSP5-8.5</td>
+                            <td class="a-left">읍면동</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="13">관측자료</td>
+                            <td rowspan="4" class="a-left">전국</td>
+                            <td class="a-left">남한(6개 지점 평균)</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">남한(45개 지점 평균)</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">남한(56개 지점 평균)</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">남한(62개 지점 평균)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9" class="a-left">지점별</td>
+                            <td class="a-left">서울·인천·경기도 </td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">강원특별자치도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">충청북도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">대전·세종·충청남도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">전라북도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">광주·전라남도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">대구·경상북도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">부산·울산·경상남도</td>
+                        </tr>
+                        <tr>
+                            <td class="a-left">제주도</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-basic-2 td-h-32">
+                        <caption>빈도 요소</caption>
+                        <colgroup>
+                            <col style="width:8.6rem">
+                            <col style="width:auto">
+                            <col style="width:6.8rem">
+                            <col style="width:15rem" span="2">
+                            <col style="width:17rem">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" colspan="4">요소</th>
+                            <th scope="col">자료상태(O, X)</th>
+                            <th scope="col">기간</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="4">고온</td>
+                            <td rowspan="4">일최고기온</td>
+                            <td rowspan="4">tx</td>
+                            <td>33℃ 이상</td>
+                            <td></td>
+                            <td rowspan="4">2021~2100</td>
+                        </tr>
+                        <tr>
+                            <td>35℃ 이상</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>37℃ 이상</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>40℃ 이상</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="layer-top-right-btn">
+                    <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                        <img src="../resources/images/common/icon-close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
 	</div>
 </body>
 <script type="text/javascript">

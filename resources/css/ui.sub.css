@@ -350,3 +350,14 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .btn-detail-open .icon-plus {width:2rem;}
 .map-disaster-info-item-chart {flex:1;padding:1.6rem 1.6rem 0}
 .map-disaster-info-item-desc {font-size:1.2rem;line-height:1.4rem;font-weight:700;color:#7386B6;flex-shrink:0;padding:.8rem 2rem 2rem;word-break:keep-all}
+.chart-layer-area {padding:3rem 4.2rem 6.4rem}
+.chart-layer-top {display:flex;align-items:center;justify-content:space-between;border-bottom:.1rem solid #D5DCE8;padding-bottom:2rem}
+.chart-layer-top-group {display:flex;align-items:center;gap:.6rem;}
+.chart-layer-section {margin-top:5rem;}
+.chart-layer-chart-box {background-color:#fff;border:.1rem solid #E4E8EF;border-radius:.6rem;padding:4rem;margin-top:1rem;}
+.chart-layer-section .table-area-box {margin-top:1rem}
+.table-sticky-box {max-height:26.4rem;margin-top:2rem;border-top:.1rem solid #D5DCE8;border-bottom:.1rem solid #D5DCE8}
+.table-sticky-box .table-basic-2 {border-top:none}
+.table-sticky-box .table-basic-2 thead th {position:sticky;top:0;}
+.table-sticky-box .table-basic-2 tbody tr:last-child td {border-bottom:none}
+.layer-content .table-basic-2 ~ .table-basic-2 {margin-top:3rem;}
