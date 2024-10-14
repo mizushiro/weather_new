@@ -151,6 +151,8 @@
     .sub3-top-tab-area .max-158 {overflow-x:auto;padding:1.2rem 1.6rem;}
     .top-button-tab {height:3.6rem;min-width:.1rem;white-space:nowrap;padding:0 2rem;flex-shrink:0;font-size:1.3rem}
     .sub3-left-map-info-desc {font-size:1.3rem;}
+    .table-basic-2.td-16 tbody td,
+    .table-basic-2 thead th {font-size:1.3rem;}
 }
 @media (max-width:767px) {
     .sub3-left-map-area {flex-direction:column}
