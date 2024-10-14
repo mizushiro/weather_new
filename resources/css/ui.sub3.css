@@ -130,6 +130,7 @@
 .line-scroll::-webkit-scrollbar {height:1.6rem;width:1.6rem;border-right:.1rem solid #D5DCE8;background-color:#fff}
 .line-scroll::-webkit-scrollbar-track {border-radius:999em;background-color:transparent}
 .line-scroll::-webkit-scrollbar-thumb {width:.4rem;border-radius:999em;background-color:#E5E8F2;border:.4rem solid transparent;background-clip:padding-box;}
+.line-scroll::-webkit-scrollbar-corner {background-color:transparent}
 
 .sub3-top-tab-area {position:sticky;top:7.9rem;border-bottom:.1rem solid rgba(0,29,101,.1);padding:1.2rem 0;background-color:#fff;z-index:10;}
 .sub3-top-tab-area .max-158 {display:flex;align-items:center;gap:.6rem;}
