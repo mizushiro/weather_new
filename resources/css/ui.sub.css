@@ -472,6 +472,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .base-wrap.is-map-comparison-open .comparison-control-area {display:flex}
 .base-wrap.is-map-comparison-open .map3-right-bottom{left:2rem; right:auto;}
 .base-wrap.is-map-comparison-open .layer-setting[data-toggle-target="setting1"]{right:auto; left:4rem}
+.base-wrap.is-map-comparison-open .map-comparison-right-area .map3-right-bottom{right:2rem; left:auto;}
+
 .map-original-area{transition: width .2s ease; transition-delay: 0s;}
 .base-wrap.is-map-comparison-open .map-original-area{width: 50%;transition-delay: .1s;}
 .map-comparison-right-area .btn-comparison-type-area {left:0;display:none}
