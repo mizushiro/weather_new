@@ -39,3 +39,19 @@
 .btn-download {width:4rem;height:4rem;background-color:#2E7EF6;border-radius:999em;display:inline-flex;align-items:center;justify-content:center}
 .icon-download {aspect-ratio:1/1;width:1.6rem;display:block;background:url("../images/common/icon-download.svg") no-repeat 50% 50%;background-size:contain}
 .sub4-content .data-content-nav {top:11.6rem}
+@media (max-width:1023px) {
+    .sub4-top-title {height:auto;padding:2rem}
+    .sub4-title {font-size:1.8rem;line-height:1}
+    .sub4-content-box {flex-direction:column}
+    .sub4-left-map-box {width:100%;border-radius:0;position:static}
+    .sub4-content .data-content-nav {top:8rem;}
+    .data-content-section-group.pt-34 {padding-top:0}
+    .data-content-section-area {padding:4rem 1.6rem 2rem}
+    .var-grid-year {font-size:1.3rem}
+    .var-info-item {height:3.2rem;padding:0 1.6rem;font-size:1.3rem}
+    .table-basic-3 tbody td,
+    .table-basic-3 thead th {font-size:1.3rem;}
+}
+@media (max-width:767px) {
+
+}
