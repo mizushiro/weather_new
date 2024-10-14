@@ -332,6 +332,55 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .dashboard-chart-grid-4-chart {flex:1;display:flex;flex-direction:column}
 .dashboard-chart-grid-4-chart-box {display:flex;flex:1}
 .dashboard-chart-grid-4-chart-item {flex:1}
+.btn-s-map-type,
+.btn-s-down-item {width:5.8rem;height:5.8rem;display:flex;align-items:center;justify-content:center;background-color:#f4f4f4;border-radius:999em}
+.btn-s-down-item {padding-left:.6rem}
+.btn-s-down-item i {width:4rem;height:2.9rem;display:block;background-position:50% 50%;background-size:contain;background-repeat:no-repeat}
+.btn-s-map-type i {width:3.2rem;height:3.2rem;display:block;background-position:50% 50%;background-size:contain;background-repeat:no-repeat}
+.icon-down-1 {background-image:url("../images/icon/icon-xl-off.png")}
+.icon-down-2 {background-image:url("../images/icon/icon-csv-off.png")}
+.icon-down-3 {background-image:url("../images/icon/icon-png-off.png")}
+button:hover .icon-down-1 {background-image:url("../images/icon/icon-xl-on.png")}
+button:hover .icon-down-2 {background-image:url("../images/icon/icon-csv-on.png")}
+button:hover .icon-down-3 {background-image:url("../images/icon/icon-png-on.png")}
+.icon-map-1 {background-image:url("../images/icon/icon-map-1-off.png")}
+.icon-map-2 {background-image:url("../images/icon/icon-map-2-off.png")}
+.icon-map-3 {background-image:url("../images/icon/icon-map-3-off.png")}
+button:hover .icon-map-1 {background-image:url("../images/icon/icon-map-1-on.png")}
+button:hover .icon-map-2 {background-image:url("../images/icon/icon-map-2-on.png")}
+button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png")}
+@media (max-width:1023px) {
+    .dashboard-area {padding:6.5rem 1.5rem 1.5rem;min-width:100%;gap:1.2rem}
+    .dashboard-grid-group-1 {gap:1.2rem;display:flex;flex-direction:column}
+    .dashboard-grid-group-1 .dashboard-grid-1.ver2 {order:2;display:flex;flex-direction:column}
+    .dashboard-grid-group-1 .dashboard-grid-1.ver2 .dashboard-chart-item-1 {height:40rem}
+    .dashboard-grid-group-1 .dashboard-grid-1.dashboard-map-type {order:1;height:calc(100vh - 6.5rem)}
+    .dashboard-grid-select-group select {width:100% !important}
+    .dashboard-grid-group-2 {gap:1.2rem;display:flex;flex-direction:column;height:auto}
+    .dashboard-grid-2-item {border-radius:1rem;padding:1rem 1.5rem;height:200px}
+    .dashboard-grid-2-data-item {justify-content:flex-end}
+    .dashboard-chart-box {gap:1.2rem;}
+    .dashboard-grid-1.ver2 .dashboard-chart-box {height:auto;display:flex;flex-direction:column}
+    .dashboard-chart-item-2.ver2 {height:24rem}
+    .dashboard-grid-2-data-box {width:100%}
+    .dashboard-grid-group-2 .dashboard-grid-3 {height:24rem}
+    .dashboard-grid-2-area {display:flex;flex-direction:column;gap:1.2rem}
+    .dashboard-chart-half.ver2 {gap:12px;display:flex;flex-direction:column}
+    .dashboard-chart-half.ver2 .dashboard-chart-grid-item-4 {height:24rem}
+    .btn-s-map-type, .btn-s-down-item {width:4rem;height:4rem}
+    .btn-s-map-type i {width:2.8rem;height:2.8rem}
+    .help-info-box {justify-content:flex-start}
+}
+@media (max-width:767px) {
+    .dashboard-layer-area {padding:1.6rem 1.6rem 6.4rem}
+    .dashboard-chart-grid-top {padding-left:6rem}
+    .dashboard-chart-grid-left {width:6rem}
+    .dashboard-chart-grid-top-title {font-size:1.3rem}
+    .dashboard-chart-grid-left-title {font-size:1.4rem}
+    .dashboard-layer-area-fixed-btn {height:4.8rem;padding-top:.6rem}
+    .dashboard-chart-grid-v3-item.table-data {padding-bottom:4.8rem}
+    .dashboard-layer-area .dashboard-chart-half-name-item {font-size:1.8rem}
+}
 
 /* 재난영향정보 */
 .disaster-info-box {display:flex;flex:1;flex-direction:column;}
