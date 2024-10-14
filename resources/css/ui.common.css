@@ -215,6 +215,10 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .link-page-list {padding:0 2.4rem;display:flex;align-items:center;gap:2rem}
 .link-page {font-size:1.6rem;font-weight:700;line-height:1.8rem;color:#27355A;text-decoration:none}
 .link-page.is-select {font-weight:800;color:#2E7EF6;text-decoration:underline}
+@media (max-width:767px) {
+    .link-page-box {width:2.4rem;height:2.4rem;}
+    [class^=icon-page-] {width:1.2rem}
+}
 
 /* header  */
 .header {height:8rem;display:flex;align-items:center;padding:0 4rem 0 2rem;background-color:var(--gnb-bg);border-bottom:.1rem solid #1F2330;box-shadow:0 .4rem .4rem 0 rgba(0,0,0,.1);flex-shrink:0;position:sticky;top:0;z-index:11;}

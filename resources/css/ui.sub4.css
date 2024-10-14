@@ -49,6 +49,8 @@
     .data-content-section-area {padding:4rem 1.6rem 2rem}
     .var-grid-year {font-size:1.3rem}
     .var-info-item {height:3.2rem;padding:0 1.6rem;font-size:1.3rem}
+    .table-basic-3 tbody td,
+    .table-basic-3 thead th {font-size:1.3rem;}
 }
 @media (max-width:767px) {
 
