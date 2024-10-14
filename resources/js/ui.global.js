@@ -922,6 +922,95 @@ class ToggleUI {
     }
 }
 
+class UI_DragMap {
+    constructor(opt) {
+        this.id = opt.id;
+        this.wrap = document.querySelector('[data-map="'+ this.id +'"]');
+        this.divides = this.wrap.querySelectorAll('[data-map-btn');
+        this.divide_items = this.wrap.querySelectorAll('[data-map-area]');
+        this.n = this.divides.length;
+        this.ww = window.innerWidth;
+    }
+    start() {
+        for (let i = 0; i < this.divides.length; i++) {
+            this.divides[i].dataset.n = i;
+            this.divides[i].addEventListener('touchstart', this.actStart);
+            this.divides[i].addEventListener('mousedown', this.actStart);
+        }
+    }
+    end() {
+        this.divide.removeEventListener('touchstart', this.actStart);
+    }
+    actStart = (e) => {
+        const el = e.currentTarget;
+        const n = Number(el.dataset.n);
+        const divide_line = el.closest('[data-map-line]');
+        const _left = document.querySelector('.sub-map-content-area').getBoundingClientRect().left
+        let _x;
+        let per;
+        let _per;
+
+        const actEnd = (e) => { 
+            window.removeEventListener('touchmove', actMove);
+            window.removeEventListener('touchend', actEnd);
+            window.removeEventListener('mousemove', actMove);
+            window.removeEventListener('mouseup', actEnd);
+        }
+        const actMove = (e) => {
+            _x = !!e.clientX ? e.clientX : e.targetTouches[0].clientX;
+            per = (_x - _left) / this.wrap.offsetWidth * 100;
+            per < 0 ? per = 0 : per;
+            per > 100 ? per = 100 : per;
+            _per = 100 - per;
+        
+            divide_line.style.left = per + '%';
+
+            if (this.divide_items.length === 2) {
+                for (let i = n; i < this.divide_items.length; i++) {
+                    this.divide_items[n].style.width = per + '%';
+                    this.divide_items[n + 1].style.width = _per + '%';
+                }
+            } else {
+                for (let i = n; i < this.divide_items.length; i++) {
+                    let _w;
+                    if (n === 0) {
+                        _w = this.divide_items[n + 2].offsetWidth;
+                        _w = _w / this.wrap.offsetWidth * 100;
+
+                        if (_per - _w <= 0) {
+                            per = 100 - _w;
+                            divide_line.style.left = per + '%';
+                            this.divide_items[n].style.width = per + '%';
+                            this.divide_items[n + 1].style.width = _per - _w + '%';
+                        } else {
+                            this.divide_items[n].style.width = per + '%';
+                            this.divide_items[n + 1].style.width = _per - _w + '%';
+                        }
+                    } else {
+                        _w = this.divide_items[n - 1].offsetWidth;
+                        _w = _w / this.wrap.offsetWidth * 100;
+
+                        if (per - _w <= 0) {
+                            divide_line.style.left = _w + '%';
+                            this.divide_items[n].style.width = '0%';
+                            this.divide_items[n + 1].style.width = 100 - _w + '%';
+                        } else {
+                            _w = this.divide_items[n - 1].offsetWidth;
+                            _w = _w / this.wrap.offsetWidth * 100;   
+                            this.divide_items[n].style.width = per - _w + '%';
+                            this.divide_items[n + 1].style.width = _per + '%';
+                        }
+                    }
+                }
+            }
+        }
+        window.addEventListener('touchmove', actMove);
+        window.addEventListener('touchend', actEnd);
+        window.addEventListener('mousemove', actMove);
+        window.addEventListener('mouseup', actEnd);
+    }
+}
+
 class Tab {
     constructor(opt) {
         this.current = opt.current ? opt.current : false;

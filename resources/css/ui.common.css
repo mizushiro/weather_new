@@ -222,7 +222,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .header-line {height:3.2rem;width:.1rem;background-color:#5C667E;display:block;}
 .header-title-2 {font-size:2rem;font-weight:800;color:#fff;}
 .header-right {display:flex;align-items:center;margin-left:auto;}
-
+.header-right-nav{display:flex;align-items:center;margin-left:auto;}
 
 .header-right-dep1{position: relative;}
 .header-right-dep1-item {font-size:1.8rem;font-weight:800;color:#fff;position:relative;text-decoration:none;padding:2rem 4rem;}
@@ -336,3 +336,57 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 [data-expanded="true"] .btn-base > span{display: none;}
 [data-expanded="true"] .btn-base::before{content:"파일닫기";    padding-top: .4rem;font-weight: 800;color: #27355a;font-size: 1.6rem;line-height: 1;}
 .pt-34{padding-top: 3.4rem;}
+
+.head-nav-btn{width: 4rem; height: 4rem; background-color: #fff; display: none;}
+
+@media (max-width:1023px) {
+    .head-nav-btn{display: flex; justify-content: center; align-items: center;}
+    html {font-size:10px}
+    .header-right[data-toggle-state="true"] .header-right-nav{
+        display: flex;
+    }
+    .header-right-nav{
+        display: none;
+        position: fixed;
+        top:8rem; 
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.4rem;
+        overflow-y: scroll;
+        max-height: calac(100dvh - 8rem);
+        gap:1.4rem;
+    }
+
+    .header-right-dep1{
+        width: 100%;
+    }
+    .header-right-dep1-item {
+        color:#000;
+        display: block;
+        padding:1.2rem 0;
+        font-size: 2.2rem;
+    }
+    .head-nav-btn {
+        position: relative;
+        z-index: 2;
+    }
+    .header-right-dep2-wrap::before,
+    .header-right-dep1 ~ .header-right-dep1:before{
+        display: none;
+    }
+    .header-right-dep2-wrap{
+        position: relative;
+        display: flex;
+        top:0;
+        flex-direction: column;
+        width: 100%;
+        border-color:#e8e8e8;
+    }
+    .header-right-dep2-item{
+        font-size: 1.8rem;
+    }
+}

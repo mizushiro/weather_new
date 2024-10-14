@@ -28,7 +28,48 @@
 		<header class="header" data-id="header"></header>
 		
 		<main class="sub-map-content">
+			<!-- D: 닫힐 때 [left-nav-area]에 is-close 추가 -->
+			<div class="left-nav-area" data-toggle-target="left-nav">
+				<div class="left-nav-box">
+					<div class="left-nav-list">
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-1"></i>
+							<span class="left-nav-item-name">지상·대기 격자</span>
+						</a>
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-2"></i>
+							<span class="left-nav-item-name">해양 격자</span>
+						</a>
+						<a href="" class="left-nav-item active">
+							<i class="icon-nav-3"></i>
+							<span class="left-nav-item-name">국가표준 인증 시나리오</span>
+						</a>
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-4"></i>
+							<span class="left-nav-item-name">기상관측지점별 기후변화</span>
+						</a>
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-5"></i>
+							<span class="left-nav-item-name">유역별 기후변화</span>
+						</a>
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-6"></i>
+							<span class="left-nav-item-name">전지구 입체자료</span>
+						</a>
+						<a href="" class="left-nav-item">
+							<i class="icon-nav-7"></i>
+							<span class="left-nav-item-name">재난영향정보</span>
+						</a>
+					</div>
+				</div>
+				<button type="button" class="btn-left-nav-folding" data-toggle-obj="left-nav">
+					<span class="for-a11y">메뉴열고닫기</span>
+				</button>
+			</div>
+			
+			<!-- 가운데 콘텐츠 -->
 			<div class="sub-map-content-area">
+				<!-- 사이드 아이템 -->
 				<div class="map-container-box">
 					<div class="map-breadcrumbs">
 						<div class="breadcrumbs-box">
@@ -118,10 +159,10 @@
 						</div>
 					</div>
 					<div class="map-right-position">
-						<button type="button" class="btn-base active btn-deviation-open">
-							<i class="icon-map-open-1"></i>
+						<button type="button" class="btn-base btn-deviation-open" data-toggle-obj="deviation" data-callback="deviation">
+							<i class="icon-map-open-1" ></i>
 						</button>
-						<button type="button" class="btn-base btn-deviation-open2">
+						<button type="button" class="btn-base btn-deviation-open2" data-toggle-obj="deviation" data-callback="deviation2">
 							<i class="icon-map-open-2"></i>
 						</button>
 					</div>
@@ -308,10 +349,161 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="map-btm-item" id="comparison-btm">
+							<div class="map3-btm-item-box">
+								<div class="radio-group-box">
+									<div class="choice-item-type-a">
+										<input type="radio" id="a2-0" name="a2" class="inp-choice">
+										<label for="a2-0" class="choice-item-type-a-label">
+											현재
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a2-1" name="a2" class="inp-choice">
+										<label for="a2-1" class="choice-item-type-a-label">
+											SSP1-26
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a2-2" name="a2" class="inp-choice">
+										<label for="a2-2" class="choice-item-type-a-label">
+											SSP2-45
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a2-3" name="a2" class="inp-choice">
+										<label for="a2-3" class="choice-item-type-a-label">
+											SSP3-70
+										</label>
+									</div>
+									<div class="choice-item-type-a">
+										<input type="radio" id="a2-4" name="a2" class="inp-choice">
+										<label for="a2-4" class="choice-item-type-a-label">
+											SSP5-85
+										</label>
+									</div>
+								</div>
+								<div class="carbon-box">
+									<span class="carbon-label">저탄소</span>
+									<span class="carbon-img"></span>
+									<span class="carbon-label">고탄소</span>
+								</div>
+							</div>
+							<div class="map3-btm-item-box" >
+								<div class="player-control-area">
+									<div class="player-control-btn">
+										<button type="button" class="btn-control">
+											<i class="icon-pause"></i>
+										</button>
+										<button type="button" class="btn-control">
+											<i class="icon-play"></i>
+										</button>
+										<!-- <button type="button" class="btn-control">
+                                            <i class="icon-stop"></i>
+                                        </button> -->
+									</div>
+									<div class="player-slider-area-box">
+										<span class="player-slider-value-s-e">2000</span>
+										<div class="player-slider-area">
+											<div class="slider-range-min2"></div>
+											<div class="slider-value-position" style="left:0%">
+												<output class="amount-data"></output>
+											</div>
+										</div>
+										<span class="player-slider-value-s-e">2100</span>
+									</div>
+								</div>
+								<div class="player-control-top">
+									<button type="button" class="btn-player-control-top active">전중후</button>
+									<button type="button" class="btn-player-control-top">연대별</button>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+
+				<!-- 기본맵 -->
+				<div class="map-original-area">
+					<div class="map-top-center map-original-top-center">
+						<p class="map-top-center-text-1">전망자료<i class="icon-arrow-small"></i>평균기온</p>
+						<p class="map-top-center-text-2">SSP5-85 : 전기(2041 ~ 2080년) </p>
+					</div>
+
 					<img src="../resources/images/temp/map.png" alt="" class="object-cover">
 				</div>
-				<div class="map-detail-right-area scrollbar-4">
+
+				<!-- 맵분할 드래그 -->
+				<div class="layer-deviation-area" data-map="dragmap1" data-toggle-target="deviation">
+					<!-- 왼쪽맵 -->
+					<div class="layer-deviation-item" style="width:50%" data-map-area="1">
+						<div class="map-top-center">
+							<p class="map-top-center-text-1">전망자료<i class="icon-arrow-small"></i>평균기온</p>
+							<p class="map-top-center-text-2">SSP5-85 : 전기(2041 ~ 2080년) </p>
+						</div>
+					</div>
+					<!-- 오른쪽 맵 -->
+					<div class="layer-deviation-item" style="width:50%" data-map-area="2">
+						<div class="map-top-center">
+							<p class="map-top-center-text-1">전망자료<i class="icon-arrow-small"></i>평균기온</p>
+							<p class="map-top-center-text-2">SSP5-85 : 전기(2041 ~ 2080년) </p>
+						</div>
+					</div>
+					<!-- 라인 -->
+					<div class="map-divide-line" style="left:50%" data-map-line="1">
+						<div class="btn-comparison-type-area">
+							<button type="button" class="btn-comparison-type" data-toggle-obj="comparison" data-callback="comparison">
+								<i class="icon-view-1"></i>
+								<span class="for-a11y">편자뷰</span>
+							</button>
+						</div>
+						<button type="button" class="btn-map-divide" data-map-btn="1">
+							<span class="for-a11y">조정</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- 비교뷰 -->
+				<div class="map-comparison-right-area" data-toggle-target="comparison" style="background-color:#46555c">
+					<div class="btn-comparison-type-area">
+						<button type="button" class="btn-comparison-type" data-toggle-obj="comparison" data-callback="comparison">
+							<i class="icon-view-2"></i>
+							<span class="for-a11y">비교뷰</span>
+						</button>
+					</div>
+					
+					<div class="comparison-control-area">
+						<button type="button" class="btn-comparison-control">
+							<i class="icon-unlink"></i>
+							<span class="for-a11y">연결해제</span>
+						</button>
+						<button type="button" class="btn-comparison-control">
+							<i class="icon-link"></i>
+							<span class="for-a11y">연결</span>
+						</button>
+					</div>
+					
+					<div class="map-top-center">
+						<p class="map-top-center-text-1">전망자료<i class="icon-arrow-small"></i>평균기온</p>
+						<p class="map-top-center-text-2">SSP5-85 : 전기(2041 ~ 2090년) </p>
+					</div>
+					
+					<div class="map-comparison-right-btn">
+						<button type="button" class="layer-top-btn-item dark" data-toggle-obj="comparison" data-callback="comparison">
+							<i class="icon-close"></i>
+							<span class="for-a11y">닫기</span>
+						</button>
+					</div>
+				</div>
+				
+			</div>
+
+			<!-- 우측레이어 -->
+			<div class="map-detail-right-area" data-toggle-target="right-info">
+				<button type="button" class="btn-right-nav-folding" data-toggle-obj="right-info">
+					<span class="for-a11y">메뉴열고닫기</span>
+				</button>
+				<div class="map-detail-right-area-wrap scrollbar-4">
 					<p class="map-detail-right-title">KMA 대권역 - 금강</p>
 					<div class="map-detail-right-box">
 						<div class="map-detail-right-1">
@@ -853,6 +1045,45 @@
 			}
 		});
 		$('.amount-data').val($('.slider-range-min2').slider('value'));
+
+
+		//map
+		const base_warp = document.querySelector('.base-wrap');
+		const deviation_btn = document.querySelector('.btn-deviation-open');
+		const deviation_btn2 = document.querySelector('.btn-deviation-open2');
+		const comparison = document.querySelector('#comparison-btm');
+		UI.callback.deviation = (v) => {
+			if (v.state === 'true') {
+				base_warp.classList.add('is-map-deviation-open');
+				deviation_btn.classList.add('active');
+			} else {
+				deviation_btn.classList.remove('active');
+				deviation_btn2.classList.remove('active');
+				base_warp.classList.remove('is-map-deviation-open');
+			}
+		}
+		UI.callback.deviation2 = (v) => {
+			if (v.state === 'true') {
+				base_warp.classList.add('is-map-deviation-open');
+				comparison.classList.add('show');
+				deviation_btn2.classList.add('active');
+			} else {
+				comparison.classList.remove('show');
+				deviation_btn.classList.remove('active');
+				deviation_btn2.classList.remove('active');
+				base_warp.classList.remove('is-map-deviation-open');
+			}
+		}
+		UI.callback.comparison = (v) => {
+			if (v.state === 'true') {
+				base_warp.classList.add('is-map-comparison-open');
+			} else {
+				base_warp.classList.remove('is-map-comparison-open');
+			}
+		}
+		UI.exe.dragMap1 = new UI_DragMap({id: 'dragmap1'});
+		UI.exe.dragMap1.start();
+
 	});
 
 </script>

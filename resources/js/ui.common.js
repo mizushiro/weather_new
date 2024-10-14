@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
         for (const item of dep1s) {
             item.addEventListener('mouseover', actHover);
         }
+
+        UI.exe.toggleHeader = new ToggleUI({
+            scope: document.querySelector('header')
+        });
     }
     
     //header 공통영역
