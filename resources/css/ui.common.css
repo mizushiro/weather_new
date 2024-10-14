@@ -278,6 +278,11 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .footer-logo-text {width:8.1rem;background:url("../images/common/header-logo-text-b.svg") no-repeat 50% 50%;background-size:contain;aspect-ratio:81/32;}
 .footer-line {height:3.2rem;width:.1rem;background-color:#5C667E;display:block;}
 .footer-title-2 {font-size:2rem;font-weight:800;color:#1E222F;}
+@media (max-width:1023px) {
+    .footer {padding:2.8rem 1.6rem}
+    .footer-box {flex-direction:column}
+    .footer-title-2 {font-size:1.6rem}
+}
 
 /* layer */
 .layer_section {opacity:0;visibility:hidden;transition:.2s;position:fixed;left:0;top:8rem;width:100%;bottom:0;background-color:rgba(0,0,0,.7);z-index:10;display:flex;align-items:center;justify-content:center}

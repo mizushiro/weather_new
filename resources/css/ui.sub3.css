@@ -136,3 +136,35 @@
 .top-button-tab {height:4.6rem;border-radius:99em;background-color:#fff;border:.1rem solid #E4E8EF;min-width:14.2rem;padding:0 2rem;display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:800;color:#7386B6;}
 .top-button-tab.is-select {background-color:#2E7EF6;border-color:#2E7EF6;color:#fff;}
 .sub3-top-tab-area ~ .sub3-content-box .sub3-left-map-box {top:17rem}
+
+@media (max-width:1023px) {
+    .sub3-top-title {height:auto;padding:2rem}
+    .sub3-title {font-size:1.8rem;line-height:1}
+    .sub3-content-box {flex-direction:column}
+    .sub3-left-map-box {width:100%;position:static;border-radius:0}
+    .sub3-left-map-box-top {padding:0 1.6rem}
+    .sub3-left-map-box-top-title {font-size:1.6rem}
+    .sub3-left-map-col-1-title {font-size:2rem;line-height:2.4rem}
+    .sub3-left-map-col-1-title br {display:none}
+    .sub3-left-map-col-1-desc-1 {max-width:100%;margin-top:2rem;font-size:1.4rem}
+    .sub3-top-tab-area {padding:0}
+    .sub3-top-tab-area .max-158 {overflow-x:auto;padding:1.2rem 1.6rem;}
+    .top-button-tab {height:3.6rem;min-width:.1rem;white-space:nowrap;padding:0 2rem;flex-shrink:0;font-size:1.3rem}
+    .sub3-left-map-info-desc {font-size:1.3rem;}
+}
+@media (max-width:767px) {
+    .sub3-left-map-area {flex-direction:column}
+    .sub3-left-map-col-1 {order:2}
+    .sub3-left-map-col-2 {order:1}
+    .sub3-left-map-col-1-img {width:100%}
+    .sub3-left-map-col-1-img {width:100%}
+    .sub3-left-map-col-1-desc-2 {margin-top:2rem;max-width:100%}
+    .sub3-left-map-box-top {flex-direction:column;align-items:flex-start;height:auto;padding:1.2rem 1.6rem}
+    .sub3-left-btn-group {flex-wrap:wrap}
+    .sub3-left-map-box-top-title {margin-bottom:1.2rem}
+    .sub3-left-map-box-top .select-item-box.w-80,
+    .sub3-left-map-box-top .datepicker-size-42 {width:100%}
+    .sub3-left-map-area .p-a {position:static;order:2}
+    .sub3-content .data-content-section-legend-title {width:100%}
+    .sub3-content .data-content-section-legend {justify-content:flex-start}
+}
