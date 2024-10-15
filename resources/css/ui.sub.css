@@ -35,7 +35,7 @@
 .map-right-position .btn-base {width:6rem;height:6rem;background-color:#181D2B;border-radius:.8rem;box-shadow:0 0 .1rem 0 rgba(0,0,0,.1);border:.1rem solid transparent;}
 .map-right-position .btn-base.active {background-color:#2E7EF6;border-color:#2978ED;}
 
-.map-left-position {position:absolute;top:8rem;left:2rem;z-index: 5;}
+.map-left-position {position:absolute;top:5.8rem;left:2rem;z-index:5;}
 .map-left-sh-box {margin-bottom:3rem;position:relative}
 .map-left-sh-box .icon-sh {position:absolute;left:1.6rem;top:50%;margin-top:-1.2rem;}
 .map-left-sh-list {position:absolute;top:6rem;left:0;min-width:25rem;max-width:36rem;z-index:10;background-color:#fff;border-radius:.4rem;box-shadow:0 .1rem .4rem rgba(0,0,0,.25);display:flex;flex-direction:column;overflow:hidden}
