@@ -89,7 +89,7 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 
 .map-detail-right-area {width:0rem;flex-shrink:0;background-color:#181D2B;position:relative;border-bottom:.1rem solid #0A0D13;border-left:.1rem solid #0A0D13;transition:width .2s;height: 100%;}
 .map-detail-right-area-wrap{width: 80rem; position: relative; height: 100%;overflow-y:auto;padding:0 2rem;}
-.map-detail-right-area[data-toggle-state="true"] {width: 80rem;}
+.map-detail-right-area[data-toggle-state="true"] {width: 50%;}
 .map-detail-right-area-wrap.scrollbar-4::-webkit-scrollbar-thumb {background-color:rgba(255,255,255,.2)}
 .map-detail-right-title {margin-top:3rem;margin-bottom:1rem;font-size:2rem;line-height:2.2rem;font-weight:800;color:#3396FF;}
 .map-detail-right-box {background-color:#212633;border-radius:.6rem;padding:2rem;}
