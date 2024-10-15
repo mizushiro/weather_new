@@ -75,7 +75,7 @@
 @media (max-width:1023px) {
     .data-content {margin-top:0}
     .data-content-box {flex-direction:column}
-    .data-content-nav {margin-top:0;top:8rem;display:flex;overflow-x:auto;width:100%;padding:2rem;background-color:#f7f8fb;gap:2rem;-webkit-overflow-scrolling:touch;z-index:11;border-bottom:.1rem solid #D5DCE8}
+    .data-content-nav {margin-top:0;top:8rem;display:flex;overflow-x:auto;width:100%;padding:2rem;background-color:#f7f8fb;gap:2rem;-webkit-overflow-scrolling:touch;z-index:2;border-bottom:.1rem solid #D5DCE8}
     .data-content-nav [data-acco="item"] {white-space:nowrap}
     .data-content-nav [data-acco="item"][data-expanded="true"] .data-content-nav-1depth {color:#2E7EF6}
     .data-content-nav .btn-nav-folding {display:none}
