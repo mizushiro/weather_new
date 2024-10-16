@@ -498,6 +498,9 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .map-top-center-text-1 {display:flex;align-items:center;gap:1.2rem;justify-content:center;font-size:1.3rem;color:#1e2329;font-weight:800}
 .map-top-center-text-2 {text-align:center;font-size:1.6rem;font-weight:800;color:#00a2ff}
 
+@media (max-width:374px) {
+    html{font-size:2.66vw;}
+}
 @media (max-width:1023px) {
     .map-breadcrumbs{height: 3rem;}
     .breadcrumbs-box{font-size: 1.1rem;}
@@ -567,7 +570,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .slider-value-position{height: 1.6rem; top:-3.1rem ;padding:0 0.6rem}
     .slider-value-position:before{left:calc(50% - 0.2rem)}
     .layer-open-box .layer_section.size-small .layer_section-container{width: 100%;}
-
+    .map-detail-right-area{border:0;}
     .map-detail-right-area[data-toggle-state="true"]{width: 100%; z-index: 20;}
     .map-detail-right-title{margin-top: 1.2rem; font-size: 1.6rem;}
     .map-detail-right-area[data-toggle-state="true"] .btn-detail-right-close{top:0rem; right:0rem;  }
