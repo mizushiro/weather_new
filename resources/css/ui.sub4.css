@@ -40,7 +40,7 @@
 .icon-download {aspect-ratio:1/1;width:1.6rem;display:block;background:url("../images/common/icon-download.svg") no-repeat 50% 50%;background-size:contain}
 .sub4-content .data-content-nav {top:11.6rem}
 @media (max-width:1023px) {
-    .sub4-top-title {height:auto;padding:2rem}
+    .sub4-top-title {height:auto;padding:1.2rem 2rem}
     .sub4-title {font-size:1.8rem;line-height:1}
     .sub4-content-box {flex-direction:column}
     .sub4-left-map-box {width:100%;border-radius:0;position:static}
