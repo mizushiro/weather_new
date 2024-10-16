@@ -536,7 +536,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .map-btm{padding: 1.2rem; gap:0.8rem;bottom:0;}
     .map-btm-item{width: auto; padding: 0; gap: 0.4rem;}
     .map3-btm-item-box{min-width: 0; width: 100%; max-width:100%; height: auto; padding:1.2rem;}
-    .map3-btm-item-box .choice-item-type-a-label{font-size: 1.2rem;height: 2.4rem;}
+    .map3-btm-item-box .choice-item-type-a-label{font-size: 1rem;height:100%;text-align: center;}
     .map3-btm-item-box .carbon-box{padding-left: 0;}
     .carbon-box{margin-top: 0.8rem;}
     .carbon-label{font-size: 1rem;}
@@ -596,4 +596,11 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .btn-comparison-type{width: 3rem; height: 3rem;border-radius: 0.8rem;}
     .icon-view-1{background-size: 1.6rem;}
     .btn-map-divide{width: 3.2rem; margin-left: -1.6rem;}
+    .is-map-deviation-open .radio-group-box{flex-wrap: wrap;}
+    .choice-item-type-a:first-child{min-width: 100%; height: 1.8rem;}
+    .is-map-deviation-open .map3-btm-item-box.player{flex-direction: column;gap: 0.4rem;position: relative;}
+    .is-map-deviation-open .map-btm{padding:0.4rem}
+    .is-map-deviation-open .player-control-area{flex-direction: column;gap: 0rem;}
+    .is-map-deviation-open .map3-btm-item-box .player-slider-area-box{width: 100%;}
+    .is-map-deviation-open .player-control-top{position: absolute;top:1rem; right:1rem;gap:0.8rem;}
 }
