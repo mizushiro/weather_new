@@ -265,7 +265,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 }
 
 @media (max-width:1023px) {
-    .header {padding:0 1.2rem 0 2rem; height: 4rem;}
+    .header {padding:0 0.8rem 0 2rem; height: 4rem;z-index: 50;}
     .header-title-2 {font-size:1.4rem;}
     .header-line {height: 2rem;}
     .header-logo {width:2rem;}
