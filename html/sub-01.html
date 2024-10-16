@@ -1198,6 +1198,9 @@
 		UI.exe.dragMap1 = new UI_DragMap({id: 'dragmap1'});
 		UI.exe.dragMap1.start();
 
+		document.querySelector('.icon-sh').addEventListener('click', () => {
+			document.querySelector('.map-left-sh-box').classList.toggle('on')
+		})
 	});
 
 </script>
