@@ -274,7 +274,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
     .head-nav-btn {display:flex;justify-content:center;align-items:center;}
     [data-toggle-state="true"] .head-nav-btn {background-image:url("../images/common/btn-menu-close.svg")}
     .header-right[data-toggle-state="true"] .header-right-nav {display:flex;padding:2rem;}
-    .header-right-nav {display:none;position:fixed;top:4rem;left:0;width:100%;height:100%;background-color:#fff;flex-direction:column;align-items:flex-start;padding:2.4rem;overflow-y:scroll;max-height:calc(100dvh - 8rem);gap:1.4rem;}
+    .header-right-nav {display:none;position:fixed;top:6rem;left:0;width:100%;bottom:0;background-color:#fff;flex-direction:column;align-items:flex-start;padding:2.4rem;overflow-y:scroll;max-height:calc(100dvh - 6rem);gap:1.4rem;}
     .header-right-dep1 {width:100%;}
     .header-right-dep1-item {color:#000;display:block;padding:1.2rem 0;font-size:1.6rem;}
     .head-nav-btn {position:relative;z-index:2;}
