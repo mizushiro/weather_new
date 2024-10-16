@@ -125,10 +125,10 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .left-nav-area {flex-shrink:0;position:relative;z-index:2;}
 .left-nav-area.is-close {margin-left:-4.8rem;}
 .left-nav-box {padding:2rem 1.4rem;background-color:#2B3244;border-right:.1rem solid #1F2330;height:100%;box-shadow:.4rem 0 .2rem 0 rgba(0,0,0,.1)}
-.left-nav-list:hover .left-nav-item-name {width:13rem;}
+.left-nav-list:hover .left-nav-item-name {width:13rem;padding-left: 0.8rem;}
 .left-nav-list {display:flex;flex-direction:column;gap:1.4rem;}
-.left-nav-item {display:flex;gap:.8rem;align-items:center;text-decoration:none;}
-.left-nav-item-name {font-size:1.2rem;color:#49577C;font-weight:800;line-height:1;overflow:hidden;width:0rem;white-space:nowrap;transition:width .2s ease;}
+.left-nav-item {display:flex;align-items:center;text-decoration:none;}
+.left-nav-item-name {font-size:1.2rem;color:#49577C;font-weight:800;line-height:1;overflow:hidden;width:0rem;white-space:nowrap;transition:all .2s ease;}
 .left-nav-item.active .left-nav-item-name,
 .left-nav-item:hover .left-nav-item-name {color:#fff;}
 [class^="icon-nav-"] {aspect-ratio:1/1;width:2rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;}
@@ -497,3 +497,74 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .icon-arrow-small {display:block;width:.5rem;height:.8rem;background:url("../images/icon/icon-arrow-small.png") no-repeat 50% 50%;background-size:contain}
 .map-top-center-text-1 {display:flex;align-items:center;gap:1.2rem;justify-content:center;font-size:1.3rem;color:#1e2329;font-weight:800}
 .map-top-center-text-2 {text-align:center;font-size:1.6rem;font-weight:800;color:#00a2ff}
+
+@media (max-width:1023px) {
+    .map-breadcrumbs{height: 3rem;}
+    .breadcrumbs-box{font-size: 1.1rem;}
+    .left-nav-area{position: fixed;left:0; top:4rem; z-index: 20; height: calc(100dvh - 4rem);}
+    .left-nav-box{ padding:1rem 0.6rem}
+    .btn-left-nav-folding{width: 1.2rem; right: -1.2rem;}
+    .left-nav-area[data-toggle-target="left-nav"][data-toggle-state="true"] {margin-left: -14.7rem;}
+    .left-nav-area[data-toggle-target="left-nav"][data-toggle-state="true"] .left-nav-item-name{width: auto !important;}
+    .left-nav-item-name{width: auto !important; font-size: 1.1rem;padding-left: 0.4rem;}
+
+    .map-left-position {top: 3.8rem; left: 1.4rem;}
+    .map-left-sh-box{margin-bottom: 0.8rem; width: 4rem; height: 4rem; overflow: hidden; border-radius: 0.4rem;}
+    input[type="text"].left-input-sh{height: 4rem; padding:0 0.4rem 0 3.2rem; width: 11rem;}
+    .map-left-sh-box .icon-sh{transform-origin: 0 0;margin-top:0; top:0;left: 0;width: 4rem;height:4rem; background-size: 2.4rem;}
+    .btn-s-map-item{width: 4rem; height: 4rem;}
+    .map-left-map-expand{width: 4rem;}
+    .map-left-map-type{flex-direction: column; width: 4rem; gap: 0.4rem;}
+    .map-type-img{height: 3rem;}
+    .map-type-text{font-size: 1rem; letter-spacing: -0.06rem;}
+    .map-left-map-expand{margin-top: 0.8rem;}
+    .map-left-btn-group{gap:0.8rem; margin-top: 0.8rem;}
+
+    .map-top-center {min-width: 10rem;padding:0.2rem 0.8rem;top:3.8rem; height: 4rem; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+    .map-top-center-text-1{font-size: 1rem;}
+    .map-top-center-text-2{font-size: 1.2rem;}
+
+    .map-right-position{top:3.8rem;right:1.2rem; gap: 0.4rem;}
+    .map-right-position .btn-base{width: 3.2rem; height: 3.2rem;}
+    .icon-map-open-1{background-size: 1.8rem;}
+    .icon-map-open-2{background-size: 1.8rem;}
+    .map-btm-item{width: auto; padding: 0 1.2rem; gap: 0.4rem;}
+    .map3-btm-item-box{min-width: 0; width: 100%; max-width:100%; height: auto; padding:1.2rem;}
+    .map3-btm-item-box .choice-item-type-a-label{font-size: 1.2rem;height: 2.4rem;}
+    .map3-btm-item-box .carbon-box{padding-left: 0;}
+    .carbon-box{margin-top: 0.8rem;}
+    .carbon-label{font-size: 1rem;}
+    .player-control-btn{gap:0.2rem}
+    .player-control-btn .btn-control{width: 2.4rem; height: 2.4rem;}
+    .player-control-area{gap:1rem; flex:1;}
+    .map3-btm-item-box.player{flex-direction: row;gap: 2rem; padding:0.6rem 1.2rem;}
+    .map3-btm-item-box .icon-pause,
+    .map3-btm-item-box .icon-play{background-size: 1.2rem;}
+    .map3-btm-item-box .player-slider-area-box .player-slider-value-s-e{font-size: 1.1rem;}
+    .player-control-area .player-slider-area{margin-top: 1.2rem;}
+    .btn-player-control-top{font-size: 1.1rem; font-weight: 500;gap: 0.6rem;}
+
+    .map3-right-bottom{right:1.2rem; bottom: auto; top:11.5rem}
+    .footer-nav{flex-direction: column;height:auto; padding: 1.2rem; justify-content: flex-end; gap:1.2rem}
+    .map-control-layer-btn-text{font-size: 1rem;}
+    .map-control-btn-group{gap:0.4rem; justify-content: space-between;width: 100%;}
+    .map-control-layer-btn{gap: 0.2rem;}
+    [class^="icon-btm-"]{width: 1.8rem;}
+    .map-control-btn-group .layer-open-box ~ .layer-open-box:before {display: none;}
+    .map-control-period-group .layer-open-box{flex:1;}
+    .map-control-period-group .btn-base{font-size: 1.2rem; min-height: 2.2rem;  width: 100%;}
+    .map-control-period-group::before {display: none;}
+    .map-control-period-group{width: 100%; justify-content: space-between;}
+    .layer-open-box .layer_section{position: fixed;width: 100%;padding: 0; z-index: 30; bottom: 7.6rem;}
+    .layer-open-box .layer_section .layer_section-container {width: 100%;max-width: 100%; border-radius: 0;}
+    .layer-open-box .map-section-head .map-section-title{font-size: 1.4rem;}
+    .map-section-head{height: 4rem;}
+    .radio-style-a + label{height: 3.2rem;font-size: 1.4rem;}
+    .layer-open-box .layer-content{border-radius: 0;}
+    .footer-nav .map-section-head{border-radius: 0;}
+    .layer-top-right-btn {top:0.2rem; right: 0.2rem;}
+    .slider-value-position .amount-data{font-size: 1rem;}
+    .slider-value-position{height: 1.6rem; top:-3.1rem ;padding:0 0.6rem}
+    .slider-value-position:before{left:calc(50% - 0.2rem)}
+    .layer-open-box .layer_section.size-small .layer_section-container{width: 100%;}
+}
