@@ -119,7 +119,7 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 .btn-detail-right-close {width:3.6rem;height:3.6rem;background-color:#0A0D13;display:flex;align-items:center;justify-content:center;border-radius:.2rem;position:absolute;top:1.4rem;right:2rem;}
 .icon-close {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-close.svg") no-repeat 50% 50%;background-size:contain;}
 
-.left-nav-area[data-toggle-target="left-nav"] {transition:margin 300ms ease-in}
+.left-nav-area[data-toggle-target="left-nav"] {transition:margin 300ms ease-in;}
 .left-nav-area[data-toggle-target="left-nav"][data-toggle-state="true"] {margin-left:-5rem}
 .left-nav-area[data-toggle-target="left-nav"][data-toggle-state="true"] .left-nav-item-name {width:0rem !important;}
 .left-nav-area {flex-shrink:0;position:relative;z-index:2;}
@@ -567,4 +567,22 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .slider-value-position{height: 1.6rem; top:-3.1rem ;padding:0 0.6rem}
     .slider-value-position:before{left:calc(50% - 0.2rem)}
     .layer-open-box .layer_section.size-small .layer_section-container{width: 100%;}
+
+    .map-detail-right-area[data-toggle-state="true"]{width: 100%; z-index: 20;}
+    .map-detail-right-title{margin-top: 1.2rem; font-size: 1.6rem;}
+    .map-detail-right-area[data-toggle-state="true"] .btn-detail-right-close{top:0rem; right:0rem;  }
+    .map-detail-right-box{padding: 1.2rem;}
+    .map-detail-right-1{padding:0; gap:0.8rem}
+    .map-detail-right-group{flex-direction: column; align-items: flex-start;}
+    .map-detail-right-group-title{font-size: 1.4rem; padding:0 0 0.8rem}
+    .map-detail-right-item{width: auto; flex: 1;min-width: 25%;max-width: 25%;}
+    .map-detail-right-list{width: 100%;}
+    .map-detail-right-group.v2{padding: 0;}
+    .map-detail-right-item{flex:1;min-width: 25%;max-width: 25%;}
+    .map-detail-right-item-title{font-size: 1rem; padding: 0.8rem; }
+    .map-detail-right-table-area{margin-top: 1.2rem;}
+    .dark-table td,
+    .dark-table th{font-size: 1.2rem !important;}
+    .map-detail-right-btn-group{justify-content: space-between; padding-bottom: 2rem;}
+    .map-detail-right-btn-group .btn-base{min-width:0; flex:1; font-size: 1.4rem;min-height:3rem}
 }
