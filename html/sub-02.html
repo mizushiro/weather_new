@@ -28,717 +28,1425 @@
 		<header class="header" data-id="header"></header>
 		
 		<main class="sub-map-content">
-			<div class="sub-map-content-area">
-				<div class="map-container-box">
-					<div class="map-breadcrumbs">
-						<div class="breadcrumbs-box">
-							기후변화 예측정보
-							<img src="../resources/images/common/icon-arrow-right.svg" alt="">
-							<span class="breadcrumbs-point">유역별 기후변화</span>
+			<div class="map-container-box overflow-hidden">
+				<div class="map-container dark">
+					<!-- 자료시점 -->
+					<div class="map2-left-top">
+						<p class="map2-left-top-title">자료시점 선택 </p>
+						<div class="map2-select-choice-box">
+							<div class="map2-select-list">
+								<div class="select-item-box dark">
+									<select name="">
+										<option value="">NCEP R1</option>
+									</select>
+								</div>
+								<div class="year-month">
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">시나리오</option>
+										</select>
+									</div>
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">2001년</option>
+											<option value="">2002년</option>
+											<option value="">2003년</option>
+											<option value="">2004년</option>
+											<option value="">2005년</option>
+											<option value="">2006년</option>
+											<option value="">2007년</option>
+											<option value="">2008년</option>
+											<option value="">2009년</option>
+											<option value="">2010년</option>
+										</select>
+									</div>
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">1월</option>
+											<option value="">2월</option>
+											<option value="">3월</option>
+											<option value="">4월</option>
+											<option value="">5월</option>
+											<option value="">6월</option>
+											<option value="">7월</option>
+											<option value="">8월</option>
+											<option value="">9월</option>
+											<option value="">10월</option>
+											<option value="">11월</option>
+											<option value="">12월</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<button class="btn-base" type="button" data-size="38" data-round="4" data-color="blue">
+								조회
+							</button>
 						</div>
 					</div>
-					<div class="map-left-position">
-						<div class="map-left-sh-box">
-							<i class="icon-sh"></i>
-							<input type="text" class="left-input-sh" placeholder="" data-id="search" />
 
-							<div class="map-left-sh-list" style="display:none">
-								<div class="map-left-sh-group">
-									<p class="map-left-sh-group-title">명칭</p>
-									<div class="map-left-sh-group-item">
-										<button type="button" class="btn-map-sh-items"><span>서울</span></button>
-										<button type="button" class="btn-map-sh-items"><span>백석대학교 도서관(서울)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>서울 지하철</span></button>
-									</div>
-								</div>
-								<div class="map-left-sh-group">
-									<p class="map-left-sh-group-title">도로명</p>
-									<div class="map-left-sh-group-item">
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
-												110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
-												110)</span></button>
-										<button type="button" class="btn-map-sh-items"><span>(04524) 서울특별시 중구 세종대로 110(서울특별시 중구 세종대로
-												110)</span></button>
-									</div>
-								</div>
-								<div class="map-left-sh-group">
-									<p class="map-left-sh-group-title">지번</p>
-									<div class="map-left-sh-group-item">
-										<button type="button" class="btn-map-sh-items">서울특별시 중구 세종대로 110</button>
-										<button type="button" class="btn-map-sh-items">서울특별시 강남구 광평로 303</button>
-										<button type="button" class="btn-map-sh-items">서울특별시 강남구 압구정로 431</button>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="map-left-map-type">
-							<button type="button" class="btn-map-type active">
-								<span class="map-type-img"><img src="../resources/images/common/icon-map-1.png" alt=""></span>
-								<span class="map-type-text">위성지도</span>
-							</button>
-							<button type="button" class="btn-map-type">
-								<span class="map-type-img"><img src="../resources/images/common/icon-map-2.png" alt=""></span>
-								<span class="map-type-text">일반지도</span>
-							</button>
-						</div>
-
-						<div class="map-left-map-expand">
-							<button type="button" class="btn-s-map-right">
-								<i class="icon-plus"></i>
-							</button>
-							<button type="button" class="btn-s-map-right">
-								<i class="icon-minus"></i>
-							</button>
-						</div>
-
-						<div class="map-left-btn-group">
-							<div class="btn-layer-hover">
-								<button type="button" class="btn-s-map-item active">
-									<i class="icon-left-map-04"></i>
-								</button>
-								<div class="left-tooltip-layer">
-									<div class="left-tooltip-layer-box">
-										경계
-									</div>
-								</div>
-							</div>
-
-							<div class="btn-layer-hover">
-								<button type="button" class="btn-s-map-item">
-									<i class="icon-left-map-03"></i>
-								</button>
-								<div class="left-tooltip-layer">
-									<div class="left-tooltip-layer-box">
-										기후요소 표출
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="map-right-position">
-						<button type="button" class="btn-base active btn-deviation-open">
-							<i class="icon-map-open-1"></i>
+					<!-- 지도선택 -->
+					<div class="map2-right-top">
+						<button type="button" class="btn-map-type">
+							<span class="map-type-img"><img src="../resources/images/icon/icon-map-4.png" alt=""></span>
+							<span class="map-type-text">항공지도</span>
 						</button>
-						<button type="button" class="btn-base btn-deviation-open2">
-							<i class="icon-map-open-2"></i>
+						<button type="button" class="btn-map-type">
+							<span class="map-type-img"><img src="../resources/images/icon/icon-map-5.png" alt=""></span>
+							<span class="map-type-text">음영기복도</span>
+						</button>
+						<button type="button" class="btn-map-type active">
+							<span class="map-type-img"><img src="../resources/images/icon/icon-map-6.png" alt=""></span>
+							<span class="map-type-text">경계지도</span>
 						</button>
 					</div>
-					<!-- content : BOTTOM -->
-					<div class="map-btm">
-						<div class="map-btm-item">
-							<div class="map3-btm-item-box">
-								<div class="radio-group-box">
-									<div class="choice-item-type-a">
-										<input type="radio" id="a1-0" name="a1" class="inp-choice">
-										<label for="a1-0" class="choice-item-type-a-label">
-											현재
-										</label>
-									</div>
-									<div class="choice-item-type-a">
-										<input type="radio" id="a1-1" name="a1" class="inp-choice">
-										<label for="a1-1" class="choice-item-type-a-label">
-											SSP1-26
-										</label>
-									</div>
-									<div class="choice-item-type-a">
-										<input type="radio" id="a1-2" name="a1" class="inp-choice">
-										<label for="a1-2" class="choice-item-type-a-label">
-											SSP2-45
-										</label>
-									</div>
-									<div class="choice-item-type-a">
-										<input type="radio" id="a1-3" name="a1" class="inp-choice">
-										<label for="a1-3" class="choice-item-type-a-label">
-											SSP3-70
-										</label>
-									</div>
-									<div class="choice-item-type-a">
-										<input type="radio" id="a1-4" name="a1" class="inp-choice">
-										<label for="a1-4" class="choice-item-type-a-label">
-											SSP5-85
-										</label>
-									</div>
-								</div>
-								<div class="carbon-box">
-									<span class="carbon-label">저탄소</span>
-									<span class="carbon-img"></span>
-									<span class="carbon-label">고탄소</span>
-								</div>
+
+					<button type="button" class="btn-right-open" data-res="m" data-toggle-obj="right-map">
+						<span class="for-a11y">우측 레이어오픈</span>
+						<i class="icon-btn-right-open"></i>
+					</button>
+
+					<!-- 작은지도 -->
+					<div class="map2-left-bottom">
+						<div class="map2-s-map-box">
+							<img src="../resources/images/temp/temp1.png" alt="" style="width:100%;height:100%;object-fit:cover">
+						</div>
+						<div class="map2-s-map-data">
+							<div class="map2-s-map-data-group">
+								<p class="map2-s-map-data-text">위도 : 48.3698</p>
+								<p class="map2-s-map-data-text">경도 : 124.5469</p>
 							</div>
-							<div class="map3-btm-item-box">
-								<div class="player-control-area">
-									<div class="player-control-btn">
-										<button type="button" class="btn-control">
-											<i class="icon-pause"></i>
-										</button>
-										<button type="button" class="btn-control">
-											<i class="icon-play"></i>
-										</button>
-										<!-- <button type="button" class="btn-control">
-                                            <i class="icon-stop"></i>
-                                        </button> -->
-									</div>
-									<div class="player-slider-area-box">
-										<span class="player-slider-value-s-e">2000</span>
-										<div class="player-slider-area">
-											<div class="slider-range-min2"></div>
-											<div class="slider-value-position" style="left:0%">
-												<output class="amount-data"></output>
+							<button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue2" data-layer="data-layer6">상세보기</button>
+						</div>
+					</div>
+					<!-- 세팅 -->
+					<div class="map2-right-bottom">
+						<button type="button" class="btn-setting-option setting-open" data-toggle-obj="setting1">
+							<i class="icon-setting"></i>
+						</button>
+						<div class="layer-setting bottom-type" data-toggle-target="setting1">
+							<div class="layer-setting-box">
+								<button type="button" class="layer-close" aria-label="레이어 닫기" data-toggle-obj="setting1"></button>
+								<div class="box-tab">
+									<ul class="type-tab-box white-type">
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-1">
+												등압선
+											</button>
+										</li>
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-2">
+												바람
+											</button>
+										</li>
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-3">
+												지상
+											</button>
+										</li>
+									</ul>
+									<div class="tab-contents col-type" id="color-setting-1">
+										<div class="setting-title-box">
+											<p class="color-setting-title">색상 설정</p>
+										</div>
+										<div class="color-choice-list-box">
+											<p class="color-setting-sub-title">50HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">200HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">500HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">850HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
 											</div>
 										</div>
-										<span class="player-slider-value-s-e">2100</span>
 									</div>
-								</div>
-								<div class="player-control-top">
-									<button type="button" class="btn-player-control-top active">전중후</button>
-									<button type="button" class="btn-player-control-top">연대별</button>
+									<div class="tab-contents col-type" id="color-setting-2">
+										<div class="box-tab2">
+											<div class="setting-title-box">
+												<ul class="tab-line-type">
+													<li class="list-item-tab2 is-selected">
+														<button type="button" class="list-item-btn2" name="#color-setting2-1">
+															50HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting2-2">
+															200HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting2-3">
+															500HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting2-4">
+															850HPA
+														</button>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-contents2 active" id="color-setting2-1">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#ffe5a8"></span>
+														<span class="level-item" style="background-color:#ffffc8"></span>
+														<span class="level-item" style="background-color:#fcffdd"></span>
+														<span class="level-item" style="background-color:#a8e2bf"></span>
+														<span class="level-item" style="background-color:#00a6ae"></span>
+														<span class="level-item" style="background-color:#0086ac"></span>
+														<span class="level-item" style="background-color:#004187"></span>
+														<span class="level-item" style="background-color:#26185f"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#c32200"></span>
+														<span class="level-item" style="background-color:#e13c00"></span>
+														<span class="level-item" style="background-color:#ed6200"></span>
+														<span class="level-item" style="background-color:#f28400"></span>
+														<span class="level-item" style="background-color:#f7ba3c"></span>
+														<span class="level-item" style="background-color:#f8d074"></span>
+														<span class="level-item" style="background-color:#fbe397"></span>
+														<span class="level-item" style="background-color:#fbf097"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#4c4c4c"></span>
+														<span class="level-item" style="background-color:#5f5f5f"></span>
+														<span class="level-item" style="background-color:#6f6f6f"></span>
+														<span class="level-item" style="background-color:#7f7f7f"></span>
+														<span class="level-item" style="background-color:#a6a6a6"></span>
+														<span class="level-item" style="background-color:#bfbfbf"></span>
+														<span class="level-item" style="background-color:#d9d9d9"></span>
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+														<span class="level-item" style="background-color:#ededed"></span>
+														<span class="level-item" style="background-color:#e2f0d9"></span>
+														<span class="level-item" style="background-color:#c5e0b4"></span>
+														<span class="level-item" style="background-color:#a9d18e"></span>
+														<span class="level-item" style="background-color:#548235"></span>
+														<span class="level-item" style="background-color:#385723"></span>
+														<span class="level-item" style="background-color:#283f18"></span>
+													</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting2-2">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#ffe5a8"></span>
+														<span class="level-item" style="background-color:#ffffc8"></span>
+														<span class="level-item" style="background-color:#fcffdd"></span>
+														<span class="level-item" style="background-color:#a8e2bf"></span>
+														<span class="level-item" style="background-color:#00a6ae"></span>
+														<span class="level-item" style="background-color:#0086ac"></span>
+														<span class="level-item" style="background-color:#004187"></span>
+														<span class="level-item" style="background-color:#26185f"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#c32200"></span>
+														<span class="level-item" style="background-color:#e13c00"></span>
+														<span class="level-item" style="background-color:#ed6200"></span>
+														<span class="level-item" style="background-color:#f28400"></span>
+														<span class="level-item" style="background-color:#f7ba3c"></span>
+														<span class="level-item" style="background-color:#f8d074"></span>
+														<span class="level-item" style="background-color:#fbe397"></span>
+														<span class="level-item" style="background-color:#fbf097"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#4c4c4c"></span>
+														<span class="level-item" style="background-color:#5f5f5f"></span>
+														<span class="level-item" style="background-color:#6f6f6f"></span>
+														<span class="level-item" style="background-color:#7f7f7f"></span>
+														<span class="level-item" style="background-color:#a6a6a6"></span>
+														<span class="level-item" style="background-color:#bfbfbf"></span>
+														<span class="level-item" style="background-color:#d9d9d9"></span>
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+														<span class="level-item" style="background-color:#ededed"></span>
+														<span class="level-item" style="background-color:#e2f0d9"></span>
+														<span class="level-item" style="background-color:#c5e0b4"></span>
+														<span class="level-item" style="background-color:#a9d18e"></span>
+														<span class="level-item" style="background-color:#548235"></span>
+														<span class="level-item" style="background-color:#385723"></span>
+														<span class="level-item" style="background-color:#283f18"></span>
+													</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting2-3">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#ffe5a8"></span>
+														<span class="level-item" style="background-color:#ffffc8"></span>
+														<span class="level-item" style="background-color:#fcffdd"></span>
+														<span class="level-item" style="background-color:#a8e2bf"></span>
+														<span class="level-item" style="background-color:#00a6ae"></span>
+														<span class="level-item" style="background-color:#0086ac"></span>
+														<span class="level-item" style="background-color:#004187"></span>
+														<span class="level-item" style="background-color:#26185f"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#c32200"></span>
+														<span class="level-item" style="background-color:#e13c00"></span>
+														<span class="level-item" style="background-color:#ed6200"></span>
+														<span class="level-item" style="background-color:#f28400"></span>
+														<span class="level-item" style="background-color:#f7ba3c"></span>
+														<span class="level-item" style="background-color:#f8d074"></span>
+														<span class="level-item" style="background-color:#fbe397"></span>
+														<span class="level-item" style="background-color:#fbf097"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#4c4c4c"></span>
+														<span class="level-item" style="background-color:#5f5f5f"></span>
+														<span class="level-item" style="background-color:#6f6f6f"></span>
+														<span class="level-item" style="background-color:#7f7f7f"></span>
+														<span class="level-item" style="background-color:#a6a6a6"></span>
+														<span class="level-item" style="background-color:#bfbfbf"></span>
+														<span class="level-item" style="background-color:#d9d9d9"></span>
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+														<span class="level-item" style="background-color:#ededed"></span>
+														<span class="level-item" style="background-color:#e2f0d9"></span>
+														<span class="level-item" style="background-color:#c5e0b4"></span>
+														<span class="level-item" style="background-color:#a9d18e"></span>
+														<span class="level-item" style="background-color:#548235"></span>
+														<span class="level-item" style="background-color:#385723"></span>
+														<span class="level-item" style="background-color:#283f18"></span>
+													</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting2-4">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#ffe5a8"></span>
+														<span class="level-item" style="background-color:#ffffc8"></span>
+														<span class="level-item" style="background-color:#fcffdd"></span>
+														<span class="level-item" style="background-color:#a8e2bf"></span>
+														<span class="level-item" style="background-color:#00a6ae"></span>
+														<span class="level-item" style="background-color:#0086ac"></span>
+														<span class="level-item" style="background-color:#004187"></span>
+														<span class="level-item" style="background-color:#26185f"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#c32200"></span>
+														<span class="level-item" style="background-color:#e13c00"></span>
+														<span class="level-item" style="background-color:#ed6200"></span>
+														<span class="level-item" style="background-color:#f28400"></span>
+														<span class="level-item" style="background-color:#f7ba3c"></span>
+														<span class="level-item" style="background-color:#f8d074"></span>
+														<span class="level-item" style="background-color:#fbe397"></span>
+														<span class="level-item" style="background-color:#fbf097"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#4c4c4c"></span>
+														<span class="level-item" style="background-color:#5f5f5f"></span>
+														<span class="level-item" style="background-color:#6f6f6f"></span>
+														<span class="level-item" style="background-color:#7f7f7f"></span>
+														<span class="level-item" style="background-color:#a6a6a6"></span>
+														<span class="level-item" style="background-color:#bfbfbf"></span>
+														<span class="level-item" style="background-color:#d9d9d9"></span>
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+													</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+													<span class="level-group h-2">
+														<span class="level-item" style="background-color:#e7e6e6"></span>
+														<span class="level-item" style="background-color:#ededed"></span>
+														<span class="level-item" style="background-color:#e2f0d9"></span>
+														<span class="level-item" style="background-color:#c5e0b4"></span>
+														<span class="level-item" style="background-color:#a9d18e"></span>
+														<span class="level-item" style="background-color:#548235"></span>
+														<span class="level-item" style="background-color:#385723"></span>
+														<span class="level-item" style="background-color:#283f18"></span>
+													</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-contents col-type" id="color-setting-3">
+										<div class="setting-title-box">
+											<p class="color-setting-title">색상 설정</p>
+										</div>
+										<div class="setting-btn-group">
+											<button type="button" class="btn-setting-item active">
+											<span class="level-group">
+												<span class="level-item" style="background-color:#a20706"></span>
+												<span class="level-item" style="background-color:#c32200"></span>
+												<span class="level-item" style="background-color:#e13c00"></span>
+												<span class="level-item" style="background-color:#ed6200"></span>
+												<span class="level-item" style="background-color:#f28400"></span>
+												<span class="level-item" style="background-color:#f7ba3c"></span>
+												<span class="level-item" style="background-color:#f8d074"></span>
+												<span class="level-item" style="background-color:#fbe49a"></span>
+												<span class="level-item" style="background-color:#ffffc8"></span>
+												<span class="level-item" style="background-color:#fcffdd"></span>
+												<span class="level-item" style="background-color:#e9fad7"></span>
+												<span class="level-item" style="background-color:#a8e2bf"></span>
+												<span class="level-item" style="background-color:#18bdb0"></span>
+												<span class="level-item" style="background-color:#00a6ae"></span>
+												<span class="level-item" style="background-color:#008cb0"></span>
+												<span class="level-item" style="background-color:#004187"></span>
+											</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+											<span class="level-group">
+												<span class="level-item" style="background-color:#678700"></span>
+												<span class="level-item" style="background-color:#b0a200"></span>
+												<span class="level-item" style="background-color:#ae8500"></span>
+												<span class="level-item" style="background-color:#d58800"></span>
+												<span class="level-item" style="background-color:#ff988b"></span>
+												<span class="level-item" style="background-color:#ffd2f6"></span>
+												<span class="level-item" style="background-color:#f8ddff"></span>
+												<span class="level-item" style="background-color:#efc8ff"></span>
+												<span class="level-item" style="background-color:#c896ff"></span>
+												<span class="level-item" style="background-color:#a96dff"></span>
+												<span class="level-item" style="background-color:#8334ff"></span>
+												<span class="level-item" style="background-color:#3f00f2"></span>
+												<span class="level-item" style="background-color:#1f00ed"></span>
+												<span class="level-item" style="background-color:#0004e1"></span>
+												<span class="level-item" style="background-color:#0015c3"></span>
+												<span class="level-item" style="background-color:#002ea8"></span>
+											</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+											<span class="level-group">
+												<span class="level-item" style="background-color:#582f3e"></span>
+												<span class="level-item" style="background-color:#723d61"></span>
+												<span class="level-item" style="background-color:#713d68"></span>
+												<span class="level-item" style="background-color:#835181"></span>
+												<span class="level-item" style="background-color:#835181"></span>
+												<span class="level-item" style="background-color:#e3e7ee"></span>
+												<span class="level-item" style="background-color:#e9f1f3"></span>
+												<span class="level-item" style="background-color:#dbeaec"></span>
+												<span class="level-item" style="background-color:#bcd9d5"></span>
+												<span class="level-item" style="background-color:#a2cac2"></span>
+												<span class="level-item" style="background-color:#7db5a9"></span>
+												<span class="level-item" style="background-color:#549d84"></span>
+												<span class="level-item" style="background-color:#539a78"></span>
+												<span class="level-item" style="background-color:#4e9268"></span>
+												<span class="level-item" style="background-color:#447f55"></span>
+												<span class="level-item" style="background-color:#3c6b42"></span>
+											</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+											<span class="level-group">
+												<span class="level-item" style="background-color:#373737"></span>
+												<span class="level-item" style="background-color:#272727"></span>
+												<span class="level-item" style="background-color:#2b2b2b"></span>
+												<span class="level-item" style="background-color:#494949"></span>
+												<span class="level-item" style="background-color:#c5c5c5"></span>
+												<span class="level-item" style="background-color:#e7e7e7"></span>
+												<span class="level-item" style="background-color:#ebebeb"></span>
+												<span class="level-item" style="background-color:#e0e0e0"></span>
+												<span class="level-item" style="background-color:#c9c9c9"></span>
+												<span class="level-item" style="background-color:#b5b5b5"></span>
+												<span class="level-item" style="background-color:#999999"></span>
+												<span class="level-item" style="background-color:#7f7f7f"></span>
+												<span class="level-item" style="background-color:#828282"></span>
+												<span class="level-item" style="background-color:#828282"></span>
+												<span class="level-item" style="background-color:#757575"></span>
+												<span class="level-item" style="background-color:#5f5f5f"></span>
+											</span>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<img src="../resources/images/temp/map.png" alt="" class="object-cover">
 				</div>
-				<div class="map-detail-right-area scrollbar-4 is-open">
-					<p class="map-detail-right-title">KMA 대권역 - 금강</p>
-					<div class="map-detail-right-box">
-						<div class="map-detail-right-1">
-							<div class="map-detail-right-group">
-								<p class="map-detail-right-group-title">SSP1 - 2.6</p>
-								<div class="map-detail-right-list">
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+
+				<!-- 메인 우측영역 -->
+				<div class="map-container-right main" data-toggle-target="right-map">
+					<div class="accordion-list">
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">50HPA</h2>
+									<button type="button" class="btn-time-series" data-layer="data-layer5">
+										<i class="icon-time-series"></i>
+									</button>
+								</div>
+							</div>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch01-1">
+										<label for="ch01-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch01-2">
+										<label for="ch01-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch01-3">
+										<label for="ch01-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch01-4">
+										<label for="ch01-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
+										</label>
 									</div>
 								</div>
 							</div>
-							<div class="map-detail-right-group">
-								<p class="map-detail-right-group-title">SSP5 - 8.5</p>
-								<div class="map-detail-right-list">
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">200HPA</h2>
+									<button type="button" class="btn-time-series" data-layer="data-layer5">
+										<i class="icon-time-series"></i>
+									</button>
+								</div>
+							</div>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch02-1">
+										<label for="ch02-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch02-2">
+										<label for="ch02-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch02-3">
+										<label for="ch02-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<img src="../resources/images/temp/sample.svg" alt="">
-										<p class="map-detail-right-item-text">
-											<span class="map-detail-right-item-text-stork">금강</span>
-											<span class="map-detail-right-item-value">금강</span>
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch02-4">
+										<label for="ch02-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
+										</label>
 									</div>
 								</div>
 							</div>
-							<div class="map-detail-right-group v2">
-								<div class="map-detail-right-list">
-									<div class="map-detail-right-item">
-										<p class="map-detail-right-item-title">
-											현재
-										</p>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">500HPA</h2>
+									<button type="button" class="btn-time-series" data-layer="data-layer5">
+										<i class="icon-time-series"></i>
+									</button>
+								</div>
+							</div>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch04-1">
+										<label for="ch04-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<p class="map-detail-right-item-title">
-											21세기 전반기<br>
-											2021~2024
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch04-2">
+										<label for="ch04-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<p class="map-detail-right-item-title">
-											21세기 중반기<br>
-											2041~2060
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch04-3">
+										<label for="ch04-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
 									</div>
-									<div class="map-detail-right-item">
-										<p class="map-detail-right-item-title">
-											21세기 후반기<br>
-											2081~2100
-										</p>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch04-4">
+										<label for="ch04-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">850HPA</h2>
+									<button type="button" class="btn-time-series" data-layer="data-layer5">
+										<i class="icon-time-series"></i>
+									</button>
+								</div>
+							</div>
+							<div class="accordion-content-item ver2">
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch03-1">
+									<label for="ch03-1" class="right-check-label">
+										<span class="right-check-data2">등압메쉬</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch03-2">
+									<label for="ch03-2" class="right-check-label">
+										<span class="right-check-data2">등압선</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch03-3">
+									<label for="ch03-3" class="right-check-label">
+										<span class="right-check-data2">등온선</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch03-4">
+									<label for="ch03-4" class="right-check-label">
+										<span class="right-check-data2">바람</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">지상</h2>
+									<button type="button" class="btn-time-series" data-layer="data-layer5">
+										<i class="icon-time-series"></i>
+									</button>
+								</div>
+							</div>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch05-1">
+										<label for="ch05-1" class="right-check-label">
+											<span class="right-check-data2">지상기온</span>
+										</label>
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch05-2">
+										<label for="ch05-2" class="right-check-label">
+											<span class="right-check-data2">해수면 온도</span>
+										</label>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<p class="map-detail-right-title">SSP시나리오 연별 최고기온 전망</p>
-					<div class="map-detail-right-box">
-						차트 영역
-					</div>
-					<div class="map-detail-right-table-area">
-						<table class="dark-table">
-							<thead>
-								<tr>
-									<th></th>
-									<th scope="col">현재기후</th>
-									<th scope="col">전반기</th>
-									<th scope="col">중반기</th>
-									<th scope="col">후반기</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">SSP1 - 2.6</th>
-									<td>26.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-								</tr>
-								<tr>
-									<th scope="row">SSP2 - 4.6</th>
-									<td>26.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-								</tr>
-								<tr>
-									<th scope="row">SSP3 - 7.0</th>
-									<td>26.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-								</tr>
-								<tr>
-									<th scope="row">SSP5 - 8.5</th>
-									<td>26.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-									<td>30.8°</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="map-detail-right-btn-group">
-						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
-							XLSX
-							<i class="icon-circle-down"></i>
-						</button>
-						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
-							CSV
-							<i class="icon-circle-down"></i>
-						</button>
-						<button type="button" class="btn-base" data-size="48" data-color="white" data-round="4">
-							PNG
-							<i class="icon-circle-down"></i>
-						</button>
-					</div>
-					<button type="button" class="btn-detail-right-close">
-						<i class="icon-close"></i>
-						<span class="for-a11y">닫기</span>
-					</button>
 				</div>
 			</div>
 		</main>
-		<nav class="footer-nav">
-			<div class="map-control-btn-group">
-				<div class="layer-open-box">
-					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-1">
-						<i class="icon-btm-5"></i>
-						<span class="map-control-layer-btn-text">평균기온</span>
+	</div>
+
+	<!-- 시계열 동영상 -->
+	<div id="data-layer5" class="layer_section layer-full">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">시계열 동영상</h1>
+			</div>
+			<div class="layer-content time-series-area">
+				<div class="series-map-area">
+
+				</div>
+				<div class="player-box">
+					<div class="select-item-box line-type w-130">
+						<select id="time-series-scnro">
+							<option value="ssp585">ssp585</option>
+							<option value="ssp370">ssp370</option>
+							<option value="ssp245">ssp245</option>
+							<option value="ssp126">ssp126</option>
+						</select>
+					</div>
+					<div class="player-control-btn">
+						<!-- <button type="button" class="btn-control">
+							<i class="icon-pause"></i>
+						</button> -->
+						<button type="button" class="btn-control">
+							<i class="icon-play"></i>
+						</button>
+						<button type="button" class="btn-control">
+							<i class="icon-stop"></i>
+						</button>
+					</div>
+					<div class="player-slider-area">
+						<div class="slider-range-min"></div>
+					</div>
+					<p class="player-desc">2023년 1월</p>
+				</div>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/icon/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- GLOBE VIEW -->
+	<div id="data-layer6" class="layer_section layer-full">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">GLOBE VIEW</h1>
+			</div>
+			<div class="layer-content time-series-detail">
+				<div class="map-layer-container">
+					<button type="button" class="btn-right-open" data-toggle-obj="right-open2">
+						<span class="for-a11y">우측 레이어오픈</span>
+						<i class="icon-btn-right-open"></i>
 					</button>
-					<div id="data-layer1-1" class="layer_section">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-5"></i>평균기온</h1>
-							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data1-1" name="data1" class="radio-style-a">
-										<label for="data1-1" class="right-check-label">
-											<span class="right-check-data2">평균기온</span>
-										</label>
+
+					<div class="player-box">
+						<div class="player-control-btn">
+							<button type="button" class="btn-control">
+								<i class="icon-pause"></i>
+							</button>
+							<button type="button" class="btn-control">
+								<i class="icon-play"></i>
+							</button>
+							<button type="button" class="btn-control">
+								<i class="icon-stop"></i>
+							</button>
+						</div>
+						<div class="player-slider-area">
+							<div class="slider-range-min"></div>
+						</div>
+						<p class="player-desc">2023년 1월</p>
+					</div>
+					<div class="s-map-right-bottom">
+						<button type="button" class="btn-setting-option setting-open" data-toggle-obj="setting2">
+							<i class="icon-setting"></i>
+						</button>
+						<div class="layer-setting bottom-type" data-toggle-target="setting2">
+							<div class="layer-setting-box">
+								<button type="button" class="layer-close" aria-label="레이어 닫기" data-toggle-obj="setting2"></button>
+								<div class="box-tab">
+									<ul class="type-tab-box white-type">
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-b-1">
+												등압선
+											</button>
+										</li>
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-b-2">
+												바람
+											</button>
+										</li>
+										<li class="list-item-tab">
+											<button type="button" class="list-item-btn btn-type-choice" name="#color-setting-b-3">
+												지상
+											</button>
+										</li>
+									</ul>
+									<div class="tab-contents col-type" id="color-setting-b-1">
+										<div class="setting-title-box">
+											<p class="color-setting-title">색상 설정</p>
+										</div>
+										<div class="color-choice-list-box">
+											<p class="color-setting-sub-title">50HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">200HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">500HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+											<p class="color-setting-sub-title">850HPA</p>
+											<div class="color-choice-box">
+												<button type="button" class="btn-color-choice" style="background-color:#26185f"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#004187"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#008cb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#00a6ae"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#18bdb0"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#a8e2bf"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e9fad7"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fcffdd"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ffffc8"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#fbe49a"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f8d074"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f7ba3c"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#f28400"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#ed6200"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#e13c00"></button>
+												<button type="button" class="btn-color-choice" style="background-color:#c32200"></button>
+											</div>
+										</div>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data1-2" name="data1" class="radio-style-a">
-										<label for="data1-2" class="right-check-label">
-											<span class="right-check-data2">최고기온</span>
-										</label>
+									<div class="tab-contents col-type" id="color-setting-b-2">
+										<div class="box-tab2">
+											<div class="setting-title-box">
+												<ul class="tab-line-type">
+													<li class="list-item-tab2 is-selected">
+														<button type="button" class="list-item-btn2" name="#color-setting-b-2-1">
+															50HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting-b-2-2">
+															200HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting-b-2-3">
+															500HPA
+														</button>
+													</li>
+													<li class="list-item-tab2">
+														<button type="button" class="list-item-btn2" name="#color-setting-b-2-4">
+															850HPA
+														</button>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-contents2 active" id="color-setting-b-2-1">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#ffe5a8"></span>
+															<span class="level-item" style="background-color:#ffffc8"></span>
+															<span class="level-item" style="background-color:#fcffdd"></span>
+															<span class="level-item" style="background-color:#a8e2bf"></span>
+															<span class="level-item" style="background-color:#00a6ae"></span>
+															<span class="level-item" style="background-color:#0086ac"></span>
+															<span class="level-item" style="background-color:#004187"></span>
+															<span class="level-item" style="background-color:#26185f"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#c32200"></span>
+															<span class="level-item" style="background-color:#e13c00"></span>
+															<span class="level-item" style="background-color:#ed6200"></span>
+															<span class="level-item" style="background-color:#f28400"></span>
+															<span class="level-item" style="background-color:#f7ba3c"></span>
+															<span class="level-item" style="background-color:#f8d074"></span>
+															<span class="level-item" style="background-color:#fbe397"></span>
+															<span class="level-item" style="background-color:#fbf097"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#4c4c4c"></span>
+															<span class="level-item" style="background-color:#5f5f5f"></span>
+															<span class="level-item" style="background-color:#6f6f6f"></span>
+															<span class="level-item" style="background-color:#7f7f7f"></span>
+															<span class="level-item" style="background-color:#a6a6a6"></span>
+															<span class="level-item" style="background-color:#bfbfbf"></span>
+															<span class="level-item" style="background-color:#d9d9d9"></span>
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+															<span class="level-item" style="background-color:#ededed"></span>
+															<span class="level-item" style="background-color:#e2f0d9"></span>
+															<span class="level-item" style="background-color:#c5e0b4"></span>
+															<span class="level-item" style="background-color:#a9d18e"></span>
+															<span class="level-item" style="background-color:#548235"></span>
+															<span class="level-item" style="background-color:#385723"></span>
+															<span class="level-item" style="background-color:#283f18"></span>
+														</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting-b-2-2">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#ffe5a8"></span>
+															<span class="level-item" style="background-color:#ffffc8"></span>
+															<span class="level-item" style="background-color:#fcffdd"></span>
+															<span class="level-item" style="background-color:#a8e2bf"></span>
+															<span class="level-item" style="background-color:#00a6ae"></span>
+															<span class="level-item" style="background-color:#0086ac"></span>
+															<span class="level-item" style="background-color:#004187"></span>
+															<span class="level-item" style="background-color:#26185f"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#c32200"></span>
+															<span class="level-item" style="background-color:#e13c00"></span>
+															<span class="level-item" style="background-color:#ed6200"></span>
+															<span class="level-item" style="background-color:#f28400"></span>
+															<span class="level-item" style="background-color:#f7ba3c"></span>
+															<span class="level-item" style="background-color:#f8d074"></span>
+															<span class="level-item" style="background-color:#fbe397"></span>
+															<span class="level-item" style="background-color:#fbf097"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#4c4c4c"></span>
+															<span class="level-item" style="background-color:#5f5f5f"></span>
+															<span class="level-item" style="background-color:#6f6f6f"></span>
+															<span class="level-item" style="background-color:#7f7f7f"></span>
+															<span class="level-item" style="background-color:#a6a6a6"></span>
+															<span class="level-item" style="background-color:#bfbfbf"></span>
+															<span class="level-item" style="background-color:#d9d9d9"></span>
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+															<span class="level-item" style="background-color:#ededed"></span>
+															<span class="level-item" style="background-color:#e2f0d9"></span>
+															<span class="level-item" style="background-color:#c5e0b4"></span>
+															<span class="level-item" style="background-color:#a9d18e"></span>
+															<span class="level-item" style="background-color:#548235"></span>
+															<span class="level-item" style="background-color:#385723"></span>
+															<span class="level-item" style="background-color:#283f18"></span>
+														</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting-b-2-3">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#ffe5a8"></span>
+															<span class="level-item" style="background-color:#ffffc8"></span>
+															<span class="level-item" style="background-color:#fcffdd"></span>
+															<span class="level-item" style="background-color:#a8e2bf"></span>
+															<span class="level-item" style="background-color:#00a6ae"></span>
+															<span class="level-item" style="background-color:#0086ac"></span>
+															<span class="level-item" style="background-color:#004187"></span>
+															<span class="level-item" style="background-color:#26185f"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#c32200"></span>
+															<span class="level-item" style="background-color:#e13c00"></span>
+															<span class="level-item" style="background-color:#ed6200"></span>
+															<span class="level-item" style="background-color:#f28400"></span>
+															<span class="level-item" style="background-color:#f7ba3c"></span>
+															<span class="level-item" style="background-color:#f8d074"></span>
+															<span class="level-item" style="background-color:#fbe397"></span>
+															<span class="level-item" style="background-color:#fbf097"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#4c4c4c"></span>
+															<span class="level-item" style="background-color:#5f5f5f"></span>
+															<span class="level-item" style="background-color:#6f6f6f"></span>
+															<span class="level-item" style="background-color:#7f7f7f"></span>
+															<span class="level-item" style="background-color:#a6a6a6"></span>
+															<span class="level-item" style="background-color:#bfbfbf"></span>
+															<span class="level-item" style="background-color:#d9d9d9"></span>
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+															<span class="level-item" style="background-color:#ededed"></span>
+															<span class="level-item" style="background-color:#e2f0d9"></span>
+															<span class="level-item" style="background-color:#c5e0b4"></span>
+															<span class="level-item" style="background-color:#a9d18e"></span>
+															<span class="level-item" style="background-color:#548235"></span>
+															<span class="level-item" style="background-color:#385723"></span>
+															<span class="level-item" style="background-color:#283f18"></span>
+														</span>
+													</button>
+												</div>
+											</div>
+											<div class="tab-contents2" id="color-setting-b-2-4">
+												<div class="setting-btn-group">
+													<button type="button" class="btn-setting-item active">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#ffe5a8"></span>
+															<span class="level-item" style="background-color:#ffffc8"></span>
+															<span class="level-item" style="background-color:#fcffdd"></span>
+															<span class="level-item" style="background-color:#a8e2bf"></span>
+															<span class="level-item" style="background-color:#00a6ae"></span>
+															<span class="level-item" style="background-color:#0086ac"></span>
+															<span class="level-item" style="background-color:#004187"></span>
+															<span class="level-item" style="background-color:#26185f"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#c32200"></span>
+															<span class="level-item" style="background-color:#e13c00"></span>
+															<span class="level-item" style="background-color:#ed6200"></span>
+															<span class="level-item" style="background-color:#f28400"></span>
+															<span class="level-item" style="background-color:#f7ba3c"></span>
+															<span class="level-item" style="background-color:#f8d074"></span>
+															<span class="level-item" style="background-color:#fbe397"></span>
+															<span class="level-item" style="background-color:#fbf097"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#4c4c4c"></span>
+															<span class="level-item" style="background-color:#5f5f5f"></span>
+															<span class="level-item" style="background-color:#6f6f6f"></span>
+															<span class="level-item" style="background-color:#7f7f7f"></span>
+															<span class="level-item" style="background-color:#a6a6a6"></span>
+															<span class="level-item" style="background-color:#bfbfbf"></span>
+															<span class="level-item" style="background-color:#d9d9d9"></span>
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+														</span>
+													</button>
+													<button type="button" class="btn-setting-item">
+														<span class="level-group h-2">
+															<span class="level-item" style="background-color:#e7e6e6"></span>
+															<span class="level-item" style="background-color:#ededed"></span>
+															<span class="level-item" style="background-color:#e2f0d9"></span>
+															<span class="level-item" style="background-color:#c5e0b4"></span>
+															<span class="level-item" style="background-color:#a9d18e"></span>
+															<span class="level-item" style="background-color:#548235"></span>
+															<span class="level-item" style="background-color:#385723"></span>
+															<span class="level-item" style="background-color:#283f18"></span>
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data1-3" name="data1" class="radio-style-a">
-										<label for="data1-3" class="right-check-label">
-											<span class="right-check-data2">최저기온</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data1-4" name="data1" class="radio-style-a">
-										<label for="data1-4" class="right-check-label">
-											<span class="right-check-data2">강수량</span>
-										</label>
+									<div class="tab-contents col-type" id="color-setting-b-3">
+										<div class="setting-title-box">
+											<p class="color-setting-title">색상 설정</p>
+										</div>
+										<div class="setting-btn-group">
+											<button type="button" class="btn-setting-item active">
+										<span class="level-group">
+											<span class="level-item" style="background-color:#a20706"></span>
+											<span class="level-item" style="background-color:#c32200"></span>
+											<span class="level-item" style="background-color:#e13c00"></span>
+											<span class="level-item" style="background-color:#ed6200"></span>
+											<span class="level-item" style="background-color:#f28400"></span>
+											<span class="level-item" style="background-color:#f7ba3c"></span>
+											<span class="level-item" style="background-color:#f8d074"></span>
+											<span class="level-item" style="background-color:#fbe49a"></span>
+											<span class="level-item" style="background-color:#ffffc8"></span>
+											<span class="level-item" style="background-color:#fcffdd"></span>
+											<span class="level-item" style="background-color:#e9fad7"></span>
+											<span class="level-item" style="background-color:#a8e2bf"></span>
+											<span class="level-item" style="background-color:#18bdb0"></span>
+											<span class="level-item" style="background-color:#00a6ae"></span>
+											<span class="level-item" style="background-color:#008cb0"></span>
+											<span class="level-item" style="background-color:#004187"></span>
+										</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+										<span class="level-group">
+											<span class="level-item" style="background-color:#678700"></span>
+											<span class="level-item" style="background-color:#b0a200"></span>
+											<span class="level-item" style="background-color:#ae8500"></span>
+											<span class="level-item" style="background-color:#d58800"></span>
+											<span class="level-item" style="background-color:#ff988b"></span>
+											<span class="level-item" style="background-color:#ffd2f6"></span>
+											<span class="level-item" style="background-color:#f8ddff"></span>
+											<span class="level-item" style="background-color:#efc8ff"></span>
+											<span class="level-item" style="background-color:#c896ff"></span>
+											<span class="level-item" style="background-color:#a96dff"></span>
+											<span class="level-item" style="background-color:#8334ff"></span>
+											<span class="level-item" style="background-color:#3f00f2"></span>
+											<span class="level-item" style="background-color:#1f00ed"></span>
+											<span class="level-item" style="background-color:#0004e1"></span>
+											<span class="level-item" style="background-color:#0015c3"></span>
+											<span class="level-item" style="background-color:#002ea8"></span>
+										</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+										<span class="level-group">
+											<span class="level-item" style="background-color:#582f3e"></span>
+											<span class="level-item" style="background-color:#723d61"></span>
+											<span class="level-item" style="background-color:#713d68"></span>
+											<span class="level-item" style="background-color:#835181"></span>
+											<span class="level-item" style="background-color:#835181"></span>
+											<span class="level-item" style="background-color:#e3e7ee"></span>
+											<span class="level-item" style="background-color:#e9f1f3"></span>
+											<span class="level-item" style="background-color:#dbeaec"></span>
+											<span class="level-item" style="background-color:#bcd9d5"></span>
+											<span class="level-item" style="background-color:#a2cac2"></span>
+											<span class="level-item" style="background-color:#7db5a9"></span>
+											<span class="level-item" style="background-color:#549d84"></span>
+											<span class="level-item" style="background-color:#539a78"></span>
+											<span class="level-item" style="background-color:#4e9268"></span>
+											<span class="level-item" style="background-color:#447f55"></span>
+											<span class="level-item" style="background-color:#3c6b42"></span>
+										</span>
+											</button>
+											<button type="button" class="btn-setting-item">
+										<span class="level-group">
+											<span class="level-item" style="background-color:#373737"></span>
+											<span class="level-item" style="background-color:#272727"></span>
+											<span class="level-item" style="background-color:#2b2b2b"></span>
+											<span class="level-item" style="background-color:#494949"></span>
+											<span class="level-item" style="background-color:#c5c5c5"></span>
+											<span class="level-item" style="background-color:#e7e7e7"></span>
+											<span class="level-item" style="background-color:#ebebeb"></span>
+											<span class="level-item" style="background-color:#e0e0e0"></span>
+											<span class="level-item" style="background-color:#c9c9c9"></span>
+											<span class="level-item" style="background-color:#b5b5b5"></span>
+											<span class="level-item" style="background-color:#999999"></span>
+											<span class="level-item" style="background-color:#7f7f7f"></span>
+											<span class="level-item" style="background-color:#828282"></span>
+											<span class="level-item" style="background-color:#828282"></span>
+											<span class="level-item" style="background-color:#757575"></span>
+											<span class="level-item" style="background-color:#5f5f5f"></span>
+										</span>
+											</button>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="layer-open-box">
-					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-2">
-						<i class="icon-btm-6"></i>
-						<span class="map-control-layer-btn-text">최고기온</span>
-					</button>
-					<div id="data-layer1-2" class="layer_section">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-6"></i>최고기온</h1>
+
+				<div class="map-container-right scrollbar-4" data-toggle-target="right-open2">
+					<div class="accordion-list">
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">50HPA</h2>
+								</div>
 							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data2-1" name="data2" class="radio-style-a">
-										<label for="data2-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch11-1">
+										<label for="ch11-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data2-2" name="data2" class="radio-style-a">
-										<label for="data2-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch11-2">
+										<label for="ch11-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data2-3" name="data2" class="radio-style-a">
-										<label for="data2-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch11-3">
+										<label for="ch11-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch11-4">
+										<label for="ch11-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
 										</label>
 									</div>
 								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="layer-open-box">
-					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-3">
-						<i class="icon-btm-7"></i>
-						<span class="map-control-layer-btn-text">최저기온</span>
-					</button>
-					<div id="data-layer1-3" class="layer_section">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-7"></i>최저기온</h1>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">200HPA</h2>
+								</div>
 							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data3-1" name="data3" class="radio-style-a">
-										<label for="data3-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch12-1">
+										<label for="ch12-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data3-2" name="data3" class="radio-style-a">
-										<label for="data3-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch12-2">
+										<label for="ch12-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data3-3" name="data3" class="radio-style-a">
-										<label for="data3-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch12-3">
+										<label for="ch12-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch12-4">
+										<label for="ch12-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
 										</label>
 									</div>
 								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="layer-open-box">
-					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-4">
-						<i class="icon-btm-4"></i>
-						<span class="map-control-layer-btn-text">강수량</span>
-					</button>
-					<div id="data-layer1-4" class="layer_section">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-4"></i>강수량</h1>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">500HPA</h2>
+								</div>
 							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data4-1" name="data4" class="radio-style-a">
-										<label for="data4-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch14-1">
+										<label for="ch14-1" class="right-check-label">
+											<span class="right-check-data2">등압메쉬</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data4-2" name="data4" class="radio-style-a">
-										<label for="data4-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch14-2">
+										<label for="ch14-2" class="right-check-label">
+											<span class="right-check-data2">등압선</span>
 										</label>
 									</div>
-									<div class="radio-item">
-										<input type="radio" id="data4-3" name="data4" class="radio-style-a">
-										<label for="data4-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch14-3">
+										<label for="ch14-3" class="right-check-label">
+											<span class="right-check-data2">등온선</span>
+										</label>
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch14-4">
+										<label for="ch14-4" class="right-check-label">
+											<span class="right-check-data2">바람</span>
 										</label>
 									</div>
 								</div>
 							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">850HPA</h2>
+								</div>
+							</div>
+							<div class="accordion-content-item ver2">
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch13-1">
+									<label for="ch13-1" class="right-check-label">
+										<span class="right-check-data2">등압메쉬</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch13-2">
+									<label for="ch13-2" class="right-check-label">
+										<span class="right-check-data2">등압선</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch13-3">
+									<label for="ch13-3" class="right-check-label">
+										<span class="right-check-data2">등온선</span>
+									</label>
+								</div>
+								<div class="checkbox-item">
+									<input type="checkbox" id="ch13-4">
+									<label for="ch13-4" class="right-check-label">
+										<span class="right-check-data2">바람</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-title">
+								<div class="accordion-title-group">
+									<h2 class="accordion-title-data">지상</h2>
+								</div>
+							</div>
+							<div class="detailed-index">
+								<div class="accordion-content-item ver2">
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch15-1">
+										<label for="ch15-1" class="right-check-label">
+											<span class="right-check-data2">지상기온</span>
+										</label>
+									</div>
+									<div class="checkbox-item">
+										<input type="checkbox" id="ch15-2">
+										<label for="ch15-2" class="right-check-label">
+											<span class="right-check-data2">해수면 온도</span>
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="map-control-period-group">
-				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
-						data-layer="data-layer1-5">
-						연별
-					</button>
-					<div id="data-layer1-5" class="layer_section size-small">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title">연별 (ANNUAL)</h1>
-							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data5-1" name="data5" class="radio-style-a">
-										<label for="data5-1" class="right-check-label">
-											<span class="right-check-data2">2002년</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data5-2" name="data5" class="radio-style-a">
-										<label for="data5-2" class="right-check-label">
-											<span class="right-check-data2">2003년</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data5-3" name="data5" class="radio-style-a">
-										<label for="data5-3" class="right-check-label">
-											<span class="right-check-data2">2004년</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
-						data-layer="data-layer1-6">
-						계절별
-					</button>
-					<div id="data-layer1-6" class="layer_section position-type-b size-small">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title">계절별 (SEASONAL)</h1>
-							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data6-1" name="data6" class="radio-style-a">
-										<label for="data6-1" class="right-check-label">
-											<span class="right-check-data2">봄(Spring)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data6-2" name="data6" class="radio-style-a">
-										<label for="data6-2" class="right-check-label">
-											<span class="right-check-data2">여름(Summer)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data6-3" name="data6" class="radio-style-a">
-										<label for="data6-3" class="right-check-label">
-											<span class="right-check-data2">가을(Fall)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data6-4" name="data6" class="radio-style-a">
-										<label for="data6-4" class="right-check-label">
-											<span class="right-check-data2">겨울(Winter)</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="layer-open-box">
-					<button type="button" class="btn-base" data-size="38" data-round="3" data-color="gray"
-						data-layer="data-layer1-7">
-						월별
-					</button>
-					<div id="data-layer1-7" class="layer_section position-type-c size-small">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title">월별 (MONTHLY)</h1>
-							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data7-1" name="data7" class="radio-style-a">
-										<label for="data7-1" class="right-check-label">
-											<span class="right-check-data2">1월(JAN)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-2" name="data7" class="radio-style-a">
-										<label for="data7-2" class="right-check-label">
-											<span class="right-check-data2">2월(FEB)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-3" name="data7" class="radio-style-a">
-										<label for="data7-3" class="right-check-label">
-											<span class="right-check-data2">3월(MAR)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-4" name="data7" class="radio-style-a">
-										<label for="data7-4" class="right-check-label">
-											<span class="right-check-data2">4월(APR)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-5" name="data7" class="radio-style-a">
-										<label for="data7-5" class="right-check-label">
-											<span class="right-check-data2">5월(MAY)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-6" name="data7" class="radio-style-a">
-										<label for="data7-6" class="right-check-label">
-											<span class="right-check-data2">6월(JUN)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-7" name="data7" class="radio-style-a">
-										<label for="data7-7" class="right-check-label">
-											<span class="right-check-data2">7월(JUL)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-8" name="data7" class="radio-style-a">
-										<label for="data7-8" class="right-check-label">
-											<span class="right-check-data2">8월(AUG)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-9" name="data7" class="radio-style-a">
-										<label for="data7-9" class="right-check-label">
-											<span class="right-check-data2">9월(SEP)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-10" name="data7" class="radio-style-a">
-										<label for="data7-10" class="right-check-label">
-											<span class="right-check-data2">10월(OCT)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-11" name="data7" class="radio-style-a">
-										<label for="data7-11" class="right-check-label">
-											<span class="right-check-data2">11월(NOV)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data7-12" name="data7" class="radio-style-a">
-										<label for="data7-12" class="right-check-label">
-											<span class="right-check-data2">12월(DEC)</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/icon/icon-close.png" alt="">
+				</button>
 			</div>
-		</nav>
+		</div>
 	</div>
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
-		let sliderTimer;
+
+		//slider range
+		$('.slider-range-min').slider({
+			range: 'min',
+			value: 0,
+			min: 1,
+			max: 700,
+		});
+
 		$('.slider-range-min2').slider({
 			range: 'min',
 			value: 0,
 			min: 1,
 			max: 100,
-			slide: function (event, ui) {
+			slide: function(event, ui) {
 				const _wrap = $(this).parent().parent();
 
 				_wrap.find('.amount-data').val(ui.value);
 				_wrap.find('.slider-value-position').css('left', ui.value + '%');
-				_wrap.find('.slider-value-position').addClass('on');
-				clearTimeout(sliderTimer);
-				sliderTimer = setTimeout(() => {
-					_wrap.find('.slider-value-position').removeClass('on');
-				}, 700);
 			}
 		});
 		$('.amount-data').val($('.slider-range-min2').slider('value'));
