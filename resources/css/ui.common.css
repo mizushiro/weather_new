@@ -376,3 +376,9 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 @media (max-width:767px) {
     .layer-title-box .layer-title {font-size:1.6rem}
 }
+
+.mdl-tab {position: relative;width: 100%;display: flex;overflow-x: auto;}
+.mdl-tab-wrap {display: flex;gap: 0; width: 100%;}
+.mdl-tab-btn[data-selected="true"] {background-color:#fff;color:#2e7ef6}
+.mdl-tab-item {display: none;}
+.mdl-tab-item[data-selected="true"] {display: block;}

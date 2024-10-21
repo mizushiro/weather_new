@@ -1020,7 +1020,7 @@ class Tab {
         this.tab_btns = this.tab.querySelectorAll('.mdl-tab-btn');
         this.pnl = document.querySelector('.mdl-tab-pnl[data-tab-id="'+ this.id +'"]');
         this.items = this.pnl.querySelectorAll('.mdl-tab-item');
-
+console.log(this.items)
         this.init();
     }
     init() {
@@ -1054,6 +1054,7 @@ class Tab {
         });
     }
     act = (e) => {
+        console.log(e);
         const _this = e.currentTarget;
         const tab = _this.dataset.tab;
         this.selected(tab);
