@@ -763,10 +763,10 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 
 
 @media (max-width:1023px) {
-    .btn-right-open{display: flex; position: absolute; top:calc(50% - 4.5rem); right:0;   height: 9rem; transition: right .2s ease; background: url(../images/common/button-nav-close.svg) no-repeat 0 50%; background-size: contain; aspect-ratio: 26 / 92; width: 2.6rem; position: absolute;rotate: 180deg;}
-    .map-container-right {position: fixed; top:6rem ; right:-20rem; z-index: 20; width: 20rem; transition: right .2s ease; height: calc(100dvh - 6rem);}
+    .btn-right-open{display: flex; position: absolute; top:calc(50% - 4.5rem); right:0; height: 9rem; transition: right .2s ease; background: url(../images/common/button-nav-close.svg) no-repeat 0 50%; background-size: contain; aspect-ratio: 26 / 92; width: 2.6rem; position: absolute;rotate: 180deg;}
+    .map-container-right {position: fixed; top:6rem ; right:-20rem; z-index: 10; width: 20rem; transition: right .2s ease; height: calc(100dvh - 6rem);}
     .map-container-right[data-toggle-state="true"]{right:0;}
-    .btn-right-open[data-toggle-state="true"]{right:20rem; z-index: 20;}
+    .btn-right-open[data-toggle-state="true"]{right:20rem; z-index: 10;}
     .map2-left-bottom{width: 20rem; height: 14rem; left:1.4rem; bottom:1.4rem}
     .map2-left-bottom .btn-base[data-color="blue2"]{font-size: 1.2rem; padding:0 1rem;}
 
@@ -787,7 +787,12 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .select-item-box select{font-size: 1.2rem; padding:0 2rem 0 .4rem; }
     .map2-right-bottom{right:1.4rem; bottom:1.4rem}
     .map2-right-top .map-type-img{height: 4rem;}
-     .map2-right-top {
-        flex-direction: column;
-     }
+    .map2-right-top {flex-direction: column; }
+    .player-box{width: 100%; bottom:0; padding:.4rem .8rem; gap:.8rem}
+    .player-box .select-item-box{background-position: calc(100% + .8rem) 50% ;}
+    .player-box .select-item-box.w-130{width: auto;}
+    .player-desc{font-size: 1.2rem; padding-left: .8rem;}
+    .s-map-right-bottom{right: 1.4rem; bottom:7.5rem; z-index: 9;}
+
+
 }

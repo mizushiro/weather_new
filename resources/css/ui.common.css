@@ -372,6 +372,15 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 
 @media (max-width:1023px) {
     .layer_section .layer_section-container {max-width:calc(100% - 4rem)}
+    .layer_section {top:6rem}
+    .layer-title-box{height: 4rem;}
+    .layer_section.layer-full .layer_section-container{width: 100%; max-width: 100%; max-height: 100%; height: calc(100dvh - 6rem);border-radius: 0;}
+    .layer_section.layer-full .layer_section-container .layer-title-box{border-radius: 0;}
+    .layer-full .layer-content{border-radius: 0;border:0}
+   .layer-full .layer-content .map-container-right{top:10rem; height: calc(100dvh - 10rem); }
+    .layer-full .layer-content .map-container-right[data-toggle-state="true"]{right:-1.2rem}
+    .layer-full .layer-content .btn-right-open[data-toggle-state="true"] {right:calc(20rem - 1.2rem)}
+
 }
 @media (max-width:767px) {
     .layer-title-box .layer-title {font-size:1.6rem}
