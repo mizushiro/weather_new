@@ -735,6 +735,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .list-item-tab2 {flex:1;}
 .list-item-tab2 .list-item-btn2 {width:100%;justify-content:center;align-items:center;display:flex;color:#1e2329;font-weight:800;font-size:1.3rem}
 .list-item-tab2.is-selected .list-item-btn2 {color:#2e7ef6}
+.list-item-tab2 .list-item-btn2[data-selected="true"] {color:#2e7ef6}
 
 .tab-contents {display:none}
 .tab-contents.active {display:flex}

@@ -1019,8 +1019,7 @@ class Tab {
         this.tab = document.querySelector('.mdl-tab[data-tab-id="'+ this.id +'"]');
         this.tab_btns = this.tab.querySelectorAll('.mdl-tab-btn');
         this.pnl = document.querySelector('.mdl-tab-pnl[data-tab-id="'+ this.id +'"]');
-        this.items = this.pnl.querySelectorAll('.mdl-tab-item');
-console.log(this.items)
+        this.items = document.querySelectorAll('.mdl-tab-pnl[data-tab-id="'+ this.id +'"] > .mdl-tab-item');
         this.init();
     }
     init() {
@@ -1063,8 +1062,8 @@ console.log(this.items)
     selected(tab) {
         const btn = this.tab.querySelector('.mdl-tab-btn[data-tab="'+ tab +'"]');
         const _selected = this.tab.querySelector('.mdl-tab-btn[data-selected="true"]');
-        const item = this.pnl.querySelector('.mdl-tab-item[data-tab="'+ tab +'"]');
-        const _selected_pnl = this.pnl.querySelector('.mdl-tab-item[data-selected="true"]');
+        const item = document.querySelector('.mdl-tab-pnl[data-tab-id="'+ this.id +'"] > .mdl-tab-item[data-tab="'+ tab +'"]');
+        const _selected_pnl = document.querySelector('.mdl-tab-pnl[data-tab-id="'+ this.id +'"] > .mdl-tab-item[data-selected="true"]');
 
         sessionStorage.setItem(this.id, tab);
 
