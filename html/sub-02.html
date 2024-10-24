@@ -29,60 +29,120 @@
 		
 		<main class="sub-map-content">
 			<div class="map-container-box overflow-hidden">
-				<div class="map-container dark">
-					<!-- 자료시점 -->
-					<div class="map2-left-top">
-						<p class="map2-left-top-title">자료시점 선택 </p>
-						<div class="map2-select-choice-box">
-							<div class="map2-select-list">
-								<div class="select-item-box dark">
-									<select name="">
-										<option value="">NCEP R1</option>
-									</select>
-								</div>
-								<div class="year-month">
+				<div class="map-container dark" data-toggle-target="deviation">
+					<!-- 지도 영역 -->
+					<div class="map-view-col">
+						<!-- 자료시점 -->
+						<div class="map2-left-top">
+							<p class="map2-left-top-title">자료시점 선택 </p>
+							<div class="map2-select-choice-box">
+								<div class="map2-select-list">
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">NCEP R1</option>
+										</select>
+									</div>
 									<div class="select-item-box dark">
 										<select name="">
 											<option value="">시나리오</option>
 										</select>
 									</div>
-									<div class="select-item-box dark">
-										<select name="">
-											<option value="">2001년</option>
-											<option value="">2002년</option>
-											<option value="">2003년</option>
-											<option value="">2004년</option>
-											<option value="">2005년</option>
-											<option value="">2006년</option>
-											<option value="">2007년</option>
-											<option value="">2008년</option>
-											<option value="">2009년</option>
-											<option value="">2010년</option>
-										</select>
-									</div>
-									<div class="select-item-box dark">
-										<select name="">
-											<option value="">1월</option>
-											<option value="">2월</option>
-											<option value="">3월</option>
-											<option value="">4월</option>
-											<option value="">5월</option>
-											<option value="">6월</option>
-											<option value="">7월</option>
-											<option value="">8월</option>
-											<option value="">9월</option>
-											<option value="">10월</option>
-											<option value="">11월</option>
-											<option value="">12월</option>
-										</select>
+									<div class="year-month">
+										<div class="select-item-box dark">
+											<select name="">
+												<option value="">2001년</option>
+												<option value="">2002년</option>
+												<option value="">2003년</option>
+												<option value="">2004년</option>
+												<option value="">2005년</option>
+												<option value="">2006년</option>
+												<option value="">2007년</option>
+												<option value="">2008년</option>
+												<option value="">2009년</option>
+												<option value="">2010년</option>
+											</select>
+										</div>
+										<div class="select-item-box dark">
+											<select name="">
+												<option value="">1월</option>
+												<option value="">2월</option>
+												<option value="">3월</option>
+												<option value="">4월</option>
+												<option value="">5월</option>
+												<option value="">6월</option>
+												<option value="">7월</option>
+												<option value="">8월</option>
+												<option value="">9월</option>
+												<option value="">10월</option>
+												<option value="">11월</option>
+												<option value="">12월</option>
+											</select>
+										</div>
 									</div>
 								</div>
+								<button class="btn-base" type="button" data-size="38" data-round="4" data-color="blue">
+									조회
+								</button>
 							</div>
-							<button class="btn-base" type="button" data-size="38" data-round="4" data-color="blue">
-								조회
-							</button>
 						</div>
 					</div>
+					<!-- S :  지도가 하나 더 생성되는 경우 -->
+					<div class="map-view-col n2">
+						<!-- 자료시점 -->
+						<div class="map2-left-top">
+							<p class="map2-left-top-title">자료시점 선택 </p>
+							<div class="map2-select-choice-box">
+								<div class="map2-select-list">
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">NCEP R1</option>
+										</select>
+									</div>
+									<div class="select-item-box dark">
+										<select name="">
+											<option value="">시나리오</option>
+										</select>
+									</div>
+									<div class="year-month">
+										<div class="select-item-box dark">
+											<select name="">
+												<option value="">2001년</option>
+												<option value="">2002년</option>
+												<option value="">2003년</option>
+												<option value="">2004년</option>
+												<option value="">2005년</option>
+												<option value="">2006년</option>
+												<option value="">2007년</option>
+												<option value="">2008년</option>
+												<option value="">2009년</option>
+												<option value="">2010년</option>
+											</select>
+										</div>
+										<div class="select-item-box dark">
+											<select name="">
+												<option value="">1월</option>
+												<option value="">2월</option>
+												<option value="">3월</option>
+												<option value="">4월</option>
+												<option value="">5월</option>
+												<option value="">6월</option>
+												<option value="">7월</option>
+												<option value="">8월</option>
+												<option value="">9월</option>
+												<option value="">10월</option>
+												<option value="">11월</option>
+												<option value="">12월</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<button class="btn-base" type="button" data-size="38" data-round="4" data-color="blue">
+									조회
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- E :  지도가 하나 더 생성되는 경우 -->
 
 					<!-- 지도선택 -->
 					<div class="map2-right-top">
@@ -97,6 +157,16 @@
 						<button type="button" class="btn-map-type active">
 							<span class="map-type-img"><img src="../resources/images/icon/icon-map-6.png" alt=""></span>
 							<span class="map-type-text">경계지도</span>
+						</button>
+					</div>
+
+					<!-- 편차 -->
+					<div class="map-right-position sub-02">
+						<button type="button" class="btn-base btn-deviation-open" data-toggle-obj="deviation" data-callback="deviation">
+							<i class="icon-map-open-1" ></i>
+						</button>
+						<button type="button" class="btn-base btn-deviation-open2" data-toggle-obj="deviation" data-callback="deviation2">
+							<i class="icon-map-open-2"></i>
 						</button>
 					</div>
 
@@ -1440,6 +1510,34 @@
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
+		const base_warp = document.querySelector('.base-wrap');
+		const deviation_btn = document.querySelector('.btn-deviation-open');
+		const deviation_btn2 = document.querySelector('.btn-deviation-open2');
+		UI.callback.deviation = (v) => {
+			if (v.state === 'true') {
+				base_warp.classList.add('is-map-deviation-open');
+				deviation_btn.classList.add('active');
+			} else {
+				deviation_btn.classList.remove('active');
+				deviation_btn2.classList.remove('active');
+				base_warp.classList.remove('is-map-deviation-open');
+			}
+		}
+		UI.callback.deviation2 = (v) => {
+			if (v.state === 'true') {
+				base_warp.classList.add('is-map-deviation-open');
+				base_warp.classList.add('n2');
+				deviation_btn2.classList.add('active');
+			} else {
+				deviation_btn.classList.remove('active');
+				deviation_btn2.classList.remove('active');
+				base_warp.classList.remove('is-map-deviation-open');
+				base_warp.classList.remove('n2');
+			}
+		}
+
+
+
 
 		//slider range
 		$('.slider-range-min').slider({

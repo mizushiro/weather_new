@@ -1178,6 +1178,7 @@
 		UI.callback.deviation2 = (v) => {
 			if (v.state === 'true') {
 				base_warp.classList.add('is-map-deviation-open');
+				base_warp.classList.add('n2');
 				comparison.classList.add('show');
 				deviation_btn2.classList.add('active');
 			} else {
@@ -1185,10 +1186,10 @@
 				deviation_btn.classList.remove('active');
 				deviation_btn2.classList.remove('active');
 				base_warp.classList.remove('is-map-deviation-open');
+				base_warp.classList.remove('n2');
 			}
 		}
 		UI.callback.comparison = (v) => {
-			
 			if (v.state === 'true') {
 				base_warp.classList.add('is-map-comparison-open');
 			} else {
