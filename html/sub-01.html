@@ -28,7 +28,6 @@
 		<header class="header" data-id="header"></header>
 		
 		<main class="sub-map-content">
-			<!-- D: 닫힐 때 [left-nav-area]에 is-close 추가 -->
 			<div class="left-nav-area" data-toggle-target="left-nav" data-toggle-state="true">
 				<div class="left-nav-box">
 					<div class="left-nav-list">
@@ -787,12 +786,12 @@
 				<div class="layer-open-box">
 					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-1">
 						<i class="icon-btm-1"></i>
-						<span class="map-control-layer-btn-text">기온 · 강수</span>
+						<span class="map-control-layer-btn-text">기후요소</span>
 					</button>
 					<div id="data-layer1-1" class="layer_section">
 						<div class="layer_section-container">
 							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-1"></i>기온 · 강수</h1>
+								<h1 class="map-section-title"><i class="icon-btm-1"></i>기후요소</h1>
 							</div>
 							<div class="layer-content">
 								<div class="layer-radio-group">
@@ -833,34 +832,214 @@
 				<div class="layer-open-box">
 					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-2">
 						<i class="icon-btm-2"></i>
-						<span class="map-control-layer-btn-text">극한지수 - 고온</span>
+						<span class="map-control-layer-btn-text">극한지수</span>
 					</button>
 					<div id="data-layer1-2" class="layer_section">
 						<div class="layer_section-container">
 							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-2"></i>극한지수 - 고온</h1>
+								<h1 class="map-section-title"><i class="icon-btm-2"></i>극한지수</h1>
 							</div>
 							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data2-1" name="data2" class="radio-style-a">
-										<label for="data2-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data2-2" name="data2" class="radio-style-a">
-										<label for="data2-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data2-3" name="data2" class="radio-style-a">
-										<label for="data2-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-								</div>
+                                <div class="layer-folding-list scrollbar-8" data-acco-id="layerList1">
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">고온</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-1" name="data2" class="radio-style-b">
+                                                    <label for="data2-1" class="right-check-label">
+                                                        <span class="right-check-data2">폭염일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-2" name="data2" class="radio-style-b">
+                                                    <label for="data2-2" class="right-check-label">
+                                                        <span class="right-check-data2">여름일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-3" name="data2" class="radio-style-b">
+                                                    <label for="data2-3" class="right-check-label">
+                                                        <span class="right-check-data2">열대야일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-4" name="data2" class="radio-style-b">
+                                                    <label for="data2-4" class="right-check-label">
+                                                        <span class="right-check-data2">일교차</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-5" name="data2" class="radio-style-b">
+                                                    <label for="data2-5" class="right-check-label">
+                                                        <span class="right-check-data2">식물성장기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-6" name="data2" class="radio-style-b">
+                                                    <label for="data2-6" class="right-check-label">
+                                                        <span class="right-check-data2">온난일</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-7" name="data2" class="radio-style-b">
+                                                    <label for="data2-7" class="right-check-label">
+                                                        <span class="right-check-data2">온난일계속기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-8" name="data2" class="radio-style-b">
+                                                    <label for="data2-8" class="right-check-label">
+                                                        <span class="right-check-data2">최대온난일계속기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-9" name="data2" class="radio-style-b">
+                                                    <label for="data2-9" class="right-check-label">
+                                                        <span class="right-check-data2">온난야</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-10" name="data2" class="radio-style-b">
+                                                    <label for="data2-10" class="right-check-label">
+                                                        <span class="right-check-data2">일최고기온연최대</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-11" name="data2" class="radio-style-b">
+                                                    <label for="data2-11" class="right-check-label">
+                                                        <span class="right-check-data2">일최저기온연최대</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">저온</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-12" name="data2" class="radio-style-b">
+                                                    <label for="data2-12" class="right-check-label">
+                                                        <span class="right-check-data2">한파일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-13" name="data2" class="radio-style-b">
+                                                    <label for="data2-13" class="right-check-label">
+                                                        <span class="right-check-data2">결빙일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-14" name="data2" class="radio-style-b">
+                                                    <label for="data2-14" class="right-check-label">
+                                                        <span class="right-check-data2">서리일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-15" name="data2" class="radio-style-b">
+                                                    <label for="data2-15" class="right-check-label">
+                                                        <span class="right-check-data2">한랭일</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-16" name="data2" class="radio-style-b">
+                                                    <label for="data2-16" class="right-check-label">
+                                                        <span class="right-check-data2">한랭야</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-17" name="data2" class="radio-style-b">
+                                                    <label for="data2-17" class="right-check-label">
+                                                        <span class="right-check-data2">한랭야계속기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-18" name="data2" class="radio-style-b">
+                                                    <label for="data2-18" class="right-check-label">
+                                                        <span class="right-check-data2">최대한랭일계속기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-19" name="data2" class="radio-style-b">
+                                                    <label for="data2-19" class="right-check-label">
+                                                        <span class="right-check-data2">일최고기온 연최소</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-20" name="data2" class="radio-style-b">
+                                                    <label for="data2-20" class="right-check-label">
+                                                        <span class="right-check-data2">일최저기온 연최소</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">강수</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-21" name="data2" class="radio-style-b">
+                                                    <label for="data2-21" class="right-check-label">
+                                                        <span class="right-check-data2">강우강도</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-22" name="data2" class="radio-style-b">
+                                                    <label for="data2-22" class="right-check-label">
+                                                        <span class="right-check-data2">호우일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-23" name="data2" class="radio-style-b">
+                                                    <label for="data2-23" class="right-check-label">
+                                                        <span class="right-check-data2">99퍼센타일강수일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-24" name="data2" class="radio-style-b">
+                                                    <label for="data2-24" class="right-check-label">
+                                                        <span class="right-check-data2">1일최다강수량</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-25" name="data2" class="radio-style-b">
+                                                    <label for="data2-25" class="right-check-label">
+                                                        <span class="right-check-data2">5일최다강수량</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-26" name="data2" class="radio-style-b">
+                                                    <label for="data2-26" class="right-check-label">
+                                                        <span class="right-check-data2">95퍼센타일강수일수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data2-27" name="data2" class="radio-style-b">
+                                                    <label for="data2-27" class="right-check-label">
+                                                        <span class="right-check-data2">최대무강수지속기간</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 							</div>
 							<div class="layer-top-right-btn">
 								<button type="button" class="layer-top-btn-item dark btn_layer-close">
@@ -873,75 +1052,239 @@
 				<div class="layer-open-box">
 					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-3">
 						<i class="icon-btm-3"></i>
-						<span class="map-control-layer-btn-text">극한지수 - 저온</span>
+						<span class="map-control-layer-btn-text">영향정보</span>
 					</button>
 					<div id="data-layer1-3" class="layer_section">
 						<div class="layer_section-container">
 							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-3"></i>극한지수 - 저온</h1>
+								<h1 class="map-section-title"><i class="icon-btm-3"></i>영향정보</h1>
 							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data3-1" name="data3" class="radio-style-a">
-										<label for="data3-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data3-2" name="data3" class="radio-style-a">
-										<label for="data3-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data3-3" name="data3" class="radio-style-a">
-										<label for="data3-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="layer-top-right-btn">
-								<button type="button" class="layer-top-btn-item dark btn_layer-close">
-									<img src="../resources/images/common/icon-close.png" alt="">
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="layer-open-box">
-					<button type="button" class="map-control-layer-btn" data-layer="data-layer1-4">
-						<i class="icon-btm-4"></i>
-						<span class="map-control-layer-btn-text">극한지수 - 강수</span>
-					</button>
-					<div id="data-layer1-4" class="layer_section">
-						<div class="layer_section-container">
-							<div class="map-section-head">
-								<h1 class="map-section-title"><i class="icon-btm-4"></i>극한지수 - 강수</h1>
-							</div>
-							<div class="layer-content">
-								<div class="layer-radio-group">
-									<div class="radio-item">
-										<input type="radio" id="data4-1" name="data4" class="radio-style-a">
-										<label for="data4-1" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data4-2" name="data4" class="radio-style-a">
-										<label for="data4-2" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-									<div class="radio-item">
-										<input type="radio" id="data4-3" name="data4" class="radio-style-a">
-										<label for="data4-3" class="right-check-label">
-											<span class="right-check-data2">평균기온(Mean Temp.)(98C)</span>
-										</label>
-									</div>
-								</div>
-							</div>
+                            <div class="layer-content">
+                                <div class="layer-folding-list scrollbar-8" data-acco-id="layerList2">
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">농업</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-1" name="data2" class="radio-style-b">
+                                                    <label for="data3-1" class="right-check-label">
+                                                        <span class="right-check-data2">생육온도일수(5℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-2" name="data2" class="radio-style-b">
+                                                    <label for="data3-2" class="right-check-label">
+                                                        <span class="right-check-data2">생육온도일수(10℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-3" name="data2" class="radio-style-b">
+                                                    <label for="data3-3" class="right-check-label">
+                                                        <span class="right-check-data2">생육온도일수(15℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-4" name="data2" class="radio-style-b">
+                                                    <label for="data3-4" class="right-check-label">
+                                                        <span class="right-check-data2">유효적산온도(5℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-5" name="data2" class="radio-style-b">
+                                                    <label for="data3-5" class="right-check-label">
+                                                        <span class="right-check-data2">유효적산온도(10℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-6" name="data2" class="radio-style-b">
+                                                    <label for="data3-6" class="right-check-label">
+                                                        <span class="right-check-data2">유효적산온도(15℃)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-7" name="data2" class="radio-style-b">
+                                                    <label for="data3-7" class="right-check-label">
+                                                        <span class="right-check-data2">식물기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-8" name="data2" class="radio-style-b">
+                                                    <label for="data3-8" class="right-check-label">
+                                                        <span class="right-check-data2">작물기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-9" name="data2" class="radio-style-b">
+                                                    <label for="data3-9" class="right-check-label">
+                                                        <span class="right-check-data2">난방도일</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-10" name="data2" class="radio-style-b">
+                                                    <label for="data3-10" class="right-check-label">
+                                                        <span class="right-check-data2">냉방도일</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">보건</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-11" name="data2" class="radio-style-b">
+                                                    <label for="data3-11" class="right-check-label">
+                                                        <span class="right-check-data2">열지수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-12" name="data2" class="radio-style-b">
+                                                    <label for="data3-12" class="right-check-label">
+                                                        <span class="right-check-data2">불쾌지수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-13" name="data2" class="radio-style-b">
+                                                    <label for="data3-13" class="right-check-label">
+                                                        <span class="right-check-data2">체감온도</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-14" name="data2" class="radio-style-b">
+                                                    <label for="data3-14" class="right-check-label">
+                                                        <span class="right-check-data2">체감온도(여름철)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-15" name="data2" class="radio-style-b">
+                                                    <label for="data3-15" class="right-check-label">
+                                                        <span class="right-check-data2">체감온도(겨울철)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-16" name="data2" class="radio-style-b">
+                                                    <label for="data3-16" class="right-check-label">
+                                                        <span class="right-check-data2">열체감지수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-17" name="data2" class="radio-style-b">
+                                                    <label for="data3-17" class="right-check-label">
+                                                        <span class="right-check-data2">NET(평균온도)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-18" name="data2" class="radio-style-b">
+                                                    <label for="data3-18" class="right-check-label">
+                                                        <span class="right-check-data2">NET(최고온도)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-19" name="data2" class="radio-style-b">
+                                                    <label for="data3-19" class="right-check-label">
+                                                        <span class="right-check-data2">일최고기온 연최소</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-20" name="data2" class="radio-style-b">
+                                                    <label for="data3-20" class="right-check-label">
+                                                        <span class="right-check-data2">열사병발생위험지수</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">방재</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-21" name="data2" class="radio-style-b">
+                                                    <label for="data3-21" class="right-check-label">
+                                                        <span class="right-check-data2">표준강수지수(SPI)3개월</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-22" name="data2" class="radio-style-b">
+                                                    <label for="data3-22" class="right-check-label">
+                                                        <span class="right-check-data2">표준강수지수(SPI)6개월</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-23" name="data2" class="radio-style-b">
+                                                    <label for="data3-23" class="right-check-label">
+                                                        <span class="right-check-data2">표준강수지수(SPI)9개월</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-24" name="data2" class="radio-style-b">
+                                                    <label for="data3-24" class="right-check-label">
+                                                        <span class="right-check-data2">표준강수지수(SPI)12개월</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-25" name="data2" class="radio-style-b">
+                                                    <label for="data3-25" class="right-check-label">
+                                                        <span class="right-check-data2">독립호우사상-지속기간</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-26" name="data2" class="radio-style-b">
+                                                    <label for="data3-26" class="right-check-label">
+                                                        <span class="right-check-data2">독립호우사상-호우총량(평균)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-27" name="data2" class="radio-style-b">
+                                                    <label for="data3-27" class="right-check-label">
+                                                        <span class="right-check-data2">독립호우사상-호우총량(최대)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-acco="item">
+                                        <div data-acco="head">
+                                            <button type="button" class="btn-list-folding" data-acco="btn">
+                                                <span class="btn-list-folding-name">산림</span>
+                                                <i class="icon-nav-folding"></i>
+                                            </button>
+                                        </div>
+                                        <div data-acco="body" class="layer-folding-content">
+                                            <div class="layer-radio-group" data-acco="wrap">
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-28" name="data2" class="radio-style-b">
+                                                    <label for="data3-28" class="right-check-label">
+                                                        <span class="right-check-data2">최저기온지수</span>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" id="data3-29" name="data2" class="radio-style-b">
+                                                    <label for="data3-29" class="right-check-label">
+                                                        <span class="right-check-data2">건조지수(건조강도지수)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="layer-top-right-btn">
 								<button type="button" class="layer-top-btn-item dark btn_layer-close">
 									<img src="../resources/images/common/icon-close.png" alt="">
@@ -1202,6 +1545,19 @@
 		document.querySelector('.icon-sh').addEventListener('click', () => {
 			document.querySelector('.map-left-sh-box').classList.toggle('on')
 		})
+
+        UI.exe.accoSideNav = new Accordion({
+            id: 'layerList1',
+            callback: (v) => {
+                console.log('callback:');
+            }
+        });
+        UI.exe.accoSideNav = new Accordion({
+            id: 'layerList2',
+            callback: (v) => {
+                console.log('callback:');
+            }
+        });
 	});
 
 </script>

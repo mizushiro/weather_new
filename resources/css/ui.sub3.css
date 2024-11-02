@@ -23,6 +23,11 @@
 .sub3-left-map-mark-box.color-3 {background-color:#FF7A00;}
 .sub3-left-map-mark-box.color-4 {background-color:#FF1F00;}
 .sub3-left-map-mark-box.color-5 {background-color:#7000FF;}
+.sub3-left-map-mark-box.color-1.is-select {outline:.4rem solid rgba(0,163,255,.25)}
+.sub3-left-map-mark-box.color-2.is-select {outline:.4rem solid rgba(255,168,0,.25)}
+.sub3-left-map-mark-box.color-3.is-select {outline:.4rem solid rgba(255,122,0,.25)}
+.sub3-left-map-mark-box.color-4.is-select {outline:.4rem solid rgba(241,29,0,.25)}
+.sub3-left-map-mark-box.color-5.is-select {outline:.4rem solid rgba(112,0,255,.25)}
 .sub3-left-map-mark-box.pin-active-green {background-color:#00B528 !important;z-index:2}
 .sub3-left-map-mark-box.pin-active-blue {background-color:#0864EE !important;z-index:2}
 .sub3-left-map-mark-box.pin-active-red {background-color:#F11D00 !important;z-index:2}
