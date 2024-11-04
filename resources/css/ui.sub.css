@@ -5,13 +5,18 @@
 .footer-nav {background-color:#131723;height:5.2rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;gap:6rem;}
 
 [class^="icon-btm-"] {display:block;width:2.4rem;background-position:50% 50%;background-repeat:no-repeat;background-size:contain;aspect-ratio:1/1;}
-.icon-btm-1 {background-image:url("../images/common/icon-btm-11.svg")}
-.icon-btm-2 {background-image:url("../images/common/icon-btm-12.svg")}
-.icon-btm-3 {background-image:url("../images/common/icon-btm-13.svg")}
-.icon-btm-4 {background-image:url("../images/common/icon-btm-4.svg")}
-.icon-btm-5 {background-image:url("../images/common/icon-btm-5.svg")}
-.icon-btm-6 {background-image:url("../images/common/icon-btm-6.svg")}
-.icon-btm-7 {background-image:url("../images/common/icon-btm-7.svg")}
+.icon-btm-1 {background-image:url("../images/common/icon-btm-1.svg")} /* 평균기온, 해수면온도 */
+.icon-btm-2 {background-image:url("../images/common/icon-btm-2.svg")} /* 상대습도 */
+.icon-btm-3 {background-image:url("../images/common/icon-btm-3.svg")} /* 표층염분 */
+.icon-btm-4 {background-image:url("../images/common/icon-btm-4.svg")} /* 강수량 */
+.icon-btm-5 {background-image:url("../images/common/icon-btm-5.svg")} /* 기후변화 시나리오 */
+.icon-btm-6 {background-image:url("../images/common/icon-btm-6.svg")} /* 최고기온 */
+.icon-btm-7 {background-image:url("../images/common/icon-btm-7.svg")} /* 최저기온 */
+.icon-btm-8 {background-image:url("../images/common/icon-btm-8.svg")} /* 과거 재현자료 */
+.icon-btm-9 {background-image:url("../images/common/icon-btm-9.svg")} /* 과거 재분석 자료 */
+.icon-btm-11 {background-image:url("../images/common/icon-btm-11.svg")} /* 기후요소 */
+.icon-btm-12 {background-image:url("../images/common/icon-btm-12.svg")} /* 극한지수 */
+.icon-btm-13 {background-image:url("../images/common/icon-btm-13.svg")} /* 영향정보 */
 .map-control-layer-btn {display:flex;align-items:center;gap:.4rem;}
 .map-control-layer-btn-text {font-size:1.6rem;font-weight:700;color:#fff;}
 .map-control-btn-group {display:flex;gap:3.6rem;}
