@@ -53,7 +53,9 @@ html.scroll_off {overflow:hidden}
 
 /* layout */
 .base-wrap.flex {display:flex;flex-direction:column;min-height:100%;}
+.base-wrap.flex-full {display:flex;flex-direction:column;height:100%;}
 .base-wrap.flex .header {flex-shrink:0}
+.base-wrap.flex-full main,
 .base-wrap.flex main {flex:1}
 
 /* scrollbar */
@@ -110,6 +112,7 @@ select::-ms-expand {display:none}
 .select-item-box.w-280 {width:28rem}
 .select-item-box.w-230 {width:23rem}
 .select-item-box.w-180 {width:18rem}
+.select-item-box.w-160 {width:16rem}
 .select-item-box.w-130 {width:13rem}
 .select-item-box.w-100 {width:10rem}
 .select-item-box.w-80 {width:8rem}
@@ -123,7 +126,9 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 
 .select-size-58 {height:5.8rem;border-radius:.8rem}
 .select-size-58 select {font-size:1.6rem;font-weight:400;border-radius:.8rem}
-.select-size-42 {height:4.2rem;border-radius:.4rem}
+.select-size-46 {height:4.6rem;border-radius:.4rem}
+.select-size-46 select {font-size:1.6rem;font-weight:800;border-radius:.4rem;padding-left:1.4rem;padding-right:3.2rem}
+.select-size-42 {height:4.6rem;border-radius:.4rem}
 .select-size-42 select {font-size:1.4rem;font-weight:700;border-radius:.4rem;padding-left:1.4rem;padding-right:3.2rem}
 
 /* box-checkbox */

@@ -178,7 +178,7 @@ input[type="text"].left-input-sh::placeholder {color:#999;font-weight:600;font-s
 
 .player-control-area {display:flex;align-items:flex-start;gap:3rem}
 .player-control-area .player-slider-area {margin-top:1.5rem;position:relative}
-.slider-value-position {position:absolute;top:-5rem;background-color:#fff;padding:0 1.2rem;height:3rem;display:flex;align-items:center;font-weight:600;font-size:1.4rem;border-radius:.4rem;box-shadow:.1rem 0 .4rem rgba(0,0,0,.25);transform:translateX(-50%)}
+.slider-value-position {position:absolute;top:-5rem;background-color:#fff;padding:0 1.2rem;height:3rem;display:flex;align-items:center;font-weight:600;font-size:1.4rem;border-radius:.4rem;box-shadow:.1rem 0 .4rem rgba(0,0,0,.25);transform:translateX(-54%)}
 .slider-value-position:before {content:'';position:absolute;bottom:-.4rem;left:50%;width:0;height:0;margin-left:-.2rem;border-top:.4rem solid #fff;border-left:.4rem solid transparent;border-right:.4rem solid transparent}
 .slider-value-position .amount-data {color:#1e2329;font-weight:800;font-family:'NanumSquare', 'Malgun Gothic', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', Dotum, 돋움, 굴림, arial, sans-serif;}
 .map3-btm-center .player-slider-area .ui-widget-content {background-color:#fff}
