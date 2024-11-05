@@ -357,7 +357,8 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .dark .layer-content {border:.2rem solid #2C364F;}
 
 .layer-open-box {position:relative}
-.layer-open-box .layer_section {position:absolute;top:auto;width:auto;bottom:4.4rem;background-color:transparent;overflow:hidden}
+.layer-open-box .layer_section {position:absolute;top:auto;width:auto;bottom:4.4rem;background-color:transparent;overflow:hidden;z-index:-1}
+.layer-open-box .layer_section.showing {z-index:10}
 .layer-open-box .position-type-b {left:50%;transform:translateX(-50%)}
 .layer-open-box .position-type-c {left:auto;right:0}
 .layer-open-box .layer_section .layer_section-container {width:28rem}
