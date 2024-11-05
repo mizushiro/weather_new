@@ -565,7 +565,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .map-control-period-group .btn-base {font-size:1.2rem;min-height:2.2rem; width:100%;}
     .map-control-period-group::before {display:none;}
     .map-control-period-group {width:100%;justify-content:space-between;}
-    .layer-open-box .layer_section {position:fixed;width:100%;padding:0;z-index:30;bottom:7.6rem;}
+    .layer-open-box .layer_section {position:fixed;width:100%;padding:0;bottom:7.6rem;}
+    .layer-open-box .layer_section.showing {z-index:30}
     .layer-open-box .layer_section .layer_section-container {width:100%;max-width:100%;border-radius:0;}
     .layer-open-box .map-section-head .map-section-title {font-size:1.4rem;}
     .map-section-head {height:4rem;}
