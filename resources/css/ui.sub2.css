@@ -45,7 +45,7 @@
 .data-content-nav-2depth-box {margin-top:.8rem;display:flex;flex-direction:column;}
 .data-content-nav-2depth {font-size:1.4rem;line-height:2.2rem;font-weight:700;color:#7386B6;text-decoration:none;}
 
-.data-content-nav-2depth-box [data-acco="wrap"]{display:flex;flex-direction:column;}
+.data-content-nav-2depth-box [data-acco="wrap"] {display:flex;flex-direction:column;}
 [data-acco="item"] ~ [data-acco="item"] {margin-top:2.4rem;}
 [data-expanded="true"] .icon-nav-folding {rotate:180deg;}
 .data-content-nav-2depth[data-active="true"] {color:#2E7EF6;}
