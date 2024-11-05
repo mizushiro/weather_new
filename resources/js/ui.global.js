@@ -1104,7 +1104,6 @@ class Accordion {
         (typeof this.current === 'number') && this.show(this.current);
     }
     actToggle = (e) => {
-        
         const _this = e.currentTarget;
         this.acco_item = _this.closest('[data-acco="item"]');
         const acco_head = _this.closest('[data-acco="head"]');

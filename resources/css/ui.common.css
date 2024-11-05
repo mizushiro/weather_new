@@ -323,7 +323,7 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 .layer_section .layer_section-container {transition:.4s;top:10rem;width:64rem;max-height:calc(100% - 8rem);box-shadow:.2rem 0 .6rem 0 rgba(0,0,0,.2);display:flex;flex-direction:column;position:relative;border-radius:1rem;}
 .layer_section.w-840 .layer_section-container {width:84rem;}
 .layer_section.w-920 .layer_section-container {width:92rem;}
-.layer_section.showing {visibility:visible;opacity:1}
+.layer_section.showing {visibility:visible;opacity:1; z-index:40 !important;}
 .layer_section.showing .layer_section-container {top:0;opacity:1}
 .map-section-head {height:6rem;background-color:#2c364f;display:flex;align-items:center;flex-shrink:0;border-radius:1rem 1rem 0 0;box-shadow:0 .3rem 0 rgba(0,0,0,.1);position:relative;z-index:2}
 .map-section-head .map-section-title {font-size:2rem;font-weight:700;color:#fff;padding:0 10rem 0 2rem;line-height:2.2rem}
