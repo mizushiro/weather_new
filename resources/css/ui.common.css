@@ -401,6 +401,10 @@ select:focus{border-color:#23b7e5;background-position:100% -5rem}
 @media (max-width:767px) {
     .layer-title-box .layer-title {font-size:1.6rem}
 }
+@media (max-width:539px) {
+    .layer-folding-list {max-height:calc(100vh - 26rem)}
+}
+
 
 .mdl-tab {position: relative;width: 100%;display: flex;overflow-x: auto;}
 .mdl-tab-wrap {display: flex;gap: 0; width: 100%;}
