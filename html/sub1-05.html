@@ -1,0 +1,428 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap sub-map">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		<main class="disaster-info-box">
+			<div class="sub1-05-top-area">
+				<div class="sub1-05-top-btn-group">
+                    <button type="button" class="btn-base btn-type-choice2 is-select" data-size="42" data-round="full">
+                        방재
+                    </button>
+                    <button type="button" class="btn-base btn-type-choice2" data-size="42" data-round="full">
+                        국토 · 교통
+                    </button>
+                    <button type="button" class="btn-base btn-type-choice2" data-size="42" data-round="full">
+                        보건
+                    </button>
+                </div>
+                <span class="sub1-05-top-line"></span>
+                <div class="sub1-05-top-select-group">
+                    <div class="select-item-box select-size-42 line-type w-300">
+                        <select name="">
+                            <option value="">하천시설물 유형별 설계기준</option>
+                        </select>
+                    </div>
+                    <div class="select-item-box select-size-42 line-type w-130">
+                        <select name="">
+                            <option value="">배수시설</option>
+                        </select>
+                    </div>
+                    <div class="select-item-box select-size-42 line-type w-160">
+                        <select name="">
+                            <option value="">1일 최다 강수량</option>
+                        </select>
+                    </div>
+                </div>
+			</div>
+			<div class="sub1-05-content">
+				<div class="map-disaster-info-left">
+					<div class="map-disaster-info-left-top">
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">SSP5-8.5</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">전국</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">시군구</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">2020</option>
+							</select>
+						</div>
+					</div>
+					<div class="map-disaster-info-left-map">
+						지도 영역
+					</div>
+				</div>
+                <div class="sub1-05-content-detail">
+                    <div class="sub1-05-content-detail-box col-1">
+                        <div class="map-disaster-info-item-top">
+                            <h4 class="map-disaster-info-item-title">
+                                재현기간별  극값
+                            </h4>
+                            <button type="button" class="btn-detail-open" data-layer="chart-layer1">
+                                <i class="icon-plus"></i>
+                            </button>
+                        </div>
+                        <div class="sub1-05-content-detail-data sub1-05-content-grid">
+                            <table class="sub1-05-table">
+                                <caption>SSP1-2.6</caption>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:calc(70% / 3)" span="3">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2071 - 2100</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">20년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="sub1-05-table">
+                                <caption>SSP2-4.5</caption>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:calc(70% / 3)" span="3">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2071 - 2100</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">20년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="sub1-05-table">
+                                <caption>SSP3-7.0</caption>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:calc(70% / 3)" span="3">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2071 - 2100</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">20년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="sub1-05-table">
+                                <caption>SSP5-8.5</caption>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:calc(70% / 3)" span="3">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2021 - 2040</th>
+                                    <th scope="col">2071 - 2100</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">20년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40년</th>
+                                    <td>148.6</td>
+                                    <td>162.0</td>
+                                    <td>176.9</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="sub1-05-content-detail-box col-2">
+                        <div class="map-disaster-info-item-top">
+                            <h4 class="map-disaster-info-item-title">
+                                시계열
+                            </h4>
+                            <div class="map-disaster-info-item-top-btn-group">
+                                <button type="button" class="btn-base" data-size="30" data-color="blue" data-round="4">
+                                    CVG
+                                </button>
+                                <button type="button" class="btn-base" data-size="30" data-color="blue" data-round="4">
+                                    PNG
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sub1-05-content-detail-data">
+                            차트영역
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div class="sub1-05-bottom">
+                <p class="sub1-05-content-desc">기준 정보 : 미래 기후변화 및 복합재해를 고려한 방재기준 가이드라인(행정안전부 가이드 라인, 2017. 12)</p>
+            </div>
+		</main>
+
+        <div id="chart-layer1" class="layer_section w-1340 dark">
+            <div class="layer_section-container">
+                <div class="layer-title-box">
+                    <h1 class="layer-title">극한지후지표</h1>
+                </div>
+                <div class="layer-content bg-gray p-30">
+                    <div class="data-content-section-sub-title-box mb-10">
+                        <h4 class="data-content-section-sub-title">시계열</h4>
+                        <div class="data-content-section-sub-btn-group">
+                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                CVG
+                            </button>
+                            <button type="button" class="btn-base" data-size="38" data-round="4" data-color="blue">
+                                PNG
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-scroll">
+                        <table class="sub1-05-table">
+                            <colgroup>
+                                <col style="width:17rem">
+                                <col span="12" style="width:calc((100% - 17rem) / 12)">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col" rowspan="2" class="deep-gray">구분</th>
+                                <th scope="col" colspan="3" class="deep-gray">SSP1-2.6</th>
+                                <th scope="col" colspan="3" class="deep-gray">SSP2-4.5</th>
+                                <th scope="col" colspan="3" class="deep-gray">SSP3-7.0</th>
+                                <th scope="col" colspan="3" class="deep-gray">SSP5-8.5</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="indent-01">2021<br> - 2040</th>
+                                <th scope="col" class="indent-01">2041<br> - 2070</th>
+                                <th scope="col" class="indent-01">2071<br> - 2100</th>
+                                <th scope="col" class="indent-01">2021<br> - 2040</th>
+                                <th scope="col" class="indent-01">2041<br> - 2070</th>
+                                <th scope="col" class="indent-01">2071<br> - 2100</th>
+                                <th scope="col" class="indent-01">2021<br> - 2040</th>
+                                <th scope="col" class="indent-01">2041<br> - 2070</th>
+                                <th scope="col" class="indent-01">2071<br> - 2100</th>
+                                <th scope="col" class="indent-01">2021<br> - 2040</th>
+                                <th scope="col" class="indent-01">2041<br> - 2070</th>
+                                <th scope="col" class="indent-01">2071<br> - 2100</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">20년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">30년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">50년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">80년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">100년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">200년</th>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                                <td>162.9</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="layer-top-right-btn">
+                    <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                        <img src="../resources/images/common/icon-close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+
+	});
+
+</script>
+
+</html>
