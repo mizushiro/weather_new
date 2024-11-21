@@ -606,11 +606,93 @@
 	<div id="dashboard-layer4" class="layer_section layer-full">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
-				<h1 class="layer-title">10년 단위 강수일수, 호우일수</h1>
+				<h1 class="layer-title">영향정보</h1>
 			</div>
 			<div class="layer-content">
-				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-half">
+				<div class="dashboard-layer-area deep-dark">
+					<div class="mdl-tab" data-tab-id="setting-c">
+						<ul class="tab-type-item ver2 mdl-tab-wrap">
+							<li class="list-item-tab">
+								<button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-c-1">
+									농업
+								</button>
+							</li>
+							<li class="list-item-tab">
+								<button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-c-2">
+									방재
+								</button>
+							</li>
+							<li class="list-item-tab">
+								<button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-c-3">
+									보건
+								</button>
+							</li>
+							<li class="list-item-tab">
+								<button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-c-4">
+									산림
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="mdl-tab-pnl" data-tab-id="setting-c">
+						<div class="tab-contents mdl-tab-item" data-tab="setting-c-1">
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents mdl-tab-item" data-tab="setting-c-2">
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents mdl-tab-item" data-tab="setting-c-3">
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents mdl-tab-item" data-tab="setting-c-4">
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+							<h2 class="dashboard-layer-title">열지수</h2>
+							<div class="dashboard-layer-chart">
+								<div class="dashboard-layer-chart-box">
+									차트
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="dashboard-chart-half">
 						<div class="dashboard-chart-grid-item-4">
 							1
 						</div>
@@ -632,7 +714,7 @@
 						<button type="button" class="btn-s-down-item">
 							<i class="icon-down-3"></i>
 						</button>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<div class="layer-top-right-btn">
@@ -679,6 +761,10 @@
 		const settingTab_B = new Tab({
 			id : 'setting-b',
 			current: 'setting-b-1'
+		});
+		const settingTab_C = new Tab({
+			id : 'setting-c',
+			current: 'setting-c-1'
 		});
 	});
 </script>

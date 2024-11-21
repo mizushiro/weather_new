@@ -418,5 +418,13 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .mdl-tab-item {display:none;}
 .mdl-tab-item[data-selected="true"] {display:block;}
 .tab-type-item {gap:.4rem}
+.tab-type-item.ver2 {gap:.6rem;border-bottom:.1rem solid #2A3141;padding-bottom:1.2rem}
 .list-item-tab-button {height:3.2rem;width:7.2rem;border-radius:999em;display:flex;align-items:center;justify-content:center;background-color:#2C364F;color:#667AAD;font-weight:800;font-size:1.6rem;}
+.tab-type-item.ver2 .list-item-tab-button {height:4.2rem;width:12rem;}
 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {color:#fff;background-color:#2C364F}
+.tab-type-item.ver2 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {background-color:#2E7EF6}
+
+@media (max-width:767px) {
+    .tab-type-item.ver2 .list-item-tab {flex:1}
+    .tab-type-item.ver2 .list-item-tab-button {width:100%}
+}
