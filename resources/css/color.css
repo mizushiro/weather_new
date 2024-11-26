@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+:root {
+    --bg-color:#181D2B;
+    --box-line:#2A3141;
+    --bg-box:#212633;
+    --bg-button1:#181D2B;
+    --bg-color2:#2C364F;
+    --text-color1:#fff;
+    --text-color2:#fff;
+    --text-color-red:#EE6666;
+    --text-color-blue:#597DF2;
+    --icon-color:#fff;
+    --line-select:#2A3141;
+}
+.light-theme {
+    --bg-color:#F7F8FB;
+    --box-line:#E4E8EF;
+    --bg-box:#fff;
+    --bg-button1:#fff;
+    --bg-color2:#E2ECFF;
+    --text-color1:#1E222F;
+    --text-color2:#000;
+    --text-color-red:#E4201D;
+    --text-color-blue:#0C4077;
+    --icon-color:#1E222F;
+    --line-select:#E4E8EF;
+}
