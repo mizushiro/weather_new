@@ -66,7 +66,7 @@
 				</div>
 				<div class="dashboard-grid-1 dashboard-map-type">
 					<div class="dashboard-grid-select-group">
-						<div class="select-item-box">
+						<div class="select-item-box select-size-42">
 							<select name="">
 								<option value="">전국</option>
 								<option value="">전국</option>
@@ -77,12 +77,12 @@
 								<option value="">전국</option>
 							</select>
 						</div>
-						<div class="select-item-box">
+						<div class="select-item-box select-size-42">
 							<select name="">
 								<option value="">시군구</option>
 							</select>
 						</div>
-						<div class="select-item-box">
+						<div class="select-item-box select-size-42">
 							<select name="">
 								<option value="">읍면동</option>
 							</select>
@@ -96,6 +96,16 @@
 					</p>
 					<div class="dashboard-grid-1-map">
 						1
+					</div>
+					<div class="theme-choice">
+						<button type="button" class="theme-choice-btn-group">
+							<span class="theme-choice-btn-item">
+								<i class="icon-light"></i>
+							</span>
+							<span class="theme-choice-btn-item">
+								<i class="icon-dark"></i>
+							</span>
+						</button>
 					</div>
 				</div>
 				<div class="dashboard-grid-1 ver2">
@@ -765,6 +775,14 @@
 		const settingTab_C = new Tab({
 			id : 'setting-c',
 			current: 'setting-c-1'
+		});
+
+		/* theme */
+		const themeBody = document.querySelector("body");
+		const themeButton = document.querySelector(".theme-choice-btn-group");
+
+		themeButton.addEventListener("click", () => {
+			themeBody.classList.toggle("light-theme");
 		});
 	});
 </script>
