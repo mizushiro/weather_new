@@ -298,7 +298,7 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .dashboard-chart-half.ver2 .dashboard-chart-title-box {flex-shrink:0}
 .dashboard-chart-legend-area {flex-shrink:0;height:3rem;margin-top:-.8rem}
 .dashboard-chart-half-name-box {flex-shrink:0;height:2rem;display:flex}
-.dashboard-chart-half-name-item {flex:1;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:#fff}
+.dashboard-chart-half-name-item {flex:1;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;color:var(--text-color1)}
 .dashboard-chart-full {flex:1}
 .dashboard-grid-2-area {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(1,minmax(0,1fr));gap:1.2rem;height:100%}
 .dashboard-grid-2-item {grid-column:span 1/span 1;grid-row:span 1/span 1;display:flex;background-color:var(--bg-box);height:100%;border-radius:1rem;flex-direction:column;border:.1rem solid var(--box-line)}
@@ -388,7 +388,7 @@ button:hover .icon-down-3 {background-image:url("../images/icon/icon-png-on.png"
 button:hover .icon-map-1 {background-image:url("../images/icon/icon-map-1-on.png")}
 button:hover .icon-map-2 {background-image:url("../images/icon/icon-map-2-on.png")}
 button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png")}
-.dashboard-layer-title {margin-top:3rem;color:#fff;font-weight:800;font-size:2rem;}
+.dashboard-layer-title {margin-top:3rem;color:var(--text-color1);font-weight:800;font-size:2rem;}
 .dashboard-layer-chart {border:.1rem solid var(--box-line);padding:3rem;background-color:var(--bg-box);border-radius:.6rem;margin-top:1rem}
 .dashboard-layer-chart-box {width:100%;height:24rem}
 .theme-choice {position:absolute;left:1.2rem;bottom:1.2rem}
