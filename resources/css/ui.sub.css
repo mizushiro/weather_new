@@ -365,7 +365,7 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .dashboard-chart-grid-table td {color:#fff;text-align:right;font-size:1.3rem;font-weight:700;line-height:3rem;border-bottom:.1rem solid #535e7b;padding:0 1.2rem}
 .dashboard-chart-grid-table td:first-child {text-align:center}
 .table-data-close {position:absolute;right:1rem;bottom:1rem}
-.btn-table-data-close {height:3rem;width:6.8rem;display:flex;align-items:center;justify-content:center;color:#fff;background-color:var(--bg-color);border-radius:.2rem;font-size:1.2rem;font-weight:700}
+.btn-table-data-close {height:3rem;width:6.8rem;display:flex;align-items:center;justify-content:center;color:var(--text-color1);background-color:var(--bg-color);border-radius:.2rem;font-size:1.2rem;font-weight:700}
 .dashboard-chart-grid-4 {display:flex;flex:1;flex-direction:column}
 .dashboard-chart-grid-legend {width:20%;min-width:6rem;flex-shrink:0}
 .dashboard-chart-grid-4-chart {flex:1;display:flex;flex-direction:column}
