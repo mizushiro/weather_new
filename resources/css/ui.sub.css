@@ -898,10 +898,10 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-content .map-disaster-info-left {width:31%;height:100%}
 .sub1-05-bottom {flex-shrink:0;display:flex;justify-content:flex-end;padding:.8rem 3rem .6rem}
 .sub1-05-content-desc {font-size:1.4rem;font-weight:700;color:#7386B6;line-height:1.8rem}
-.sub1-05-content-detail {flex:1;height:100%;min-height:80rem;display:flex;flex-direction:column;gap:2rem}
+.sub1-05-content-detail {flex:1;height:100%;min-height:70rem;display:flex;flex-direction:column;gap:2rem}
 .sub1-05-content-detail-box {border:.1rem solid #E4E8EF;background-color:#fff;border-radius:.6rem;display:flex;flex-direction:column}
 .sub1-05-content-detail-box.col-1 {flex:1}
-.sub1-05-content-detail-box.col-2 {flex-shrink:0;height:35%}
+.sub1-05-content-detail-box.col-2 {flex-shrink:0;height:30%}
 .sub1-05-content-detail-box.col-3 {flex-shrink:0}
 .sub1-05-content-detail .map-disaster-info-item-top {height:4.6rem}
 .sub1-05-content-detail-data {flex:1;padding:3rem}
@@ -932,6 +932,12 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-table-legend-max {background-color:#E4201D;border-color:#CA1E1C}
 .layer-content .sub1-05-table thead th {height:4.6rem;padding:1rem;line-height:1.8rem}
 .layer-content .sub1-05-table tbody td {height:4.6rem;padding:0 1rem}
+.sub1-05-top-year {display:flex;align-items:center;gap:1rem;padding-left:1rem}
+.sub1-05-top-year-title {font-size:1.4rem;font-weight:700;color:#7386B6;flex-shrink:0}
+.sub1-05-content .map-disaster-info-left-map {display:flex;flex-direction:column;gap:2rem}
+.ssp-choice-area {display:flex;align-items:center;gap:.4rem;width:100%;flex-shrink:0;}
+.ssp-choice-area .choice-item-type-b {flex:1;}
+.sub1-05-content-map {flex:1}
 @media (max-width:1023px) {
     .sub1-05-top-area {flex-direction:column;gap:.8rem;align-items:flex-start;margin:0 2rem 1.6rem}
     .sub1-05-top-line {display:none}
@@ -971,4 +977,9 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .sub1-05-content-grid {grid-template-columns:repeat(1,minmax(0,1fr))}
     .sub1-05-content-summary {flex-wrap:wrap}
     .sub1-05-content-summary-item {width:calc(50% - .4rem);flex:none}
+    .sub1-05-top-year {padding-left:0;width:100%}
+    .sub1-05-top-year .select-item-box.w-160 {flex:1;width:auto}
+    .sub1-05-content .map-disaster-info-left-top .select-item-box {width:auto;flex:1}
+    .sub1-05-content .map-disaster-info-left-map {padding:1.2rem}
+    .ssp-choice-area .choice-item-type-b-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
 }
