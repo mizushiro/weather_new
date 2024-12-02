@@ -901,7 +901,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-content-detail {flex:1;height:100%;min-height:70rem;display:flex;flex-direction:column;gap:2rem}
 .sub1-05-content-detail-box {border:.1rem solid #E4E8EF;background-color:#fff;border-radius:.6rem;display:flex;flex-direction:column}
 .sub1-05-content-detail-box.col-1 {flex:1}
-.sub1-05-content-detail-box.col-2 {flex-shrink:0;height:27%}
+.sub1-05-content-detail-box.col-2 {flex-shrink:0;height:30%}
 .sub1-05-content-detail-box.col-3 {flex-shrink:0}
 .sub1-05-content-detail .map-disaster-info-item-top {height:4.6rem}
 .sub1-05-content-detail-data {flex:1;padding:3rem}
