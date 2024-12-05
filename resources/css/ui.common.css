@@ -438,6 +438,8 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {color:#fff;background-color:var(--bg-tab)}
 .light-theme .list-item-tab-button.mdl-tab-btn[data-selected="true"] {background-color:var(--bg-tab2)}
 .tab-type-item.ver2 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {background-color:var(--bg-tab2);}
+.light-theme .list-item-tab-button {border:.1rem solid #E4E8EF}
+.light-theme .list-item-tab-button.mdl-tab-btn[data-selected="true"] {border-color:transparent}
 
 @media (max-width:767px) {
     .tab-type-item.ver2 .list-item-tab {flex:1}

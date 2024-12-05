@@ -853,8 +853,8 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .dashboard-group-title-side-line {width:.1rem;height:1.8rem;background-color:var(--line)}
 .dashboard-group-chart-full {height:calc(100% - 5.2rem)}
 .dashboard-group-box-layer {position:absolute;top:0;right:0;bottom:0;left:0;background-color:var(--layer-bg);border-radius:.6rem;display:flex;flex-direction:column}
-.dashboard-group-box-layer-top {height:5.2rem;padding:0 1.4rem 0 2rem;display:flex;align-items:center;background-color:#232D44;border-bottom:.1rem solid var(--box-line);flex-shrink:0}
-.dashboard-group-box-layer-title {font-size:1.8rem;font-weight:800;color:var(--text-color1);flex:1}
+.dashboard-group-box-layer-top {height:5.2rem;padding:0 1.4rem 0 2rem;display:flex;align-items:center;background-color:#232D44;border-bottom:.1rem solid var(--box-line);flex-shrink:0;border-radius:.6rem .6rem 0 0}
+.dashboard-group-box-layer-title {font-size:1.8rem;font-weight:800;color:#fff;flex:1}
 .dashboard-group-box-layer-close {display:flex;width:2.4rem;height:2.4rem;align-items:center;justify-content:center}
 .dashboard-group-box-layer-content {flex:1;overflow:auto;padding:2rem 3rem;-webkit-overflow-scrolling:touch}
 .dashboard-group-box-layer-content::-webkit-scrollbar {height:.8rem;width:.8rem;}
