@@ -48,7 +48,7 @@
 						<div class="dashboard-chart-item-2 ver2">
 							<div class="dashboard-chart-title-box">
 								<p class="dashboard-chart-title">미래 강수량</p>
-								<button type="button" class="btn-dashboard-chart-view" data-layer="dashboard-layer2">
+								<button type="button" class="btn-dashboard-chart-view" data-layer="dashboard-layer3">
 									<span class="for-a11y">확대보기</span>
 								</button>
 							</div>
@@ -370,15 +370,118 @@
 			</div>
 		</main>
 	</div>
-	<div id="dashboard-layer1" class="layer_section layer-full">
+	<div id="dashboard-layer1" class="layer_section w-1240">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
 				<h1 class="layer-title">미래 평균기온</h1>
 			</div>
 			<div class="layer-content">
 				<div class="dashboard-layer-area">
+                    <div class="dashboard-chart-section">
+                        <div class="dashboard-group-box">
+                            <div class="dashboard-group-title-area">
+                                <h2 class="dashboard-group-title">평균기온</h2>
+                                <div class="dashboard-group-title-side">
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-down-4"></i>
+                                    </button>
+                                    <span class="dashboard-group-title-side-line"></span>
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-article"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dashboard-layer-chart-box">
+                                차트
+                            </div>
+                            <div class="dashboard-group-box-layer">
+                                <div class="dashboard-group-box-layer-top">
+                                    <h3 class="dashboard-group-box-layer-title">평균기온</h3>
+                                    <button type="button" class="dashboard-group-box-layer-close">
+                                        <i class="icon-close"></i>
+                                    </button>
+                                </div>
+                                <div class="dashboard-group-box-layer-content">
+                                    <table class="dashboard-group-box-table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">연도</th>
+                                            <th scope="col">현재기후</th>
+                                            <th scope="col">SSP1-2.6</th>
+                                            <th scope="col">SSP2-4.5</th>
+                                            <th scope="col">SSP3-7.0</th>
+                                            <th scope="col">SSP5-8.5</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="a-center">2020</td>
+                                            <td>10.8</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>26</td>
+                                            <td>68</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-group-box">
+                            <div class="dashboard-group-title-area">
+                                <h2 class="dashboard-group-title">평균기온</h2>
+                                <div class="dashboard-group-title-side">
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-down-4"></i>
+                                    </button>
+                                    <span class="dashboard-group-title-side-line"></span>
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-article"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dashboard-layer-chart-box">
+                                차트
+                            </div>
+                        </div>
+                        <div class="dashboard-group-box">
+                            <div class="dashboard-group-title-area">
+                                <h2 class="dashboard-group-title">최저기온</h2>
+                                <div class="dashboard-group-title-side">
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-down-4"></i>
+                                    </button>
+                                    <span class="dashboard-group-title-side-line"></span>
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-article"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dashboard-layer-chart-box">
+                                차트
+                            </div>
+                        </div>
+                        <div class="dashboard-group-box">
+                            <div class="dashboard-group-title-area">
+                                <h2 class="dashboard-group-title">최고기온</h2>
+                                <div class="dashboard-group-title-side">
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-down-4"></i>
+                                    </button>
+                                    <span class="dashboard-group-title-side-line"></span>
+                                    <button type="button" class="dashboard-top-btn">
+                                        <i class="icon-article"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dashboard-layer-chart-box">
+                                차트
+                            </div>
+                        </div>
+                    </div>
+                    <!--
 					<div class="dashboard-chart-grid-v3">
-						<div class="dashboard-chart-grid-v3-item table-data">
+                        <div class="dashboard-chart-grid-v3-item table-data">
 							<div class="table-data-area">
 								<table class="dashboard-chart-grid-table">
 									<caption>
@@ -450,6 +553,7 @@
 							최고기온
 						</div>
 					</div>
+					-->
 					<!--
 					<div class="dashboard-chart-grid-v2">
 						<div class="dashboard-chart-grid-top">
@@ -494,25 +598,105 @@
 		</div>
 	</div>
 
-	<div id="dashboard-layer2" class="layer_section layer-full">
+	<div id="dashboard-layer2" class="layer_section w-1240">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
-				<h1 class="layer-title">고온 극한기후지수</h1>
+				<h1 class="layer-title">고온 극한기후지수-전국</h1>
 			</div>
 			<div class="layer-content">
 				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-half">
-						<div class="dashboard-chart-grid-item-4">
-							1
-						</div>
-						<div class="dashboard-chart-grid-item-4">
-							2
-						</div>
-					</div>
-					<div class="dashboard-chart-half-name-box">
-						<div class="dashboard-chart-half-name-item">SSP1-2.6</div>
-						<div class="dashboard-chart-half-name-item">SSP5-8.5</div>
-					</div>
+                    <div class="dashboard-group-box">
+                        <div class="dashboard-group-title-area">
+                            <h2 class="dashboard-group-title">고온 극한기후지수</h2>
+                            <div class="dashboard-group-title-side">
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-down-4"></i>
+                                </button>
+                                <span class="dashboard-group-title-side-line"></span>
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-article"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-chart-half">
+                            <div class="dashboard-chart-grid-item-4">
+                                1
+                            </div>
+                            <div class="dashboard-chart-grid-item-4">
+                                2
+                            </div>
+                        </div>
+                        <div class="dashboard-chart-half-name-box">
+                            <div class="dashboard-chart-half-name-item">SSP1-2.6</div>
+                            <div class="dashboard-chart-half-name-item">SSP5-8.5</div>
+                        </div>
+                        <div class="dashboard-group-box-layer">
+                            <div class="dashboard-group-box-layer-top">
+                                <h3 class="dashboard-group-box-layer-title">고온 극한기후지수</h3>
+                                <button type="button" class="dashboard-group-box-layer-close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="dashboard-group-box-layer-content">
+                                <table class="dashboard-group-box-table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">연도</th>
+                                        <th scope="col" colspan="2">현재기후</th>
+                                        <th scope="col" colspan="2">SSP1-2.6</th>
+                                        <th scope="col" colspan="2">SSP5-8.5</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">폭염일수</th>
+                                        <th scope="col">열대야일수</th>
+                                        <th scope="col">폭염일수</th>
+                                        <th scope="col">열대야일수</th>
+                                        <th scope="col">폭염일수</th>
+                                        <th scope="col">열대야일수</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="a-center">2020</td>
+                                        <td>10.8</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>26</td>
+                                        <td>68</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-center">2020</td>
+                                        <td>10.8</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>26</td>
+                                        <td>68</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-center">2020</td>
+                                        <td>10.8</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>26</td>
+                                        <td>68</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-center">2020</td>
+                                        <td>10.8</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>20</td>
+                                        <td>26</td>
+                                        <td>68</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 					<div class="dashboard-layer-area-fixed-btn">
 						<button type="button" class="btn-s-down-item">
 							<i class="icon-down-1"></i>
@@ -534,25 +718,77 @@
 		</div>
 	</div>
 
-	<div id="dashboard-layer2-2" class="layer_section layer-full">
+	<div id="dashboard-layer2-2" class="layer_section w-1240">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
-				<h1 class="layer-title">저온 극한기후지수</h1>
+				<h1 class="layer-title">저온 극한기후지수-전국</h1>
+			</div>
+			<div class="layer-content">
+                <div class="dashboard-layer-area">
+                    <div class="dashboard-group-box">
+                        <div class="dashboard-group-title-area">
+                            <h2 class="dashboard-group-title">저온 극한기후지수</h2>
+                            <div class="dashboard-group-title-side">
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-down-4"></i>
+                                </button>
+                                <span class="dashboard-group-title-side-line"></span>
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-article"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-chart-half">
+                            <div class="dashboard-chart-grid-item-4">
+                                1
+                            </div>
+                            <div class="dashboard-chart-grid-item-4">
+                                2
+                            </div>
+                        </div>
+                        <div class="dashboard-chart-half-name-box">
+                            <div class="dashboard-chart-half-name-item">SSP1-2.6</div>
+                            <div class="dashboard-chart-half-name-item">SSP5-8.5</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-layer-area-fixed-btn">
+                        <button type="button" class="btn-s-down-item">
+                            <i class="icon-down-1"></i>
+                        </button>
+                        <button type="button" class="btn-s-down-item">
+                            <i class="icon-down-2"></i>
+                        </button>
+                        <button type="button" class="btn-s-down-item">
+                            <i class="icon-down-3"></i>
+                        </button>
+                    </div>
+                </div>
+			</div>
+			<div class="layer-top-right-btn">
+				<button type="button" class="layer-top-btn-item dark btn_layer-close">
+					<img src="../resources/images/common/icon-close.png" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="dashboard-layer3" class="layer_section w-1240">
+		<div class="layer_section-container">
+			<div class="layer-title-box">
+				<h1 class="layer-title">미래 강수량</h1>
 			</div>
 			<div class="layer-content">
 				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-half">
-						<div class="dashboard-chart-grid-item-4">
-							1
-						</div>
-						<div class="dashboard-chart-grid-item-4">
-							2
-						</div>
-					</div>
-					<div class="dashboard-chart-half-name-box">
-						<div class="dashboard-chart-half-name-item">SSP1-2.6</div>
-						<div class="dashboard-chart-half-name-item">SSP5-8.5</div>
-					</div>
+                    <div class="dashboard-group-box">
+                        <div class="dashboard-group-title-area">
+                            <h2 class="dashboard-group-title">강수량</h2>
+                            <div class="dashboard-group-title-side">
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-article"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 					<div class="dashboard-layer-area-fixed-btn">
 						<button type="button" class="btn-s-down-item">
 							<i class="icon-down-1"></i>
@@ -574,46 +810,7 @@
 		</div>
 	</div>
 
-	<div id="dashboard-layer3" class="layer_section layer-full">
-		<div class="layer_section-container">
-			<div class="layer-title-box">
-				<h1 class="layer-title">고탄소, 저탄소 : 10년 단위 강수량</h1>
-			</div>
-			<div class="layer-content">
-				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-grid">
-						<div class="dashboard-chart-grid-item-1">
-							1
-						</div>
-						<div class="dashboard-chart-grid-item-2">
-							2
-						</div>
-						<div class="dashboard-chart-grid-item-3">
-							3
-						</div>
-					</div>
-					<div class="dashboard-layer-area-fixed-btn">
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-1"></i>
-						</button>
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-2"></i>
-						</button>
-						<button type="button" class="btn-s-down-item">
-							<i class="icon-down-3"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-			<div class="layer-top-right-btn">
-				<button type="button" class="layer-top-btn-item dark btn_layer-close">
-					<img src="../resources/images/common/icon-close.png" alt="">
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div id="dashboard-layer4" class="layer_section layer-full">
+	<div id="dashboard-layer4" class="layer_section w-1240">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
 				<h1 class="layer-title">영향정보</h1>
@@ -646,60 +843,98 @@
 					</div>
 					<div class="mdl-tab-pnl" data-tab-id="setting-c">
 						<div class="tab-contents mdl-tab-item" data-tab="setting-c-1">
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
+                            <div class="dashboard-group-box">
+                                <div class="dashboard-group-title-area">
+                                    <h2 class="dashboard-group-title">생육온도일수(10℃)</h2>
+                                    <div class="dashboard-group-title-side">
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-down-4"></i>
+                                        </button>
+                                        <span class="dashboard-group-title-side-line"></span>
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-article"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dashboard-layer-chart-box">
+                                    차트
+                                </div>
+                            </div>
+
+                            <div class="dashboard-group-box">
+                                <div class="dashboard-group-title-area">
+                                    <h2 class="dashboard-group-title">생육온도일수(10℃)</h2>
+                                    <div class="dashboard-group-title-side">
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-down-4"></i>
+                                        </button>
+                                        <span class="dashboard-group-title-side-line"></span>
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-article"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dashboard-layer-chart-box">
+                                    차트
+                                </div>
+                            </div>
 						</div>
 						<div class="tab-contents mdl-tab-item" data-tab="setting-c-2">
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
+                            <div class="dashboard-group-box">
+                                <div class="dashboard-group-title-area">
+                                    <h2 class="dashboard-group-title">생육온도일수(10℃)</h2>
+                                    <div class="dashboard-group-title-side">
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-down-4"></i>
+                                        </button>
+                                        <span class="dashboard-group-title-side-line"></span>
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-article"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dashboard-layer-chart-box">
+                                    차트
+                                </div>
+                            </div>
 						</div>
 						<div class="tab-contents mdl-tab-item" data-tab="setting-c-3">
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
+                            <div class="dashboard-group-box">
+                                <div class="dashboard-group-title-area">
+                                    <h2 class="dashboard-group-title">생육온도일수(10℃)</h2>
+                                    <div class="dashboard-group-title-side">
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-down-4"></i>
+                                        </button>
+                                        <span class="dashboard-group-title-side-line"></span>
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-article"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dashboard-layer-chart-box">
+                                    차트
+                                </div>
+                            </div>
 						</div>
 						<div class="tab-contents mdl-tab-item" data-tab="setting-c-4">
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
-							<h2 class="dashboard-layer-title">열지수</h2>
-							<div class="dashboard-layer-chart">
-								<div class="dashboard-layer-chart-box">
-									차트
-								</div>
-							</div>
+                            <div class="dashboard-group-box">
+                                <div class="dashboard-group-title-area">
+                                    <h2 class="dashboard-group-title">생육온도일수(10℃)</h2>
+                                    <div class="dashboard-group-title-side">
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-down-4"></i>
+                                        </button>
+                                        <span class="dashboard-group-title-side-line"></span>
+                                        <button type="button" class="dashboard-top-btn">
+                                            <i class="icon-article"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dashboard-layer-chart-box">
+                                    차트
+                                </div>
+                            </div>
 						</div>
 					</div>
 					<!--<div class="dashboard-chart-half">
@@ -735,16 +970,30 @@
 		</div>
 	</div>
 
-	<div id="dashboard-layer5" class="layer_section layer-full">
+	<div id="dashboard-layer5" class="layer_section w-1240">
 		<div class="layer_section-container">
 			<div class="layer-title-box">
 				<h1 class="layer-title">계절길이 변화</h1>
 			</div>
 			<div class="layer-content">
 				<div class="dashboard-layer-area">
-					<div class="dashboard-chart-full">
-						1
-					</div>
+                    <div class="dashboard-group-box">
+                        <div class="dashboard-group-title-area">
+                            <h2 class="dashboard-group-title">계절길이 미래변화</h2>
+                            <div class="dashboard-group-title-side">
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-down-4"></i>
+                                </button>
+                                <span class="dashboard-group-title-side-line"></span>
+                                <button type="button" class="dashboard-top-btn">
+                                    <i class="icon-article"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="dashboard-group-chart-full">
+                            차트
+                        </div>
+                    </div>
 					<div class="dashboard-layer-area-fixed-btn">
 						<button type="button" class="btn-s-down-item">
 							<i class="icon-down-1"></i>

@@ -327,14 +327,15 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .value-down .data-value {color:var(--text-color-blue)}
 .value-down .icon-up-down {background-image:url("../images/common/icon-down.svg");top:.2rem}
 .light-theme .value-down .icon-up-down {background-image:url("../images/common/icon-down-light.svg")}
-.dashboard-layer-area {width:100%;height:100%;padding:3rem 3rem 8rem;background-color:var(--bg-box);overflow-y:auto;position:relative;-webkit-overflow-scrolling:touch}
+.dashboard-layer-area {width:100%;height:100%;padding:3rem 3rem 1rem;background-color:var(--bg-color);overflow-y:auto;position:relative;-webkit-overflow-scrolling:touch}
 .dashboard-layer-area::-webkit-scrollbar {height:.8rem;width:.8rem;}
 .dashboard-layer-area::-webkit-scrollbar-track {border-radius:999em;background-color:transparent}
-.dashboard-layer-area::-webkit-scrollbar-thumb {width:.8rem;border-radius:999em;background-color:#D9D9D9;}
+.dashboard-layer-area::-webkit-scrollbar-thumb {width:.8rem;border-radius:999em;background-color:rgba(255,255,255,.15);}
+.light-theme .dashboard-layer-area::-webkit-scrollbar-thumb {background-color:rgba(0,0,0,.15);}
 .dashboard-layer-area.deep-dark::-webkit-scrollbar-thumb {background-color:rgba(255,255,255,.15);}
 .dashboard-layer-area.deep-dark {background-color:var(--bg-color)}
-.dashboard-layer-area-fixed-btn {position:absolute;left:0;right:0;bottom:1rem;height:6rem;display:flex;justify-content:flex-end;gap:.8rem;padding:0 2rem}
-.dashboard-layer-area .dashboard-chart-half {height:calc(100% - 8rem)}
+.dashboard-layer-area-fixed-btn {position:sticky;left:0;right:0;bottom:0;height:6rem;display:flex;justify-content:flex-end;gap:.8rem;padding:0 2rem;margin-top:1rem}
+.dashboard-layer-area .dashboard-chart-half {height:calc(100% - 13rem)}
 .dashboard-layer-area .dashboard-chart-half-name-box {height:8rem}
 .dashboard-layer-area .dashboard-chart-half-name-item {font-size:2.8rem;color:var(--text-color1)}
 .dashboard-layer-area .dashboard-chart-full,
@@ -425,7 +426,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .theme-choice {left:0;bottom:.4rem}
 }
 @media (max-width:767px) {
-    .dashboard-layer-area {padding:1.6rem 1.6rem 6.4rem}
+    .dashboard-layer-area {padding:1.6rem 1.6rem 1rem}
     .dashboard-chart-grid-top {padding-left:6rem}
     .dashboard-chart-grid-left {width:6rem}
     .dashboard-chart-grid-top-title {font-size:1.3rem}
@@ -638,7 +639,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
     .radio-style-a + label {height:3.2rem;font-size:1.4rem;}
     .layer-open-box .layer-content {border-radius:0;}
     .footer-nav .map-section-head {border-radius:0;}
-    .layer-top-right-btn {top:0.2rem;right:0.2rem;}
+    .layer-top-right-btn {top:0.5rem;right:0.8rem;}
+    .layer-top-btn-item img {width:1.2rem;height:1.2rem}
     .slider-value-position .amount-data {font-size:1rem;}
     .slider-value-position {height:1.6rem;top:-3.1rem ;padding:0 0.6rem}
     .slider-value-position:before {left:calc(50% - 0.2rem)}
@@ -837,6 +839,31 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .map-view-col.n2 {display:none;background:black}
 .map-container[data-toggle-state="true"] .map-view-col.n2 {display:block}
 .map-container[data-toggle-state="true"] .map2-right-top {display:none}
+
+.dashboard-group-box {border:.1rem solid var(--box-line);background-color:var(--bg-box);border-radius:.6rem;height:calc(100% - 8rem);position:relative}
+.dashboard-group-box ~ .dashboard-group-box {margin-top:2rem}
+.icon-down-4 {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-download-4.svg") no-repeat 50% 50%;background-size:contain;}
+.light-theme .icon-down-4 {background-image:url("../images/common/icon-download-4-light.svg")}
+.icon-article {aspect-ratio:1/1;width:2.4rem;background:url("../images/common/icon-article.svg") no-repeat 50% 50%;background-size:contain;}
+.light-theme .icon-article {background-image:url("../images/common/icon-article-light.svg")}
+.dashboard-top-btn {width:2.4rem;height:2.4rem;display:flex;align-items:center;justify-content:center;border:none}
+.dashboard-group-title-area {height:5.2rem;border-bottom:.1rem solid var(--box-line);display:flex;align-items:center;padding:0 1.8rem}
+.dashboard-group-title {flex:1;color:var(--text-color1);font-size:1.8rem;font-weight:800;}
+.dashboard-group-title-side {display:flex;align-items:center;gap:1rem;}
+.dashboard-group-title-side-line {width:.1rem;height:1.8rem;background-color:var(--line)}
+.dashboard-group-chart-full {height:calc(100% - 5.2rem)}
+.dashboard-group-box-layer {position:absolute;top:0;right:0;bottom:0;left:0;background-color:var(--layer-bg);border-radius:.6rem;display:flex;flex-direction:column}
+.dashboard-group-box-layer-top {height:5.2rem;padding:0 1.4rem 0 2rem;display:flex;align-items:center;background-color:#232D44;border-bottom:.1rem solid var(--box-line);flex-shrink:0}
+.dashboard-group-box-layer-title {font-size:1.8rem;font-weight:800;color:var(--text-color1);flex:1}
+.dashboard-group-box-layer-close {display:flex;width:2.4rem;height:2.4rem;align-items:center;justify-content:center}
+.dashboard-group-box-layer-content {flex:1;overflow:auto;padding:2rem 3rem;-webkit-overflow-scrolling:touch}
+.dashboard-group-box-layer-content::-webkit-scrollbar {height:.8rem;width:.8rem;}
+.dashboard-group-box-layer-content::-webkit-scrollbar-track {border-radius:999em;background-color:transparent}
+.dashboard-group-box-layer-content::-webkit-scrollbar-thumb {width:.8rem;border-radius:999em;background-color:var(--scroll-thumb);}
+.dashboard-group-box-table {border-top:.1rem solid var(--table-line);border-left:.1rem solid var(--table-line);width:auto;min-width:100%}
+.dashboard-group-box-table thead th {border-right:.1rem solid var(--table-line);border-bottom:.1rem solid var(--table-line);color:var(--text-color1);padding:1.2rem .8rem;font-size:1.6rem;font-weight:800;background-color:var(--table-th-bg);white-space:nowrap}
+.dashboard-group-box-table tbody td {border-right:.1rem solid var(--table-line);border-bottom:.1rem solid var(--table-line);color:var(--text-color1);padding:1.2rem .8rem;text-align:right;font-size:1.4rem;font-weight:700;white-space:nowrap}
+.dashboard-group-box-table tbody td.a-center {text-align:center}
 @media (max-width:1023px) {
     .btn-right-open {display:flex;position:absolute;top:calc(50% - 4.5rem);right:0;height:9rem;transition:right .2s ease;background:url(../images/common/button-nav-close.svg) no-repeat 0 50%;background-size:contain;aspect-ratio:26 / 92;width:2.6rem;rotate:180deg;}
     .map-container-right {position:fixed;top:6rem ;right:-20rem;z-index:10;width:20rem;transition:right .2s ease;height:calc(100dvh - 6rem);}
@@ -874,6 +901,12 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .s-map-right-bottom {right:1.4rem;bottom:7.5rem;z-index:9;}
     .map3-right-bottom {right:1.2rem;}
     .btn-setting-option {width: 3.2rem; height: 3.2rem;}
+    .dashboard-group-box-layer-top {height:4.4rem}
+    .dashboard-group-box-layer-title {font-size:1.4rem}
+    .dashboard-group-box-layer-content {padding:1.2rem}
+    .dashboard-group-box {height:calc(100% - 6rem)}
+    .dashboard-group-box-table tbody td,
+    .dashboard-group-box-table thead th {font-size:1.3rem;padding:.8rem}
 }
 @media (max-width:767px) {
     .map-view-col .map2-select-choice-box {flex-wrap:nowrap;width:100%}
@@ -885,6 +918,10 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .map-right-position.sub-02 {top:9rem}
     .radio-group-box {flex-wrap: wrap}
     .choice-item-type-a:first-child {min-width:100%;height:1.8rem;}
+    .dashboard-group-title-area {height:4.4rem;padding:0 1.2rem}
+    .dashboard-group-title {font-size:1.5rem}
+    .icon-down-4,
+    .icon-article {width:2rem}
 }
 
 /* 극한기후지표 */
@@ -981,5 +1018,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .sub1-05-top-year .select-item-box.w-160 {flex:1;width:auto}
     .sub1-05-content .map-disaster-info-left-top .select-item-box {width:auto;flex:1}
     .sub1-05-content .map-disaster-info-left-map {padding:1.2rem}
+    .chart-layer-top-group .choice-item-type-b {flex:1}
+    .chart-layer-top-group .choice-item-type-b-label,
     .ssp-choice-area .choice-item-type-b-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
 }
