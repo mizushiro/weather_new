@@ -187,6 +187,13 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .choice-item-type-b-label {padding:0 1.2rem;height:4.2rem;background-color:#fff;font-size:1.4rem;font-weight:800;color:#7386B6;display:flex;align-items:center;border-radius:999em;border:1px solid #CED6E3;min-width:10rem;justify-content:center;cursor:pointer;line-height:1}
 .choice-item-type-b .inp-choice {opacity:0;position:absolute;left:0;top:0}
 .inp-choice:checked + .choice-item-type-b-label {background-color:#2E7EF6;border-color:#2E7EF6;color:#fff}
+.choice-item-type-c {position:relative}
+.choice-item-type-c ~ .choice-item-type-c {margin-left:-1px}
+.choice-item-type-c-label {padding:0 1.2rem;height:4.2rem;background-color:#fff;font-size:1.4rem;font-weight:800;color:#7386B6;display:flex;align-items:center;;border:1px solid #CED6E3;min-width:10rem;justify-content:center;cursor:pointer;line-height:1}
+.choice-item-type-c:first-child .choice-item-type-c-label {border-bottom-left-radius:.4rem;border-top-left-radius:.4rem}
+.choice-item-type-c:last-child .choice-item-type-c-label {border-bottom-right-radius:.4rem;border-top-right-radius:.4rem}
+.choice-item-type-c .inp-choice {opacity:0;position:absolute;left:0;top:0}
+.inp-choice:checked + .choice-item-type-c-label {border-color:#2E7EF6;color:#2E7EF6;position:relative;z-index:2}
 
 /* button */
 .btn-wrap .btn-base {flex:1;}
@@ -332,6 +339,7 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .layer_section .layer_section-container {transition:.4s;top:10rem;width:64rem;max-height:calc(100% - 8rem);box-shadow:.2rem 0 .6rem 0 rgba(0,0,0,.2);display:flex;flex-direction:column;position:relative;border-radius:1rem;}
 .layer_section.w-840 .layer_section-container {width:84rem;}
 .layer_section.w-920 .layer_section-container {width:92rem;}
+.layer_section.w-1064 .layer_section-container {width:106.4rem;}
 .layer_section.w-1240 .layer_section-container {width:124rem;}
 .layer_section.w-1340 .layer_section-container {width:134rem;}
 .layer_section.showing {visibility:visible;opacity:1;}

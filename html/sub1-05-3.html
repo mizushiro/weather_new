@@ -1,0 +1,581 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>기후변화상황지도</title>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="../resources/js/ui.common.js"></script>
+	<script src="../resources/js/ui.global.js"></script>
+</head>
+
+<body>
+	<div class="base-wrap sub-map">
+		<!-- /html/header.html -->
+		<header class="header" data-id="header"></header>
+		<main class="disaster-info-box">
+			<div class="sub1-05-top-area">
+				<div class="sub1-05-top-btn-group">
+                    <button type="button" class="btn-base btn-type-choice2" data-size="42" data-round="full">
+                        방재
+                    </button>
+                    <button type="button" class="btn-base btn-type-choice2" data-size="42" data-round="full">
+                        국토 · 교통
+                    </button>
+                    <button type="button" class="btn-base btn-type-choice2 is-select" data-size="42" data-round="full">
+                        보건
+                    </button>
+                </div>
+                <span class="sub1-05-top-line"></span>
+                <div class="sub1-05-top-select-group m-full">
+                    <div class="select-item-box select-size-42 line-type w-180">
+                        <select name="">
+                            <option value="">고열 작업환경</option>
+                        </select>
+                    </div>
+                    <div class="select-item-box select-size-42 line-type w-180">
+                        <select name="">
+                            <option value="">온열지수(평균기온)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sub1-05-top-year">
+                    <span class="sub1-05-top-year-title">기준연도</span>
+                    <div class="select-item-box select-size-42 line-type w-160">
+                        <select name="">
+                            <option value="">2021</option>
+                        </select>
+                    </div>
+                </div>
+			</div>
+			<div class="sub1-05-content">
+				<div class="map-disaster-info-left">
+					<div class="map-disaster-info-left-top">
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">전국</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">시군구</option>
+							</select>
+						</div>
+						<div class="select-item-box select-size-42 line-type">
+							<select name="">
+								<option value="">2020</option>
+							</select>
+						</div>
+					</div>
+					<div class="map-disaster-info-left-map">
+                        <div class="ssp-choice-area">
+                            <div class="choice-item-type-c">
+                                <input type="radio" id="a1-0" name="a1" class="inp-choice">
+                                <label for="a1-0" class="choice-item-type-c-label">
+                                    SSP1-2.6
+                                </label>
+                            </div>
+                            <div class="choice-item-type-c">
+                                <input type="radio" id="a1-1" name="a1" class="inp-choice">
+                                <label for="a1-1" class="choice-item-type-c-label">
+                                    SSP2-4.5
+                                </label>
+                            </div>
+                            <div class="choice-item-type-c">
+                                <input type="radio" id="a1-2" name="a1" class="inp-choice">
+                                <label for="a1-2" class="choice-item-type-c-label">
+                                    SSP3-7.0
+                                </label>
+                            </div>
+                            <div class="choice-item-type-c">
+                                <input type="radio" id="a1-3" name="a1" class="inp-choice">
+                                <label for="a1-3" class="choice-item-type-c-label">
+                                    SSP5-8.5
+                                </label>
+                            </div>
+                        </div>
+                        <div class="sub1-05-content-map">
+                            지도영역
+                        </div>
+					</div>
+				</div>
+                <div class="sub1-05-content-detail">
+                    <div class="sub1-05-content-detail-box col-3">
+                        <div class="map-disaster-info-item-top">
+                            <h4 class="map-disaster-info-item-title">
+                                10년 평균
+                            </h4>
+                        </div>
+                        <div class="sub1-05-content-detail-data ver2">
+                            <div class="sub1-05-content-summary red-type">
+                                <div class="sub1-05-content-summary-title">
+                                    최대
+                                </div>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP1-2.6
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        26.8일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP2-4.5
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        42.9일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP3-7.0
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        36.0일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP5-8.5
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        69.3일
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="sub1-05-content-summary blue-type">
+                                <div class="sub1-05-content-summary-title">
+                                    최소
+                                </div>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP1-2.6
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        26.8일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP2-4.5
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        42.9일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP3-7.0
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        36.0일
+                                    </dd>
+                                </dl>
+                                <dl class="sub1-05-content-summary-item">
+                                    <dt class="sub1-05-content-summary-item-title">
+                                        SSP5-8.5
+                                    </dt>
+                                    <dd class="sub1-05-content-summary-item-value">
+                                        69.3일
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub1-05-content-detail-box col-2">
+                        <div class="map-disaster-info-item-top">
+                            <h4 class="map-disaster-info-item-title">
+                                시계열
+                            </h4>
+                            <button type="button" class="btn-detail-open" data-layer="chart-layer1">
+                                <i class="icon-plus"></i>
+                            </button>
+                        </div>
+                        <div class="sub1-05-content-detail-data">
+                            차트영역
+                        </div>
+                    </div>
+                    <div class="sub1-05-content-detail-box col-1">
+                        <div class="map-disaster-info-item-top light-theme">
+                            <h4 class="map-disaster-info-item-title2">
+                                월별/작업강도별 작업 가능일
+                            </h4>
+                            <div class="mdl-tab" data-tab-id="setting-b">
+                                <ul class="tab-type-item mdl-tab-wrap">
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button mdl-tab-btn" data-tab="setting-b-1">
+                                            경작업
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button mdl-tab-btn" data-tab="setting-b-2">
+                                            중등작업
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button mdl-tab-btn" data-tab="setting-b-3">
+                                            중작업
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="map-disaster-info-item-top-btn-group">
+                                <span class="map-disaster-info-item-title2">기준정보</span>
+                                <button type="button" class="btn-detail-open" data-layer="chart-layer1">
+                                    <i class="icon-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sub1-05-content-detail-data ver2">
+                            <div class="mdl-tab-pnl" data-tab-id="setting-b">
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-b-1">
+                                    <div class="w-scroll">
+                                        <table class="sub1-05-table h-full">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">작업휴식시간비</th>
+                                                <th scope="col">1월</th>
+                                                <th scope="col">2월</th>
+                                                <th scope="col">3월</th>
+                                                <th scope="col">4월</th>
+                                                <th scope="col">5월</th>
+                                                <th scope="col">6월</th>
+                                                <th scope="col">7월</th>
+                                                <th scope="col">8월</th>
+                                                <th scope="col">9월</th>
+                                                <th scope="col">10월</th>
+                                                <th scope="col">11월</th>
+                                                <th scope="col">12월</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">계속작업</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 75% 작업, 25%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 50% 작업, 50%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 25% 작업, 75%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-b-2">
+                                    <div class="w-scroll">
+                                        <table class="sub1-05-table h-full">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">작업휴식시간비</th>
+                                                <th scope="col">1월</th>
+                                                <th scope="col">2월</th>
+                                                <th scope="col">3월</th>
+                                                <th scope="col">4월</th>
+                                                <th scope="col">5월</th>
+                                                <th scope="col">6월</th>
+                                                <th scope="col">7월</th>
+                                                <th scope="col">8월</th>
+                                                <th scope="col">9월</th>
+                                                <th scope="col">10월</th>
+                                                <th scope="col">11월</th>
+                                                <th scope="col">12월</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">계속작업</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 75% 작업, 25%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 50% 작업, 50%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 25% 작업, 75%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-b-3">
+                                    <div class="w-scroll">
+                                        <table class="sub1-05-table h-full">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">작업휴식시간비</th>
+                                                <th scope="col">1월</th>
+                                                <th scope="col">2월</th>
+                                                <th scope="col">3월</th>
+                                                <th scope="col">4월</th>
+                                                <th scope="col">5월</th>
+                                                <th scope="col">6월</th>
+                                                <th scope="col">7월</th>
+                                                <th scope="col">8월</th>
+                                                <th scope="col">9월</th>
+                                                <th scope="col">10월</th>
+                                                <th scope="col">11월</th>
+                                                <th scope="col">12월</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">계속작업</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 75% 작업, 25%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 50% 작업, 50%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">매시간 25% 작업, 75%휴식</th>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                                <td>25일</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div class="sub1-05-bottom">
+                <p class="sub1-05-content-desc">기준 정보 : 미래 기후변화 및 복합재해를 고려한 방재기준 가이드라인(행정안전부 가이드 라인, 2017. 12)</p>
+            </div>
+		</main>
+
+        <div id="chart-layer1" class="layer_section w-1064 dark">
+            <div class="layer_section-container">
+                <div class="layer-title-box">
+                    <h1 class="layer-title">월별/작업강도별 작업 가능일</h1>
+                </div>
+                <div class="layer-content bg-gray p-30">
+                    <div class="w-scroll">
+                        <table class="sub1-05-table">
+                            <colgroup>
+                                <col style="width:31rem">
+                                <col span="3" style="width:calc((100% - 31rem) / 3)">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col" rowspan="2" class="deep-gray">작업휴식시간비</th>
+                                <th scope="col" colspan="3" class="deep-gray">작업강동</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">경작업</th>
+                                <th scope="col">중득작업</th>
+                                <th scope="col">중작업</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">계속작업</th>
+                                <td>30.0°</td>
+                                <td>30.0°</td>
+                                <td>30.0°</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">매시간 75% 작업, 25%휴식</th>
+                                <td>30.6°</td>
+                                <td>30.6°</td>
+                                <td>30.6°</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">매시간 50% 작업, 50%휴식</th>
+                                <td>31.4°</td>
+                                <td>31.4°</td>
+                                <td>31.4°</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">매시간 25% 작업, 75%휴식</th>
+                                <td>32.2°</td>
+                                <td>32.2°</td>
+                                <td>32.2°</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="layer-top-right-btn">
+                    <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                        <img src="../resources/images/common/icon-close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+        const settingTab_B = new Tab({
+            id : 'setting-b',
+            current: 'setting-b-1'
+        });
+	});
+
+</script>
+
+</html>

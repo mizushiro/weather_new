@@ -459,8 +459,9 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .map-disaster-info-left-top .select-item-box {flex:1}
 .map-disaster-info-left-map {flex:1;padding:2rem;}
 .map-disaster-info-item {border:.1rem solid #E4E8EF;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
-.map-disaster-info-item-top {flex-shrink:0;display:flex;padding:0 1.2rem 0 1.6rem;align-items:center;height:4.2rem;border-bottom:.1rem solid #E4E8EF}
+.map-disaster-info-item-top {flex-shrink:0;display:flex;padding:0 1.2rem 0 1.6rem;align-items:center;height:4.2rem;border-bottom:.1rem solid #E4E8EF;gap:1.5rem}
 .map-disaster-info-item-title {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex:1}
+.map-disaster-info-item-title2 {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex-shrink:0}
 .map-disaster-info-item-top-btn-group {display:flex;align-items:center;gap:.6rem;flex-shrink:0}
 .map-disaster-info-item-top-btn-group .btn-base {min-width:7.2rem}
 .btn-detail-open {display:flex;align-items:center;justify-content:center;border:.1rem solid #E4E8EF;width:2.4rem;height:2.4rem;}
@@ -939,9 +940,11 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-content-detail-box {border:.1rem solid #E4E8EF;background-color:#fff;border-radius:.6rem;display:flex;flex-direction:column}
 .sub1-05-content-detail-box.col-1 {flex:1}
 .sub1-05-content-detail-box.col-2 {flex-shrink:0;height:30%}
+.sub1-05-content-detail-box.col-4 {flex-shrink:0;height:35%}
 .sub1-05-content-detail-box.col-3 {flex-shrink:0}
 .sub1-05-content-detail .map-disaster-info-item-top {height:4.6rem}
 .sub1-05-content-detail-data {flex:1;padding:3rem}
+.sub1-05-content-detail-data.ver2 {padding:1.8rem 3rem}
 .sub1-05-content-detail-data .w-scroll {height:100%;}
 .sub1-05-content-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:2rem}
 .sub1-05-table {border-top:.1rem solid #D5DCE8;border-left:.1rem solid #D5DCE8;width:100%;}
@@ -958,6 +961,14 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-table-data-value.data-mini {background-color:#135090;font-weight:800;color:#fff;border-color:#0C4077}
 .sub1-05-table-data-value.data-max {background-color:#E4201D;font-weight:800;color:#fff;border-color:#CA1E1C}
 .sub1-05-content-summary {display:flex;gap:1.6rem}
+.sub1-05-content-summary-title {height:5.8rem;width:9rem;border-radius:.4rem;font-size:2rem;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.sub1-05-content-summary.blue-type {gap:1.2rem;margin-top:1.2rem}
+.sub1-05-content-summary.red-type {gap:1.2rem}
+.sub1-05-content-summary.red-type .sub1-05-content-summary-title {background-color:#E4201D}
+.sub1-05-content-summary.blue-type .sub1-05-content-summary-title {background-color:#2E7EF6}
+.sub1-05-content-summary.red-type .sub1-05-content-summary-item {height:5.8rem;background-color:rgba(228,32,29,.12)}
+.sub1-05-content-summary.blue-type .sub1-05-content-summary-item {height:5.8rem}
+.sub1-05-content-summary.red-type .sub1-05-content-summary-item-title {color:#E4201D}
 .sub1-05-content-summary-item {flex:1;background-color:#E2ECFF;border-radius:.4rem;height:7.4rem;padding:0 3rem;display:flex;justify-content:space-between;align-items:center}
 .sub1-05-content-summary-item-title {font-size:1.6rem;color:#2E7EF6;font-weight:800}
 .sub1-05-content-summary-item-value {font-size:3rem;color:#1E222F;font-weight:800}
@@ -972,16 +983,21 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-top-year {display:flex;align-items:center;gap:1rem;padding-left:1rem}
 .sub1-05-top-year-title {font-size:1.4rem;font-weight:700;color:#7386B6;flex-shrink:0}
 .sub1-05-content .map-disaster-info-left-map {display:flex;flex-direction:column;gap:2rem}
-.ssp-choice-area {display:flex;align-items:center;gap:.4rem;width:100%;flex-shrink:0;}
-.ssp-choice-area .choice-item-type-b {flex:1;}
+.ssp-choice-area {display:flex;align-items:center;width:100%;flex-shrink:0;max-width:48rem;margin:0 auto}
+.ssp-choice-area .choice-item-type-c {flex:1;}
 .sub1-05-content-map {flex:1}
+.sub1-05-content-detail .list-item-tab-button {min-width:9.8rem;font-size:1.5rem}
+.sub1-05-content-detail-data .mdl-tab-pnl,
+.sub1-05-content-detail-data .tab-contents,
+.sub1-05-content-detail-data .tab-contents .w-scroll {height:100%;width:100%}
 @media (max-width:1023px) {
     .sub1-05-top-area {flex-direction:column;gap:.8rem;align-items:flex-start;margin:0 2rem 1.6rem}
     .sub1-05-top-line {display:none}
     .sub1-05-content {flex-direction:column;padding:0 1.6rem}
     .sub1-05-content .map-disaster-info-left {width:100%;height:60rem}
-    .sub1-05-content-detail {min-height:0;height:auto}
+    .sub1-05-content-detail {min-height:0;height:auto;width:100%}
     .sub1-05-content-detail-data {padding:1.6rem}
+    .sub1-05-content-detail-data.ver2 {padding:1.6rem}
     .sub1-05-content-grid {gap:.8rem}
     .sub1-05-table caption {font-size:1.4rem;height:3.6rem;line-height:3.6rem}
     .sub1-05-table thead th {height:3.6rem}
@@ -1003,6 +1019,12 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .w-scroll .sub1-05-table tbody th {padding:.6rem}
     .sub1-05-content-detail-data .w-scroll {width:calc(100vw - 6.4rem)}
     .sub1-05-table-data-value {min-width:6rem}
+
+    .sub1-05-content-summary.red-type,
+    .sub1-05-content-summary.blue-type {flex-wrap:wrap;gap:.8rem}
+    .sub1-05-content-summary-title {width:100%;height:3.2rem;font-size:1.6rem}
+    .sub1-05-top-select-group .select-item-box.w-180 {flex:1}
+    .sub1-05-top-select-group.m-full {width:100%}
 }
 @media (max-width:767px) {
     .sub1-05-top-btn-group {width:100%}
@@ -1010,7 +1032,8 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .sub1-05-top-select-group {flex-wrap:wrap}
     .sub1-05-top-select-group .select-item-box.w-300 {width:100%}
     .sub1-05-top-select-group .select-item-box.w-130,
-    .sub1-05-top-select-group .select-item-box.w-160 {flex:1}
+    .sub1-05-top-select-group .select-item-box.w-160,
+    .sub1-05-top-select-group .select-item-box.w-180 {flex:1}
     .sub1-05-content-grid {grid-template-columns:repeat(1,minmax(0,1fr))}
     .sub1-05-content-summary {flex-wrap:wrap}
     .sub1-05-content-summary-item {width:calc(50% - .4rem);flex:none}
@@ -1019,6 +1042,8 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .sub1-05-content .map-disaster-info-left-top .select-item-box {width:auto;flex:1}
     .sub1-05-content .map-disaster-info-left-map {padding:1.2rem}
     .chart-layer-top-group .choice-item-type-b {flex:1}
-    .chart-layer-top-group .choice-item-type-b-label,
-    .ssp-choice-area .choice-item-type-b-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
+    .chart-layer-top-group .choice-item-type-b-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
+    .ssp-choice-area .choice-item-type-c-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
+    .map-disaster-info-item-top.light-theme {flex-wrap:wrap;height:auto;padding:1.2rem;gap:.8rem;flex-direction:column;align-items:flex-start}
+    .map-disaster-info-item-top.light-theme .map-disaster-info-item-top-btn-group {margin-left:auto}
 }
