@@ -535,7 +535,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .base-wrap.is-map-comparison-open .btn-map-divide,
 .base-wrap.is-map-comparison-open .comparison-control-area {display:flex}
 .is-map-comparison-open .map3-right-bottom .legend-desc {left:-50px;text-align:right}
-.map3-right-bottom.deviation-open {right:auto;left:8rem;top:calc(-100vh + 43.8rem)}
+.map3-right-bottom.deviation-open {right:auto;left:8rem;top:22.4rem;bottom:auto}
 .base-wrap.is-map-comparison-open .map3-right-bottom {right:calc(50% + 1rem);left:auto}
 /*.base-wrap.is-map-comparison-open .layer-setting[data-toggle-target="setting1"] {right:auto;left:4rem}*/
 .base-wrap.is-map-comparison-open .map-comparison-right-area .map3-right-bottom {right:2rem;left:auto;}
