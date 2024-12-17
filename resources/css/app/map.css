@@ -1,0 +1,82 @@
+#map { height: 100%; z-index: 5; }
+.d-none { display: none; }
+.disable { pointer-events: none; opacity: 50% !important; }
+
+.select-container { position: absolute; top: 5.8rem; left: calc(2rem + 17rem + 10px); z-index: 1; align-content: center; width: 140px; }
+
+.map-type-text { min-width: max-content; }
+
+.level-group2 { display: flex; flex-direction: column; margin-top: 10px; }
+.btn-setting-item .level-group2 { width: 30px; margin-top: 0; }
+.level-item2 { height:3px; width:100% }
+.legend-desc { position: absolute; height: 100%; text-align: right; left: -50px; color: black; width: 45px; }
+.legend-desc div { position: absolute; width: 100%; }
+.legend-desc div:nth-child(1) { top: -10px; }
+.legend-desc div:nth-child(2) { top: calc(25% - 10px); }
+.legend-desc div:nth-child(3) { top: calc(50% - 10px); }
+.legend-desc div:nth-child(4) { top: calc(75% - 10px); }
+.legend-desc div:nth-child(5) { top: calc(100% - 10px); }
+.btn-change-legend .icon-legend { width: 32px; height: 32px; border-radius: 4px; margin-bottom: 10px; }
+.active .icon-legend { background: url(../../img/icon/icon-new1-on.png) no-repeat 50% 50%; background-size: contain; }
+.layer-setting[data-toggle-target="legend-setting"] { top: 42px; }
+
+.slider-value-position { width: max-content; }
+
+.radio-item .right-check-label { cursor: pointer; }
+.map-control-layer-btn.active span { color: #2e7ef6; }
+.period-btn.active { background-color: #2e7ef7; }
+
+.select-distance-layer { position: absolute; z-index: 3; }
+.select-distance-layer .layer-content { width: 215px; padding: 4px 0; }
+
+.map-detail-right-group:nth-child(-n+4) .map-detail-right-item { height: 96px; }
+#map-chart-visualMap { width: 100%; height: 25px; }
+
+.mt-0 { margin-top: 0; }
+.carbon-box-full { padding-left: initial !important; }
+
+button[data-calculate].active img { filter: invert(95%) sepia(5%) saturate(0%) hue-rotate(66deg) brightness(104%) contrast(107%); }
+
+/* 비교 */
+.split-map { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: auto; }
+.deviation-open { left: 20px; right: unset; }
+.deviation-open .legend-desc { left: 38px; text-align: left; }
+.deviation-open .layer-setting { left: 40px; right: auto; }
+.is-map-comparison-open .layer-setting { left: 40px; right: auto; }
+.is-map-comparison-open .legend-desc { left: 38px; text-align: left; }
+
+#comparison-btm { display: none; }
+#comparison-btm .show { display: flex; }
+
+.layer-deviation-item[data-map-area="1"] { background-color: initial !important; }
+.layer-deviation-item[data-map-area="2"] { background-color: initial !important; }
+.deviation-right-bottom { position: absolute; right: 20px; bottom: 28px; z-index: 3; width: 32px; }
+.deviation-right-bottom .level-item2 { height: 20px; }
+.deviation-right-bottom .level-group2 { margin-top: 0; }
+
+.layer_section:not(.showing) { pointer-events: none; }
+
+/** 2024-11-10 요청사항 */
+.left-nav-box { padding: 2rem 1rem; }
+.left-nav-list .left-nav-item-name { width:13rem; padding-left:0.8rem; }
+.map-original-area { background-color: #46555c; }
+
+/** 범위 선택 아이콘 */
+.map-square-icon { display: block; width: 10px; height: 10px; border: 2px solid #2e7ef6; background-color: #abcbfb; box-shadow: 0 2px 0 rgba(0, 0, 0, .1); box-sizing: border-box; }
+.map-round-icon { display: block; width: 10px; height: 10px; border: 2px solid #2e7ef6; background-color: #abcbfb; box-shadow: 0 2px 0 rgba(0, 0, 0, .1); box-sizing: border-box; border-radius: 50%; }
+
+/** 거리재기, 면적재기 */
+.tooltip-text { display: flex; justify-content: space-between; }
+.tooltip-hr { border: .1rem solid #ccc; margin: 1rem 0; }
+.calculate-result-overlay { word-break: keep-all; z-index: 1; position: absolute; background-color: white; border-radius: 8px; padding: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); font-size: 12px; }
+.calculate-result-overlay button { width: 100%; margin-top: 5px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 4px; color: black; cursor: pointer; }
+
+.select-none { -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none }
+
+@media (max-width: 1023px) {
+    .sub-map {
+        height: 100%;
+    }
+}
+
+.deck-tooltip { left: 10px !important; background-color: #ffffff !important; color: #000 !important; padding: 10px !important; border-radius: 4px !important; }

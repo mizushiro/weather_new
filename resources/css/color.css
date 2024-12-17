@@ -15,6 +15,9 @@
     --line-select:#2A3141;
     --bg-tab:#2C364F;
     --bg-tab2:#2E7EF6;
+    --bg-tab3:#181D2B;
+    --tab3-line:#2A3141;
+    --tab3-text:#fff;
     --layer-bg:#10131C;
     --table-line:#38455F;
     --table-th-bg:#212633;
@@ -34,6 +37,9 @@
     --icon-color:#1E222F;
     --line-select:#E4E8EF;
     --bg-tab:#fff;
+    --bg-tab3:#fff;
+    --tab3-text:#7386B6;
+    --tab3-line:#E4E8EF;
     --layer-bg:#fff;
     --table-line:#D5DCE8;
     --table-th-bg:#F3F3F3;

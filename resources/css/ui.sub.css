@@ -224,7 +224,7 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .map3-btm-item-box .player-slider-area-box {flex:1;display:flex;align-items:flex-start;gap:1.6rem}
 .map3-btm-item-box .player-slider-area-box .player-slider-value-s-e {font-size:1.4rem;font-weight:800;color:#fff;padding-top:.6rem;flex-shrink:0}
 
-.map3-right-bottom {position:absolute;right:2rem;bottom:2.8rem;z-index:10}
+/*.map3-right-bottom {position:absolute;right:2rem;bottom:2.8rem;z-index:10}*/
 .btn-setting-option {display:flex;width:3.2rem;height:3.2rem;background-color:#fff;border-radius:.4rem;box-shadow:.1rem 0 .4rem rgba(0,0,0,.25);align-items:center;justify-content:center}
 .icon-setting {background:url("../images/common/icon-setting-off.png") no-repeat 50% 50% / 60%;width:100%;height:100%;display:block}
 .level-group {display:flex;flex-direction:column;gap:.2rem;margin-top:1rem}
@@ -233,7 +233,7 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .level-group.h-2 .level-item {height:2rem}
 .layer-setting {position:absolute;right:4rem;top:0;background-color:#fff;border-radius:.4rem;padding:1.2rem 1rem;display:none;box-shadow:.1rem 0 .4rem rgba(0,0,0,.25)}
 .layer-setting[data-toggle-state="true"] {display:block;}
-.layer-setting.bottom-type {top:auto;bottom:0;width:30rem;border-radius:1rem;border:.2rem solid #000;padding:1rem;height:34rem}
+.layer-setting.bottom-type {top:auto;bottom:0;width:30rem;border-radius:1rem;border:.2rem solid #000;padding:1rem;height:34rem;z-index:10}
 .setting-title-area {display:flex;justify-content:space-between;align-items:center}
 .setting-title {font-size:1.2rem;color:#1e2329;font-weight:800}
 .btn-change-legend {display:flex;align-items:center;gap:.4rem;font-size:1.2rem;color:#1e2329;font-weight:800}
@@ -534,9 +534,12 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .base-wrap.is-map-comparison-open .btn-comparison-type-area,
 .base-wrap.is-map-comparison-open .btn-map-divide,
 .base-wrap.is-map-comparison-open .comparison-control-area {display:flex}
-.base-wrap.is-map-comparison-open .map3-right-bottom {left:2rem;right:auto;}
-.base-wrap.is-map-comparison-open .layer-setting[data-toggle-target="setting1"] {right:auto;left:4rem}
+.is-map-comparison-open .map3-right-bottom .legend-desc {left:-50px;text-align:right}
+.map3-right-bottom.deviation-open {right:auto;left:8rem;top:calc(-100vh + 43.8rem)}
+.base-wrap.is-map-comparison-open .map3-right-bottom {right:calc(50% + 1rem);left:auto}
+/*.base-wrap.is-map-comparison-open .layer-setting[data-toggle-target="setting1"] {right:auto;left:4rem}*/
 .base-wrap.is-map-comparison-open .map-comparison-right-area .map3-right-bottom {right:2rem;left:auto;}
+.is-map-comparison-open .map3-right-bottom .layer-setting {right:4rem;left:auto}
 
 .map-original-area {transition:width .2s ease;transition-delay:0s;}
 .base-wrap.is-map-comparison-open .map-original-area {width:50%;transition-delay:.1s;}
@@ -667,7 +670,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 
     .btn-comparison-type-area {top:20%;margin-left:-1.5rem;}
     .btn-comparison-type {width:3rem;height:3rem;border-radius:0.8rem;}
-    .icon-view-1 {background-size:1.6rem;}
+    .icon-view-1,
+    .icon-view-2 {background-size:1.6rem;}
     .btn-map-divide {width:3.2rem;margin-left:-1.6rem;}
     .is-map-deviation-open .radio-group-box {flex-wrap:wrap;}
 
@@ -758,8 +762,10 @@ input.amount-data {border:none;font-size:1.5rem;font-weight:700;width:3rem;paddi
 .map2-s-map-data {display:flex;flex-shrink:0;height:4.6rem;align-items:center;justify-content:space-between;padding:0 .6rem}
 .map2-s-map-data-group {padding-left:.6rem;display:flex;flex-direction:column;justify-content:center;padding-top:.2rem}
 .map2-s-map-data-text {font-size:1.2rem;font-weight:400;color:#fff;line-height:1.2}
-.map3-right-bottom,
+.map3-right-bottom  {position:absolute;right:2rem;bottom:10.8rem;z-index:10}
 .map2-right-bottom {position:absolute;right:2rem;bottom:2.8rem;z-index:10}
+.map2-right-bottom .level-group2 {height:19rem}
+.map2-right-bottom .level-item2 {height:auto;flex:1}
 .map2-select-choice-box {display:flex;gap:1rem}
 .map2-select-choice-box .btn-type1.btn-small {height:auto}
 .map2-select-list {display:flex;gap:.6rem;flex:1}
@@ -865,6 +871,8 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .dashboard-group-box-table thead th {border-right:.1rem solid var(--table-line);border-bottom:.1rem solid var(--table-line);color:var(--text-color1);padding:1.2rem .8rem;font-size:1.6rem;font-weight:800;background-color:var(--table-th-bg);white-space:nowrap}
 .dashboard-group-box-table tbody td {border-right:.1rem solid var(--table-line);border-bottom:.1rem solid var(--table-line);color:var(--text-color1);padding:1.2rem .8rem;text-align:right;font-size:1.4rem;font-weight:700;white-space:nowrap}
 .dashboard-group-box-table tbody td.a-center {text-align:center}
+.dashboard-group-radio-group {flex-shrink:0;display:flex;align-items:center;margin-right:2rem}
+.dashboard-group-radio-group .choice-item-type-c-label {height:3.6rem;background-color:var(--bg-tab3);border-color:var(--tab3-line);color:var(--tab3-text);min-width:8.4rem}
 @media (max-width:1023px) {
     .btn-right-open {display:flex;position:absolute;top:calc(50% - 4.5rem);right:0;height:9rem;transition:right .2s ease;background:url(../images/common/button-nav-close.svg) no-repeat 0 50%;background-size:contain;aspect-ratio:26 / 92;width:2.6rem;rotate:180deg;}
     .map-container-right {position:fixed;top:6rem ;right:-20rem;z-index:10;width:20rem;transition:right .2s ease;height:calc(100dvh - 6rem);}
@@ -919,8 +927,11 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .map-right-position.sub-02 {top:9rem}
     .radio-group-box {flex-wrap: wrap}
     .choice-item-type-a:first-child {min-width:100%;height:1.8rem;}
-    .dashboard-group-title-area {height:4.4rem;padding:0 1.2rem}
-    .dashboard-group-title {font-size:1.5rem}
+    .dashboard-group-title-area {min-height:4.4rem;padding:.8rem 1.2rem;flex-wrap:wrap;height:auto;}
+    .dashboard-group-title {font-size:1.5rem;order:1}
+    .dashboard-group-title-side {order:2}
+    .dashboard-group-radio-group {order:3;width:100%;margin-right:0;margin-top:.8rem}
+    .dashboard-group-radio-group .choice-item-type-c {flex:1}
     .icon-down-4,
     .icon-article {width:2rem}
 }

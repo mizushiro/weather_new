@@ -14,6 +14,8 @@
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="../resources/css/ui.base.css">
+    <!-- D : 개발 적용 된 css 확인용 -->
+    <link rel="stylesheet" href="../resources/css/app/map.css">
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -550,86 +552,262 @@
 												<p class="color-setting-title">색상 설정</p>
 											</div>
 											<div class="setting-btn-group">
-												<button type="button" class="btn-setting-item active">
-												<span class="level-group">
-													<span class="level-item" style="background-color:#a20706"></span>
-													<span class="level-item" style="background-color:#c32200"></span>
-													<span class="level-item" style="background-color:#e13c00"></span>
-													<span class="level-item" style="background-color:#ed6200"></span>
-													<span class="level-item" style="background-color:#f28400"></span>
-													<span class="level-item" style="background-color:#f7ba3c"></span>
-													<span class="level-item" style="background-color:#f8d074"></span>
-													<span class="level-item" style="background-color:#fbe49a"></span>
-													<span class="level-item" style="background-color:#ffffc8"></span>
-													<span class="level-item" style="background-color:#fcffdd"></span>
-													<span class="level-item" style="background-color:#e9fad7"></span>
-													<span class="level-item" style="background-color:#a8e2bf"></span>
-													<span class="level-item" style="background-color:#18bdb0"></span>
-													<span class="level-item" style="background-color:#00a6ae"></span>
-													<span class="level-item" style="background-color:#008cb0"></span>
-													<span class="level-item" style="background-color:#004187"></span>
-												</span>
-												</button>
-												<button type="button" class="btn-setting-item">
-												<span class="level-group">
-													<span class="level-item" style="background-color:#678700"></span>
-													<span class="level-item" style="background-color:#b0a200"></span>
-													<span class="level-item" style="background-color:#ae8500"></span>
-													<span class="level-item" style="background-color:#d58800"></span>
-													<span class="level-item" style="background-color:#ff988b"></span>
-													<span class="level-item" style="background-color:#ffd2f6"></span>
-													<span class="level-item" style="background-color:#f8ddff"></span>
-													<span class="level-item" style="background-color:#efc8ff"></span>
-													<span class="level-item" style="background-color:#c896ff"></span>
-													<span class="level-item" style="background-color:#a96dff"></span>
-													<span class="level-item" style="background-color:#8334ff"></span>
-													<span class="level-item" style="background-color:#3f00f2"></span>
-													<span class="level-item" style="background-color:#1f00ed"></span>
-													<span class="level-item" style="background-color:#0004e1"></span>
-													<span class="level-item" style="background-color:#0015c3"></span>
-													<span class="level-item" style="background-color:#002ea8"></span>
-												</span>
-												</button>
-												<button type="button" class="btn-setting-item">
-												<span class="level-group">
-													<span class="level-item" style="background-color:#582f3e"></span>
-													<span class="level-item" style="background-color:#723d61"></span>
-													<span class="level-item" style="background-color:#713d68"></span>
-													<span class="level-item" style="background-color:#835181"></span>
-													<span class="level-item" style="background-color:#835181"></span>
-													<span class="level-item" style="background-color:#e3e7ee"></span>
-													<span class="level-item" style="background-color:#e9f1f3"></span>
-													<span class="level-item" style="background-color:#dbeaec"></span>
-													<span class="level-item" style="background-color:#bcd9d5"></span>
-													<span class="level-item" style="background-color:#a2cac2"></span>
-													<span class="level-item" style="background-color:#7db5a9"></span>
-													<span class="level-item" style="background-color:#549d84"></span>
-													<span class="level-item" style="background-color:#539a78"></span>
-													<span class="level-item" style="background-color:#4e9268"></span>
-													<span class="level-item" style="background-color:#447f55"></span>
-													<span class="level-item" style="background-color:#3c6b42"></span>
-												</span>
-												</button>
-												<button type="button" class="btn-setting-item">
-												<span class="level-group">
-													<span class="level-item" style="background-color:#373737"></span>
-													<span class="level-item" style="background-color:#272727"></span>
-													<span class="level-item" style="background-color:#2b2b2b"></span>
-													<span class="level-item" style="background-color:#494949"></span>
-													<span class="level-item" style="background-color:#c5c5c5"></span>
-													<span class="level-item" style="background-color:#e7e7e7"></span>
-													<span class="level-item" style="background-color:#ebebeb"></span>
-													<span class="level-item" style="background-color:#e0e0e0"></span>
-													<span class="level-item" style="background-color:#c9c9c9"></span>
-													<span class="level-item" style="background-color:#b5b5b5"></span>
-													<span class="level-item" style="background-color:#999999"></span>
-													<span class="level-item" style="background-color:#7f7f7f"></span>
-													<span class="level-item" style="background-color:#828282"></span>
-													<span class="level-item" style="background-color:#828282"></span>
-													<span class="level-item" style="background-color:#757575"></span>
-													<span class="level-item" style="background-color:#5f5f5f"></span>
-												</span>
-												</button>
+                                                <button type="button" class="btn-setting-item active" data-tool="change-legend" data-legend="temperature">
+                                                    <span class="level-group2">
+                                                        <span class="level-item2" style="background-color:#67001f"></span>
+                                                        <span class="level-item2" style="background-color:#740421"></span>
+                                                        <span class="level-item2" style="background-color:#800823"></span>
+                                                        <span class="level-item2" style="background-color:#8d0c25"></span>
+                                                        <span class="level-item2" style="background-color:#9a1027"></span>
+                                                        <span class="level-item2" style="background-color:#a71429"></span>
+                                                        <span class="level-item2" style="background-color:#b3192c"></span>
+                                                        <span class="level-item2" style="background-color:#b92531"></span>
+                                                        <span class="level-item2" style="background-color:#bf3237"></span>
+                                                        <span class="level-item2" style="background-color:#c53e3d"></span>
+                                                        <span class="level-item2" style="background-color:#cb4a43"></span>
+                                                        <span class="level-item2" style="background-color:#d15648"></span>
+                                                        <span class="level-item2" style="background-color:#d7624f"></span>
+                                                        <span class="level-item2" style="background-color:#dc6e58"></span>
+                                                        <span class="level-item2" style="background-color:#e17a61"></span>
+                                                        <span class="level-item2" style="background-color:#e6856a"></span>
+                                                        <span class="level-item2" style="background-color:#eb9173"></span>
+                                                        <span class="level-item2" style="background-color:#f09d7c"></span>
+                                                        <span class="level-item2" style="background-color:#f4a886"></span>
+                                                        <span class="level-item2" style="background-color:#f6b191"></span>
+                                                        <span class="level-item2" style="background-color:#f8ba9d"></span>
+                                                        <span class="level-item2" style="background-color:#f9c3a9"></span>
+                                                        <span class="level-item2" style="background-color:#fbccb4"></span>
+                                                        <span class="level-item2" style="background-color:#fcd6c0"></span>
+                                                        <span class="level-item2" style="background-color:#fdddca"></span>
+                                                        <span class="level-item2" style="background-color:#fce2d2"></span>
+                                                        <span class="level-item2" style="background-color:#fbe6db"></span>
+                                                        <span class="level-item2" style="background-color:#faebe3"></span>
+                                                        <span class="level-item2" style="background-color:#f9f0eb"></span>
+                                                        <span class="level-item2" style="background-color:#f8f5f3"></span>
+                                                        <span class="level-item2" style="background-color:#f4f5f6"></span>
+                                                        <span class="level-item2" style="background-color:#edf2f5"></span>
+                                                        <span class="level-item2" style="background-color:#e7eff4"></span>
+                                                        <span class="level-item2" style="background-color:#e0ecf3"></span>
+                                                        <span class="level-item2" style="background-color:#dae9f2"></span>
+                                                        <span class="level-item2" style="background-color:#d4e6f0"></span>
+                                                        <span class="level-item2" style="background-color:#cbe2ee"></span>
+                                                        <span class="level-item2" style="background-color:#c0dceb"></span>
+                                                        <span class="level-item2" style="background-color:#b5d7e8"></span>
+                                                        <span class="level-item2" style="background-color:#abd1e5"></span>
+                                                        <span class="level-item2" style="background-color:#a0cce2"></span>
+                                                        <span class="level-item2" style="background-color:#95c7df"></span>
+                                                        <span class="level-item2" style="background-color:#89bfdb"></span>
+                                                        <span class="level-item2" style="background-color:#7bb7d6"></span>
+                                                        <span class="level-item2" style="background-color:#6eaed2"></span>
+                                                        <span class="level-item2" style="background-color:#60a6cd"></span>
+                                                        <span class="level-item2" style="background-color:#539dc8"></span>
+                                                        <span class="level-item2" style="background-color:#4695c4"></span>
+                                                        <span class="level-item2" style="background-color:#3e8dc0"></span>
+                                                        <span class="level-item2" style="background-color:#3985bc"></span>
+                                                        <span class="level-item2" style="background-color:#337eb8"></span>
+                                                        <span class="level-item2" style="background-color:#2d76b4"></span>
+                                                        <span class="level-item2" style="background-color:#276eb0"></span>
+                                                        <span class="level-item2" style="background-color:#2267ac"></span>
+                                                        <span class="level-item2" style="background-color:#1d5ea1"></span>
+                                                        <span class="level-item2" style="background-color:#185594"></span>
+                                                        <span class="level-item2" style="background-color:#134b87"></span>
+                                                        <span class="level-item2" style="background-color:#0e427a"></span>
+                                                        <span class="level-item2" style="background-color:#0a396e"></span>
+                                                        <span class="level-item2" style="background-color:#053061"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn-setting-item" data-tool="change-legend" data-legend="precipitation">
+                                                    <span class="level-group2">
+                                                        <span class="level-item2" style="background-color:#003c30"></span>
+                                                        <span class="level-item2" style="background-color:#004338"></span>
+                                                        <span class="level-item2" style="background-color:#004a40"></span>
+                                                        <span class="level-item2" style="background-color:#015147"></span>
+                                                        <span class="level-item2" style="background-color:#01584f"></span>
+                                                        <span class="level-item2" style="background-color:#016057"></span>
+                                                        <span class="level-item2" style="background-color:#02675f"></span>
+                                                        <span class="level-item2" style="background-color:#0b6f67"></span>
+                                                        <span class="level-item2" style="background-color:#14776f"></span>
+                                                        <span class="level-item2" style="background-color:#1c8078"></span>
+                                                        <span class="level-item2" style="background-color:#258880"></span>
+                                                        <span class="level-item2" style="background-color:#2e9088"></span>
+                                                        <span class="level-item2" style="background-color:#389991"></span>
+                                                        <span class="level-item2" style="background-color:#44a299"></span>
+                                                        <span class="level-item2" style="background-color:#51aba2"></span>
+                                                        <span class="level-item2" style="background-color:#5eb4aa"></span>
+                                                        <span class="level-item2" style="background-color:#6abdb3"></span>
+                                                        <span class="level-item2" style="background-color:#77c7bb"></span>
+                                                        <span class="level-item2" style="background-color:#84cec3"></span>
+                                                        <span class="level-item2" style="background-color:#90d3c9"></span>
+                                                        <span class="level-item2" style="background-color:#9cd8cf"></span>
+                                                        <span class="level-item2" style="background-color:#a8ddd5"></span>
+                                                        <span class="level-item2" style="background-color:#b4e2db"></span>
+                                                        <span class="level-item2" style="background-color:#c0e7e1"></span>
+                                                        <span class="level-item2" style="background-color:#caebe6"></span>
+                                                        <span class="level-item2" style="background-color:#d2ede9"></span>
+                                                        <span class="level-item2" style="background-color:#daeeec"></span>
+                                                        <span class="level-item2" style="background-color:#e2f0ee"></span>
+                                                        <span class="level-item2" style="background-color:#e9f2f1"></span>
+                                                        <span class="level-item2" style="background-color:#f1f4f4"></span>
+                                                        <span class="level-item2" style="background-color:#f5f4f1"></span>
+                                                        <span class="level-item2" style="background-color:#f5f2e8"></span>
+                                                        <span class="level-item2" style="background-color:#f5efe0"></span>
+                                                        <span class="level-item2" style="background-color:#f6edd7"></span>
+                                                        <span class="level-item2" style="background-color:#f6ebcf"></span>
+                                                        <span class="level-item2" style="background-color:#f6e9c6"></span>
+                                                        <span class="level-item2" style="background-color:#f4e4bc"></span>
+                                                        <span class="level-item2" style="background-color:#f0deb0"></span>
+                                                        <span class="level-item2" style="background-color:#ecd7a4"></span>
+                                                        <span class="level-item2" style="background-color:#e8d198"></span>
+                                                        <span class="level-item2" style="background-color:#e4ca8c"></span>
+                                                        <span class="level-item2" style="background-color:#e0c481"></span>
+                                                        <span class="level-item2" style="background-color:#dbba74"></span>
+                                                        <span class="level-item2" style="background-color:#d6af66"></span>
+                                                        <span class="level-item2" style="background-color:#d0a458"></span>
+                                                        <span class="level-item2" style="background-color:#cb994b"></span>
+                                                        <span class="level-item2" style="background-color:#c68e3d"></span>
+                                                        <span class="level-item2" style="background-color:#c08330"></span>
+                                                        <span class="level-item2" style="background-color:#b87a28"></span>
+                                                        <span class="level-item2" style="background-color:#af7222"></span>
+                                                        <span class="level-item2" style="background-color:#a76a1c"></span>
+                                                        <span class="level-item2" style="background-color:#9e6216"></span>
+                                                        <span class="level-item2" style="background-color:#965a11"></span>
+                                                        <span class="level-item2" style="background-color:#8d520b"></span>
+                                                        <span class="level-item2" style="background-color:#834c09"></span>
+                                                        <span class="level-item2" style="background-color:#7a4608"></span>
+                                                        <span class="level-item2" style="background-color:#704108"></span>
+                                                        <span class="level-item2" style="background-color:#673b07"></span>
+                                                        <span class="level-item2" style="background-color:#5d3606"></span>
+                                                        <span class="level-item2" style="background-color:#543005"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn-setting-item" data-tool="change-legend" data-legend="wind">
+                                                    <span class="level-group2">
+                                                        <span class="level-item2" style="background-color: #2b194c"></span>
+                                                        <span class="level-item2" style="background-color: #2e2052"></span>
+                                                        <span class="level-item2" style="background-color: #312758"></span>
+                                                        <span class="level-item2" style="background-color: #342d5e"></span>
+                                                        <span class="level-item2" style="background-color: #363464"></span>
+                                                        <span class="level-item2" style="background-color: #393b6a"></span>
+                                                        <span class="level-item2" style="background-color: #3c4270"></span>
+                                                        <span class="level-item2" style="background-color: #3f4876"></span>
+                                                        <span class="level-item2" style="background-color: #424f7c"></span>
+                                                        <span class="level-item2" style="background-color: #455682"></span>
+                                                        <span class="level-item2" style="background-color: #475d88"></span>
+                                                        <span class="level-item2" style="background-color: #4a648e"></span>
+                                                        <span class="level-item2" style="background-color: #4d6a94"></span>
+                                                        <span class="level-item2" style="background-color: #50719a"></span>
+                                                        <span class="level-item2" style="background-color: #5378a0"></span>
+                                                        <span class="level-item2" style="background-color: #577fa6"></span>
+                                                        <span class="level-item2" style="background-color: #6086aa"></span>
+                                                        <span class="level-item2" style="background-color: #698daf"></span>
+                                                        <span class="level-item2" style="background-color: #7294b3"></span>
+                                                        <span class="level-item2" style="background-color: #7b9bb7"></span>
+                                                        <span class="level-item2" style="background-color: #84a2bc"></span>
+                                                        <span class="level-item2" style="background-color: #8da9c0"></span>
+                                                        <span class="level-item2" style="background-color: #96b0c4"></span>
+                                                        <span class="level-item2" style="background-color: #9fb7c9"></span>
+                                                        <span class="level-item2" style="background-color: #a8becd"></span>
+                                                        <span class="level-item2" style="background-color: #b1c5d1"></span>
+                                                        <span class="level-item2" style="background-color: #baccd6"></span>
+                                                        <span class="level-item2" style="background-color: #c3d3da"></span>
+                                                        <span class="level-item2" style="background-color: #ccdade"></span>
+                                                        <span class="level-item2" style="background-color: #d5e1e3"></span>
+                                                        <span class="level-item2" style="background-color: #d6e3e1"></span>
+                                                        <span class="level-item2" style="background-color: #cfdfd9"></span>
+                                                        <span class="level-item2" style="background-color: #c7dad1"></span>
+                                                        <span class="level-item2" style="background-color: #bfd6c9"></span>
+                                                        <span class="level-item2" style="background-color: #b8d2c1"></span>
+                                                        <span class="level-item2" style="background-color: #b0ceb9"></span>
+                                                        <span class="level-item2" style="background-color: #a9cab1"></span>
+                                                        <span class="level-item2" style="background-color: #a1c5a9"></span>
+                                                        <span class="level-item2" style="background-color: #99c1a1"></span>
+                                                        <span class="level-item2" style="background-color: #92bd99"></span>
+                                                        <span class="level-item2" style="background-color: #8ab991"></span>
+                                                        <span class="level-item2" style="background-color: #83b589"></span>
+                                                        <span class="level-item2" style="background-color: #7bb081"></span>
+                                                        <span class="level-item2" style="background-color: #73ac79"></span>
+                                                        <span class="level-item2" style="background-color: #6ca871"></span>
+                                                        <span class="level-item2" style="background-color: #68a269"></span>
+                                                        <span class="level-item2" style="background-color: #659c62"></span>
+                                                        <span class="level-item2" style="background-color: #63965b"></span>
+                                                        <span class="level-item2" style="background-color: #609053"></span>
+                                                        <span class="level-item2" style="background-color: #5d8a4c"></span>
+                                                        <span class="level-item2" style="background-color: #5a8445"></span>
+                                                        <span class="level-item2" style="background-color: #587d3d"></span>
+                                                        <span class="level-item2" style="background-color: #557736"></span>
+                                                        <span class="level-item2" style="background-color: #52712e"></span>
+                                                        <span class="level-item2" style="background-color: #506b27"></span>
+                                                        <span class="level-item2" style="background-color: #4d6520"></span>
+                                                        <span class="level-item2" style="background-color: #4a5f18"></span>
+                                                        <span class="level-item2" style="background-color: #475811"></span>
+                                                        <span class="level-item2" style="background-color: #455209"></span>
+                                                        <span class="level-item2" style="background-color: #424c02"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button" class="btn-setting-item" data-tool="change-legend" data-legend="otherVariables">
+                                                    <span class="level-group2">
+                                                        <span class="level-item2" style="background-color: #1933b2"></span>
+                                                        <span class="level-item2" style="background-color: #1a36b1"></span>
+                                                        <span class="level-item2" style="background-color: #1c39af"></span>
+                                                        <span class="level-item2" style="background-color: #1d3cae"></span>
+                                                        <span class="level-item2" style="background-color: #1f3eac"></span>
+                                                        <span class="level-item2" style="background-color: #2041ab"></span>
+                                                        <span class="level-item2" style="background-color: #2244a9"></span>
+                                                        <span class="level-item2" style="background-color: #2347a8"></span>
+                                                        <span class="level-item2" style="background-color: #254aa6"></span>
+                                                        <span class="level-item2" style="background-color: #264da5"></span>
+                                                        <span class="level-item2" style="background-color: #284fa3"></span>
+                                                        <span class="level-item2" style="background-color: #2952a2"></span>
+                                                        <span class="level-item2" style="background-color: #2b55a0"></span>
+                                                        <span class="level-item2" style="background-color: #2c589f"></span>
+                                                        <span class="level-item2" style="background-color: #2e5b9d"></span>
+                                                        <span class="level-item2" style="background-color: #305e9c"></span>
+                                                        <span class="level-item2" style="background-color: #32609a"></span>
+                                                        <span class="level-item2" style="background-color: #346398"></span>
+                                                        <span class="level-item2" style="background-color: #376696"></span>
+                                                        <span class="level-item2" style="background-color: #396994"></span>
+                                                        <span class="level-item2" style="background-color: #3c6b92"></span>
+                                                        <span class="level-item2" style="background-color: #3e6e90"></span>
+                                                        <span class="level-item2" style="background-color: #41718e"></span>
+                                                        <span class="level-item2" style="background-color: #43738c"></span>
+                                                        <span class="level-item2" style="background-color: #46768a"></span>
+                                                        <span class="level-item2" style="background-color: #487988"></span>
+                                                        <span class="level-item2" style="background-color: #4a7c86"></span>
+                                                        <span class="level-item2" style="background-color: #4d7e84"></span>
+                                                        <span class="level-item2" style="background-color: #4f8182"></span>
+                                                        <span class="level-item2" style="background-color: #528480"></span>
+                                                        <span class="level-item2" style="background-color: #55877e"></span>
+                                                        <span class="level-item2" style="background-color: #598b7d"></span>
+                                                        <span class="level-item2" style="background-color: #5d907c"></span>
+                                                        <span class="level-item2" style="background-color: #61947b"></span>
+                                                        <span class="level-item2" style="background-color: #66987a"></span>
+                                                        <span class="level-item2" style="background-color: #6a9c79"></span>
+                                                        <span class="level-item2" style="background-color: #6ea078"></span>
+                                                        <span class="level-item2" style="background-color: #72a576"></span>
+                                                        <span class="level-item2" style="background-color: #76a975"></span>
+                                                        <span class="level-item2" style="background-color: #7aad74"></span>
+                                                        <span class="level-item2" style="background-color: #7eb173"></span>
+                                                        <span class="level-item2" style="background-color: #83b572"></span>
+                                                        <span class="level-item2" style="background-color: #87ba71"></span>
+                                                        <span class="level-item2" style="background-color: #8bbe6f"></span>
+                                                        <span class="level-item2" style="background-color: #8fc26e"></span>
+                                                        <span class="level-item2" style="background-color: #96c66e"></span>
+                                                        <span class="level-item2" style="background-color: #9dca6d"></span>
+                                                        <span class="level-item2" style="background-color: #a5ce6d"></span>
+                                                        <span class="level-item2" style="background-color: #acd26c"></span>
+                                                        <span class="level-item2" style="background-color: #b4d66b"></span>
+                                                        <span class="level-item2" style="background-color: #bbda6b"></span>
+                                                        <span class="level-item2" style="background-color: #c3de6a"></span>
+                                                        <span class="level-item2" style="background-color: #cae26a"></span>
+                                                        <span class="level-item2" style="background-color: #d2e669"></span>
+                                                        <span class="level-item2" style="background-color: #d9ea69"></span>
+                                                        <span class="level-item2" style="background-color: #e1ee68"></span>
+                                                        <span class="level-item2" style="background-color: #e8f268"></span>
+                                                        <span class="level-item2" style="background-color: #f0f667"></span>
+                                                        <span class="level-item2" style="background-color: #f7fa67"></span>
+                                                        <span class="level-item2" style="background-color: #fffe66"></span>
+                                                    </span>
+                                                </button>
 											</div>
 										</div>
 										<div class="tab-contents col-type mdl-tab-item" data-tab="setting-a-4">
@@ -674,6 +852,77 @@
 								</div>
 							</div>
 						</div>
+                        <div class="level-group2" style="position: relative;">
+                            <div class="legend-desc">
+                                <div id="legend-100">38</div>
+                                <div id="legend-75">27</div>
+                                <div id="legend-50">16</div>
+                                <div id="legend-25">5</div>
+                                <div id="legend-0">-6</div>
+                            </div>
+
+                            <span class="level-item2" style="background-color:#67001f"></span>
+                            <span class="level-item2" style="background-color:#740421"></span>
+                            <span class="level-item2" style="background-color:#800823"></span>
+                            <span class="level-item2" style="background-color:#8d0c25"></span>
+                            <span class="level-item2" style="background-color:#9a1027"></span>
+                            <span class="level-item2" style="background-color:#a71429"></span>
+                            <span class="level-item2" style="background-color:#b3192c"></span>
+                            <span class="level-item2" style="background-color:#b92531"></span>
+                            <span class="level-item2" style="background-color:#bf3237"></span>
+                            <span class="level-item2" style="background-color:#c53e3d"></span>
+                            <span class="level-item2" style="background-color:#cb4a43"></span>
+                            <span class="level-item2" style="background-color:#d15648"></span>
+                            <span class="level-item2" style="background-color:#d7624f"></span>
+                            <span class="level-item2" style="background-color:#dc6e58"></span>
+                            <span class="level-item2" style="background-color:#e17a61"></span>
+                            <span class="level-item2" style="background-color:#e6856a"></span>
+                            <span class="level-item2" style="background-color:#eb9173"></span>
+                            <span class="level-item2" style="background-color:#f09d7c"></span>
+                            <span class="level-item2" style="background-color:#f4a886"></span>
+                            <span class="level-item2" style="background-color:#f6b191"></span>
+                            <span class="level-item2" style="background-color:#f8ba9d"></span>
+                            <span class="level-item2" style="background-color:#f9c3a9"></span>
+                            <span class="level-item2" style="background-color:#fbccb4"></span>
+                            <span class="level-item2" style="background-color:#fcd6c0"></span>
+                            <span class="level-item2" style="background-color:#fdddca"></span>
+                            <span class="level-item2" style="background-color:#fce2d2"></span>
+                            <span class="level-item2" style="background-color:#fbe6db"></span>
+                            <span class="level-item2" style="background-color:#faebe3"></span>
+                            <span class="level-item2" style="background-color:#f9f0eb"></span>
+                            <span class="level-item2" style="background-color:#f8f5f3"></span>
+                            <span class="level-item2" style="background-color:#f4f5f6"></span>
+                            <span class="level-item2" style="background-color:#edf2f5"></span>
+                            <span class="level-item2" style="background-color:#e7eff4"></span>
+                            <span class="level-item2" style="background-color:#e0ecf3"></span>
+                            <span class="level-item2" style="background-color:#dae9f2"></span>
+                            <span class="level-item2" style="background-color:#d4e6f0"></span>
+                            <span class="level-item2" style="background-color:#cbe2ee"></span>
+                            <span class="level-item2" style="background-color:#c0dceb"></span>
+                            <span class="level-item2" style="background-color:#b5d7e8"></span>
+                            <span class="level-item2" style="background-color:#abd1e5"></span>
+                            <span class="level-item2" style="background-color:#a0cce2"></span>
+                            <span class="level-item2" style="background-color:#95c7df"></span>
+                            <span class="level-item2" style="background-color:#89bfdb"></span>
+                            <span class="level-item2" style="background-color:#7bb7d6"></span>
+                            <span class="level-item2" style="background-color:#6eaed2"></span>
+                            <span class="level-item2" style="background-color:#60a6cd"></span>
+                            <span class="level-item2" style="background-color:#539dc8"></span>
+                            <span class="level-item2" style="background-color:#4695c4"></span>
+                            <span class="level-item2" style="background-color:#3e8dc0"></span>
+                            <span class="level-item2" style="background-color:#3985bc"></span>
+                            <span class="level-item2" style="background-color:#337eb8"></span>
+                            <span class="level-item2" style="background-color:#2d76b4"></span>
+                            <span class="level-item2" style="background-color:#276eb0"></span>
+                            <span class="level-item2" style="background-color:#2267ac"></span>
+                            <span class="level-item2" style="background-color:#1d5ea1"></span>
+                            <span class="level-item2" style="background-color:#185594"></span>
+                            <span class="level-item2" style="background-color:#134b87"></span>
+                            <span class="level-item2" style="background-color:#0e427a"></span>
+                            <span class="level-item2" style="background-color:#0a396e"></span>
+                            <span class="level-item2" style="background-color:#053061"></span>
+
+                        </div>
 					</div>
 				</div>
 
