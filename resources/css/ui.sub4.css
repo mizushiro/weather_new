@@ -78,6 +78,11 @@
 .sorting-radio-group .inp-choice:checked + .choice-item-type-a-label {color:#2E7EF6;border-color:#2E7EF6;}
 .sorting-top-area .btn-base {min-width:9.8rem}
 
+.data-content-section-in-cart-box {border:.1rem solid #E4E8EF;border-radius:.5rem;;overflow:hidden;margin-top:.4rem}
+.data-content-section-in-cart-select {height:6.2rem;background-color:#F9F9F9;border-bottom:.1rem solid #E4E8EF;display:flex;align-items:center;justify-content:center;gap:.6rem;padding:0 1.2rem}
+.data-content-section-in-cart {padding:2.6rem .8rem;display:flex;flex-direction:column;align-items:center;gap:2rem;}
+.data-content-section-in-cart-label {height:4.6rem;border-radius:.2rem;background-color:#F7F8FB;display:inline-flex;align-items:center;padding:0 3rem;font-size:1.8rem;color:#1E222F;font-weight:800;line-height:1}
+
 @media (max-width:1023px) {
     .sub4-top-title {height:auto;padding:1.2rem 2rem}
     .sub4-title {font-size:1.8rem;line-height:1}

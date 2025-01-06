@@ -110,6 +110,52 @@ document.addEventListener('DOMContentLoaded', function () {
         src: 'footer.html',
         type: 'HTML',
         insert: false,
+        callback:(v) => {
+            // 메인배너
+            const mainBanner = () => {
+                const main_swiper = document.querySelector('.footer-banner-swiper[data-id="main-banner"]');
+                const main_swiper_items = main_swiper.querySelectorAll('.swiper-slide');
+                const main_swiper_control = main_swiper.querySelector('.btn-swiper-control');
+                main_swiper.setAttribute('aria-label', '배너 광고');
+                main_swiper.setAttribute('tabindex', '0');
+                UI.exe.swiperMainBanner = new Swiper('.footer-banner-swiper', {
+                    slidesPerView: "auto",
+                    spaceBetween: 16,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    a11y: {
+                        prevSlideMessage: '이전 배너',
+                        nextSlideMessage: '다음 배너',
+                        slideLabelMessage: '총 {{slidesLength}}장의 배너 중 {{index}}번 배너 입니다.',
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+                UI.exe.swiperMainBanner.switchPlayStop = (e) => {
+                    const that = e.currentTarget;
+                    const id = that.dataset.id;
+                    const state = that.dataset.state;
+                    console.log(that);
+                    if (state === 'stop') {
+                        UI.exe.swiperMainBanner.autoplay.stop();
+                        that.dataset.state = 'play';
+                        that.setAttribute('aria-label','배너 광고 재생');
+                    } else if (state === 'play') {
+                        UI.exe.swiperMainBanner.autoplay.start();
+                        that.dataset.state = 'stop';
+                        that.setAttribute('aria-label','배너 광고 멈춤');
+                    }
+                }
+                main_swiper.addEventListener('focus', UI.exe.swiperMainBanner.autoplay.stop);
+                main_swiper_control.addEventListener('click',  UI.exe.swiperMainBanner.switchPlayStop);
+            }
+            mainBanner();
+        }
     });
     
     

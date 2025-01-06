@@ -65,6 +65,36 @@
 .layer_section[data-style="map-info"].showing {display:block;}
 .layer_section[data-style="map-info"] {display:block;bottom:auto; height:auto; background:transparent;}
 
+.footer-banner {border-bottom:.1rem solid #1f222e;margin-bottom:5.2rem;padding-bottom:2.8rem;}
+.footer-banner-link {display:flex;align-items:center;gap:1.2rem;font-size:1.8rem;font-weight:800;color:#1f222e;text-decoration:none;padding:0 1.6rem;height:6.8rem}
+.footer-banner-link:hover {text-decoration:underline;color:#2e7ef6;text-underline-offset:.6rem}
+.footer-banner-link-logo {width:3.2rem;}
+
+.footer-banner-swiper {position:relative;}
+.footer-banner-swiper .swiper-slide {width:auto}
+.footer-banner-swiper-control {position:absolute;width:18rem;background-color:#fff;height:6.8rem;right:-.4rem;top:0;flex-shrink:0;display:flex;align-items:center;gap:1rem;justify-content:center;padding:0 .6rem 0 1.2rem;border-radius:999em;z-index:2}
+.footer-banner-swiper-control * {position:static !important;}
+.footer-banner-swiper-control .swiper-pagination-fraction {width:auto;font-size:1.4rem;font-weight:500;line-height:1.4rem;color:rgba(69,69,69,.8)}
+.footer-banner-swiper-control .swiper-pagination-current {font-weight:700;color:#111}
+.footer-banner-swiper-control .swiper-pagination-line {width:.1rem;height:1rem;background-color:#a0a2a8}
+.btn-swiper-control {height:3.2rem;width:3.2rem;margin:0;background-color:#eaecf2;display:flex;align-items:center;justify-content:center;border-radius:99em;border:.1rem solid transparent}
+.btn-swiper-control:hover {border-color:#3381f6;background-color:#fff}
+.btn-swiper-control-icon {width:1.2rem;height:1.2rem;background-size:contain;background-repeat:no-repeat;background-position:50% 50%}
+[data-state="play"] .btn-swiper-control-icon {background-image:url("../images/icon/icon-play-b.svg")}
+.btn-swiper-control[data-state="play"]:hover .btn-swiper-control-icon {background-image:url("../images/icon/icon-play-on.svg")}
+[data-state="stop"] .btn-swiper-control-icon {background-image:url("../images/icon/icon-pause-b.svg")}
+.btn-swiper-control[data-state="stop"]:hover .btn-swiper-control-icon {background-image:url("../images/icon/icon-pause-on.svg")}
+.footer-banner-swiper-control .swiper-button-next:after,
+.footer-banner-swiper-control .swiper-button-prev:after {display:none !important;}
+.footer-banner-swiper-control .swiper-button-next,
+.footer-banner-swiper-control .swiper-button-prev {height:3.2rem;width:3.2rem;margin:0;background-color:#eaecf2;display:flex;align-items:center;justify-content:center;border-radius:99em;border:.1rem solid transparent}
+.footer-banner-swiper-control .swiper-button-next:hover,
+.footer-banner-swiper-control .swiper-button-prev:hover {border-color:#3381f6;background-color:#fff}
+.icon-aspect-prev {width:2.4rem;height:2.4rem;background-size:contain;background-repeat:no-repeat;background-position:50% 50%;background-image:url("../images/common/icon-s-prev.svg")}
+.icon-aspect-next {width:2.4rem;height:2.4rem;background-size:contain;background-repeat:no-repeat;background-position:50% 50%;background-image:url("../images/common/icon-s-next.svg")}
+.swiper-button-next:hover .icon-aspect-next {background-image:url("../images/common/icon-s-next-on.svg")}
+.swiper-button-prev:hover .icon-aspect-prev {background-image:url("../images/common/icon-s-prev-on.svg")}
+
 @media (max-width:1023px) {
     .main-content-text {font-size:4rem}
     .main-content-desc {font-size:1.6rem;word-break:keep-all;padding:0 2rem}
@@ -82,6 +112,16 @@
     .main-content-box-item-text {font-size:1.6rem}
     .main-content-box-item {min-height:16rem}
     [class^="main-box-icon-"] {width:6rem;}
+
+    .footer-banner {padding-bottom:1.6rem;margin-bottom:2.8rem}
+    .footer-banner-swiper {padding-top:4rem !important;position:relative}
+    .footer-banner-swiper-control {top:0;height:4rem}
+    .footer-banner-link {height:4rem;font-size:1.5rem;gap:.8rem;}
+    .footer-banner-link-logo {width:2rem}
+    .footer-banner-swiper-control .swiper-button-next,
+    .footer-banner-swiper-control .swiper-button-prev,
+    .btn-swiper-control {width:2.4rem;height:2.4rem}
+    .btn-swiper-control-icon {width:1rem;height:1rem;}
 }
 @media (max-width:767px) {
     .main-content-section-1 .max-142 {padding-top:5.6rem}
