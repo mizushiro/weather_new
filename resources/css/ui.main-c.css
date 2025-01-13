@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.main {background:url("../images/main/bg-c.jpg") no-repeat 50% 0;background-size:100% 61rem;min-height:100%;display:flex;flex-direction:column;}
+.main {background:#FFF url("../images/main/bg-c.jpg") no-repeat 50% 0;background-size:100% 61rem;min-height:100%;display:flex;flex-direction:column;}
 .main-content-section-1 {flex-shrink:0;}
 .main-content-section-1 .max-142 {position:relative;padding-top:4.8rem;}
 .main-help {position:absolute;top:2rem;right:0;width:5.4rem;height:5.4rem;background:url("../images/main/help-icon.png") no-repeat 50% 50%;background-size:contain;}
@@ -59,7 +59,7 @@
 .main-box-icon-04 {background-image:url("../images/main/icon-b-04.png")}
 .main-box-icon-05 {background-image:url("../images/main/icon-b-05.png")}
 
-.main .footer {background-color:#fff;border-top:.1rem solid #eef0f2}
+.main .footer {background-color:#F8F7FC;border-top:.1rem solid #eef0f2}
 .main .footer-desc {color:#646e89}
 
 .layer_section[data-style="map-info"].showing {display:block;}
@@ -69,10 +69,10 @@
 .footer-banner-link {display:flex;align-items:center;gap:1.2rem;font-size:1.8rem;font-weight:800;color:#1f222e;text-decoration:none;padding:0 1.6rem;height:6.8rem}
 .footer-banner-link:hover {text-decoration:underline;color:#2e7ef6;text-underline-offset:.6rem}
 .footer-banner-link-logo {width:3.2rem;}
-
+.footer-banner-link img{height: 100%; width: auto; max-height: 3.6rem;}
 .footer-banner-swiper {position:relative;}
 .footer-banner-swiper .swiper-slide {width:auto}
-.footer-banner-swiper-control {position:absolute;width:18rem;background-color:#fff;height:6.8rem;right:-.4rem;top:0;flex-shrink:0;display:flex;align-items:center;gap:1rem;justify-content:center;padding:0 .6rem 0 1.2rem;border-radius:999em;z-index:2}
+.footer-banner-swiper-control {position:absolute;width:18rem;background-color:#F8F7FC;height:6.8rem;right:-.4rem;top:0;flex-shrink:0;display:flex;align-items:center;gap:1rem;justify-content:center;padding:0 .6rem 0 1.2rem;border-radius:999em;z-index:2}
 .footer-banner-swiper-control * {position:static !important;}
 .footer-banner-swiper-control .swiper-pagination-fraction {width:auto;font-size:1.4rem;font-weight:500;line-height:1.4rem;color:rgba(69,69,69,.8)}
 .footer-banner-swiper-control .swiper-pagination-current {font-weight:700;color:#111}
