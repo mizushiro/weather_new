@@ -313,9 +313,9 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 /* footer */
 .max-142 {max-width:142rem;margin:0 auto;}
 .max-158 {max-width:158rem;margin:0 auto;}
-.footer {background-color:var(--footer-bg);padding:4rem 0 4.8rem;flex-shrink:0;margin-top:auto;}
+.footer {background-color:var(--footer-bg);padding:.4rem 0 4.8rem;flex-shrink:0;margin-top:auto;}
 .footer-box {display:flex;align-items:flex-start;gap:2rem;}
-.footer-desc {font-size:1.2rem;color:#7386B6;line-height:1.4rem;font-weight:700;margin-top:1.6rem}
+.footer-desc {font-size:1.2rem;color:#7386B6;line-height:1.4rem;font-weight:700;}
 .footer-btn-group {display:flex;align-items:center;gap:1rem;margin-left:auto;}
 [class^="footer-icon-"] {width:4rem;height:4rem;background-size:contain;background-position:50% 50%;background-repeat:no-repeat;margin-right:-1.8rem}
 .footer-icon-01 {background-image:url("../images/common/footer-icon-01.png")}

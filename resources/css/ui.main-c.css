@@ -65,7 +65,7 @@
 .layer_section[data-style="map-info"].showing {display:block;}
 .layer_section[data-style="map-info"] {display:block;bottom:auto; height:auto; background:transparent;}
 
-.footer-banner {border-bottom:.1rem solid #1f222e;margin-bottom:5.2rem;padding-bottom:2.8rem;}
+.footer-banner {border-bottom:.1rem solid #1f222e;margin-bottom:2.8rem;padding-bottom:.4rem;}
 .footer-banner-link {display:flex;align-items:center;gap:1.2rem;font-size:1.8rem;font-weight:800;color:#1f222e;text-decoration:none;padding:0 1.6rem;height:6.8rem}
 .footer-banner-link:hover {text-decoration:underline;color:#2e7ef6;text-underline-offset:.6rem}
 .footer-banner-link-logo {width:3.2rem;}

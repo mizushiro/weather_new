@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 main_swiper.setAttribute('tabindex', '0');
                 UI.exe.swiperMainBanner = new Swiper('.footer-banner-swiper', {
                     slidesPerView: "auto",
-                    spaceBetween: 16,
+                    spaceBetween: 28,
                     loop: true,
                     autoplay: {
                         delay: 3000,
