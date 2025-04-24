@@ -31,6 +31,11 @@
 .object-cover {width:100%;height:100%;object-fit:cover;}
 
 .map-breadcrumbs {position:absolute;top:0;left:0;right:0;height:4.2rem;background-color:rgba(0,0,0,.5);padding:0 1.6rem;display:flex;width:100%;align-items:center;z-index:5;}
+.map-breadcrumbs .breadcrumbs-box {margin-left:auto}
+.map-breadcrumbs .icon-home {background-image:url("../images/icon/icon-home-w.svg")}
+.map-breadcrumbs .icon-breadcrumbs-arrow {background-image:url("../images/icon/icon-breadcrumbs-arrow-w.svg")}
+.map-breadcrumbs .breadcrumbs-name {color:#fff}
+.map-breadcrumbs .breadcrumbs-name:last-child {color:#FFE602}
 .breadcrumbs-box {display:flex;align-items:center;font-size:1.4rem;font-weight:800;color:#fff;gap:.4rem;}
 .breadcrumbs-box img {display:block;}
 .breadcrumbs-point {color:#FFE602;}
@@ -450,7 +455,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 
 /* 재난영향정보 */
 .disaster-info-box {display:flex;flex:1;flex-direction:column;}
-.disaster-info-title-area {padding:2rem 3rem 1.2rem;flex-shrink:0;display:flex;align-items:center}
+.disaster-info-title-area {padding:4.2rem 0 1rem;flex-shrink:0;display:flex;align-items:center;border-bottom:.1rem solid #CED6E3;margin:0 3rem 2rem}
 .disaster-info-title {font-size:2.8rem;font-weight:800;color:#1E222F;line-height:2.8rem;}
 .disaster-info-title-area .right-area {margin-left:auto}
 .sub-map-content.grid-layout {display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:2rem;padding:0 3rem 3rem;}

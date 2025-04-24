@@ -217,6 +217,7 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .btn-base[data-color="blue"] {background-color:#2E7EF6;color:#fff;font-weight:800;}
 .btn-base[data-color="blue2"] {background-color:#136ef6;color:#fff;font-weight:800;}
 .btn-base[data-color="lineGray"] {background-color:#fff;color:#27355A;font-weight:800;border:.1rem solid #E4E8EF}
+.btn-base [data-color="navy"] {color:#27355A}
 
 .font-800 {font-weight:800;}
 
@@ -316,7 +317,8 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .footer {background-color:var(--footer-bg);padding:.4rem 0 4.8rem;flex-shrink:0;margin-top:auto;}
 .footer-box {display:flex;align-items:flex-start;gap:2rem;}
 .footer-desc {font-size:1.2rem;color:#7386B6;line-height:1.4rem;font-weight:700;}
-.footer-btn-group {display:flex;align-items:center;gap:1rem;margin-left:auto;}
+.footer-btn-group {display:flex;align-items:center;gap:1rem;margin-left:auto}
+.footer-btn-group .btn-base {gap:4.6rem;padding-left:3rem}
 [class^="footer-icon-"] {width:4rem;height:4rem;background-size:contain;background-position:50% 50%;background-repeat:no-repeat;margin-right:-1.8rem}
 .footer-icon-01 {background-image:url("../images/common/footer-icon-01.png")}
 .footer-icon-02 {background-image:url("../images/common/footer-icon-02.png")}
@@ -453,4 +455,47 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
     .tab-type-item.ver2 .list-item-tab {flex:1}
     .tab-type-item.ver2 .list-item-tab-button {width:100%}
     .tab-type-item.ver2 .list-item-tab-button {height:3.6rem}
+}
+
+/* sitemap */
+.-mt-20 {margin-top:-2rem}
+.has-breadcrumbs {display:flex;align-items:flex-end !important;}
+.sub1-05-top-area .breadcrumbs-box {align-self:flex-end}
+.sub1-05-top-area .breadcrumbs-box,
+.has-breadcrumbs .breadcrumbs-box {flex-shrink:0;margin-left:auto}
+.icon-home {aspect-ratio:1/1;width:1.8rem;background:url("../images/icon/icon-home.svg") no-repeat 50% 50%;background-size:contain;display:block;transform:translateY(-.1rem)}
+.icon-breadcrumbs-arrow {aspect-ratio:1/1;width:2.4rem;background:url("../images/icon/icon-breadcrumbs-arrow.svg") no-repeat 50% 50%;background-size:contain;display:block}
+.breadcrumbs-name {color:#7386B6;font-size:1.4rem;font-weight:800;line-height:1.6rem}
+.breadcrumbs-name:last-child {color:#1E222F}
+.sub5-top-title .breadcrumbs-box {padding-bottom:2rem}
+
+.sitemap-content-box {display:flex;flex-wrap:wrap;gap:8rem;margin-top:4rem;padding-bottom:8rem}
+.sitemap-content-group {width:calc((100% - 16rem) / 3);}
+.sitemap-group-title {height:7rem;border-radius:.6rem;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.4rem;font-weight:800;background-color:#2E7EF6}
+.sitemap-1depth-link {padding:3rem 0 1.7rem;font-size:2rem;font-weight:800;color:#1E222F;border-bottom:.1rem solid #D9D9D9;text-decoration:none;display:block}
+.sitemap-2depth-list {padding:2.4rem 2rem;display:flex;flex-wrap:wrap;border-bottom:.1rem solid #D9D9D9}
+.sitemap-2depth-item {width:50%;min-height:3.2rem}
+.sitemap-2depth-link {display:flex;align-items:center;font-size:1.6rem;font-weight:800;color:#414756;line-height:3.2rem;gap:.7rem;text-decoration:none}
+.sitemap-2depth-link:before {content:'';width:.4rem;height:.4rem;flex-shrink:0;background-color:#7386B6;display:block;border-radius:999em}
+.sitemap-content-group:nth-child(n+4) {margin-top:-17rem}
+
+@media (max-width:1023px) {
+    .has-breadcrumbs .breadcrumbs-box {display:none}
+
+    .sitemap-content-box {padding:0 2.4rem;gap:2rem}
+    .sitemap-content-group {width:calc((100% - 4rem) / 3);}
+    .sitemap-group-title {height:5.2rem;font-size:1.8rem}
+    .sitemap-1depth-link {padding:1.6rem 0 1.2rem;font-size:1.6rem}
+    .sitemap-2depth-list {padding:1.2rem}
+    .sitemap-2depth-link {font-size:1.3rem}
+    .sitemap-content-group:nth-child(n+4) {margin-top:-10rem}
+    .-mt-20 {margin-top:0}
+    .sub5-top-title .breadcrumbs-box {padding-bottom:1rem}
+}
+@media (max-width:767px) {
+    .sitemap-content-box {gap:4rem}
+    .sitemap-content-group {width:100%}
+    .sitemap-group-title {height:4.4rem;font-size:1.6rem}
+    .sitemap-1depth-link {padding:1.2rem 0 .8rem;font-size:1.4rem}
+    .sitemap-content-group:nth-child(n+4) {margin-top:0}
 }
