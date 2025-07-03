@@ -71,24 +71,34 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerAct = () => {
         const dep1s = document.querySelectorAll('.header-right-dep1-item');
         const wraps = document.querySelectorAll('.header-right-dep1');
+        let timer = null;
+        const actHide = (e) => {
+            const _this = e.currentTarget;
+            const _on = document.querySelector('.header-right-dep1[data-state="on"]');
+            timer = setTimeout(() => {
+                _on ? _on.dataset.state = 'off' : '';
+            }, 100);
+        }
         const actHover = (e) => {
             const _this = e.currentTarget;
             const _wrap = _this.closest('.header-right-dep1');
             const _dep2 = _wrap.querySelector('.header-right-dep2-wrap');
             const actLeaver = () => {
                 _dep2.removeEventListener('mouseleave', actLeaver);
+                _dep2.removeEventListener('mouseover', actHideCancel);
                 _wrap.dataset.state = 'off';
             }
 
-            for (const item of wraps) {
-                item.dataset.state = 'off';
+            const actHideCancel = () => {
+                clearTimeout(timer);
             }
-            
+            _dep2.addEventListener('mouseover', actHideCancel);
             _dep2.addEventListener('mouseleave', actLeaver);
             _wrap.dataset.state = 'on';
         }
         for (const item of dep1s) {
             item.addEventListener('mouseover', actHover);
+            item.addEventListener('mouseleave', actHide);
         }
 
         UI.exe.toggleHeader = new ToggleUI({
