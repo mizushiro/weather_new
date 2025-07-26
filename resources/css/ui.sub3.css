@@ -120,6 +120,8 @@
 .table-basic-2 tbody td.color-3 {background-color:#FF7A00;}
 .table-basic-2 tbody td.color-4 {background-color:#FF1F00;}
 .table-basic-2 tbody td.color-5 {background-color:#7000FF;}
+.table-basic-2 tbody td.color-gray {background-color:#F9F9F9;}
+.table-basic-2.img-block tbody td img {display:block;margin:.8rem 0}
 .table-basic-2.td-16 tbody td {font-size:1.6rem;}
 .table-basic-2.td-h-32 tbody td {padding:.5rem 1.6rem}
 .table-basic-2.th-s thead th {padding:.6rem 1rem;height:4.4rem;}

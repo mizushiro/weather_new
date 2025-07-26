@@ -282,13 +282,13 @@ button:hover .icon-stop {background-image:url("../images/common/icon-stop-on.png
 .dashboard-chart-item-2 .mdl-tab-pnl {flex:1}
 .dashboard-chart-item-2 .mdl-tab-item[data-selected="true"] {display:flex;height:100%;flex-direction:column}
 .dashboard-chart-title-box {display:flex;align-items:center;gap:2rem;flex-shrink:0;margin:-1.2rem -1.2rem 1.6rem;padding:0 1.2rem 0 1.6rem;border-bottom:.1rem solid var(--box-line);height:4.6rem;}
-.dashboard-chart-title {font-size:1.6rem;font-weight:800;color:var(--text-color1);flex-shrink:0}
+.dashboard-chart-title {font-size:1.6rem;font-weight:800;color:var(--text-color1);flex-shrink:0;display:flex;align-items:center;gap:.6rem}
 .dashboard-chart-title-small {font-size:1.2rem}
-.btn-dashboard-chart-view {width:2.4rem;height:2.4rem;border:.1rem solid var(--box-line);background-color:var(--bg-button1);position:relative;border-radius:.2rem;flex-shrink:0;margin-left:auto}
-.btn-dashboard-chart-view:before,
-.btn-dashboard-chart-view:after {content:'';position:absolute;background-color:var(--icon-color);top:50%;left:50%}
-.btn-dashboard-chart-view:before {width:1rem;height:.2rem;margin:-.1rem 0 0 -.5rem}
-.btn-dashboard-chart-view:after {height:1rem;width:.2rem;margin:-.5rem 0 0 -.1rem}
+.btn-dashboard-chart-view {min-width:2.4rem;height:2.4rem;padding:0 .8rem 0 1rem;border:.1rem solid var(--box-line);background-color:var(--bg-button1);position:relative;border-radius:.2rem;flex-shrink:0;margin-left:auto;display:flex;align-items:center;gap:.8rem}
+.btn-dashboard-chart-view:before {content:'더보기';font-size:1.2rem;color:#667AAD;font-weight:700;line-height:1;position:relative;top:.1rem}
+.btn-dashboard-chart-view:after {content:'';width:1rem;height:1rem;background:url("../images/icon/icon-more-w.svg") no-repeat 50% 50%;background-size:contain}
+.light-theme .btn-dashboard-chart-view:before {color:#7386B6}
+.light-theme .btn-dashboard-chart-view:after {background-image:url("../images/icon/icon-more-b.svg")}
 .dashboard-chart-grid {display:grid;grid-template-columns:repeat(10,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr));flex:1;gap:.8rem 0}
 .dashboard-chart-grid-item-1 {grid-column:span 10/span 10;grid-row:span 3/span 3}
 .dashboard-chart-grid-item-2 {grid-column:span 10/span 10;grid-row:span 2/span 2}
@@ -1062,4 +1062,16 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
     .ssp-choice-area .choice-item-type-c-label {padding:0 .8rem;height:3.6rem;font-size:1.3rem;min-width:0}
     .map-disaster-info-item-top.light-theme {flex-wrap:wrap;height:auto;padding:1.2rem;gap:.8rem;flex-direction:column;align-items:flex-start}
     .map-disaster-info-item-top.light-theme .map-disaster-info-item-top-btn-group {margin-left:auto}
+}
+.btn-help-layer-open {width:2rem;height:2rem}
+.icon-help-round {display:block;width:2rem;height:2rem;background:url("../images/icon/icon-help-round.svg") no-repeat 50% 50%;background-size:contain}
+.layer-help-content-area {padding:3rem;}
+.layer-help-title {font-size:2rem;font-weight:800;color:#1E222F;line-height:2.3rem;margin-bottom:1rem}
+.layer-help-title ~ .layer-help-title {margin-top:5rem}
+.layer-help-desc {font-size:1.2rem;font-weight:700;color:#7386B6;margin-top:1rem}
+.layer-help-content-area .w-scroll ~ .w-scroll {margin-top:0}
+@media (max-width:767px) {
+    .layer-help-content-area {padding:2rem}
+    .layer-help-title {font-size:1.8rem}
+    .layer-help-content-area .table-basic-2 tbody td {font-size:1.2rem;line-height:1.6rem}
 }

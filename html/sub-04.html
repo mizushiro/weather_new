@@ -30,7 +30,12 @@
 					<div class="dashboard-chart-box">
 						<div class="dashboard-chart-item-1">
 							<div class="dashboard-chart-title-box">
-								<p class="dashboard-chart-title">미래 평균기온</p>
+								<p class="dashboard-chart-title">
+                                    미래 평균기온
+                                    <button type="button" class="btn-help-layer-open" data-layer="help-layer1">
+                                        <i class="icon-help-round" aria-label="도움말"></i>
+                                    </button>
+                                </p>
 								<button type="button" class="btn-dashboard-chart-view" data-layer="dashboard-layer1">
 									<span class="for-a11y">확대보기</span>
 								</button>
@@ -1034,6 +1039,345 @@
 			</div>
 		</div>
 	</div>
+
+    <div id="help-layer1" class="layer_section w-1240">
+        <div class="layer_section-container">
+            <div class="layer-title-box">
+                <h1 class="layer-title">우리동네 기후변화 도움말</h1>
+            </div>
+            <div class="layer-content bg-gray">
+                <div class="layer-help-content-area">
+                    <div class="mdl-tab" data-tab-id="setting-d">
+                        <ul class="tab-type-item ver3 mdl-tab-wrap">
+                            <li class="list-item-tab">
+                                <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-d-1">
+                                    극한기후지수
+                                </button>
+                            </li>
+                            <li class="list-item-tab">
+                                <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-d-2">
+                                    영향정보
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-tab-pnl" data-tab-id="setting-d">
+                        <div class="tab-contents mdl-tab-item" data-tab="setting-d-1">
+                            <p class="layer-help-title">복합 극한기후지수(두가지 현상)</p>
+                            <div class="table-area-box w-scroll">
+                                <table class="table-basic-2">
+                                    <colgroup>
+                                        <col style="width:7.6rem">
+                                        <col style="width:12.4rem">
+                                        <col style="width:8.2rem">
+                                        <col style="width:auto">
+                                        <col style="width:8.2rem">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">요소</th>
+                                        <th scope="col">극한기후지수</th>
+                                        <th scope="col">변수명</th>
+                                        <th scope="col">정의</th>
+                                        <th scope="col">단위</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="color-gray" rowspan="4">고온관련</td>
+                                        <td class="a-left">열대야일수</td>
+                                        <td class="a-left">TR25</td>
+                                        <td class="a-left">일최저기온이 25℃ 이상인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">폭염일수</td>
+                                        <td class="a-left">HW33</td>
+                                        <td class="a-left">일최고기온이 33℃ 이상인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">여름일수</td>
+                                        <td class="a-left">SU25</td>
+                                        <td class="a-left">일평균기온이 5℃ 초과인 날이 적어도 6일 이상 지속된 첫 날부터<br />
+                                            일평균기온이 5℃ 미만인 날이 적어도 6일 이상 지속된 첫 날까지 사이의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">식물성장가능기간</td>
+                                        <td class="a-left">GSL</td>
+                                        <td class="a-left">일최고기온이 25℃ 이상인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color-gray" rowspan="4">저온관련</td>
+                                        <td class="a-left">서리일수</td>
+                                        <td class="a-left">FD0</td>
+                                        <td class="a-left">일최저기온이 0℃ 미만인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">결빙일수</td>
+                                        <td class="a-left">ID0</td>
+                                        <td class="a-left">일최고기온이 0℃ 미만인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">한파일수</td>
+                                        <td class="a-left">CWm12</td>
+                                        <td class="a-left">일최저기온이 -12℃ 이하인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">한랭일</td>
+                                        <td class="a-left">TX10P</td>
+                                        <td class="a-left">일최고기온이 기준기간의 10퍼센타일 미만인 날의 연중 일수</td>
+                                        <td>일</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="layer-help-desc">※ 상위 95/99 퍼센타일은 일강수량 1mm 이상인 날을 기준으로 산출함</p>
+
+                            <p class="layer-help-title">산출 방법</p>
+                            <div class="table-area-box w-scroll">
+                                <table class="table-basic-2 img-block">
+                                    <colgroup>
+                                        <col style="width:12.4rem">
+                                        <col span="2">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">기후요소</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="a-left">
+                                            열지수 (HI)<br />Heat Index,6~9월
+                                        </td>
+                                        <td class="a-left">
+                                            미국 기상청에서 고온다습한 환경에 대국민 경보를<br />
+                                            더욱 효율적으로 제시하기 위해 개발한 열지수는 일사병, 열경련 등<br />
+                                            열적 스트레스의 위험도를 나타내는 지수로서 기온과 상대습도를<br />
+                                            이용하여 사람이 더위를 어떻게 느끼는지 인지하기 위해 시도되었다.<br />
+                                            열지수는 그늘지고 약한 바람이 부는 환경에서 만들어진 것으로<br />
+                                            태양빛에 노출되거나 강한 바람, 뜨거운 바람 등이 불면<br />
+                                            더 위험한 환경이 될 수 있다.
+                                        </td>
+                                        <td class="a-left">
+                                            <img src="../resources/images/help/help-img1-1.png" alt="">
+                                            T: 최고기온(℉), R: 상대습도(%)<br />
+                                            ※ 열지수 보정식<br />
+                                            -조건 1: 기온(℉)이 80℉ 보다 낮을 경우
+                                            <img src="../resources/images/help/help-img1-2.png" alt="">
+                                            -조건 2: 기온(℉)이 80℉ 보다 높거나 같고, 112℉ 보다 낮거나 같고,<br />
+                                            상대습도(%)가 13%보다 낮을 경우 적용
+                                            <img src="../resources/images/help/help-img1-3.png" alt="">
+                                            -조건 3: 기온(℉)이 80℉보다 높고, 87℉ 보다 낮거나 같고,<br />
+                                            상대습도(%)가 85%보다 높을 경우 적용
+                                            <img src="../resources/images/help/help-img1-4.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="a-left">
+                                            불쾌지수 (DI)<br />
+                                            Discomfort Index,<br />
+                                            6~9월
+                                        </td>
+                                        <td class="a-left">
+                                            미국 기후학자 톰(E.C., Thom)이 고안하여 발표한 불쾌지수는<br />
+                                            기온과 습도를 이용하여 날씨에 따라서 사람이 불쾌감을 느끼는<br />
+                                            정도를 나타낸 것이다. 이는 여름철 실내 무더위의 기준으로는<br />
+                                            적정하지만, 태양복사나 풍속을 고려하지 않았기 때문에 다른 용도로<br />
+                                            사용하는 것은 한계가 있게 되었다.<br />
+                                            일반적으로 불쾌지수가 75이상이면 50%의 사람이 ,80이상이면<br />
+                                            대부분의 사람이 불쾌감을 느낀다고 하나 사람마다 느끼는 정도가<br />
+                                            다소 다르기 때문에 명백한 기준은 아니다.
+                                        </td>
+                                        <td class="a-left">
+                                            <img src="../resources/images/help/help-img1-5.png" alt="">
+                                            T: 최고기온(℃), RH: 상대습도(60%일 경우 0.6으로 계산)
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="layer-help-desc">※ 상위 95/99 퍼센타일은 일강수량 1mm 이상인 날을 기준으로 산출함</p>
+                        </div>
+                        <div class="tab-contents mdl-tab-item" data-tab="setting-d-2">
+
+                            <div class="mdl-tab" data-tab-id="setting-e">
+                                <ul class="tab-type-item ver4 mdl-tab-wrap">
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-1">
+                                            농업분야
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-2">
+                                            방재분야
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-3">
+                                            보건분야
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-4">
+                                            산림분야
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-5">
+                                            수자원분야
+                                        </button>
+                                    </li>
+                                    <li class="list-item-tab">
+                                        <button type="button" class="list-item-tab-button ver2 mdl-tab-btn" data-tab="setting-e-6">
+                                            동물생태분야
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdl-tab-pnl" data-tab-id="setting-e">
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-1">
+                                    <p class="layer-help-title">영향정보 정의</p>
+                                    <div class="table-area-box w-scroll">
+                                        <table class="table-basic-2">
+                                            <colgroup>
+                                                <col span="5">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">생산요소</th>
+                                                <th scope="col">시나리오</th>
+                                                <th scope="col">기간</th>
+                                                <th scope="col">시간해상도</th>
+                                                <th scope="col">공간해상도</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="a-left">생육온도일수</td>
+                                                <td rowspan="9">SSP 4종</td>
+                                                <td rowspan="9">2021 ~ 2100</td>
+                                                <td rowspan="9">순, 월, 연</td>
+                                                <td rowspan="9">시도, 시군구</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">유효적산온도</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">식물기간</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">작물기간</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">난방도일</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">냉방도일</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">Chill Units (저온축적값)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">Chill Units (고온축적값)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">온습도지수</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p class="layer-help-title">타이틀</p>
+                                    <div class="table-area-box w-scroll">
+                                        <table class="table-basic-2 img-block">
+                                            <colgroup>
+                                                <col style="width:18rem">
+                                                <col style="width:9.4rem">
+                                                <col span="2">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">기후요소</th>
+                                                <th scope="col">단위</th>
+                                                <th scope="col">개념</th>
+                                                <th scope="col">산출방법</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="a-left">
+                                                    생육온도일수 (GDD)<br />
+                                                    Growing degree days
+                                                </td>
+                                                <td>도일</td>
+                                                <td class="a-left">
+                                                    작물별 기본온도와 일평균온도의 차를<br />
+                                                    생육기간 동안 합한 값<br />
+                                                    작물의 재배적지 및 품종 선택 지표
+                                                </td>
+                                                <td class="a-left">
+                                                    일최고기온과 일최저기온의 평균에서<br />
+                                                    작물의 기본온도(생육영점온도)를 뺀 것을<br />
+                                                    생육기간동안 누적함
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a-left">
+                                                    유효적산온도 (EAT)<br />
+                                                    Effective accumulated<br />
+                                                    temperature
+                                                </td>
+                                                <td>℃</td>
+                                                <td class="a-left">
+                                                    일정한 발육 단계까지 도달하기 위해<br />
+                                                    필요한 총온열량
+                                                </td>
+                                                <td class="a-left">
+                                                    일평균기온에서 작물의 <br />
+                                                    생육영점온도(생육한계온도)를 뺀 것을 적산함
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="layer-help-desc">※ 상위 95/99 퍼센타일은 일강수량 1mm 이상인 날을 기준으로 산출함</p>
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-2">
+                                    방재분야
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-3">
+                                    보건분야
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-4">
+                                    산림분야
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-5">
+                                    수자원분야
+                                </div>
+                                <div class="tab-contents mdl-tab-item" data-tab="setting-e-6">
+                                    동물생태분야
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer-top-right-btn">
+                <button type="button" class="layer-top-btn-item dark btn_layer-close">
+                    <img src="../resources/images/common/icon-close.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function () {
@@ -1045,8 +1389,17 @@
 			id : 'setting-c',
 			current: 'setting-c-1'
 		});
+        const settingTab_d = new Tab({
+            id : 'setting-d',
+            current: 'setting-d-1'
+        });
+        const settingTab_e = new Tab({
+            id : 'setting-e',
+            current: 'setting-e-1'
+        });
 
-		/* theme */
+
+        /* theme */
 		const themeBody = document.querySelector("body");
 		const themeButton = document.querySelector(".theme-choice-btn-group");
 
