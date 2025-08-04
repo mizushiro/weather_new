@@ -1131,7 +1131,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .map-disaster-info-item-right {display:flex;align-items:center;gap:2rem}
 .map-disaster-info-item-right .choice-item-type-c-label {height:3.6rem;min-width:8.4rem}
 .btn-icon-help {width:2rem;height:2rem;display:inline-flex;align-items:center;justify-content:center;vertical-align:bottom;margin-left:.4rem}
-.icon-round-help {width:2rem;height:2rem;background:url("../images/icon/icon-round-help.svg") no-repeat 50% 50%;background-size:contain}
+.icon-round-help {width:2rem;height:2rem;background:url("../images/icon/icon-help-round.svg") no-repeat 50% 50%;background-size:contain}
 .text-20-800 {font-size:2rem;font-weight:800;color:#1E222F;line-height:2.4rem}
 .text-16-800 {font-size:1.6rem;font-weight:800}
 .text-12-700 {font-size:1.2rem;font-weight:700}
