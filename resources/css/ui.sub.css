@@ -459,8 +459,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .disaster-info-title-area.not-shadow {box-shadow:none;border-bottom:none;margin-bottom:0}
 .disaster-info-title {font-size:2.8rem;font-weight:800;color:#1E222F;line-height:2.8rem;}
 .disaster-info-title-area .right-area {margin-left:auto}
-.sub-map-content.grid-layout {display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:2rem;padding:0 3rem 3rem;}
-.map-disaster-info-left {grid-column:span 2/span 2;grid-row:span 3/span 3;border:.1rem solid #CED6E3;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
+.sub-map-content.grid-layout {display:grid;grid-template-columns:58rem repeat(3, 1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:2rem;padding:0 3rem 3rem;}
+.map-disaster-info-left {grid-column:span 1/span 1;grid-row:span 2/span 2;border:.1rem solid #CED6E3;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
 .map-disaster-info-left-top {flex-shrink:0;display:flex;align-items:center;gap:.6rem;padding:1.2rem 2.6rem;border-bottom:.1rem solid #CED6E3}
 .map-disaster-info-left-top .select-item-box {flex:1}
 .map-disaster-info-left-map {flex:1;padding:2rem;position:relative}
@@ -468,8 +468,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .map-disaster-info-left-map-title {margin:-1rem auto 0;background:rgba(243,243,243,.5);height:3.4rem;padding:0 2.2rem;display:inline-flex;align-items:center;font-size:1.4rem;font-weight:800;color:#1E222F;border-radius:.2rem}
 .map-disaster-info-left-map-desc-box {position:absolute;bottom:2rem;right:2rem;border:.1rem solid #E4E8EF;border-radius:.2rem;height:2.8rem;display:flex;align-items:center;line-height:1;font-size:1.2rem;font-weight:800;color:#1E222F;padding:0 1.2rem}
 .map-disaster-info-item {border:.1rem solid #E4E8EF;border-radius:.6rem;background-color:#fff;display:flex;flex-direction:column}
-.map-disaster-info-item-top {flex-shrink:0;display:flex;padding:0 1.2rem 0 1.6rem;align-items:center;height:4.2rem;border-bottom:.1rem solid #E4E8EF;gap:1.5rem}
-.map-disaster-info-item-title {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex:1}
+.map-disaster-info-item-top {flex-shrink:0;display:flex;padding:0 1.2rem 0 1.6rem;align-items:center;height:4.2rem;border-bottom:.1rem solid #E4E8EF;gap:1rem}
+.map-disaster-info-item-title {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex:1;display:flex;align-items:center;gap:.6rem}
 .map-disaster-info-item-title .color-point {color:#2E7EF6}
 .map-disaster-info-item-title2 {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem;flex-shrink:0}
 .map-disaster-info-item-top-btn-group {display:flex;align-items:center;gap:.6rem;flex-shrink:0}
@@ -478,7 +478,8 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 .btn-detail-open:before {content:'더보기';font-size:1.2rem;color:#667AAD;font-weight:700;line-height:1;position:relative;top:.1rem}
 .btn-detail-open .icon-plus {width:1rem;background-image:url("../images/icon/icon-more-b.svg")}
 .map-disaster-info-item-chart {flex:1;padding:1.6rem 1.6rem 0}
-.map-disaster-info-item-desc {font-size:1.2rem;line-height:1.4rem;font-weight:700;color:#7386B6;flex-shrink:0;padding:.8rem 2rem 2rem;word-break:keep-all}
+.map-disaster-info-item-desc {font-size:1.4rem;line-height:1.8rem;font-weight:700;color:#27355A;flex-shrink:0;padding:1.8rem 1.2rem;word-break:keep-all;display:flex;flex-direction:column;align-items:center;}
+span[data-color="sora"] {color:#7386B6}
 .chart-layer-area {padding:3rem 4.2rem 6.4rem}
 .chart-layer-top {display:flex;align-items:center;justify-content:space-between;border-bottom:.1rem solid #D5DCE8;padding-bottom:2rem}
 .chart-layer-top-group {display:flex;align-items:center;gap:.6rem;}
@@ -1097,6 +1098,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .sub1-05-content-detail-data .gray-info-in-box {flex-shrink:0}
 .text-18-800 {font-size:1.6rem;font-weight:800;color:#1E222F;line-height:1.8rem}
 .text-14-700 {font-size:1.4rem;font-weight:700;color:#414756;line-height:1.6rem}
+.text-12-800 {font-size:1.2rem;font-weight:800;color:#1E222F;line-height:1.4rem}
 .text-color-blue {color:#2E7EF6}
 .data-box-group {display:flex;flex-direction:column;gap:.6rem;flex:1}
 .data-box-item {display:flex;gap:2rem;flex:1;width:100%}
@@ -1177,6 +1179,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 }
 .btn-help-layer-open {width:2rem;height:2rem}
 .icon-help-round {display:block;width:2rem;height:2rem;background:url("../images/icon/icon-help-round.svg") no-repeat 50% 50%;background-size:contain}
+.icon-help-round-light {display:block;width:2rem;height:2rem;background:url("../images/icon/icon-help-round-light.svg") no-repeat 50% 50%;background-size:contain}
 .layer-help-content-area {padding:3rem;}
 .layer-help-title {font-size:2rem;font-weight:800;color:#1E222F;line-height:2.3rem;margin-bottom:1rem}
 .layer-help-title ~ .layer-help-title {margin-top:5rem}
