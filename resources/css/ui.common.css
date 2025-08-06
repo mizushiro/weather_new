@@ -460,6 +460,8 @@ select:focus {border-color:#23b7e5;background-position:100% -5rem}
 .tab-type-item.ver4 {gap:2rem;margin-bottom:4rem;padding-top:1rem}
 .tab-type-item.ver4 .list-item-tab-button {height:2.4rem;padding-bottom:.4rem;width:auto;border-bottom:.2rem solid transparent;color:#7386B6;font-size:1.6rem;font-weight:800;border-radius:0;background-color:transparent;white-space:nowrap}
 .tab-type-item.ver4 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {border-color:#2E7EF6;color:#2E7EF6}
+.light-theme .tab-type-item.ver4 .list-item-tab-button {border:none;border-bottom:.2rem solid transparent}
+.light-theme .tab-type-item.ver4 .list-item-tab-button.mdl-tab-btn[data-selected="true"] {border-color:#2E7EF6;background-color:transparent}
 @media (max-width:767px) {
     .tab-type-item.ver2 .list-item-tab {flex:1}
     .tab-type-item.ver2 .list-item-tab-button {width:100%}

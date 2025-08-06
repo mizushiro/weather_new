@@ -1180,6 +1180,7 @@ button:hover .icon-stop {background-image:url("../images/icon/icon-stop-on.png")
 .btn-help-layer-open {width:2rem;height:2rem}
 .icon-help-round {display:block;width:2rem;height:2rem;background:url("../images/icon/icon-help-round.svg") no-repeat 50% 50%;background-size:contain}
 .icon-help-round-light {display:block;width:2rem;height:2rem;background:url("../images/icon/icon-help-round-light.svg") no-repeat 50% 50%;background-size:contain}
+.light-theme .icon-help-round {background-image:url("../images/icon/icon-help-round-light.svg")}
 .layer-help-content-area {padding:3rem;}
 .layer-help-title {font-size:2rem;font-weight:800;color:#1E222F;line-height:2.3rem;margin-bottom:1rem}
 .layer-help-title ~ .layer-help-title {margin-top:5rem}
