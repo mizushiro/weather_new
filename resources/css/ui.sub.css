@@ -455,6 +455,7 @@ button:hover .icon-map-3 {background-image:url("../images/icon/icon-map-3-on.png
 
 /* 재난영향정보 */
 .disaster-info-box {display:flex;flex:1;flex-direction:column;}
+.disaster-info-box[data-overflow="hidden"] {overflow:hidden}
 .disaster-info-title-area {padding:3.8rem 3rem 1.8rem;flex-shrink:0;display:flex;align-items:center;background-color:#fff;margin:0 0 2rem;box-shadow:0 .3rem 0 0 #001D6505;border-bottom:.1rem solid rgba(0,29,101,.1)}
 .disaster-info-title-area.not-shadow {box-shadow:none;border-bottom:none;margin-bottom:0}
 .disaster-info-title {font-size:2.8rem;font-weight:800;color:#1E222F;line-height:2.8rem;}
